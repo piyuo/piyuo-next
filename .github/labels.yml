@@ -1,16 +1,16 @@
 # .github/labels.yml
 
 # GitHub Default Labels
-- name: "bug"
+- name: "fix"
   color: "d73a4a"
   description: "Something isn't working"
-- name: "documentation"
+- name: "docs"
   color: "0075ca"
   description: "Improvements or additions to documentation"
 - name: "duplicate"
   color: "cfd3d7"
   description: "This issue or pull request already exists"
-- name: "enhancement"
+- name: "feat"
   color: "a2eeef"
   description: "New feature or request"
 - name: "good first issue"
@@ -39,3 +39,8 @@
 - name: "release"
   color: "00ff00"
   description: "Release related changes"
+
+  # Triage Label
+- name: "needs-triage"
+  color: "fbca04"
+  description: "Needs triage to determine priority or classification"
