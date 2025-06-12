@@ -1,7 +1,7 @@
 name: ✨ Feature Request
 description: Suggest an idea for this project
 title: "feat: "
-labels: ["feat", "needs-triage"]
+labels: ["feat"]
 body:
   - type: markdown
     attributes:

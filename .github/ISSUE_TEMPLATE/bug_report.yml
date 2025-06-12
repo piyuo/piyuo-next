@@ -1,7 +1,7 @@
 name: 🐛 Bug Report
 description: Report a bug to help us improve
 title: "fix: "
-labels: ["fix", "needs-triage"]
+labels: ["fix"]
 body:
   - type: markdown
     attributes:
