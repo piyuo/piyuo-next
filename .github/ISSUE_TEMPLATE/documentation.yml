@@ -1,7 +1,7 @@
 name: 📚 Documentation
 description: Report missing or incorrect documentation
 title: "docs: "
-labels: ["docs", "needs-triage"]
+labels: ["docs"]
 body:
   - type: markdown
     attributes:
