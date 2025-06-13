@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Next.js Frontend in Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true,
+            "trace": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Next.js Backend",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "dev"],
+            "console": "integratedTerminal"
+          }
+ ]
+}

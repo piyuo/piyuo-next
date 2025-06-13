@@ -27,6 +27,15 @@
 - [ ] Environment variables need to be updated
 - [ ] Other: _________
 
+## 🤖 AI Assistance (Optional)
+<!-- If AI tools helped generate code, include the prompt here for transparency -->
+- [ ] This PR contains code generated or significantly assisted by AI.
+- [ ] I have reviewed the AI-generated code for accuracy, security, and quality.
+
+Prompt Used (Optional)
+
+-
+
 ## Reviewer Notes (Optional)
 <!-- Any specific areas you'd like reviewers to focus on -->
 -
