@@ -73,3 +73,28 @@ You are an AI assistant helping with:
 - The current deployment uses **Static Site Generation (SSG)** only.
 - All pages are pre-rendered at build time and deployed to **GitHub Pages**.
 - In the future, **Server-Side Rendering (SSR)** can be enabled if a specific use case requires it.
+
+## 🗂️ Asset Management Strategy
+
+### 📁 File Placement
+
+- Use an `assets/` directory inside `src/` for all **versioned assets** (e.g., images, documents, locale files).
+  - These files should be imported directly in components or modules.
+  - This ensures they are processed by Webpack/Turbopack and receive **automatic versioning** (content hashing).
+  - Example:
+    ```tsx
+    import logo from '@/assets/logo.png';
+    <Image src={logo} alt="Logo" />
+    ```
+
+- The `public/` folder should only be used for:
+  - Files that **never change** (e.g., `robots.txt`, `favicon.ico`).
+  - Static resources that are intended to bypass the bundler entirely.
+
+### 🎯 Why This Matters
+
+- Imported assets get **fingerprinted** and benefit from **long-term caching** with automatic cache busting.
+- `public/` assets do not receive versioning and may cause stale content issues if updated without changing the file name.
+- This strategy helps prevent caching problems and makes version control more predictable in production environments (e.g., GitHub Pages or Vercel).
+
+> 📌 Summary: Prefer importing from `src/assets` for anything that might change. Only use `public/` for permanent, never-changing files.
