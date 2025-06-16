@@ -78,7 +78,7 @@ You are an AI assistant helping with:
 
 ### 📁 File Placement
 
-- Use an `assets/` directory inside `src/` for all **versioned assets** (e.g., images, documents, locale files).
+- Use an `assets/` directory for all **versioned assets** (e.g., images, documents, locale files).
   - These files should be imported directly in components or modules.
   - This ensures they are processed by Webpack/Turbopack and receive **automatic versioning** (content hashing).
   - Example:
@@ -97,4 +97,4 @@ You are an AI assistant helping with:
 - `public/` assets do not receive versioning and may cause stale content issues if updated without changing the file name.
 - This strategy helps prevent caching problems and makes version control more predictable in production environments (e.g., GitHub Pages or Vercel).
 
-> 📌 Summary: Prefer importing from `src/assets` for anything that might change. Only use `public/` for permanent, never-changing files.
+> 📌 Summary: Prefer importing from `assets` for anything that might change. Only use `public/` for permanent, never-changing files.
