@@ -98,3 +98,16 @@ You are an AI assistant helping with:
 - This strategy helps prevent caching problems and makes version control more predictable in production environments (e.g., GitHub Pages or Vercel).
 
 > 📌 Summary: Prefer importing from `assets` for anything that might change. Only use `public/` for permanent, never-changing files.
+
+
+## 🌍 Locale File Structure
+
+- Locale files are stored in `messages/` instead of the `public/` folder.
+  - This allows for versioning, modular imports, and bundler integration.
+  - Follows conventions used in `next-intl` official examples.
+- Files may be organized by language and domain:
+messages/en/common.json
+messages/zh/common.json
+- Avoid placing locale files in `public/` to prevent stale content and missing type integration.
+
+> 📌 Summary: Store all translatable messages in `src/messages/` and load them via imports or dynamic imports.
