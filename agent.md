@@ -9,6 +9,7 @@ This is a modern website project built using cutting-edge tools and best practic
 - **TypeScript**: For static type safety across the codebase.
 - **React**: Core UI framework.
 - **Next.js (App Router)**: Handles routing, server-side rendering, and optimizations like `next/image`, `next/font`.
+- **TurboPack**: For internationalization and multilingual support.
 - **next-intl**: For internationalization and multilingual support.
 - **Tailwind CSS + clsx**: Utility-first CSS styling with conditional class management.
 - **ShadCN UI**: Prebuilt, accessible, and Tailwind-compatible UI components.
@@ -18,6 +19,11 @@ This is a modern website project built using cutting-edge tools and best practic
 - **React Hook Form**: Form handling and integration with Zod.
 - **Jest + React Testing Library**: Unit and component testing.
 - **Playwright**: End-to-end testing.
+
+## ⚙️ Bundlers
+
+- **Turbopack** is used for local development (enabled by Next.js).
+- **Webpack** is used for production builds.
 
 ## 🧠 AI Agent Goals
 
