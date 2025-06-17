@@ -4,27 +4,6 @@
 
 This is a modern website project built using cutting-edge tools and best practices recommended by the Next.js community. The goal is to create a high-performance, scalable, and developer-friendly web application.
 
-## 🧰 Tech Stack
-
-- **TypeScript**: For static type safety across the codebase.
-- **React**: Core UI framework.
-- **Next.js (App Router)**: Handles routing, server-side rendering, and optimizations like `next/image`, `next/font`.
-- **TurboPack**: For internationalization and multilingual support.
-- **next-intl**: For internationalization and multilingual support.
-- **Tailwind CSS + clsx**: Utility-first CSS styling with conditional class management.
-- **ShadCN UI**: Prebuilt, accessible, and Tailwind-compatible UI components.
-- **Zustand**: Lightweight state management library.
-- **SWR**: Data fetching strategy for REST APIs.
-- **Zod**: Schema validation and form validation logic.
-- **React Hook Form**: Form handling and integration with Zod.
-- **Jest + React Testing Library**: Unit and component testing.
-- **Playwright**: End-to-end testing.
-
-## ⚙️ Bundlers
-
-- **Turbopack** is used for local development (enabled by Next.js).
-- **Webpack** is used for production builds.
-
 ## 🧠 AI Agent Goals
 
 You are an AI assistant helping with:
@@ -82,6 +61,7 @@ You are an AI assistant helping with:
   - These files should be imported directly in components or modules.
   - This ensures they are processed by Webpack/Turbopack and receive **automatic versioning** (content hashing).
   - Example:
+
     ```tsx
     import logo from '@/assets/logo.png';
     <Image src={logo} alt="Logo" />
@@ -99,7 +79,6 @@ You are an AI assistant helping with:
 
 > 📌 Summary: Prefer importing from `assets` for anything that might change. Only use `public/` for permanent, never-changing files.
 
-
 ## 🌍 Locale File Structure
 
 - Locale files are stored in `messages/` instead of the `public/` folder.
@@ -111,3 +90,8 @@ messages/zh/common.json
 - Avoid placing locale files in `public/` to prevent stale content and missing type integration.
 
 > 📌 Summary: Store all translatable messages in `src/messages/` and load them via imports or dynamic imports.
+
+## Other document to reference
+
+README.md - Includes purpose, how to start, and tech stack
+CONTRIBUTING.md - Follows a clear step-by-step GitHub flow.
