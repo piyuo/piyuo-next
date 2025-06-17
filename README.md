@@ -42,6 +42,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 │   └── zh/             # Chinese translations
 ├── public/             # Public static files (served at root). Files inside will never change (this folder is not versioned).
 │   └── locales/        # (Optional) i18n locale files for Next.js
+├── scripts/            # Useful scripts for development and maintenance
 ├── styles/             # Additional global styles
 ├── .github/            # GitHub workflows, issue templates, and labels
 ├── .vscode/            # VS Code workspace settings and launch configs
@@ -72,6 +73,8 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - **package.json**: Project dependencies, scripts, and metadata.
 - **AGENTS.md**: Guidance for AI Agents and developers on project conventions, best practices, and what to avoid. Essential for automated and human contributors.
 - **CONTRIBUTING.md**: Step-by-step guide for contributing, including workflow, commit standards, and review process. Read this before making a PR.
+- **scripts/**: Useful scripts for development and maintenance (e.g., cleanup, automation).
+  - **cleanup-branches.sh**: Deletes all local git branches that have been removed from the remote. Useful for keeping your local repository clean.
 
 ## Environment Variables
 
