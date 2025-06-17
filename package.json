@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "next": "15.3.3",
@@ -29,9 +30,14 @@
     "eslint-config-next": "15.3.3",
     "jest": "^30.0.0",
     "jest-environment-jsdom": "^30.0.0",
+    "only-allow": "^1.2.1",
     "tailwindcss": "^4",
     "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5"
-  }
+  },
+  "engines": {
+    "pnpm": ">=8.0.0"
+  },
+  "engineStrict": true
 }

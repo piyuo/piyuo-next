@@ -99,6 +99,30 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - **Turbopack** is used for local development (enabled by Next.js).
 - **Webpack** is used for production builds.
 
+## ⚠️ Dependency Management
+
+This project uses [`pnpm`](https://pnpm.io) for managing dependencies.
+
+✅ Please use:
+
+```bash
+pnpm install
+```
+
+or
+
+```bash
+pnpm dev
+```
+
+❌ Do NOT use npm install. It will either be blocked or crash due to pnpm's optimized node_modules layout.
+
+If you don’t have pnpm yet:
+
+```bash
+npm install -g pnpm
+```
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
