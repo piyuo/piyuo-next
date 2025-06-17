@@ -2,6 +2,19 @@
 
 piyuo-next is the official website for piyuo counter. This project uses Next.js/React to build a small, fast, and most importantly, Search Engine Optimized (SEO) website.
 
+## 🛠️ Development Tools
+
+These tools are used to support local development, collaboration, and testing:
+
+- Visual Studio Code – Recommended code editor with official Next.js and Tailwind CSS extensions.
+- Node.js (v18+) – Required runtime for Next.js and tooling.
+- pnpm – Preferred package manager (faster and more efficient than npm/yarn).
+- Git – Version control for managing source code.
+- GitHub CLI (gh) – Streamlines GitHub workflows (issues, pull requests, etc.).
+- Playwright Test Runner – Used for running end-to-end tests locally and in CI.
+- Jest – Unit testing framework with React Testing Library integration.
+- ESLint + Prettier – Enforces consistent code quality and formatting (integrated via VS Code extensions).
+
 ## Getting Started
 
 First, run the development server:
