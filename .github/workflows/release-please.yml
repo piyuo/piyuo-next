@@ -29,3 +29,16 @@ jobs:
         with:
           release-type: node
           target-branch: main
+###
+### Give Release-please permission
+### Go to your GitHub repository.
+### Click on Settings.
+### In the left sidebar, click on Actions.
+### Then click on General.
+### Scroll down to "Workflow permissions".
+
+### Set the default permissions granted to the GITHUB_TOKEN for all workflow runs.
+### [ ] Read repository contents and packages permissions
+### [x] Read and write permissions  <-- Make sure this is checked
+
+### [x] Allow GitHub Actions to create and approve pull requests <-- You already checked this
