@@ -36,7 +36,6 @@ jobs:
 ### In the left sidebar, click on Actions.
 ### Then click on General.
 ### Scroll down to "Workflow permissions".
-
 ### Set the default permissions granted to the GITHUB_TOKEN for all workflow runs.
 ### [ ] Read repository contents and packages permissions
 ### [x] Read and write permissions  <-- Make sure this is checked
