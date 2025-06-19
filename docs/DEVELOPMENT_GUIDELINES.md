@@ -150,66 +150,23 @@ const t = useTranslations('common');
 After completing your work, create a PR using GitHub CLI:
 
 ```bash
-gh pr create --title "<type>(<scope>): <description> #<issue-number>" --body "<filled-template>" --base main
+gh pr create --title "<issue-title> #<issue-number>" --body "<filled-template>" --base main
 ```
 
-> **Note:** The canonical commit/PR title format is `<type>(<scope>): <description> #<issue-number>`. See `CONTRIBUTING.md` for details and more examples.
+> **Tip:** You already know the issue number you are working on. To get the exact issue title, use the provided script:
+>
+> ```bash
+> ./scripts/get-issue-title.sh <issue-number>
+> ```
+>
+> This will output the issue title, which you should use directly in your PR title for consistency and clarity.
 
-### 3.1 PR Title Format
-```
-<type>(<scope>): <description> #<issue-number>
-```
-
-**Types:**
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation
-- `refactor`: Code refactoring
-- `test`: Adding tests
-- `chore`: Maintenance
-
-**Examples:**
-- `feat(DASH): add user dashboard component #23`
-- `fix(PAY): resolve login validation issue #17`
-
-### 3.2 PR Body Template
-
-Use this template (from `.github/PULL_REQUEST_TEMPLATE.md`):
-
-### 3.3 Complete PR Creation Example
-
+**Example:**
 ```bash
-gh pr create \
-  --title "feat(DASH): add user profile component #23" \
-  --body "## Checklist
-- [x] My code follows the project's coding standards
-- [x] I have performed a self-review of my code
-- [x] I have commented functions >10 lines with JSDoc
-- [x] All user-facing text uses translations (i18n)
-- [x] My changes generate no new warnings
-- [x] I have added tests that prove my feature works
-- [x] New and existing unit tests pass locally
-- [x] File sizes are ≤200 lines (code only)
-
-## Testing
-- [x] Existing tests pass
-- [x] Added new tests for UserProfile component
-- [x] Manual testing performed
-
-### Test Evidence
-- Added unit tests for UserProfile rendering and interactions
-- Tested with both English and Chinese translations
-- Verified responsive design on mobile and desktop
-
-## 🤖 AI Assistance
-- [x] This PR contains code generated or significantly assisted by AI
-
-## Reviewer Notes
-- Please review the translation keys in messages/en/user.json
-- Component follows established patterns from existing profile components
-" \
-  --base main
+gh pr create --title "Add user dashboard component #23" --body "<filled-template>" --base main
 ```
+
+There is no need to manually format the PR title—just use the issue title and number. See `CONTRIBUTING.md` for more details and examples.
 
 ## 🤖 AI Agent Automation Guide
 
