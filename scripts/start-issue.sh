@@ -1,55 +1,54 @@
-# scripts/start-issue.sh
 #!/bin/bash
-# This script creates a new branch for a GitHub issue, assigns it to you, and checks it out.
+# This script uses GitHub CLI to create and check out a branch linked to an issue.
 # Usage: ./start-issue.sh <issue-number>
 
 set -e
 
-# Check input
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
 if [ -z "$1" ]; then
-    echo "❌ Error: Issue number is required."
+    echo -e "${RED}❌ Error: Issue number is required.${NC}"
     echo "Usage: $0 <issue-number>"
     exit 1
 fi
 
 ISSUE="$1"
-BASE=main
 
-# Get current GitHub username
-GH_USER=$(gh api user --jq .login 2>/dev/null)
-if [ -z "$GH_USER" ]; then
-    echo "❌ Error: Could not determine GitHub user. Are you logged in with gh?"
+# Ensure user is logged in to GitHub CLI
+if ! gh auth status &>/dev/null; then
+    echo -e "${RED}❌ Error: You are not logged in to GitHub CLI. Run 'gh auth login' first.${NC}"
     exit 1
 fi
 
-# Check if issue exists and get title
-ISSUE_TITLE=$(gh issue view "$ISSUE" --json title --jq ".title" 2>/dev/null || true)
-if [ -z "$ISSUE_TITLE" ]; then
-    echo "❌ Error: Issue #$ISSUE not found. Please check the issue number."
+# Check that issue exists
+if ! gh issue view "$ISSUE" &>/dev/null; then
+    echo -e "${RED}❌ Error: Issue #$ISSUE not found.${NC}"
     exit 1
 fi
 
-echo "📋 Issue #$ISSUE: $ISSUE_TITLE"
-
-# Slugify issue title (lowercase, replace non-alnum with dash, trim dashes)
-SLUG=$(echo "$ISSUE_TITLE" | \
-    tr '[:upper:]' '[:lower:]' | \
-    sed -E 's/[^a-z0-9]+/-/g' | \
-    sed -E 's/^-+|-+$//g')
-
-BRANCH="${ISSUE}-${SLUG}"
-
-# Assign issue to current user
-echo "👤 Assigning issue #$ISSUE to @$GH_USER..."
-gh issue edit "$ISSUE" --add-assignee "$GH_USER" >/dev/null
-
-# Check if branch exists locally
-if git show-ref --verify --quiet "refs/heads/$BRANCH"; then
-    echo "✅ Branch '$BRANCH' already exists locally."
-    git checkout "$BRANCH"
-else
-    echo "🚀 Creating and checking out branch '$BRANCH' for issue #$ISSUE"
-    # Create branch from base
-    git fetch origin "$BASE"
-    git checkout -b "$BRANCH" "origin/$BASE"
+# Check for uncommitted changes before switching branches
+echo "🔍 Checking for uncommitted changes..."
+if ! git diff-index --quiet HEAD --; then
+    echo -e "${RED}❌ Error: You have uncommitted changes. Please commit or stash them before proceeding.${NC}"
+    git status -s
+    exit 1
 fi
+echo -e "${GREEN}✅ No uncommitted changes found.${NC}"
+
+# Pull the latest changes from the remote main branch
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ "$CURRENT_BRANCH" != "main" ]; then
+    echo "🔄 Switching to main branch and pulling latest changes..."
+    git checkout main
+fi
+git pull origin main
+
+# Use GitHub CLI to create and link the branch
+echo -e "🚀 Creating a branch for issue #$ISSUE using 'gh issue develop'..."
+gh issue develop "$ISSUE" --checkout --base main
+
+# Print final status
+NEW_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+echo -e "${GREEN}✅ Branch '$NEW_BRANCH' created and linked to issue #$ISSUE.${NC}"
