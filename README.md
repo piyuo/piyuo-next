@@ -76,6 +76,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - **scripts/**: Useful scripts for development and maintenance (e.g., cleanup, automation).
   - **cleanup-branches.sh**: Deletes all local git branches that have been removed from the remote. Useful for keeping your local repository clean.
   - **start-issue.sh**: Automates starting work on a GitHub issue. It creates a new branch named after the issue number and title, assigns the issue to you, and checks out the branch.
+  - **get-issue-title.sh**: Fetches the title of a GitHub issue by its number.
 
 ### Using `start-issue.sh`
 
@@ -97,6 +98,27 @@ Example:
 
 ```bash
 ./scripts/start-issue.sh 42
+```
+
+### Using `get-issue-title.sh`
+
+This script fetches the title of a GitHub issue by its number using the GitHub CLI:
+
+```bash
+./scripts/get-issue-title.sh <issue-number>
+```
+
+- Prints the issue title to stdout.
+- Exits with an error if the issue number is missing or the title cannot be fetched.
+
+**Requirements:**
+- [GitHub CLI (`gh`)](https://cli.github.com/) must be installed and authenticated.
+- Run from the project root.
+
+Example:
+
+```bash
+./scripts/get-issue-title.sh 42
 ```
 
 ## Environment Variables
