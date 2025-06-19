@@ -25,10 +25,10 @@ You are an AI assistant who helps with:
 - Use functional components and React hooks only.
 - All styles should use Tailwind CSS.
 - Prefer server components unless interaction is required.
-- Co-locate i18n messages with the page or component (using `next-intl`).
+- Co-locate i18n messages with the page or component. Place all messages files in the `messages/` directory (see below).
 - Validate all user input using Zod schemas.
 - Prefer composable, reusable components.
-- Always add tests for new features.
+- All new features and fixes must use TDD (write tests first). See `TESTING_POLICY.md` for detailed testing process and standards.
 - Ensure accessibility in UI components.
 
 ## 🚫 What to Avoid
@@ -43,7 +43,21 @@ You are an AI assistant who helps with:
 
 - Use concise, readable TypeScript.
 - Write self-documenting code with clear naming and structure.
-- Use conventional commit messages (e.g., `feat: add login button`).
+- Use conventional commit messages and PR titles. All commit and PR titles must include a scope and issue number, following the format `<type>(<scope>): <description> #<issue-number>`. See `CONTRIBUTING.md` for canonical format and more examples.
+
+  **Examples:**
+  - `feat(DASH): add user dashboard with activity metrics #95`
+  - `fix(PAY): resolve payment gateway connection timeout #142`
+
+---
+
+## 🔄 Pull Request Workflow
+
+- **AI agents:** Create Pull Requests directly when work is completed. Do **not** create draft PRs.
+- **Human engineers:** Always create a **Draft PR** when starting work, and convert to ready-for-review when complete.
+- Ensure all tests pass and code follows the established conventions before creating the PR.
+- Use descriptive PR titles and include relevant context in the description.
+- See `CONTRIBUTING.md` for full workflow and requirements.
 
 ---
 
@@ -55,45 +69,19 @@ You are an AI assistant who helps with:
 
 ## 🗂️ Asset Management Strategy
 
-### 📁 File Placement
+- For detailed asset and i18n file placement rules, see the `README.md`.
 
-- Use an `assets/` directory for all **versioned assets** (e.g., images, documents, locale files).
-  - These files should be imported directly in components or modules.
-  - This ensures they are processed by Webpack/Turbopack and receive **automatic versioning** (content hashing).
-  - Example:
-
-    ```tsx
-    import logo from '@/assets/logo.png';
-    <Image src={logo} alt="Logo" />
-    ```
-
-- The `public/` folder should only be used for:
-  - Files that **never change** (e.g., `robots.txt`, `favicon.ico`).
-  - Static resources that are intended to bypass the bundler entirely.
-
-### 🎯 Why This Matters
-
-- Imported assets get **fingerprinted** and benefit from **long-term caching** with automatic cache busting.
-- `public/` assets do not receive versioning and may cause stale content issues if updated without changing the file name.
-- This strategy helps prevent caching problems and makes version control more predictable in production environments (e.g., GitHub Pages or Vercel).
-
-> 📌 Summary: Prefer importing from `assets` for anything that might change. Only use `public/` for permanent, never-changing files.
+> 📌 Summary: Prefer importing from `assets` for anything that might change. Only use `public/` for permanent, never-changing files. See `README.md` for details.
 
 ## 🌍 Locale File Structure
 
-- Locale files are stored in the `messages/` directory instead of the `public/` folder.
-  - This allows for versioning, modular imports, and bundler integration.
-  - Follows conventions used in `next-intl` official examples.
-- Files may be organized by language and domain, for example:
+- Store all translatable messages in `messages/` and load them via imports or dynamic imports. See `README.md` for details.
 
-messages/en/common.json
-messages/zh/common.json
-
-- Avoid placing locale files in `public/` to prevent stale content and missing type integration.
-
-> 📌 Summary: Store all translatable messages in `messages/` and load them via imports or dynamic imports.
+---
 
 ## Other documents to reference
 
-- **README.md** – Includes purpose, how to start, and tech stack
-- **CONTRIBUTING.md** – Follows a clear step-by-step GitHub flow.
+- **README.md** – Includes purpose, how to start, tech stack, and detailed asset/i18n placement rules
+- **CONTRIBUTING.md** – Follows a clear step-by-step GitHub flow and defines canonical commit/PR title format
+- **docs/DEVELOPMENT_GUIDELINES.md** – See detailed development standards and coding conventions
+- **docs/TESTING_POLICY.md** – See the project's testing requirements and best practices. All new features and fixes must use TDD (write tests first).

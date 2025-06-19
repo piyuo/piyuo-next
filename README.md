@@ -29,7 +29,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Project Structure
 
-```
+```bash
 ├── app/                # Main Next.js app directory (App Router)
 │   ├── components/     # Reusable React components
 │   ├── globals.css     # Global styles (Tailwind CSS)
@@ -75,6 +75,29 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - **CONTRIBUTING.md**: Step-by-step guide for contributing, including workflow, commit standards, and review process. Read this before making a PR.
 - **scripts/**: Useful scripts for development and maintenance (e.g., cleanup, automation).
   - **cleanup-branches.sh**: Deletes all local git branches that have been removed from the remote. Useful for keeping your local repository clean.
+  - **start-issue.sh**: Automates starting work on a GitHub issue. It creates a new branch named after the issue number and title, assigns the issue to you, and checks out the branch.
+
+### Using `start-issue.sh`
+
+This script streamlines the process of starting work on a GitHub issue:
+
+```bash
+./scripts/start-issue.sh <issue-number>
+```
+
+- Creates a new branch from `main` named `<issue-number>-<slugified-title>`.
+- Assigns the issue to your GitHub user.
+- Checks out the new branch (or switches to it if it already exists).
+
+**Requirements:**
+- [GitHub CLI (`gh`)](https://cli.github.com/) must be installed and authenticated.
+- Run from the project root.
+
+Example:
+
+```bash
+./scripts/start-issue.sh 42
+```
 
 ## Environment Variables
 
