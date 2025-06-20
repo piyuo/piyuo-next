@@ -56,7 +56,7 @@ echo -e "${GREEN}✅ Branch '$NEW_BRANCH' created and linked to issue #$ISSUE.${
 # Call cleanup script to remove old branches
 if [ -x "./cleanup-branches.sh" ]; then
     echo -e "🧹 Running branch cleanup script..."
-    ./cleanup-branches.sh
+    bash ./cleanup-branches.sh
 else
     echo -e "${RED}⚠️ Warning: cleanup-branches.sh not found or not executable.${NC}"
 fi
