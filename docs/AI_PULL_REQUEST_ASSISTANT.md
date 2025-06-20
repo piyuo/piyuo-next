@@ -106,7 +106,19 @@ Both the PR title and the first commit message should follow the same format:
 Use GitHub CLI to create the PR:
 
 ```bash
-gh pr create --title "<issue-title> #<issue-number>" --body "<filled-template>" --base main
+# Write the PR template content to a temporary file
+cat > .PR_BODY.md << 'EOF'
+<filled-template>
+EOF
+
+# Create the PR using the body file
+gh pr create \
+  --title "<issue-title> #<issue-number>" \
+  --body-file .PR_BODY.md \
+  --base main
+
+# Clean up the temporary file after successful PR creation
+rm .PR_BODY.md
 ```
 
 **Important:**
@@ -114,6 +126,8 @@ gh pr create --title "<issue-title> #<issue-number>" --body "<filled-template>" 
 - Replace `<issue-title>` with the title retrieved from step 1
 - Replace `<issue-number>` with the actual issue number
 - Replace `<filled-template>` with the completed PR template content
+- The `.PR_BODY.md` file is automatically ignored by git (already in .gitignore)
+- The temporary file is cleaned up after successful PR creation
 - Ensure you're on the correct feature branch before creating the PR
 
 ---
@@ -132,7 +146,11 @@ docs(ai): create AI pull request assistant guide #43
 
 ### Template Content
 
-```markdown
+Create the PR template file and use it:
+
+```bash
+# Write the completed template to .PR_BODY.md
+cat > .PR_BODY.md << 'EOF'
 ## Checklist
 - [x] My code follows the project's coding standards
 - [x] I have performed a self-review of my code
@@ -168,6 +186,16 @@ docs(ai): create AI pull request assistant guide #43
 ## Reviewer Notes (Optional)
 - Please verify the PR creation workflow instructions are accurate for our setup
 - Ensure the template completion examples align with project standards
+EOF
+
+# Create the PR
+gh pr create \
+  --title "docs(ai): create AI pull request assistant guide #43" \
+  --body-file .PR_BODY.md \
+  --base main
+
+# Clean up the temporary file
+rm .PR_BODY.md
 ```
 
 ---
