@@ -52,3 +52,11 @@ gh issue develop "$ISSUE" --checkout --base main
 # Print final status
 NEW_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 echo -e "${GREEN}✅ Branch '$NEW_BRANCH' created and linked to issue #$ISSUE.${NC}"
+
+# Call cleanup script to remove old branches
+if [ -x "./cleanup-branches.sh" ]; then
+    echo -e "🧹 Running branch cleanup script..."
+    ./cleanup-branches.sh
+else
+    echo -e "${RED}⚠️ Warning: cleanup-branches.sh not found or not executable.${NC}"
+fi
