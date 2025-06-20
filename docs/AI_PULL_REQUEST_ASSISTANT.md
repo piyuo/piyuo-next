@@ -34,9 +34,9 @@ The PR template is located at `.github/PULL_REQUEST_TEMPLATE.md` and contains:
 - **AI Assistance** - Transparency about AI-generated code
 - **Reviewer Notes** - Specific areas for reviewer focus
 
-### 3. **Format PR Title**
+### 3. **Format PR Title and Commit Messages**
 
-Use this format:
+Both the PR title and the first commit message should follow the same format:
 
 ```text
 <type>(<scope>): <description> #<issue-number>
@@ -61,6 +61,13 @@ Use this format:
 **Scope (optional):**
 
 - Component, module, or area affected (e.g., `ui`, `auth`, `api`, `docs`)
+
+**Commit Message Requirements:**
+
+- The **first commit** in your PR branch must use the exact same format as the PR title
+- This ensures consistency between the commit history and PR tracking
+- Additional commits in the same PR can use shorter, descriptive messages
+- Always include the issue number for traceability
 
 ### 4. **Fill PR Template Intelligently**
 
@@ -115,7 +122,9 @@ gh pr create --title "<issue-title> #<issue-number>" --body "<filled-template>" 
 
 For issue #43 "docs: create AI pull request assistant guide":
 
-### Title
+### Title and First Commit Message
+
+Both should use the same format:
 
 ```text
 docs(ai): create AI pull request assistant guide #43
@@ -171,6 +180,14 @@ docs(ai): create AI pull request assistant guide #43
 - Use lowercase for type and description
 - Include the issue number for traceability
 - Match the conventional commit format used in the project
+
+### **Commit Message Guidelines**
+
+- The **first commit** must match the PR title format exactly
+- Use the same `<type>(<scope>): <description> #<issue-number>` format
+- Subsequent commits can be more descriptive but should remain clear
+- Always reference the issue number in the first commit
+- Keep commit messages under 72 characters when possible
 
 ### **Template Completion**
 
