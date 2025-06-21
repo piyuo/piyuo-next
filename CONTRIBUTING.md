@@ -10,12 +10,13 @@ Here's the complete development workflow at a glance:
 
 1. **Create Issue** → Use AI Issue Assistant or templates
 2. **Create Branch** → Using `./scripts/start-issue.sh <issue-number>`
-3. **Write Tests First** → Test-driven development (TDD) approach
-4. **Develop & Commit** → Frequent commits with descriptive messages
-5. **Clean History** → Squash into meaningful commits before review
-6. **Create PR** → Request review with proper title format
-7. **Merge** → Maintainer performs rebase and merge
-8. **Auto-Release** → Release-please handles versioning when milestone complete
+3. **Create Draft PR** → Early communication and collaboration
+4. **Write Tests First** → Test-driven development (TDD) approach
+5. **Develop & Commit** → Frequent commits with descriptive messages
+6. **Clean History** → Squash into meaningful commits before review
+7. **Create PR** → Request review with proper title format
+8. **Merge** → Maintainer performs rebase and merge
+9. **Auto-Release** → Release-please handles versioning when milestone complete
 
 ---
 
@@ -25,10 +26,12 @@ All work must begin with a GitHub Issue to ensure proper tracking and milestone 
 
 ### Issue Creation Options
 
-**AI Assist Issue** (Recommended) - Use the AI-powered issue template `AI Assist Issue`, the detail document is in   `docs/AI_ISSUE_ASSISTANT.md`
+**AI Assist Issue** (Recommended) - Use the AI-powered issue template `AI Assist Issue`, the detailed document can be found in   `docs/AI_ISSUE_ASSISTANT.md`
+
 ### Large Feature Management
 
 For complex features, use **Epic + Sub-issues** approach:
+
 1. **Epic Issue** - Main feature request with overview
 2. **Team Planning** - Collaborative breakdown into sub-issues (1-2 days each)
 3. **Sub-issue Creation** - Each with clear acceptance criteria
@@ -36,7 +39,7 @@ For complex features, use **Epic + Sub-issues** approach:
 
 ---
 
-## 🌿 Step 2: Create Branch
+## 🌿 Step 2: Create Issue Branch
 
 **ALWAYS** use the provided script to start working on any issue:
 
@@ -55,7 +58,77 @@ This script will:
 
 ---
 
-## ✅ Step 3: Write Tests First (TDD)
+## 📝 Step 3: Create Draft PR for Early Communication
+
+**RECOMMENDED:** Create a Draft PR immediately after creating your branch to enable early communication and collaboration.
+
+### Why Create Draft PRs Early?
+
+- **Communicate your approach** before significant development
+- **Get feedback on direction** from team members and AI agents
+- **Document your thinking process** in PR comments
+- **Enable collaborative problem-solving**
+- **Avoid rework** by validating approach early
+
+### Creating a Draft PR
+
+```bash
+# Create draft PR using GitHub CLI
+gh pr create --draft --title "<issue-title> #<issue-number>" --body "<initial-approach>" --base main
+```
+
+### Draft PR Best Practices
+
+**Use PR Comments to:**
+
+- Explain your planned approach
+- Ask questions about implementation details
+- Share discoveries and learnings
+- Request feedback on specific design decisions
+- Document any blockers or challenges
+
+### When to Ask for Help
+
+**ALWAYS ask for help when you:**
+
+- If the issue requirements are unclear
+- Are unsure about the best technical approach
+- Encounter unfamiliar technologies or patterns
+- Face blockers that you can't resolve
+- Need clarification on project conventions
+- Are stuck on implementation details
+
+**HOW to ask for help:**
+
+1. **Comment in your Draft PR** with specific questions
+2. **Tag relevant team members** or use `@team` mentions
+3. **Provide context** about what you've tried
+4. **Be specific** about what you need help with
+
+**Example Help Request:**
+
+```markdown
+## Need Help 🆘
+
+I'm stuck on implementing the payment integration. I've reviewed the API docs but I'm not sure how to handle webhook verification.
+
+**What I've tried:**
+- Read Stripe webhook documentation
+- Looked at existing webhook handlers in the codebase
+- Attempted to implement signature verification
+
+**Specific questions:**
+- How should we store webhook secrets securely?
+- Should webhook processing be synchronous or queued?
+- Are there existing utilities for webhook validation I should use?
+
+**Context:**
+Working on Issue #142 - Payment gateway integration
+```
+
+---
+
+## ✅ Step 4: Write Tests First (TDD)
 
 **MANDATORY:** Write tests before implementing functionality. This test-first approach ensures:
 - Code is testable and well-designed
@@ -110,20 +183,23 @@ test('displays error message when form submission fails', async () => {
 
 ---
 
-## 💻 Step 4: Development & Commit
+## 💻 Step 5: Development & Commit
 
 ### Code Standards
 
 #### File Size Limits
+
 - **Target:** ≤200 lines per file (excluding comments/blank lines)
 - **Refactor if exceeded:** Extract components, utilities, types, or functions
 
 #### Naming Conventions
+
 - **Files:** Follow project conventions (PascalCase for components, camelCase for utilities)
 - **Variables/Functions:** camelCase (`userName`, `handleSubmit`)
 - **Constants:** SCREAMING_SNAKE_CASE (`API_BASE_URL`)
 
 #### Comments (Required for functions >10 lines)
+
 ```javascript
 /**
  * Calculates the total price of items in cart after applying discount and tax.
@@ -139,6 +215,7 @@ function calculateCartTotal(items, discountRate, taxRate) {
 ```
 
 #### Import Organization
+
 ```javascript
 // 1. Standard library imports
 import fs from 'fs';
@@ -169,6 +246,7 @@ git commit -m "debug: add logging for troubleshooting"
 ```
 
 **Development Phase Freedom:**
+
 - Commit as frequently as you want with any message style
 - Use WIP, debug, typo fix, or any other commit messages
 - Focus on progress, not commit message perfection
@@ -176,7 +254,14 @@ git commit -m "debug: add logging for troubleshooting"
 
 ---
 
-## 🧹 Step 5: Clean Commit History
+## 🧹 Step 6: Clean Commit History
+
+**Commit Message Requirements:**
+
+- The **first commit** in your PR branch must use the exact same format as the PR title
+- This ensures consistency between the commit history and PR tracking
+- Additional commits in the same PR can use shorter, descriptive messages
+- Always include the issue number for traceability
 
 **CRITICAL:** You MUST clean up your commit history before creating a PR or converting Draft PR to ready for review.
 
@@ -185,6 +270,7 @@ git commit -m "debug: add logging for troubleshooting"
 Transform messy development commits into **1-n meaningful commits** (typically 1 per issue).
 
 #### Interactive Rebase Process
+
 ```bash
 # First, sync with latest main
 git fetch origin
@@ -206,6 +292,7 @@ git push --force-with-lease origin <branch-name>
 ### Commit Cleanup Guidelines
 
 **What to squash/remove:**
+
 - ❌ WIP commits
 - ❌ Typo fixes
 - ❌ Debug commits
@@ -213,6 +300,7 @@ git push --force-with-lease origin <branch-name>
 - ❌ Any noisy, non-meaningful commits
 
 **What constitutes meaningful commits:**
+
 - ✅ `feat(AUTH): implement user authentication system #17`
 - ✅ `fix(PAY): resolve payment gateway timeout issues #142`
 - ✅ `refactor(DB): optimize database query performance #201`
@@ -228,7 +316,8 @@ Your cleaned commits must follow these requirements:
 - **Include scope** for better categorization (AUTH, DASH, PAY, etc.)
 - **Be descriptive and actionable**
 
-#### Good Examples:
+#### Good Examples
+
 ```bash
 feat(DASH): add user dashboard with activity metrics #95
 fix(PAY): resolve payment gateway connection timeout #142
@@ -238,26 +327,41 @@ docs(README): update API authentication guide #78
 
 ---
 
-## 🔀 Step 6: Create Pull Request
+## 🔀 Step 7: Create/Update Pull Request
 
-### PR Creation Process
+### Converting Draft PR to Ready for Review
+
+If you created a Draft PR in Step 3, update it when ready:
+
+1. **Clean up commit history** (completed in Step 6)
+2. **Update PR title and description** if needed
+3. **Convert to ready for review**:
+   ```bash
+   gh pr ready <pr-number>
+   ```
+
+### Creating New PR (If No Draft)
 
 1. **Get the exact issue title**:
+
    ```bash
    ./scripts/get-issue-title.sh <issue-number>
    ```
 
 2. **Create PR using GitHub CLI**:
+
    ```bash
    gh pr create --title "<issue-title> #<issue-number>" --body "<filled-template>" --base main
    ```
 
 ### PR Title Format
-```
+
+```bash
 <type>(<scope>): <description> #<issue-number>
 ```
 
 **Examples:**
+
 ```bash
 feat(DASH): add user dashboard with activity metrics #95
 fix(PAY): resolve payment gateway connection timeout #142
@@ -267,6 +371,7 @@ docs(README): update API authentication guide #78
 ### PR Template Requirements
 
 **Required Sections:**
+
 - **Checklist** - Code standards, testing, documentation
 - **Testing** - How changes were tested, evidence provided
 - **Deployment Notes** - Any special deployment considerations
@@ -275,13 +380,14 @@ docs(README): update API authentication guide #78
 ### Pre-PR Checklist
 
 Before creating/converting PR, ensure:
+
 - [ ] Commits are cleaned up with meaningful messages
 - [ ] All commits include issue number
 - [ ] All tests pass locally
 - [ ] Build succeeds
 - [ ] Code formatting applied (linting/prettier)
 - [ ] Functions >10 lines have documentation comments
-- [ ] Files are ≤200 lines
+- [ ] Keep files under 200 lines when possible
 
 ### Review Process
 
@@ -294,7 +400,7 @@ Before creating/converting PR, ensure:
 
 ---
 
-## 🚀 Step 7: Merge (Rebase Strategy)
+## 🚀 Step 8: Merge (Rebase Strategy)
 
 ### Merge Process
 
@@ -320,7 +426,7 @@ If you need to recreate an issue branch:
 
 ---
 
-## 🏷️ Step 8: Auto-Release
+## 🏷️ Step 9: Auto-Release
 
 ### Release-Please Automation
 
@@ -356,6 +462,12 @@ When all issues in a milestone are completed:
 # Get issue title for PR
 ./scripts/get-issue-title.sh <issue-number>
 
+# Create draft PR early for communication
+gh pr create --draft --title "<issue-title> #<issue>" --body "<approach>" --base main
+
+# Mark PR as ready when development is complete
+gh pr ready <pr-number>
+
 # Run tests (adjust based on your project)
 npm test
 npm run test:watch
@@ -367,9 +479,6 @@ npm run dev
 
 # Build project
 npm run build
-
-# Create PR
-gh pr create --title "<type>(<scope>): <description> #<issue>" --body "<template>" --base main
 ```
 
 ### Git Operations
@@ -406,6 +515,12 @@ Issue #93 → Branch 93-docs-update → PR #94 → Commit "docs(README): update 
 ---
 
 ## 🤔 FAQ
+
+**Q: Should I create a Draft PR early or wait until I'm done?**
+A: **Create a Draft PR early** (Step 3) to communicate your approach and get feedback. This prevents rework and enables collaboration with team members and AI agents.
+
+**Q: When should I ask for help?**
+A: **Always ask when you're unsure**. Don't guess or make up solutions. Use Draft PR comments to ask specific questions about requirements, technical approach, or any blockers you encounter.
 
 **Q: When exactly should I clean up my commits?**
 A: **Before creating a PR or converting Draft PR to ready for review**. This is mandatory - reviewers expect clean, meaningful commits with issue numbers.
@@ -445,3 +560,11 @@ feat!(AUTH): change user ID from int to UUID #123
 ---
 
 **Success Criteria:** Following this guide should result in a complete, tested, and properly documented feature that passes all CI checks and is ready for review, with a clean Git history that provides perfect traceability from commit to original issue.
+
+## Reference documents
+
+- **/README.md**: provides a high-level overview of the project, including its purpose, tech stack .
+- **/CONTRIBUTING.md**: outlines the complete development workflow for contributing to the project.
+- **/AGENTS.md**: provides instructions and goals for AI assistants involved in the project.
+- **docs/AI_ISSUE_ASSISTANT.md**: instructs agents on how to enhance raw user input into a GitHub issue.
+- **docs/AI_PULL_REQUEST_ASSISTANT.md**: provides steps and guidelines to create pull requests.
