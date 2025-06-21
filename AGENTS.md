@@ -1,81 +1,91 @@
-# AI Agent Instructions for Website Development
+# AI Agent Instructions for Development
 
-## 📌 Project Overview
+## Project Overview
 
-This is a modern website project built using cutting-edge tools and best practices recommended by the Next.js community. The goal is to create a high-performance, scalable, and developer-friendly web application.
+Please reference README.md to understand what this project is and what tech stack to use.
 
-## 🧠 AI Agent Goals
+## Resolve issue Workflow
 
-You are an AI assistant who helps with:
+When you're asked to resolve an issue (e.g., “resolve issue 42” or “solve issue #42”), it means the issue has already been created on GitHub and has a valid issue number.
 
-- Code generation (following conventions and typing)
-- Component creation (using Tailwind + ShadCN UI)
-- Internationalization (using the `next-intl` structure)
-- REST API integration (using `SWR`)
-- State management (use `Zustand` when needed)
-- Form creation and validation (using `React Hook Form` + `Zod`)
-- Writing and maintaining test files (Jest + RTL + Playwright)
-- Optimizing performance and SEO (using Next.js features)
-- Keeping the codebase clean and modular
+Please follow the steps below to resolve the issue correctly:
 
-## ✅ Best Practices to Follow
+### Step 1: Read the Workflow
 
-- Use TypeScript for all code.
-- Follow Next.js App Router architecture.
-- Use functional components and React hooks only.
-- All styles should use Tailwind CSS.
-- Prefer server components unless interaction is required.
-- Co-locate i18n messages with the page or component. Place all messages files in the `messages/` directory (see below).
-- Validate all user input using Zod schemas.
-- Prefer composable, reusable components.
-- All new features and fixes must use TDD (write tests first). See `TESTING_POLICY.md` for detailed testing process and standards.
-- Ensure accessibility in UI components.
+Refer to CONTRIBUTING.md to understand the project's development workflow. It usually includes instructions for setting up your working branch.
 
-## 🚫 What to Avoid
+### Step 2: Create and Check Out the Issue Branch
 
-- Do not use class-based React components.
-- Do not use Redux or other global state libraries; use Zustand only.
-- Do not use CSS Modules or styled-components.
-- Avoid GraphQL (use only REST + SWR).
-- Avoid complex side effects outside of hooks or state stores.
+Use the provided script to create a new branch based on the issue number:
 
-## 🗣️ Language & Style
+./scripts/start-issue.sh <issue-number>
 
-- Use concise, readable TypeScript.
-- Write self-documenting code with clear naming and structure.
-- Use conventional commit messages and PR titles. All commit and PR titles must include a scope and issue number, following the format `<type>(<scope>): <description> #<issue-number>`. See `CONTRIBUTING.md` for canonical format and more examples.
+- Creates a new branch from `main` named `<issue-number>-<slugified-title>`.
+- Assigns the issue to your GitHub user.
+- Checks out the new branch (or switches to it if it already exists).
 
-  **Examples:**
-  - `feat(DASH): add user dashboard with activity metrics #95`
-  - `fix(PAY): resolve payment gateway connection timeout #142`
+Example:
 
----
+```bash
+./scripts/start-issue.sh 42
+```
 
-## 🔄 Pull Request Workflow
+This will create a properly named branch and check it out for you.
 
-- **AI agents:** Create Pull Requests directly when work is completed. Do **not** create draft PRs.
-- **Human engineers:** Always create a **Draft PR** when starting work, and convert to ready-for-review when complete.
-- Ensure all tests pass and code follows the established conventions before creating the PR.
-- Use descriptive PR titles and include relevant context in the description.
-- See `CONTRIBUTING.md` for full workflow and requirements.
+### Step 3: Resolve the Issue
+
+As an expert, use your best judgment and problem-solving skills to address the issue. Refer to README.md for project-specific implementation guidance or constraints.
+
+### Step 4: Prepare a Pull Request
+
+Once your solution is complete:
+
+Refer to docs/AI_PULL_REQUEST_ASSISTANT.md for help creating a pull request (PR).
+Commit your changes following the commit message guidelines in the documentation.
+Make sure the PR follows all the rules and formatting specified in the documentation.
+
+### Step 5: Submit and Wait for Review
+
+After your PR is submitted, your work is considered complete. Reviewers will evaluate your changes. If further adjustments are needed, they will run the Resolve issue workflow again to let you or another AI to get it done.
 
 ---
 
-## 🔧 Rendering Strategy
+## Create Pull Request Workflow
 
-- The current deployment uses **Static Site Generation (SSG)** only.
-- All pages are pre-rendered at build time and deployed to **GitHub Pages**.
-- In the future, **Server-Side Rendering (SSR)** can be enabled if a specific use case requires it.
+When you're asked to create a pull request (PR), it means someone has already completed work on an issue and now needs your help to submit that work as a PR.
 
-## 🗂️ Asset Management Strategy
+You might receive a command like:
 
-- For detailed asset and i18n file placement rules, see the `README.md`.
+“Create a PR for me on issue 42”
+“Create a PR”
+Follow the steps below to create the PR correctly.
 
-> 📌 Summary: Prefer importing from `assets` for anything that might change. Only use `public/` for permanent, never-changing files. See `README.md` for details.
+### Step 1: Determine the Issue Number
 
-## 🌍 Locale File Structure
+If the issue number is not explicitly provided, infer it from the current working branch name. All issue branches follow a naming convention like:
 
-- Store all translatable messages in `messages/` and load them via imports or dynamic imports. See `README.md` for details.
+45-docs-adjust-all-documents-to-fit-ai-workflow
+The first number (45) is always the issue number.
+
+### Step 2: Review the PR Guidelines
+
+Refer to docs/AI_PULL_REQUEST_ASSISTANT.md to understand the rules for creating a PR. This file includes important instructions such as:
+
+How to write a proper PR title and description
+How to format commit messages
+
+### Step 3: Finalize and Submit the PR
+
+Make sure all code changes are committed.
+Follow the instructions in the AI_PULL_REQUEST_ASSISTANT.md to create the pull request.
+Ensure the PR complies with the contribution rules and links to the correct issue.
+
+### Step 4: Done — Wait for Review
+
+Once the PR is created, your job is done. Reviewers will now:
+
+1. Review the PR
+2. If additional work is required, they will trigger the “Resolve Issue” workflow again, which may involve you or another AI agent.
 
 ---
 
@@ -83,5 +93,11 @@ You are an AI assistant who helps with:
 
 - **README.md** – Includes purpose, how to start, tech stack, and detailed asset/i18n placement rules
 - **CONTRIBUTING.md** – Follows a clear step-by-step GitHub flow and defines canonical commit/PR title format
-- **docs/DEVELOPMENT_GUIDELINES.md** – See detailed development standards and coding conventions
-- **docs/TESTING_POLICY.md** – See the project's testing requirements and best practices. All new features and fixes must use TDD (write tests first).
+
+## Reference documents
+
+- **/README.md**: provides a high-level overview of the project, including its purpose, tech stack .
+- **/CONTRIBUTING.md**: outlines the complete development workflow for contributing to the project.
+- **/AGENTS.md**: provides instructions and goals for AI assistants involved in the project.
+- **docs/AI_ISSUE_ASSISTANT.md**: instructs agents on how to enhance raw user input into a GitHub issue.
+- **docs/AI_PULL_REQUEST_ASSISTANT.md**: provides steps and guidelines to create pull requests.

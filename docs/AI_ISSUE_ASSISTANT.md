@@ -2,6 +2,8 @@
 
 This document is for AI agents to convert raw user input into a complete GitHub issue using one of three predefined templates.
 
+(This document will overlap some content CONTRIBUTING.md cause, cause general AI won't have access to that document)
+
 ---
 
 ## Input

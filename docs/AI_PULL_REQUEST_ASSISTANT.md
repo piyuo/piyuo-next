@@ -36,38 +36,7 @@ The PR template is located at `.github/PULL_REQUEST_TEMPLATE.md` and contains:
 
 ### 3. **Format PR Title and Commit Messages**
 
-Both the PR title and the first commit message should follow the same format:
-
-```text
-<type>(<scope>): <description> #<issue-number>
-```
-
-**Examples:**
-
-- `feat(ui): implement dark mode theme support #43`
-- `fix(auth): resolve login redirect issue #27`
-- `docs(contributing): add pull request guidelines #15`
-
-**Types:**
-
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation changes
-- `style`: Code style changes (formatting, etc.)
-- `refactor`: Code refactoring
-- `test`: Adding or updating tests
-- `chore`: Maintenance tasks, build changes
-
-**Scope (optional):**
-
-- Component, module, or area affected (e.g., `ui`, `auth`, `api`, `docs`)
-
-**Commit Message Requirements:**
-
-- The **first commit** in your PR branch must use the exact same format as the PR title
-- This ensures consistency between the commit history and PR tracking
-- Additional commits in the same PR can use shorter, descriptive messages
-- Always include the issue number for traceability
+Follow CONTRIBUTING.md.
 
 ### 4. **Fill PR Template Intelligently**
 
@@ -105,12 +74,11 @@ Both the PR title and the first commit message should follow the same format:
 
 Use GitHub CLI to create the PR:
 
-```bash
-# Write the PR template content to a temporary file
-cat > .PR_BODY.md << 'EOF'
-<filled-template>
-EOF
+Write the PR template content to a temporary file /.PR_BODY.md
+Important!!! use vscode create file directly. don't use terminal or CLI, long file content will crash terminal.
+You can create file directly us vscode editor.
 
+```bash
 # Create the PR using the body file
 gh pr create \
   --title "<issue-title> #<issue-number>" \

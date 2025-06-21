@@ -20,7 +20,7 @@ These tools are used to support local development, collaboration, and testing:
 First, run the development server:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Follow the instructions in the console to open the [URL] in your browser to see the result.
@@ -36,11 +36,11 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 │   ├── i18n.ts         # Internationalization setup (next-intl)
 │   ├── layout.tsx      # Root layout for all pages
 │   └── page.tsx        # Home page (with language switch)
-├── assets/             # Static assets that need versioning (images, etc.)
+├── assets/             #  Files in assets/ are meant for static assets that are part of the build process or may be versioned.
 ├── messages/           # i18n translation files
 │   ├── en/             # English translations
 │   └── zh/             # Chinese translations
-├── public/             # Public static files (served at root). Files inside will never change (this folder is not versioned).
+├── public/             # Use public/ for static assets that are unlikely to change, such as favicons or robots.txt. These files are served directly from the root URL.
 │   └── locales/        # (Optional) i18n locale files for Next.js
 ├── scripts/            # Useful scripts for development and maintenance
 ├── styles/             # Additional global styles
@@ -65,6 +65,8 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - **app/i18n.ts**: Internationalization setup using `next-intl`.
 - **messages/**: JSON translation files for each supported language.
 - **public/**: Static files (SVGs, images) served at the root URL.
+- **assets/**: Prefer importing from `assets` for anything that might change. Only use `public/` for permanent, never-changing files.
+- **messages/**: Store all translatable messages in `messages/` and load them via imports or dynamic imports..
 - **.github/**: GitHub Actions workflows, issue/PR templates, and label sync config.
 - **jest.config.ts & jest.setup.ts**: Testing setup with Jest and React Testing Library.
 - **eslint.config.mjs**: ESLint configuration for code quality.
@@ -77,49 +79,6 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
   - **cleanup-branches.sh**: Deletes all local git branches that have been removed from the remote. Useful for keeping your local repository clean.
   - **start-issue.sh**: Automates starting work on a GitHub issue. It creates a new branch named after the issue number and title, assigns the issue to you, and checks out the branch.
   - **get-issue-title.sh**: Fetches the title of a GitHub issue by its number.
-
-### Using `start-issue.sh`
-
-This script streamlines the process of starting work on a GitHub issue:
-
-```bash
-./scripts/start-issue.sh <issue-number>
-```
-
-- Creates a new branch from `main` named `<issue-number>-<slugified-title>`.
-- Assigns the issue to your GitHub user.
-- Checks out the new branch (or switches to it if it already exists).
-
-**Requirements:**
-- [GitHub CLI (`gh`)](https://cli.github.com/) must be installed and authenticated.
-- Run from the project root.
-
-Example:
-
-```bash
-./scripts/start-issue.sh 42
-```
-
-### Using `get-issue-title.sh`
-
-This script fetches the title of a GitHub issue by its number using the GitHub CLI:
-
-```bash
-./scripts/get-issue-title.sh <issue-number>
-```
-
-- Prints the issue title to stdout.
-- Exits with an error if the issue number is missing or the title cannot be fetched.
-
-**Requirements:**
-- [GitHub CLI (`gh`)](https://cli.github.com/) must be installed and authenticated.
-- Run from the project root.
-
-Example:
-
-```bash
-./scripts/get-issue-title.sh 42
-```
 
 ## Environment Variables
 
@@ -168,6 +127,47 @@ If you don’t have pnpm yet:
 npm install -g pnpm
 ```
 
+## ✅ Best Practices to Follow
+
+- Use TypeScript for all code.
+- Follow Next.js App Router architecture.
+- Use functional components and React hooks only.
+- All styles should use Tailwind CSS.
+- Prefer server components unless interaction is required.
+- Co-locate i18n messages with the page or component. Place all messages files in the `messages/` directory (see below).
+- Validate all user input using Zod schemas.
+- Prefer composable, reusable components.
+- All new features and fixes must use TDD (write tests first).
+- Ensure accessibility in UI components.
+- Use concise, readable TypeScript.
+- Write self-documenting code with clear naming and structure.
+
+## 🚫 What to Avoid
+
+- Do not use class-based React components.
+- Do not use Redux or other global state libraries; use Zustand only.
+- Do not use CSS Modules or styled-components.
+- Avoid GraphQL (use only REST + SWR).
+- Avoid complex side effects outside of hooks or state stores.
+
+## AI Agent Assistance Highlight
+
+- Code generation (following conventions and typing)
+- Component creation (using Tailwind + ShadCN UI)
+- Internationalization (using the `next-intl` structure)
+- REST API integration (using `SWR`)
+- State management (use `Zustand` when needed)
+- Form creation and validation (using `React Hook Form` + `Zod`)
+- Writing and maintaining test files (Jest + RTL + Playwright)
+- Optimizing performance and SEO (using Next.js features)
+- Keeping the codebase clean and modular
+
+## 🔧 Rendering Strategy
+
+- The current deployment uses **Static Site Generation (SSG)** only.
+- All pages are pre-rendered at build time and deployed to **GitHub Pages**.
+- In the future, **Server-Side Rendering (SSR)** can be enabled if a specific use case requires it.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
@@ -178,3 +178,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 - **AGENTS.md** – Guidance for AI Agents and developers on project conventions, best practices, and what to avoid.
 - **CONTRIBUTING.md** – Follows a clear step-by-step GitHub flow.
+
+## Reference documents
+
+- **/README.md**: provides a high-level overview of the project, including its purpose, tech stack .
+- **/CONTRIBUTING.md**: outlines the complete development workflow for contributing to the project.
+- **/AGENTS.md**: provides instructions and goals for AI assistants involved in the project.
+- **docs/AI_ISSUE_ASSISTANT.md**: instructs agents on how to enhance raw user input into a GitHub issue.
+- **docs/AI_PULL_REQUEST_ASSISTANT.md**: provides steps and guidelines to create pull requests.
