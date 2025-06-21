@@ -54,9 +54,12 @@ NEW_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 echo -e "${GREEN}✅ Branch '$NEW_BRANCH' created and linked to issue #$ISSUE.${NC}"
 
 # Call cleanup script to remove old branches
-if [ -x "./cleanup-branches.sh" ]; then
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CLEANUP_SCRIPT="$SCRIPT_DIR/cleanup-branches.sh"
+
+if [ -x "$CLEANUP_SCRIPT" ]; then
     echo -e "🧹 Running branch cleanup script..."
-    bash ./cleanup-branches.sh
+    bash "$CLEANUP_SCRIPT"
 else
     echo -e "${RED}⚠️ Warning: cleanup-branches.sh not found or not executable.${NC}"
 fi

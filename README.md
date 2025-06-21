@@ -65,6 +65,8 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - **app/i18n.ts**: Internationalization setup using `next-intl`.
 - **messages/**: JSON translation files for each supported language.
 - **public/**: Static files (SVGs, images) served at the root URL.
+- **assets/**: Prefer importing from `assets` for anything that might change. Only use `public/` for permanent, never-changing files.
+- **messages/**: Store all translatable messages in `messages/` and load them via imports or dynamic imports..
 - **.github/**: GitHub Actions workflows, issue/PR templates, and label sync config.
 - **jest.config.ts & jest.setup.ts**: Testing setup with Jest and React Testing Library.
 - **eslint.config.mjs**: ESLint configuration for code quality.
@@ -100,26 +102,6 @@ Example:
 ./scripts/start-issue.sh 42
 ```
 
-### Using `get-issue-title.sh`
-
-This script fetches the title of a GitHub issue by its number using the GitHub CLI:
-
-```bash
-./scripts/get-issue-title.sh <issue-number>
-```
-
-- Prints the issue title to stdout.
-- Exits with an error if the issue number is missing or the title cannot be fetched.
-
-**Requirements:**
-- [GitHub CLI (`gh`)](https://cli.github.com/) must be installed and authenticated.
-- Run from the project root.
-
-Example:
-
-```bash
-./scripts/get-issue-title.sh 42
-```
 
 ## Environment Variables
 
@@ -167,6 +149,36 @@ If you don’t have pnpm yet:
 ```bash
 npm install -g pnpm
 ```
+
+## ✅ Best Practices to Follow
+
+- Use TypeScript for all code.
+- Follow Next.js App Router architecture.
+- Use functional components and React hooks only.
+- All styles should use Tailwind CSS.
+- Prefer server components unless interaction is required.
+- Co-locate i18n messages with the page or component. Place all messages files in the `messages/` directory (see below).
+- Validate all user input using Zod schemas.
+- Prefer composable, reusable components.
+- All new features and fixes must use TDD (write tests first). See `TESTING_POLICY.md` for detailed testing process and standards.
+- Ensure accessibility in UI components.
+- Use concise, readable TypeScript.
+- Write self-documenting code with clear naming and structure.
+
+## 🚫 What to Avoid
+
+- Do not use class-based React components.
+- Do not use Redux or other global state libraries; use Zustand only.
+- Do not use CSS Modules or styled-components.
+- Avoid GraphQL (use only REST + SWR).
+- Avoid complex side effects outside of hooks or state stores.
+
+## 🔧 Rendering Strategy
+
+- The current deployment uses **Static Site Generation (SSG)** only.
+- All pages are pre-rendered at build time and deployed to **GitHub Pages**.
+- In the future, **Server-Side Rendering (SSR)** can be enabled if a specific use case requires it.
+
 
 ## Deploy on Vercel
 
