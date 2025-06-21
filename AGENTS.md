@@ -99,5 +99,3 @@ Once the PR is created, your job is done. Reviewers will now:
 
 - **README.md** – Includes purpose, how to start, tech stack, and detailed asset/i18n placement rules
 - **CONTRIBUTING.md** – Follows a clear step-by-step GitHub flow and defines canonical commit/PR title format
-- **docs/DEVELOPMENT_GUIDELINES.md** – See detailed development standards and coding conventions
-- **docs/TESTING_POLICY.md** – See the project's testing requirements and best practices. All new features and fixes must use TDD (write tests first).
