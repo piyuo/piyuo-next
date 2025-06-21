@@ -178,3 +178,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 - **AGENTS.md** – Guidance for AI Agents and developers on project conventions, best practices, and what to avoid.
 - **CONTRIBUTING.md** – Follows a clear step-by-step GitHub flow.
+
+## Reference documents
+
+- **/README.md**: provides a high-level overview of the project, including its purpose, tech stack .
+- **/CONTRIBUTING.md**: outlines the complete development workflow for contributing to the project.
+- **/AGENTS.md**: provides instructions and goals for AI assistants involved in the project.
+- **docs/AI_ISSUE_ASSISTANT.md**: instructs agents on how to enhance raw user input into a GitHub issue.
+- **docs/AI_PULL_REQUEST_ASSISTANT.md**: provides steps and guidelines to create pull requests.
