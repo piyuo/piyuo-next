@@ -36,38 +36,7 @@ The PR template is located at `.github/PULL_REQUEST_TEMPLATE.md` and contains:
 
 ### 3. **Format PR Title and Commit Messages**
 
-Both the PR title and the first commit message should follow the same format:
-
-```text
-<type>(<scope>): <description> #<issue-number>
-```
-
-**Examples:**
-
-- `feat(ui): implement dark mode theme support #43`
-- `fix(auth): resolve login redirect issue #27`
-- `docs(contributing): add pull request guidelines #15`
-
-**Types:**
-
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation changes
-- `style`: Code style changes (formatting, etc.)
-- `refactor`: Code refactoring
-- `test`: Adding or updating tests
-- `chore`: Maintenance tasks, build changes
-
-**Scope (optional):**
-
-- Component, module, or area affected (e.g., `ui`, `auth`, `api`, `docs`)
-
-**Commit Message Requirements:**
-
-- The **first commit** in your PR branch must use the exact same format as the PR title
-- This ensures consistency between the commit history and PR tracking
-- Additional commits in the same PR can use shorter, descriptive messages
-- Always include the issue number for traceability
+Follow CONTRIBUTING.md.
 
 ### 4. **Fill PR Template Intelligently**
 

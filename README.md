@@ -36,11 +36,11 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 │   ├── i18n.ts         # Internationalization setup (next-intl)
 │   ├── layout.tsx      # Root layout for all pages
 │   └── page.tsx        # Home page (with language switch)
-├── assets/             # Static assets that need versioning (images, etc.)
+├── assets/             #  Files in assets/ are meant for static assets that are part of the build process or may be versioned.
 ├── messages/           # i18n translation files
 │   ├── en/             # English translations
 │   └── zh/             # Chinese translations
-├── public/             # Public static files (served at root). Files inside will never change (this folder is not versioned).
+├── public/             # Files in public/ are served at the root URL and are generally for static, unversioned assets that do not change frequently (e.g., favicon.ico, robots.txt).
 │   └── locales/        # (Optional) i18n locale files for Next.js
 ├── scripts/            # Useful scripts for development and maintenance
 ├── styles/             # Additional global styles
@@ -79,29 +79,6 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
   - **cleanup-branches.sh**: Deletes all local git branches that have been removed from the remote. Useful for keeping your local repository clean.
   - **start-issue.sh**: Automates starting work on a GitHub issue. It creates a new branch named after the issue number and title, assigns the issue to you, and checks out the branch.
   - **get-issue-title.sh**: Fetches the title of a GitHub issue by its number.
-
-### Using `start-issue.sh`
-
-This script streamlines the process of starting work on a GitHub issue:
-
-```bash
-./scripts/start-issue.sh <issue-number>
-```
-
-- Creates a new branch from `main` named `<issue-number>-<slugified-title>`.
-- Assigns the issue to your GitHub user.
-- Checks out the new branch (or switches to it if it already exists).
-
-**Requirements:**
-- [GitHub CLI (`gh`)](https://cli.github.com/) must be installed and authenticated.
-- Run from the project root.
-
-Example:
-
-```bash
-./scripts/start-issue.sh 42
-```
-
 
 ## Environment Variables
 
@@ -173,12 +150,23 @@ npm install -g pnpm
 - Avoid GraphQL (use only REST + SWR).
 - Avoid complex side effects outside of hooks or state stores.
 
+## AI Agent Assistance Highlight
+
+- Code generation (following conventions and typing)
+- Component creation (using Tailwind + ShadCN UI)
+- Internationalization (using the `next-intl` structure)
+- REST API integration (using `SWR`)
+- State management (use `Zustand` when needed)
+- Form creation and validation (using `React Hook Form` + `Zod`)
+- Writing and maintaining test files (Jest + RTL + Playwright)
+- Optimizing performance and SEO (using Next.js features)
+- Keeping the codebase clean and modular
+
 ## 🔧 Rendering Strategy
 
 - The current deployment uses **Static Site Generation (SSG)** only.
 - All pages are pre-rendered at build time and deployed to **GitHub Pages**.
 - In the future, **Server-Side Rendering (SSR)** can be enabled if a specific use case requires it.
-
 
 ## Deploy on Vercel
 

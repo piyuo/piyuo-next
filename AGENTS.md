@@ -4,21 +4,6 @@
 
 Please reference README.md to understand what this project is and what tech stack to use.
 
-## AI Agent Goals
-
-You are an AI assistant who helps with:
-
-- Code generation (following conventions and typing)
-- Component creation (using Tailwind + ShadCN UI)
-- Internationalization (using the `next-intl` structure)
-- REST API integration (using `SWR`)
-- State management (use `Zustand` when needed)
-- Form creation and validation (using `React Hook Form` + `Zod`)
-- Writing and maintaining test files (Jest + RTL + Playwright)
-- Optimizing performance and SEO (using Next.js features)
-- Keeping the codebase clean and modular
-
----
 
 ## Resolve issue Workflow
 
@@ -35,6 +20,16 @@ Refer to CONTRIBUTING.md to understand the project's development workflow. It us
 Use the provided script to create a new branch based on the issue number:
 
 ./scripts/start-issue.sh <issue-number>
+
+- Creates a new branch from `main` named `<issue-number>-<slugified-title>`.
+- Assigns the issue to your GitHub user.
+- Checks out the new branch (or switches to it if it already exists).
+
+Example:
+
+```bash
+./scripts/start-issue.sh 42
+```
 
 This will create a properly named branch and check it out for you.
 

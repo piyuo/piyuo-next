@@ -115,15 +115,18 @@ test('displays error message when form submission fails', async () => {
 ### Code Standards
 
 #### File Size Limits
+
 - **Target:** ≤200 lines per file (excluding comments/blank lines)
 - **Refactor if exceeded:** Extract components, utilities, types, or functions
 
 #### Naming Conventions
+
 - **Files:** Follow project conventions (PascalCase for components, camelCase for utilities)
 - **Variables/Functions:** camelCase (`userName`, `handleSubmit`)
 - **Constants:** SCREAMING_SNAKE_CASE (`API_BASE_URL`)
 
 #### Comments (Required for functions >10 lines)
+
 ```javascript
 /**
  * Calculates the total price of items in cart after applying discount and tax.
@@ -139,6 +142,7 @@ function calculateCartTotal(items, discountRate, taxRate) {
 ```
 
 #### Import Organization
+
 ```javascript
 // 1. Standard library imports
 import fs from 'fs';
@@ -169,6 +173,7 @@ git commit -m "debug: add logging for troubleshooting"
 ```
 
 **Development Phase Freedom:**
+
 - Commit as frequently as you want with any message style
 - Use WIP, debug, typo fix, or any other commit messages
 - Focus on progress, not commit message perfection
@@ -178,6 +183,13 @@ git commit -m "debug: add logging for troubleshooting"
 
 ## 🧹 Step 5: Clean Commit History
 
+**Commit Message Requirements:**
+
+- The **first commit** in your PR branch must use the exact same format as the PR title
+- This ensures consistency between the commit history and PR tracking
+- Additional commits in the same PR can use shorter, descriptive messages
+- Always include the issue number for traceability
+
 **CRITICAL:** You MUST clean up your commit history before creating a PR or converting Draft PR to ready for review.
 
 ### Before Requesting Review (Mandatory)
@@ -185,6 +197,7 @@ git commit -m "debug: add logging for troubleshooting"
 Transform messy development commits into **1-n meaningful commits** (typically 1 per issue).
 
 #### Interactive Rebase Process
+
 ```bash
 # First, sync with latest main
 git fetch origin
@@ -206,6 +219,7 @@ git push --force-with-lease origin <branch-name>
 ### Commit Cleanup Guidelines
 
 **What to squash/remove:**
+
 - ❌ WIP commits
 - ❌ Typo fixes
 - ❌ Debug commits
@@ -213,6 +227,7 @@ git push --force-with-lease origin <branch-name>
 - ❌ Any noisy, non-meaningful commits
 
 **What constitutes meaningful commits:**
+
 - ✅ `feat(AUTH): implement user authentication system #17`
 - ✅ `fix(PAY): resolve payment gateway timeout issues #142`
 - ✅ `refactor(DB): optimize database query performance #201`
@@ -228,7 +243,8 @@ Your cleaned commits must follow these requirements:
 - **Include scope** for better categorization (AUTH, DASH, PAY, etc.)
 - **Be descriptive and actionable**
 
-#### Good Examples:
+#### Good Examples
+
 ```bash
 feat(DASH): add user dashboard with activity metrics #95
 fix(PAY): resolve payment gateway connection timeout #142
@@ -243,21 +259,25 @@ docs(README): update API authentication guide #78
 ### PR Creation Process
 
 1. **Get the exact issue title**:
+
    ```bash
    ./scripts/get-issue-title.sh <issue-number>
    ```
 
 2. **Create PR using GitHub CLI**:
+
    ```bash
    gh pr create --title "<issue-title> #<issue-number>" --body "<filled-template>" --base main
    ```
 
 ### PR Title Format
-```
+
+```bash
 <type>(<scope>): <description> #<issue-number>
 ```
 
 **Examples:**
+
 ```bash
 feat(DASH): add user dashboard with activity metrics #95
 fix(PAY): resolve payment gateway connection timeout #142
@@ -267,6 +287,7 @@ docs(README): update API authentication guide #78
 ### PR Template Requirements
 
 **Required Sections:**
+
 - **Checklist** - Code standards, testing, documentation
 - **Testing** - How changes were tested, evidence provided
 - **Deployment Notes** - Any special deployment considerations
@@ -275,6 +296,7 @@ docs(README): update API authentication guide #78
 ### Pre-PR Checklist
 
 Before creating/converting PR, ensure:
+
 - [ ] Commits are cleaned up with meaningful messages
 - [ ] All commits include issue number
 - [ ] All tests pass locally
