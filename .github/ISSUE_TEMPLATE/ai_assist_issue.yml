@@ -35,6 +35,7 @@ body:
 
 
         # 🤖 AI Issue Assistant
+        Can you use instructions bellow to create issue for me?
 
         This document is for AI agents to convert raw user input into a complete GitHub issue using one of three predefined templates.
 
