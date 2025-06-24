@@ -1,9 +1,62 @@
 import { createTranslator } from 'next-intl';
-import en from '../messages/en/page.json';
-import zh from '../messages/zh/page.json';
 
-export const messages = { en, zh };
+// Supported locales - dynamically loaded
+export const supportedLocales = [
+  'af', 'am', 'ar', 'ar_AE', 'ar_DZ', 'ar_EG', 'az', 'bg', 'bn', 'bn_IN',
+  'ca', 'cs', 'da', 'de', 'de_AT', 'de_CH', 'el', 'en', 'en_AU', 'en_CA',
+  'en_GB', 'en_IN', 'es', 'es_AR', 'es_CO', 'et', 'fa', 'fi', 'fr', 'fr_BE',
+  'fr_CA', 'fr_CH', 'gl', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'it', 'ja',
+  'kk', 'ko', 'lt', 'lv', 'ml', 'mn', 'mr', 'ms', 'ms_SG', 'my', 'nb',
+  'ne', 'nl', 'nl_BE', 'pl', 'pt', 'pt_PT', 'ro', 'ru', 'ru_KZ', 'ru_UA',
+  'si', 'sk', 'sl', 'sr', 'sv', 'sw', 'ta', 'te', 'th', 'tl', 'tr', 'uk',
+  'ur', 'ur_IN', 'uz', 'vi', 'zh', 'zh_CN', 'zh_HK', 'zh_MO', 'zh_SG'
+] as const;
 
-export function getTranslator(locale: 'en' | 'zh') {
-  return createTranslator({ locale, messages: messages[locale] });
+export type SupportedLocale = typeof supportedLocales[number];
+
+// Dynamic message loading
+export async function getMessages(locale: SupportedLocale) {
+  try {
+    const messages = await import(`../messages/${locale}/page.json`);
+    return messages.default;
+  } catch (error) {
+    console.warn(`Failed to load messages for locale "${locale}", falling back to English`);
+    const fallback = await import('../messages/en/page.json');
+    return fallback.default;
+  }
+}
+
+export async function getTranslator(locale: SupportedLocale) {
+  const messages = await getMessages(locale);
+  return createTranslator({ locale, messages });
+}
+
+// Helper function to check if a locale is supported
+export function isSupportedLocale(locale: string): locale is SupportedLocale {
+  return supportedLocales.includes(locale as SupportedLocale);
+}
+
+// Helper function to get the best matching locale
+export function getBestMatchingLocale(requestedLocale: string): SupportedLocale {
+  // Exact match
+  if (isSupportedLocale(requestedLocale)) {
+    return requestedLocale;
+  }
+
+  // Try with underscore (e.g., 'en_US' for 'en-US')
+  const underscoreLocale = requestedLocale.replace('-', '_');
+  if (isSupportedLocale(underscoreLocale)) {
+    return underscoreLocale;
+  }
+
+
+  // Try base locale (e.g., 'en' for 'en-US')
+  const baseLocale = requestedLocale.split('-')[0];
+  if (isSupportedLocale(baseLocale)) {
+    return baseLocale;
+  }
+
+
+  // Fallback to English
+  return 'en';
 }
