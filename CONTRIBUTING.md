@@ -256,14 +256,56 @@ git commit -m "debug: add logging for troubleshooting"
 
 ## 🧹 Step 6: Clean Commit History
 
-**Commit Message Requirements:**
-
-- The **first commit** in your PR branch must use the exact same format as the PR title
-- This ensures consistency between the commit history and PR tracking
-- Additional commits in the same PR can use shorter, descriptive messages
-- Always include the issue number for traceability
-
 **CRITICAL:** You MUST clean up your commit history before creating a PR or converting Draft PR to ready for review.
+
+### Commit Message Requirements (Enforced by Commitlint)
+
+All commit messages are automatically validated by commitlint and must follow these strict rules:
+
+#### Commitlint Rules
+
+1. **Header Maximum Length**: Commit message header must not exceed 100 characters
+2. **Subject Not Empty**: The commit message subject cannot be empty
+3. **Issue Number Required**: All commits must end with ` #<issue-number>` (space + hash + number)
+   - Exception: Commits starting with `chore(main):` are exempt from this rule
+4. **Body Leading Blank Line**: Blank line required between header and body (if body exists)
+5. **Body Maximum Line Length**: Each body line must not exceed 100 characters
+6. **Footer Leading Blank Line**: Blank line required between body and footer (if footer exists)
+7. **Footer Maximum Line Length**: Each footer line must not exceed 100 characters
+8. **Scope Case**: Scope must be lowercase (e.g., `feat(auth):` not `feat(AUTH):`)
+9. **Header Full Stop**: Header must not end with a period (.)
+10. **Type Required**: Commit must have a valid type (feat, fix, docs, etc.)
+11. **Subject Full Stop**: Subject must not end with a period (.)
+
+#### Commit Message Format
+
+```
+<type>(<scope>): <subject> #<issue-number>
+
+<body>
+
+<footer>
+```
+
+#### Valid Examples
+
+```bash
+feat(auth): implement user authentication system #17
+fix(payment): resolve gateway timeout issues #142
+docs(readme): update installation guide #78
+refactor(db): optimize query performance #201
+chore(deps): update dependency versions #15
+```
+
+#### Invalid Examples (Will Fail Commitlint)
+
+```bash
+❌ feat(AUTH): implement user authentication system #17  (scope not lowercase)
+❌ feat(auth): implement user authentication system.     (no issue number)
+❌ feat(auth): implement user authentication system. #17 (ends with period)
+❌ feat(auth): #17                                      (empty subject)
+❌ feat(auth): implement user authentication system that handles OAuth, JWT tokens, and session management for our application #17 (exceeds 100 chars)
+```
 
 ### Before Requesting Review (Mandatory)
 
@@ -283,7 +325,7 @@ git rebase -i origin/main
 # - Keep the first commit as 'pick'
 # - Change others to 'squash' or 'fixup'
 # - Save and exit
-# - Edit the final commit message
+# - Edit the final commit message following commitlint rules
 
 # Force push safely
 git push --force-with-lease origin <branch-name>
@@ -301,28 +343,40 @@ git push --force-with-lease origin <branch-name>
 
 **What constitutes meaningful commits:**
 
-- ✅ `feat(AUTH): implement user authentication system #17`
-- ✅ `fix(PAY): resolve payment gateway timeout issues #142`
-- ✅ `refactor(DB): optimize database query performance #201`
-- ✅ `docs(API): add API authentication guide #78`
+- ✅ `feat(auth): implement user authentication system #17`
+- ✅ `fix(pay): resolve payment gateway timeout issues #142`
+- ✅ `refactor(db): optimize database query performance #201`
+- ✅ `docs(api): add API authentication guide #78`
 
 ### Final Commit Requirements
 
 Your cleaned commits must follow these requirements:
 
 - **Use conventional commit format**: `<type>(<scope>): <description> #<issue-number>`
-- **Must include issue number** - **MANDATORY** for all commits
+- **Must include issue number** - **MANDATORY** for all commits (except `chore(main):`)
 - **Must be `feat:` or `fix:`** to trigger version updates (unless it's docs/refactor/chore)
-- **Include scope** for better categorization (AUTH, DASH, PAY, etc.)
+- **Include lowercase scope** for better categorization (auth, dash, pay, etc.)
+- **Keep header under 100 characters**
+- **No period at end of header**
 - **Be descriptive and actionable**
 
-#### Good Examples
+#### Good Examples (Pass Commitlint)
 
 ```bash
-feat(DASH): add user dashboard with activity metrics #95
-fix(PAY): resolve payment gateway connection timeout #142
-refactor(DB): optimize database query performance for large datasets #201
-docs(README): update API authentication guide #78
+feat(dash): add user dashboard with activity metrics #95
+fix(pay): resolve payment gateway connection timeout #142
+refactor(db): optimize database query performance #201
+docs(readme): update API authentication guide #78
+chore(deps): update dependency versions #15
+```
+
+#### Bad Examples (Fail Commitlint)
+
+```bash
+❌ feat(DASH): add user dashboard #95                    (scope not lowercase)
+❌ feat(dash): add user dashboard                        (missing issue number)
+❌ feat(dash): add user dashboard. #95                   (ends with period)
+❌ feat(dash): add comprehensive user dashboard with activity metrics and charts #95 (too long)
 ```
 
 ---
@@ -360,12 +414,18 @@ If you created a Draft PR in Step 3, update it when ready:
 <type>(<scope>): <description> #<issue-number>
 ```
 
+**Format Requirements:**
+- Header must be ≤100 characters
+- Scope must be lowercase
+- No period at end of header
+- Must include issue number (except `chore(main):`)
+
 **Examples:**
 
 ```bash
-feat(DASH): add user dashboard with activity metrics #95
-fix(PAY): resolve payment gateway connection timeout #142
-docs(README): update API authentication guide #78
+feat(auth): add user authentication system #95
+fix(pay): resolve payment gateway timeout #142
+docs(readme): update API authentication guide #78
 ```
 
 ### PR Template Requirements
@@ -502,7 +562,7 @@ With our commit format requiring issue numbers, we achieve complete traceability
 
 ### Complete Traceability Chain
 ```
-Issue #93 → Branch 93-docs-update → PR #94 → Commit "docs(README): update guide #93"
+Issue #93 → Branch 93-docs-update → PR #94 → Commit "docs(readme): update guide #93"
 ```
 
 ### Benefits
@@ -515,6 +575,12 @@ Issue #93 → Branch 93-docs-update → PR #94 → Commit "docs(README): update 
 ---
 
 ## 🤔 FAQ
+
+**Q: What are the commitlint rules I need to follow?**
+A: **All commits are validated by commitlint**. Key rules: header ≤100 chars, lowercase scope, must end with ` #<issue-number>`, no periods at end of header, and proper conventional commit format. See the "Commit Message Requirements" section for full details.
+
+**Q: My commit is failing commitlint validation. What should I check?**
+A: **Common issues**: header too long (>100 chars), uppercase scope, missing issue number, ending with period, or empty subject. Use `git commit --amend` to fix the message.
 
 **Q: Should I create a Draft PR early or wait until I'm done?**
 A: **Create a Draft PR early** (Step 3) to communicate your approach and get feedback. This prevents rework and enables collaboration with team members and AI agents.
@@ -543,7 +609,7 @@ A: Each issue must have its own branch and milestone assignment. Each commit mus
 **Q: How do I handle breaking changes?**
 A: Use the exclamation mark syntax to trigger a major version bump:
 ```bash
-feat!(AUTH): change user ID from int to UUID #123
+feat!(auth): change user ID from int to UUID #123
 ```
 
 ---
@@ -554,12 +620,15 @@ feat!(AUTH): change user ID from int to UUID #123
 - **Never** commit code without documentation for functions >10 lines
 - **Never** create files >200 lines without refactoring
 - **Never** submit PRs with failing tests
-- **Never** create commits without issue numbers
+- **Never** create commits without issue numbers (except `chore(main):`)
 - **Never** submit PRs without cleaning up commit history
+- **Never** use uppercase scopes in commit messages (use lowercase)
+- **Never** exceed 100 characters in commit headers
+- **Never** end commit headers with periods
 
 ---
 
-**Success Criteria:** Following this guide should result in a complete, tested, and properly documented feature that passes all CI checks and is ready for review, with a clean Git history that provides perfect traceability from commit to original issue.
+**Success Criteria:** Following this guide should result in a complete, tested, and properly documented feature that passes all CI checks and is ready for review, with a clean Git history that provides perfect traceability from commit to original issue and passes all commitlint validations.
 
 ## Reference documents
 
