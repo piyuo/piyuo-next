@@ -18,7 +18,7 @@ Refer to CONTRIBUTING.md to understand the project's development workflow. It us
 
 Use the provided script to create a new branch based on the issue number:
 
-./scripts/start-issue.sh <issue-number>
+./scripts/start-issue.sh `issue-number`
 
 - Creates a new branch from `main` named `<issue-number>-<slugified-title>`.
 - Assigns the issue to your GitHub user.

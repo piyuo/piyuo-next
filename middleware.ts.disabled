@@ -1,0 +1,2 @@
+// Middleware is not compatible with static export (output: 'export')
+// Client-side locale detection and routing is handled in the root page component instead
