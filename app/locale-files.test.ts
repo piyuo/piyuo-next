@@ -1,7 +1,9 @@
 describe('CSV to locale conversion verification', () => {
   // Test locale message files exist
   it('should have message files for major locales', () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const fs = require('fs');
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const path = require('path');
 
     const majorLocales = ['en', 'fr', 'es', 'de', 'zh', 'ja', 'ko'];
@@ -14,7 +16,9 @@ describe('CSV to locale conversion verification', () => {
 
   // Test message file content structure
   it('should have valid JSON structure in locale files', () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const fs = require('fs');
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const path = require('path');
 
     const enPath = path.join(__dirname, '../messages/en/page.json');
@@ -37,7 +41,9 @@ describe('CSV to locale conversion verification', () => {
 
   // Test that all locales have the same keys
   it('should have consistent keys across all locale files', () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const fs = require('fs');
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const path = require('path');
 
     const messagesDir = path.join(__dirname, '../messages');
@@ -67,7 +73,9 @@ describe('CSV to locale conversion verification', () => {
 
   // Test that conversion included all expected keys from CSV
   it('should include all translation keys from CSV', () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const fs = require('fs');
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const path = require('path');
 
     const enPath = path.join(__dirname, '../messages/en/page.json');

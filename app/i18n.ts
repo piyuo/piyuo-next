@@ -19,7 +19,7 @@ export async function getMessages(locale: SupportedLocale) {
   try {
     const messages = await import(`../messages/${locale}/page.json`);
     return messages.default;
-  } catch (error) {
+  } catch {
     console.warn(`Failed to load messages for locale "${locale}", falling back to English`);
     const fallback = await import('../messages/en/page.json');
     return fallback.default;
