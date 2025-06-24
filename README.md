@@ -174,11 +174,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-## Other documents to reference
-
-- **AGENTS.md** – Guidance for AI Agents and developers on project conventions, best practices, and what to avoid.
-- **CONTRIBUTING.md** – Follows a clear step-by-step GitHub flow.
-
 ## Reference documents
 
 - **/README.md**: provides a high-level overview of the project, including its purpose, tech stack .

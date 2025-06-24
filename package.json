@@ -12,9 +12,11 @@
     "test:coverage": "jest --coverage",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
+    "i18n:convert": "node scripts/csv-to-locale.js",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
+    "csv-parse": "^5.6.0",
     "next": "15.3.3",
     "next-intl": "^4.1.0",
     "react": "^19.0.0",

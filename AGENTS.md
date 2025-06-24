@@ -1,8 +1,8 @@
 # AI Agent Instructions for Development
 
-## Project Overview
+## Overview
 
-Please reference README.md to understand what this project is and what tech stack to use.
+Please refer to the README.md and CONTRIBUTING.md files to learn about the project, the technologies used, and the complete development workflow for contributing.
 
 ## Resolve issue Workflow
 
@@ -88,11 +88,6 @@ Once the PR is created, your job is done. Reviewers will now:
 2. If additional work is required, they will trigger the “Resolve Issue” workflow again, which may involve you or another AI agent.
 
 ---
-
-## Other documents to reference
-
-- **README.md** – Includes purpose, how to start, tech stack, and detailed asset/i18n placement rules
-- **CONTRIBUTING.md** – Follows a clear step-by-step GitHub flow and defines canonical commit/PR title format
 
 ## Reference documents
 
