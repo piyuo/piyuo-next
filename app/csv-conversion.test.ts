@@ -1,7 +1,7 @@
 import {
-    getBestMatchingLocale,
-    isSupportedLocale,
-    supportedLocales
+  getBestMatchingLocale,
+  isSupportedLocale,
+  supportedLocales
 } from './i18n';
 
 describe('i18n CSV conversion results', () => {
@@ -30,7 +30,9 @@ describe('i18n CSV conversion results', () => {
 
   // Test locale message files exist
   it('should have message files for major locales', () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const fs = require('fs');
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const path = require('path');
 
     const majorLocales = ['en', 'fr', 'es', 'de', 'zh', 'ja', 'ko'];
@@ -43,7 +45,9 @@ describe('i18n CSV conversion results', () => {
 
   // Test message file content structure
   it('should have valid JSON structure in locale files', () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const fs = require('fs');
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const path = require('path');
 
     const enPath = path.join(__dirname, '../messages/en/page.json');
