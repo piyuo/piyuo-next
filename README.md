@@ -121,7 +121,7 @@ pnpm dev
 
 ❌ Do NOT use npm install. It will either be blocked or crash due to pnpm's optimized node_modules layout.
 
-If you don’t have pnpm yet:
+If you don't have pnpm yet:
 
 ```bash
 npm install -g pnpm
@@ -166,13 +166,37 @@ npm install -g pnpm
 
 - The current deployment uses **Static Site Generation (SSG)** only.
 - All pages are pre-rendered at build time and deployed to **GitHub Pages**.
-- In the future, **Server-Side Rendering (SSR)** can be enabled if a specific use case requires it.
+- **No Server-Side Rendering (SSR)** is used since there is no Node.js runtime in the production environment.
+- GitHub Pages serves only static files, so all dynamic content must be handled client-side.
 
-## Deploy on Vercel
+## Deploy to GitHub Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow is triggered on every push to the main branch.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Important**: GitHub Pages only serves static files and does not support Node.js runtime, so Server-Side Rendering (SSR) is not available in production.
+
+### Automated Deployment
+
+The site is built and deployed using the `gh-pages` branch through GitHub Actions. The workflow:
+
+1. Builds the Next.js application with static export (no SSR)
+2. Generates static HTML, CSS, and JavaScript files
+3. Deploys the generated static files to the `gh-pages` branch
+4. GitHub Pages serves the site from the `gh-pages` branch
+
+### Manual Deployment
+
+If you need to deploy manually, you can use the following commands:
+
+```bash
+# Build the project for static export
+pnpm run build
+
+# Deploy to gh-pages branch (if configured)
+pnpm run deploy
+```
+
+Check out the [Next.js static export documentation](https://nextjs.org/docs/app/building-your-application/deploying/static-exports) for more details on static site generation.
 
 ## Reference documents
 
