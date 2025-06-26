@@ -1,6 +1,6 @@
 # piyuo-next
 
-piyuo-next is the official website for piyuo counter. This project uses Next.js/React to build a small, fast, and most importantly, Search Engine Optimized (SEO) website.
+piyuo-next is the official website for piyuo counter. This project uses Next.js/React with Incremental Static Regeneration (ISR) to build a small, fast, and most importantly, Search Engine Optimized (SEO) website with dynamic content capabilities.
 
 ## 🛠️ Development Tools
 
@@ -14,6 +14,7 @@ These tools are used to support local development, collaboration, and testing:
 - Playwright Test Runner – Used for running end-to-end tests locally and in CI.
 - Jest – Unit testing framework with React Testing Library integration.
 - ESLint + Prettier – Enforces consistent code quality and formatting (integrated via VS Code extensions).
+- Wrangler CLI – Cloudflare's CLI tool for local development and deployment.
 
 ## Getting Started
 
@@ -53,6 +54,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 ├── package.json        # Project metadata and scripts
 ├── postcss.config.mjs  # PostCSS (for Tailwind CSS)
 ├── tsconfig.json       # TypeScript configuration
+├── wrangler.toml       # Cloudflare configuration
 ├── README.md           # Project documentation (this file)
 ├── AGENTS.md           # AI Agent instructions and best practices
 └── CONTRIBUTING.md     # Contribution guidelines and workflow
@@ -73,6 +75,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - **postcss.config.mjs**: PostCSS config for Tailwind CSS.
 - **tsconfig.json**: TypeScript project configuration.
 - **package.json**: Project dependencies, scripts, and metadata.
+- **wrangler.toml**: Cloudflare Pages and Functions configuration.
 - **AGENTS.md**: Guidance for AI Agents and developers on project conventions, best practices, and what to avoid. Essential for automated and human contributors.
 - **CONTRIBUTING.md**: Step-by-step guide for contributing, including workflow, commit standards, and review process. Read this before making a PR.
 - **scripts/**: Useful scripts for development and maintenance (e.g., cleanup, automation).
@@ -82,11 +85,21 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Environment Variables
 
+Create a `.env.local` file in the root directory for local development:
+
+```bash
+# Add your environment variables here
+# Example:
+# NEXT_PUBLIC_API_URL=https://api.example.com
+```
+
+For production deployment on Cloudflare Pages, set environment variables in the Cloudflare Dashboard under Pages > Settings > Environment variables.
+
 ## 🧰 Tech Stack
 
 - **TypeScript**: For static type safety across the codebase.
 - **React**: Core UI framework.
-- **Next.js (App Router)**: Handles routing, server-side rendering, and optimizations like `next/image`, `next/font`.
+- **Next.js (App Router)**: Handles routing, Incremental Static Regeneration (ISR), and optimizations like `next/image`, `next/font`.
 - **TurboPack**: For fast local development (enabled by Next.js).
 - **next-intl**: For internationalization and multilingual support.
 - **Tailwind CSS + clsx**: Utility-first CSS styling with conditional class management.
@@ -97,6 +110,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - **React Hook Form**: Form handling and integration with Zod.
 - **Jest + React Testing Library**: Unit and component testing.
 - **Playwright**: End-to-end testing.
+- **Cloudflare Pages + Functions**: Production hosting with serverless functions support.
 
 ## ⚙️ Bundlers
 
@@ -133,7 +147,8 @@ npm install -g pnpm
 - Follow Next.js App Router architecture.
 - Use functional components and React hooks only.
 - All styles should use Tailwind CSS.
-- Prefer server components unless interaction is required.
+- Leverage ISR for pages that benefit from both static generation and dynamic updates.
+- Use server components for static content and client components for interactive features.
 - Co-locate i18n messages with the page or component. Place all messages files in the `messages/` directory (see below).
 - Validate all user input using Zod schemas.
 - Prefer composable, reusable components.
@@ -141,6 +156,7 @@ npm install -g pnpm
 - Ensure accessibility in UI components.
 - Use concise, readable TypeScript.
 - Write self-documenting code with clear naming and structure.
+- Optimize ISR revalidation intervals based on content update frequency.
 
 ## 🚫 What to Avoid
 
@@ -149,6 +165,7 @@ npm install -g pnpm
 - Do not use CSS Modules or styled-components.
 - Avoid GraphQL (use only REST + SWR).
 - Avoid complex side effects outside of hooks or state stores.
+- Don't set ISR revalidation too aggressively (avoid unnecessary server load).
 
 ## AI Agent Assistance Highlight
 
@@ -159,44 +176,94 @@ npm install -g pnpm
 - State management (use `Zustand` when needed)
 - Form creation and validation (using `React Hook Form` + `Zod`)
 - Writing and maintaining test files (Jest + RTL + Playwright)
-- Optimizing performance and SEO (using Next.js features)
+- Optimizing performance and SEO (using Next.js ISR features)
+- ISR configuration and revalidation strategies
+- Cloudflare Pages and Functions integration
 - Keeping the codebase clean and modular
 
 ## 🔧 Rendering Strategy
 
-- The current deployment uses **Static Site Generation (SSG)** only.
-- All pages are pre-rendered at build time and deployed to **GitHub Pages**.
-- **No Server-Side Rendering (SSR)** is used since there is no Node.js runtime in the production environment.
-- GitHub Pages serves only static files, so all dynamic content must be handled client-side.
+- The current deployment uses **Incremental Static Regeneration (ISR)** for optimal performance and SEO.
+- Pages are statically generated at build time and can be regenerated on-demand or at specified intervals.
+- **Server-Side Rendering (SSR)** is available for dynamic content when needed.
+- Static pages are served from Cloudflare's global CDN for maximum performance.
+- Dynamic functionality is handled by Cloudflare Functions (serverless edge computing).
 
-## Deploy to GitHub Pages
+### ISR Configuration
 
-This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow is triggered on every push to the main branch.
+Pages can be configured with different revalidation strategies:
 
-**Important**: GitHub Pages only serves static files and does not support Node.js runtime, so Server-Side Rendering (SSR) is not available in production.
+```tsx
+// Static generation with 60-second revalidation
+export const revalidate = 60;
+
+// On-demand revalidation (triggered by API calls)
+export const revalidate = false;
+
+// Always fresh (equivalent to SSR)
+export const revalidate = 0;
+```
+
+## Deploy to Cloudflare Pages
+
+This project is automatically deployed to Cloudflare Pages using GitHub Actions. The deployment workflow is triggered on every push to the main branch.
 
 ### Automated Deployment
 
-The site is built and deployed using the `gh-pages` branch through GitHub Actions. The workflow:
+The site is built and deployed using Cloudflare Pages' GitHub integration:
 
-1. Builds the Next.js application with static export (no SSR)
-2. Generates static HTML, CSS, and JavaScript files
-3. Deploys the generated static files to the `gh-pages` branch
-4. GitHub Pages serves the site from the `gh-pages` branch
+1. Builds the Next.js application with ISR support
+2. Deploys static assets to Cloudflare's global CDN
+3. Deploys serverless functions to Cloudflare Functions
+4. Provides instant global distribution with edge caching
 
 ### Manual Deployment
 
-If you need to deploy manually, you can use the following commands:
+For manual deployment using Wrangler CLI:
 
 ```bash
-# Build the project for static export
+# Install Wrangler CLI globally
+npm install -g wrangler
+
+# Login to Cloudflare
+wrangler login
+
+# Build the project
 pnpm run build
 
-# Deploy to gh-pages branch (if configured)
-pnpm run deploy
+# Deploy to Cloudflare Pages
+wrangler pages deploy .next --project-name=piyuo-next
 ```
 
-Check out the [Next.js static export documentation](https://nextjs.org/docs/app/building-your-application/deploying/static-exports) for more details on static site generation.
+### Local Development with Cloudflare
+
+To test Cloudflare Functions locally:
+
+```bash
+# Install Wrangler CLI
+npm install -g wrangler
+
+# Run local development server with Functions
+wrangler pages dev .next --compatibility-date=2024-01-15
+```
+
+### Environment Configuration
+
+Configure environment variables in:
+- **Development**: `.env.local` file
+- **Production**: Cloudflare Dashboard > Pages > Settings > Environment variables
+
+### Performance Benefits
+
+The migration to Cloudflare Pages + ISR provides:
+
+- **Faster Time to First Byte**: ISR serves cached content instantly
+- **Better SEO**: Server-generated content with dynamic updates
+- **Global Performance**: Cloudflare's 200+ edge locations
+- **Automatic Scaling**: Serverless functions scale automatically
+- **Cost Efficiency**: Pay-per-use model with generous free tier
+
+Check out the [Next.js ISR documentation](https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration) and [Cloudflare Pages documentation](https://developers.cloudflare.com/pages/) for more details.
 
 ## Reference documents
 
