@@ -88,9 +88,12 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 Create a `.env.local` file in the root directory for local development:
 
 ```bash
-# Add your environment variables here
-# Example:
-# NEXT_PUBLIC_API_URL=https://api.example.com
+# Cloudflare API credentials (GitHub Secrets)
+CLOUDFLARE_API_TOKEN=your_api_token
+CLOUDFLARE_ACCOUNT_ID=your_account_id
+
+# Optional: On-demand revalidation security
+REVALIDATE_TOKEN=your_secure_token
 ```
 
 For production deployment on Cloudflare Pages, set environment variables in the Cloudflare Dashboard under Pages > Settings > Environment variables.

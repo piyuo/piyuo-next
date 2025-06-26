@@ -38,24 +38,31 @@ export function isSupportedLocale(locale: string): locale is SupportedLocale {
 
 // Helper function to get the best matching locale
 export function getBestMatchingLocale(requestedLocale: string): SupportedLocale {
-  // Exact match
-  if (isSupportedLocale(requestedLocale)) {
-    return requestedLocale;
+  // Handle Accept-Language header format (e.g., "en-US,en;q=0.9,zh;q=0.8")
+  const locales = requestedLocale
+    .split(',')
+    .map(lang => lang.split(';')[0].trim()) // Remove quality values
+    .filter(Boolean);
+
+  // Try each locale in order of preference
+  for (const locale of locales) {
+    // Exact match
+    if (isSupportedLocale(locale)) {
+      return locale;
+    }
+
+    // Try with underscore (e.g., 'en_US' for 'en-US')
+    const underscoreLocale = locale.replace('-', '_');
+    if (isSupportedLocale(underscoreLocale)) {
+      return underscoreLocale;
+    }
+
+    // Try base locale (e.g., 'en' for 'en-US')
+    const baseLocale = locale.split('-')[0];
+    if (isSupportedLocale(baseLocale)) {
+      return baseLocale;
+    }
   }
-
-  // Try with underscore (e.g., 'en_US' for 'en-US')
-  const underscoreLocale = requestedLocale.replace('-', '_');
-  if (isSupportedLocale(underscoreLocale)) {
-    return underscoreLocale;
-  }
-
-
-  // Try base locale (e.g., 'en' for 'en-US')
-  const baseLocale = requestedLocale.split('-')[0];
-  if (isSupportedLocale(baseLocale)) {
-    return baseLocale;
-  }
-
 
   // Fallback to English
   return 'en';

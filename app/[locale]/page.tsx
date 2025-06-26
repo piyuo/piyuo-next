@@ -10,6 +10,10 @@ import { ScreenshotPlayer } from "../components/ScreenshotPlayer";
 import { ScreenshotView } from "../components/ScreenshotView";
 import { getTranslator, isSupportedLocale, supportedLocales, type SupportedLocale } from "../i18n";
 
+// Enable ISR with 24-hour revalidation
+// Content is typically stable but allows for updates without full rebuilds
+export const revalidate = 86400; // 24 hours in seconds
+
 // Define all the translations we need
 interface Translations {
   app_desc: string;
