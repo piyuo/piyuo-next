@@ -1,0 +1,50 @@
+name = "piyuo-next"
+compatibility_date = "2024-01-15"
+pages_build_output_dir = ".next"
+
+[build]
+command = "pnpm run build"
+
+# Configure headers for security and performance
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "origin-when-cross-origin"
+X-XSS-Protection = "1; mode=block"
+
+# Cache static assets
+[[headers]]
+for = "/_next/static/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache images
+[[headers]]
+for = "/images/*"
+[headers.values]
+Cache-Control = "public, max-age=86400"
+
+# Cache fonts
+[[headers]]
+for = "/*.woff2"
+[headers.values]
+Cache-Control = "public, max-age=31536000"
+
+# Configure redirects for cleaner URLs
+[[redirects]]
+from = "/index.html"
+to = "/"
+status = 301
+
+# Handle locale-specific redirects
+[[redirects]]
+from = "/en"
+to = "/en/"
+status = 301
+
+[[redirects]]
+from = "/zh"
+to = "/zh/"
+status = 301
