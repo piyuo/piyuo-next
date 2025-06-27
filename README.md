@@ -207,6 +207,29 @@ export const revalidate = false;
 export const revalidate = 0;
 ```
 
+## Release
+
+**Release-please** automatically handles versioning and releases by:
+
+1. **Analyzing commit messages** on main branch
+2. **Determining version type** based on conventional commits:
+   - `feat:` commits → Minor version bump (1.1.0 → 1.2.0)
+   - `fix:` commits → Patch version bump (1.1.0 → 1.1.1)
+   - `feat!:` or `BREAKING CHANGE` → Major version bump (1.1.0 → 2.0.0)
+3. **Generating changelog** from commit messages and linked issues
+4. **Creating release PR** with version bump and changelog
+5. **Creating Git tags** when release PR is merged
+
+### Milestone Completion
+
+When all issues in a milestone are completed:
+
+1. **Release-please creates release PR** automatically
+2. **Maintainer reviews and merges** release PR to main
+3. **Automatic version bump and changelog** generation
+4. **Git tag created** with version number
+5. **CI/CD deployment triggered** automatically
+
 ## Deploy to Cloudflare Pages
 
 This project is automatically deployed to Cloudflare Pages using GitHub Actions. The deployment workflow is triggered on every push to the main branch.
@@ -253,6 +276,7 @@ wrangler pages dev .next --compatibility-date=2024-01-15
 ### Environment Configuration
 
 Configure environment variables in:
+
 - **Development**: `.env.local` file
 - **Production**: Cloudflare Dashboard > Pages > Settings > Environment variables
 
