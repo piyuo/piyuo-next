@@ -15,6 +15,7 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "i18n:convert": "node scripts/csv-to-locale.js",
+    "pages:build": "npx @cloudflare/next-on-pages",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
@@ -25,6 +26,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.12",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.6.3",
