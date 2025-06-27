@@ -2,6 +2,9 @@ import { revalidatePath } from 'next/cache';
 import { NextRequest, NextResponse } from 'next/server';
 import { supportedLocales } from '../../i18n';
 
+// Configure Edge Runtime for Cloudflare compatibility
+export const runtime = 'edge';
+
 // API route for on-demand revalidation
 // This allows content to be updated without waiting for scheduled revalidation
 export async function POST(request: NextRequest) {

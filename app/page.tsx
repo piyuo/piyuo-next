@@ -2,6 +2,9 @@ import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { getBestMatchingLocale } from './i18n';
 
+// Configure Edge Runtime for Cloudflare compatibility
+export const runtime = 'edge';
+
 // Root page that handles locale detection and redirection
 // Uses server-side redirection for better SEO and performance with ISR
 export default async function RootPage() {

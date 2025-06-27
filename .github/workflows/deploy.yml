@@ -37,7 +37,7 @@ jobs:
         run: pnpm test
 
       - name: Build application
-        run: pnpm build
+        run: pnpm pages:build
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
