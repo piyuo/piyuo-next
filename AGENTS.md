@@ -95,17 +95,7 @@ gh pr create --draft --title "<issue-title> #<issue-number>" --body-file .PR_BOD
 **4a. Clean Up Git History:**
 
 ```bash
-# Sync with main
-git fetch origin
-git rebase origin/main
-
-# Clean up commits
-git rebase -i origin/main
-# In editor: keep first as 'pick', change others to 'squash'
-# Edit final commit message to format: type(scope): description #issue-number
-
-# Push with force-with-lease
-git push --force-with-lease origin <branch-name>
+./scripts/squash-commits.sh
 ```
 
 **4b. Complete PR Submission:**
@@ -166,17 +156,7 @@ Your work is done. Ensure all temporary files (e.g., `.PR_BODY.md` after success
 **3a. Clean Up Git History:**
 
 ```bash
-# Sync with main
-git fetch origin
-git rebase origin/main
-
-# Clean up commits
-git rebase -i origin/main
-# In editor: keep first as 'pick', change others to 'squash'
-# Edit final commit message to format: type(scope): description #issue-number
-
-# Push with force-with-lease
-git push --force-with-lease origin <branch-name>
+./scripts/squash-commits.sh
 ```
 
 **3b. Complete PR Submission:**
