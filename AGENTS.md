@@ -64,7 +64,7 @@ This creates the proper branch and assigns the issue.
 
 **📖 Refer to CONTRIBUTING.md Step 1 for detailed branch creation instructions.**
 
-### Step 2: Create Draft PR Early (Optional but Recommended)
+### Step 2: Create Draft PR (Mandatory)
 
 - Create draft PR with empty template body
 - Use comments section to document your thinking process
@@ -218,7 +218,7 @@ git pull origin <branch-name>
 **Problem:** Test suite doesn't pass
 **Solution:**
 
-1. Run tests locally: `npm test` (or project-specific command)
+1. Run tests locally: See README.md for Run all tests command
 2. Fix failing tests before proceeding
 3. Refer to CONTRIBUTING.md for test requirements
 4. Ask for help if blocked on test failures
