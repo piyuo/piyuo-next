@@ -2,6 +2,33 @@
 
 piyuo-next is the official website for piyuo counter. This project uses Next.js/React with Incremental Static Regeneration (ISR) to build a small, fast, and most importantly, Search Engine Optimized (SEO) website with dynamic content capabilities.
 
+## Table of Contents
+
+- [piyuo-next](#piyuo-next)
+  - [Table of Contents](#table-of-contents)
+  - [🛠️ Development Tools](#️-development-tools)
+  - [Getting Started](#getting-started)
+  - [Project Structure](#project-structure)
+    - [Key Files \& Directories](#key-files--directories)
+  - [Environment Variables](#environment-variables)
+  - [🧰 Tech Stack](#-tech-stack)
+  - [⚙️ Bundlers](#️-bundlers)
+  - [⚠️ Dependency Management](#️-dependency-management)
+  - [✅ Best Practices to Follow](#-best-practices-to-follow)
+  - [🚫 What to Avoid](#-what-to-avoid)
+  - [AI Agent Assistance Highlight](#ai-agent-assistance-highlight)
+  - [🔧 Rendering Strategy](#-rendering-strategy)
+    - [ISR Configuration](#isr-configuration)
+  - [Release](#release)
+    - [Milestone Completion](#milestone-completion)
+  - [Deploy to Cloudflare Pages](#deploy-to-cloudflare-pages)
+    - [Automated Deployment](#automated-deployment)
+    - [Manual Deployment](#manual-deployment)
+    - [Local Development with Cloudflare](#local-development-with-cloudflare)
+    - [Environment Configuration](#environment-configuration)
+    - [Performance Benefits](#performance-benefits)
+  - [Reference Documents](#reference-documents)
+
 ## 🛠️ Development Tools
 
 These tools are used to support local development, collaboration, and testing:
@@ -18,13 +45,22 @@ These tools are used to support local development, collaboration, and testing:
 
 ## Getting Started
 
-First, run the development server:
+Here are the most commonly used commands for developing with this project:
 
 ```bash
-pnpm run dev
+# Start development server
+pnpm dev
 ```
 
-Follow the instructions in the console to open the [URL] in your browser to see the result.
+```bash
+# Build for production
+pnpm build
+```
+
+```bash
+# Run all tests
+pnpm test
+```
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
@@ -37,7 +73,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 │   ├── i18n.ts         # Internationalization setup (next-intl)
 │   ├── layout.tsx      # Root layout for all pages
 │   └── page.tsx        # Home page (with language switch)
-├── assets/             #  Files in assets/ are meant for static assets that are part of the build process or may be versioned.
+├── assets/             # Files in assets/ are meant for static assets that are part of the build process or may be versioned.
 ├── messages/           # i18n translation files
 │   ├── en/             # English translations
 │   └── zh/             # Chinese translations
@@ -292,7 +328,7 @@ The migration to Cloudflare Pages + ISR provides:
 
 Check out the [Next.js ISR documentation](https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration) and [Cloudflare Pages documentation](https://developers.cloudflare.com/pages/) for more details.
 
-## Reference documents
+## Reference Documents
 
 - **/README.md**: provides a high-level overview of the project, including its purpose, tech stack .
 - **/CONTRIBUTING.md**: outlines the complete development workflow for contributing to the project.
