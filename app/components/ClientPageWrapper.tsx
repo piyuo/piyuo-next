@@ -18,6 +18,7 @@ import { GlassContainer } from "./GlassContainer";
 
 interface HeaderTranslations {
   index_download: string;
+  index_language: string;
 }
 
 interface ClientPageWrapperProps {
@@ -63,6 +64,7 @@ export function ClientPageWrapper({ children, locale, translations }: ClientPage
 
                   <EnhancedLanguageSelector
                     currentLocale={locale}
+                    languageLabel={translations.index_language}
                   />
                 </div>
               </div>

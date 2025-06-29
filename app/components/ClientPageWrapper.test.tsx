@@ -11,19 +11,33 @@
 // ===============================================
 
 import { fireEvent, render, screen } from '@testing-library/react';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { ClientPageWrapper } from './ClientPageWrapper';
 
 // Mock next/navigation
 jest.mock('next/navigation', () => ({
   useRouter: jest.fn(),
+  usePathname: jest.fn(),
 }));
 
-// Mock useTranslations from next-intl
-// No longer needed - using prop-based translations
+// Mock the language utils
+jest.mock('../utils/language-utils', () => ({
+  getAvailableLanguages: jest.fn(() => Promise.resolve(['en', 'zh', 'fr', 'es', 'ja'])),
+  getLanguageDisplayName: jest.fn((code: string) => {
+    const names: Record<string, string> = {
+      'en': 'English',
+      'zh': '中文',
+      'fr': 'Français',
+      'es': 'Español',
+      'ja': '日本語',
+    };
+    return names[code] || code;
+  }),
+}));
 
 const mockPush = jest.fn();
 const mockUseRouter = useRouter as jest.MockedFunction<typeof useRouter>;
+const mockUsePathname = usePathname as jest.MockedFunction<typeof usePathname>;
 
 const mockTranslations = {
   index_download: 'Download',
@@ -46,6 +60,7 @@ describe('ClientPageWrapper', () => {
       replace: jest.fn(),
       refresh: jest.fn(),
     });
+    mockUsePathname.mockReturnValue('/en');
 
     // Mock scrollTo
     Object.defineProperty(window, 'scrollTo', {

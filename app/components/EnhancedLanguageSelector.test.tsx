@@ -70,16 +70,25 @@ describe('EnhancedLanguageSelector', () => {
 
   it('renders language selector button', async () => {
     await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" />);
+      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
     });
 
     expect(screen.getByRole('button')).toBeInTheDocument();
     expect(screen.getByText('Language')).toBeInTheDocument();
   });
 
+  it('displays translated language label', async () => {
+    await act(async () => {
+      render(<EnhancedLanguageSelector currentLocale="zh" languageLabel="語言" />);
+    });
+
+    expect(screen.getByRole('button')).toBeInTheDocument();
+    expect(screen.getByText('語言')).toBeInTheDocument();
+  });
+
   it('opens dropdown when button is clicked', async () => {
     await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" />);
+      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
     });
 
     const button = screen.getByRole('button');
@@ -98,7 +107,7 @@ describe('EnhancedLanguageSelector', () => {
 
   it('shows current language with check mark', async () => {
     await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="zh" />);
+      render(<EnhancedLanguageSelector currentLocale="zh" languageLabel="語言" />);
     });
 
     const button = screen.getByRole('button');
@@ -120,7 +129,7 @@ describe('EnhancedLanguageSelector', () => {
     mockUsePathname.mockReturnValue('/en/about');
 
     await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" />);
+      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
     });
 
     const button = screen.getByRole('button');
@@ -145,7 +154,7 @@ describe('EnhancedLanguageSelector', () => {
     mockUsePathname.mockReturnValue('/en');
 
     await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" />);
+      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
     });
 
     const button = screen.getByRole('button');
@@ -168,7 +177,7 @@ describe('EnhancedLanguageSelector', () => {
 
   it('closes dropdown when clicking outside', async () => {
     await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" />);
+      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
     });
 
     const button = screen.getByRole('button');
@@ -200,7 +209,7 @@ describe('EnhancedLanguageSelector', () => {
     mockGetAvailableLanguages.mockReturnValue(slowPromise);
 
     await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" />);
+      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
     });
 
     const button = screen.getByRole('button');
@@ -221,7 +230,7 @@ describe('EnhancedLanguageSelector', () => {
     mockGetAvailableLanguages.mockRejectedValue(new Error('Failed to load languages'));
 
     await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" />);
+      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
     });
 
     const button = screen.getByRole('button');
