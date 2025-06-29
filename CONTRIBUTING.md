@@ -119,7 +119,6 @@ git commit -m "<issue-title> #<issue-number>"
 **IMPORTANT:** This first commit message will be used as your PR title
 
 Commit Message Format (ENFORCED)
-if you have following commits.
 
 - Always reference the issue number in the commit
 
