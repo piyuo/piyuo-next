@@ -24,6 +24,7 @@
  */
 
 import { render } from '@testing-library/react';
+import { notFound } from 'next/navigation';
 import LocaleLayout from './[locale]/layout';
 import RootLayout from './layout';
 
@@ -135,7 +136,6 @@ describe('Layout Hydration Tests', () => {
     });
 
     test('should call notFound for unsupported locales', async () => {
-      const { notFound } = require('next/navigation');
       const mockParams = Promise.resolve({ locale: 'unsupported-locale' });
 
       const TestComponent = () => <div>Content</div>;

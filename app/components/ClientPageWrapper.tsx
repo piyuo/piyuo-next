@@ -12,14 +12,12 @@
 
 "use client";
 
-import { useRouter } from "next/navigation";
 import { type SupportedLocale } from "../i18n";
+import { EnhancedLanguageSelector } from "./EnhancedLanguageSelector";
 import { GlassContainer } from "./GlassContainer";
-import { LanguageSelector } from "./LanguageSelector";
 
 interface HeaderTranslations {
   index_download: string;
-  index_language: string;
 }
 
 interface ClientPageWrapperProps {
@@ -29,8 +27,6 @@ interface ClientPageWrapperProps {
 }
 
 export function ClientPageWrapper({ children, locale, translations }: ClientPageWrapperProps) {
-  const router = useRouter();
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -40,10 +36,6 @@ export function ClientPageWrapper({ children, locale, translations }: ClientPage
     if (downloadSection) {
       downloadSection.scrollIntoView({ behavior: 'smooth' });
     }
-  };
-
-  const handleLanguageChange = (newLang: 'en' | 'zh') => {
-    router.push(`/${newLang}/`);
   };
 
   return (
@@ -69,10 +61,8 @@ export function ClientPageWrapper({ children, locale, translations }: ClientPage
                     {translations.index_download}
                   </button>
 
-                  <LanguageSelector
-                    currentLang={locale}
-                    onLangChange={handleLanguageChange}
-                    t={(key: string) => translations[key as keyof HeaderTranslations] || key}
+                  <EnhancedLanguageSelector
+                    currentLocale={locale}
                   />
                 </div>
               </div>
