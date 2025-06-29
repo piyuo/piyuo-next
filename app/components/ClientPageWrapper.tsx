@@ -1,3 +1,15 @@
+// ===============================================
+// Component: ClientPageWrapper.tsx
+// Description: Wrapper component for client-side functionality and navigation
+//
+// Sections:
+//   - Imports and Types
+//   - Component Interface
+//   - Main Component
+//   - Event Handlers
+//   - Header Translation Helper
+// ===============================================
+
 "use client";
 
 import { useRouter } from "next/navigation";
@@ -5,12 +17,18 @@ import { type SupportedLocale } from "../i18n";
 import { GlassContainer } from "./GlassContainer";
 import { LanguageSelector } from "./LanguageSelector";
 
+interface HeaderTranslations {
+  index_download: string;
+  index_language: string;
+}
+
 interface ClientPageWrapperProps {
   children: React.ReactNode;
   locale: SupportedLocale;
+  translations: HeaderTranslations;
 }
 
-export function ClientPageWrapper({ children, locale }: ClientPageWrapperProps) {
+export function ClientPageWrapper({ children, locale, translations }: ClientPageWrapperProps) {
   const router = useRouter();
 
   const scrollToTop = () => {
@@ -26,22 +44,6 @@ export function ClientPageWrapper({ children, locale }: ClientPageWrapperProps) 
 
   const handleLanguageChange = (newLang: 'en' | 'zh') => {
     router.push(`/${newLang}/`);
-  };
-
-  // Create a simple translation function for the header
-  const getHeaderTranslation = (key: string) => {
-    // Simple translations for header items only
-    const translations: Record<string, Record<string, string>> = {
-      en: {
-        index_download: "Download",
-        index_language: "Language"
-      },
-      zh: {
-        index_download: "下载",
-        index_language: "语言"
-      }
-    };
-    return translations[locale]?.[key] || key;
   };
 
   return (
@@ -64,13 +66,13 @@ export function ClientPageWrapper({ children, locale }: ClientPageWrapperProps) 
                     onClick={scrollToDownload}
                     className="text-sm md:text-base text-white hover:text-gray-200 transition-colors"
                   >
-                    {getHeaderTranslation('index_download')}
+                    {translations.index_download}
                   </button>
 
                   <LanguageSelector
                     currentLang={locale}
                     onLangChange={handleLanguageChange}
-                    t={getHeaderTranslation}
+                    t={(key: string) => translations[key as keyof HeaderTranslations] || key}
                   />
                 </div>
               </div>

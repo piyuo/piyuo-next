@@ -106,8 +106,14 @@ export default async function LocalePage({ params }: PageProps) {
     privacy: t('privacy'),
   };
 
+  // Header translations for ClientPageWrapper
+  const headerTranslations = {
+    index_download: t('index_download'),
+    index_language: t('index_language'),
+  };
+
   return (
-    <ClientPageWrapper locale={locale as SupportedLocale}>
+    <ClientPageWrapper locale={locale as SupportedLocale} translations={headerTranslations}>
       <div className="min-h-screen relative">
         {/* Background */}
         <div
