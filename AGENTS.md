@@ -19,9 +19,9 @@ Always confirm understanding with the user before proceeding. If any required in
 ### 🔧 **Main Workflows**
 
 1. **[Resolve Issue](#workflow-1-resolve-issue)** → When asked "resolve issue #42"
-   - Setup branch → Test-first development → First commit → Draft PR → Continue development → Finalize PR
+   - Setup branch → Test-first development → Complete development → Create PR
 2. **[Create Pull Request](#workflow-2-create-pull-request)** → When development is complete and ready for review
-   - Verify readiness → Clean history → Finalize PR
+   - Verify readiness → Clean history → Create PR
 3. **[Development Flow](#workflow-3-development-flow)** → When working on existing issue/feature
    - Continue development → Apply best practices → Quality checkpoints → Iterative improvement
 
@@ -36,7 +36,6 @@ Always confirm understanding with the user before proceeding. If any required in
 - Human says "resolve issue #42" → Use Workflow 1
 - Human says "create PR" AND development is complete → Use Workflow 2
 - Human asks for development help, code improvements, or feature implementation → Use Workflow 3
-- Work in progress, need draft PR → Use Workflow 1, Steps 1-4
 - Tests failing → See [Troubleshooting](#troubleshooting)
 - Merge conflicts → See [Troubleshooting](#troubleshooting)
 - Unsure what to do? → Read CONTRIBUTING.md first
@@ -44,7 +43,6 @@ Always confirm understanding with the user before proceeding. If any required in
 ### 🚨 **Non-Negotiable Requirements**
 
 - Test-first development (≥80% coverage)
-- First commit before creating draft PR
 - Clean Git history before PR submission
 - Issue numbers in all commits
 - TOC at the top of all code files (Why TOC? AI assistants like Copilot read the first 50–100 lines to understand structure. A good TOC helps them provide smarter suggestions and navigate the file effectively.)
@@ -68,64 +66,35 @@ This creates the proper branch and assigns the issue.
 
 **📖 Refer to CONTRIBUTING.md Step 1 for detailed branch creation instructions.**
 
-### Step 2: Test-First Development (Initial Phase)
+### Step 2: Test-First Development
 
 1. **Write tests first** (mandatory - ≥80% coverage)
-2. **Develop initial solution** to make tests pass
-3. **Ensure tests are passing**
+2. **Develop solution** to make tests pass
+3. **Iterate** until feature is complete
 
 **📖 MANDATORY: Read CONTRIBUTING.md Step 2 for test-first development requirements and README.md for project-specific implementation guidance.**
 
-### Step 3: Create First Meaningful Commit
+### Step 3: Complete Development
 
-**🚨 CRITICAL: You MUST have at least one commit before creating a PR. GitHub requires commits to exist before PR creation.**
+**🎯 For ongoing development work, use [Workflow 3: Development Flow](#workflow-3-development-flow) patterns**
 
-Create your first commit with proper format - this will become your PR title:
-
-```bash
-# Example - make this descriptive and follow the format exactly
-./scripts/get-issue-title.sh <issue-number>
-git commit -m "<issue-title> #<issue-number>"
-```
-
-**📖 Refer to CONTRIBUTING.md for commit message format requirements.**
-
-### Step 4: Create Draft PR Immediately
-
-**🚨 IMPORTANT: Create a draft PR as soon as you have your first commit for early feedback and visibility.**
+Continue development until the issue is fully resolved:
 
 ```bash
-# Get the exact issue title for consistency
-./scripts/get-issue-title.sh <issue-number>
-
-# Create draft PR - title should match your first commit message exactly
-gh pr create --draft --title "<issue-title> #<issue-number>" --body-file .PR_BODY.md
+# Commit freely during development - these will be cleaned up later
+git commit -m "add user authentication tests"
+git commit -m "implement login validation"
+git commit -m "fix edge case for empty passwords"
+git commit -m "add integration tests for auth flow"
+git commit -m "refactor validation logic"
 ```
 
-**Benefits of Early Draft PR:**
-
-- Early feedback on approach
-- Team visibility into your work
-- Collaborative problem-solving
-- Document your thinking process in comments
-
-**📖 Refer to CONTRIBUTING.md Step 2 for draft PR creation details.**
-
-### Step 5: Continue Development
-
-**🎯 For ongoing development work, proceed to [Workflow 3: Development Flow](#workflow-3-development-flow)**
-
-### Step 6: Finalize PR for Review
+### Step 4: Create PR for Review
 
 **📖 CRITICAL: Follow CONTRIBUTING.md Step 3 for exact process requirements.**
 
-**6a. Clean Up Git History:**
 
-```bash
-./scripts/squash-commits.sh
-```
-
-**6b. Complete PR Submission:**
+**4a. Create PR:**
 
 **Prepare PR body:**
 
@@ -133,29 +102,32 @@ gh pr create --draft --title "<issue-title> #<issue-number>" --body-file .PR_BOD
 - Create `.PR_BODY.md` in the project root using your code editor
 - Fill out all sections completely
 
-**Update Draft PR to Ready:**
+**Create the PR:**
 
 ```bash
-# Update PR body with the completed template
-gh pr edit <pr-number> --body-file .PR_BODY.md
+# Get the exact issue title for consistency
+./scripts/get-issue-title.sh <issue-number>
 
-# Mark PR as ready for review
-gh pr ready <pr-number>
+# Create PR
+gh pr create \
+  --title "<issue-title> #<issue-number>" \
+  --body-file .PR_BODY.md \
+  --base main
 
 # Clean up the temporary file
 rm .PR_BODY.md
 ```
 
-**6c. Verification Checklist:**
+**4b. Verification Checklist:**
 
 - [ ] All tests pass
 - [ ] Build succeeds
 - [ ] Code follows standards (TOC at the top of files, functions >10 lines documented)
 - [ ] Clean commit history with proper format
 - [ ] PR template fully completed
-- [ ] PR title matches the first commit message exactly
+- [ ] PR title matches issue title exactly + `#<issue-number>`
 
-### Step 7: Clean Up
+### Step 5: Clean Up
 
 Your work is done. Ensure all temporary files are removed.
 
@@ -186,27 +158,17 @@ Your work is done. Ensure all temporary files are removed.
 
 **📖 MANDATORY: Check CONTRIBUTING.md for the complete pre-submission checklist and README.md for build requirements.**
 
-### Step 3: Determine PR Creation Method
-
-**If Draft PR Already Exists:**
-
-- Skip to Step 4b (Update existing draft)
-
-**If No PR Exists:**
-
-- Continue to Step 4a (Create new PR)
-
-### Step 4: Finalize PR for Review
+### Step 3: Create PR for Review
 
 **📖 CRITICAL: Follow CONTRIBUTING.md Step 3 for exact process requirements.**
 
-**4a. Clean Up Git History:**
+**3a. Clean Up Git History:**
 
 ```bash
 ./scripts/squash-commits.sh
 ```
 
-**4b. Complete PR Submission:**
+**3b. Create PR:**
 
 **Prepare PR body:**
 
@@ -214,38 +176,32 @@ Your work is done. Ensure all temporary files are removed.
 - Create `.PR_BODY.md` in the project root using your code editor
 - Fill out all sections completely
 
-**Option A - If Draft PR Exists:**
+**Create the PR:**
 
 ```bash
-# Update the existing draft PR
-gh pr edit <pr-number> --body-file .PR_BODY.md
-gh pr ready <pr-number>
-```
+# Get the exact issue title for consistency
+./scripts/get-issue-title.sh <issue-number>
 
-**Option B - If No PR Exists:**
+# Create PR
+gh pr create \
+  --title "<issue-title> #<issue-number>" \
+  --body-file .PR_BODY.md \
+  --base main
 
-```bash
-# Create a new PR
-gh pr create --title "<issue-title> #<issue-number>" --body-file .PR_BODY.md
-```
-
-**4c. Verification Checklist:**
-
-- [ ] Clean commit history with proper format
-- [ ] PR template fully completed
-- [ ] Correct title format: `<issue-title> #<issue-number>`
-- [ ] PR title matches the first commit message exactly
-
-### Step 5: Clean Up
-
-```bash
 # Clean up the temporary file
 rm .PR_BODY.md
 ```
 
+**3c. Verification Checklist:**
+
+- [ ] Clean commit history with proper format
+- [ ] PR template fully completed
+- [ ] Correct title format: `<issue-title> #<issue-number>`
+
+### Step 4: Clean Up
+
 Your work is done.
 
-**📖 Final verification: Ensure all CONTRIBUTING.md Step 3 requirements are satisfied.**
 
 ---
 
@@ -352,9 +308,9 @@ git commit -m "docs: update API documentation #<issue-number>"
 
 **5a. Progress Documentation:**
 
-- Use PR comments to document design decisions and rationale
+- Document design decisions and rationale in commit messages
 - Note challenges encountered and solutions implemented
-- Ask questions for areas needing clarification
+- Ask questions for areas needing clarification in GitHub discussions or issues
 - Highlight areas that need additional attention
 
 **5b. Code Review Preparation:**
@@ -382,11 +338,11 @@ Your development work is complete when all requirements are implemented, thoroug
 
 **🎯 Next Steps:**
 
-- If working within Workflow 1: Return to Step 6 (Finalize PR)
+- If working within Workflow 1: Return to Step 4 (Create PR)
 - If working independently: Consider creating a PR using Workflow 2
 - If more development needed: Continue iterating through this workflow
 
-**📝 Remember:** You are an experienced developer - trust your judgment on technical decisions while staying aligned with project patterns and standards. When in doubt, refer to existing codebase examples or ask questions in PR comments.
+**📝 Remember:** You are an experienced developer - trust your judgment on technical decisions while staying aligned with project patterns and standards. When in doubt, refer to existing codebase examples or ask questions in GitHub discussions.
 
 ---
 
@@ -504,7 +460,7 @@ git pull origin <branch-name>
 **Quick Facts:**
 
 - **Issue branch naming:** `<number>-<slugified-title>`
-- **PR title:** Must match issue title exactly + `#<number>` AND match the first commit message
+- **PR title:** Must match issue title exactly + `#<number>`` AND match the first commit message
 - **Scripts location:** `./scripts/` directory
 - **Template location:** `.github/PULL_REQUEST_TEMPLATE.md`
 
@@ -521,7 +477,6 @@ git pull origin <branch-name>
 - Don't forget TOC at the top of new files
 - Don't assume scripts exist without checking
 - Don't proceed with failing tests
-- Don't make the PR title different from the first commit message
 
 ---
 
