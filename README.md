@@ -1,10 +1,40 @@
 # piyuo-next
 
+**GitHub Repository**: [https://github.com/piyuo/piyuo-next](https://github.com/piyuo/piyuo-next)
+
+## ⚠️ **CRITICAL: Package Manager Requirement**
+
+> **This project uses [`pnpm`](https://pnpm.io) as the ONLY supported package manager.**
+> **All commands MUST use `pnpm` - never `npm` or `yarn`.**
+> **Using `npm install` or `yarn install` WILL cause errors and corrupted installations.**
+
+```bash
+# ✅ CORRECT - Always use pnpm
+pnpm install
+pnpm dev
+pnpm build
+pnpm test
+
+# ❌ WRONG - These will break the project
+npm install    # DON'T USE
+yarn install   # DON'T USE
+npm run dev    # DON'T USE
+```
+
+**Don't have pnpm?** Install it first:
+
+```bash
+npm install -g pnpm
+```
+
+---
+
 piyuo-next is the official website for piyuo counter. This project uses Next.js/React with Incremental Static Regeneration (ISR) to build a small, fast, and most importantly, Search Engine Optimized (SEO) website with dynamic content capabilities.
 
 ## Table of Contents
 
 - [piyuo-next](#piyuo-next)
+  - [⚠️ **CRITICAL: Package Manager Requirement**](#️-critical-package-manager-requirement)
   - [Table of Contents](#table-of-contents)
   - [🛠️ Development Tools](#️-development-tools)
   - [Getting Started](#getting-started)
@@ -13,7 +43,6 @@ piyuo-next is the official website for piyuo counter. This project uses Next.js/
   - [Environment Variables](#environment-variables)
   - [🧰 Tech Stack](#-tech-stack)
   - [⚙️ Bundlers](#️-bundlers)
-  - [⚠️ Dependency Management](#️-dependency-management)
   - [✅ Best Practices to Follow](#-best-practices-to-follow)
   - [🚫 What to Avoid](#-what-to-avoid)
   - [AI Agent Assistance Highlight](#ai-agent-assistance-highlight)
@@ -35,7 +64,7 @@ These tools are used to support local development, collaboration, and testing:
 
 - Visual Studio Code – Recommended code editor with official Next.js and Tailwind CSS extensions.
 - Node.js (v18+) – Required runtime for Next.js and tooling.
-- pnpm – Preferred package manager (faster and more efficient than npm/yarn).
+- **pnpm – REQUIRED package manager (faster and more efficient than npm/yarn).**
 - Git – Version control for managing source code.
 - GitHub CLI (gh) – Streamlines GitHub workflows (issues, pull requests, etc.).
 - Playwright Test Runner – Used for running end-to-end tests locally and in CI.
@@ -156,32 +185,9 @@ For production deployment on Cloudflare Pages, set environment variables in the 
 - **Turbopack** is used for local development (enabled by Next.js).
 - **Webpack** is used for production builds.
 
-## ⚠️ Dependency Management
-
-This project uses [`pnpm`](https://pnpm.io) for managing dependencies.
-
-✅ Please use:
-
-```bash
-pnpm install
-```
-
-or
-
-```bash
-pnpm dev
-```
-
-❌ Do NOT use npm install. It will either be blocked or crash due to pnpm's optimized node_modules layout.
-
-If you don't have pnpm yet:
-
-```bash
-npm install -g pnpm
-```
-
 ## ✅ Best Practices to Follow
 
+- **Always use `pnpm` for all package management commands.**
 - Use TypeScript for all code.
 - Follow Next.js App Router architecture.
 - Use functional components and React hooks only.
@@ -199,6 +205,7 @@ npm install -g pnpm
 
 ## 🚫 What to Avoid
 
+- **NEVER use `npm` or `yarn` commands - only `pnpm` is supported.**
 - Do not use class-based React components.
 - Do not use Redux or other global state libraries; use Zustand only.
 - Do not use CSS Modules or styled-components.
@@ -208,6 +215,7 @@ npm install -g pnpm
 
 ## AI Agent Assistance Highlight
 
+- **CRITICAL: Always use `pnpm` commands, never `npm` or `yarn`**
 - Code generation (following conventions and typing)
 - Component creation (using Tailwind + ShadCN UI)
 - Internationalization (using the `next-intl` structure)
