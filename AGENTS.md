@@ -2,26 +2,28 @@
 
 **Purpose:** This document guides AI assistants on how to help human developers with issue resolution and pull request creation.
 
-Since AI assistants do tend to focus on the section that seems most relevant and skip the broader context. We need embedding the critical reminders directly into each workflow section.
+Since AI assistants tend to focus on the section that seems most relevant and skip the broader context, we need to embed the critical reminders directly into each workflow section.
 
 ## 📋 Table of Contents & Quick Navigation
 
 ## 📖 **Critical**
 
-Always confirm understanding with the user before proceeding, If any required information is missing, proactively prompt the user to provide it.
+Always confirm understanding with the user before proceeding. If any required information is missing, proactively prompt the user to provide it.
 
 ### 🎯 **Overview**
 
-- **Primary Use Cases:** Resolve GitHub issues and create pull requests
+- **Primary Use Cases:** Resolve GitHub issues, create pull requests, and ongoing development
 - **Key Requirements:** Always read CONTRIBUTING.md + README.md for context
 - **Success Criteria:** Clean, tested, documented code with TOC, proper commit messages, and full traceability.
 
 ### 🔧 **Main Workflows**
 
 1. **[Resolve Issue](#workflow-1-resolve-issue)** → When asked "resolve issue #42"
-   - Setup branch → Draft PR → Test-first development → Finalize PR
+   - Setup branch → Test-first development → First commit → Draft PR → Continue development → Finalize PR
 2. **[Create Pull Request](#workflow-2-create-pull-request)** → When development is complete and ready for review
-   - Verify readiness → Clean history → Create PR
+   - Verify readiness → Clean history → Finalize PR
+3. **[Development Flow](#workflow-3-development-flow)** → When working on existing issue/feature
+   - Continue development → Apply best practices → Quality checkpoints → Iterative improvement
 
 ### 📖 **Critical Documents (MUST READ EVERY TIME)**
 
@@ -31,9 +33,10 @@ Always confirm understanding with the user before proceeding, If any required in
 
 ### ⚡ **Enhanced Decision Tree**
 
-- Human says "resolve issue X" → Use Workflow 1
+- Human says "resolve issue #42" → Use Workflow 1
 - Human says "create PR" AND development is complete → Use Workflow 2
-- Work in progress, need draft PR → Use Workflow 1, Step 2
+- Human asks for development help, code improvements, or feature implementation → Use Workflow 3
+- Work in progress, need draft PR → Use Workflow 1, Steps 1-4
 - Tests failing → See [Troubleshooting](#troubleshooting)
 - Merge conflicts → See [Troubleshooting](#troubleshooting)
 - Unsure what to do? → Read CONTRIBUTING.md first
@@ -41,15 +44,16 @@ Always confirm understanding with the user before proceeding, If any required in
 ### 🚨 **Non-Negotiable Requirements**
 
 - Test-first development (≥80% coverage)
+- First commit before creating draft PR
 - Clean Git history before PR submission
 - Issue numbers in all commits
-- TOC at top of all code files (Why TOC? AI assistants like Copilot read the top 50–100 lines to understand structure. A good TOC helps them provide smarter suggestions and navigate the file effectively.)
+- TOC at the top of all code files (Why TOC? AI assistants like Copilot read the first 50–100 lines to understand structure. A good TOC helps them provide smarter suggestions and navigate the file effectively.)
 
 ---
 
 ## 🔧 Workflow 1: Resolve Issue
 
-**Trigger:** Human says "resolve issue 42" or "solve issue #42"
+**Trigger:** Human says "resolve issue #42" or "solve issue #42"
 **Prerequisites:** None - this workflow handles complete issue resolution from start to finish
 
 **🚨 CRITICAL: Before starting, read CONTRIBUTING.md for complete workflow details and README.md for project-specific tech stack and implementation constraints.**
@@ -64,29 +68,133 @@ This creates the proper branch and assigns the issue.
 
 **📖 Refer to CONTRIBUTING.md Step 1 for detailed branch creation instructions.**
 
-### Step 2: Create Draft PR (Mandatory)
+### Step 2: Test-First Development (Initial Phase)
 
-- Create draft PR with empty template body
-- Use comments section to document your thinking process
-- Example: "Planning to implement X by doing Y, will need to test Z"
+1. **Write tests first** (mandatory - ≥80% coverage)
+2. **Develop initial solution** to make tests pass
+3. **Ensure tests are passing**
+
+**📖 MANDATORY: Read CONTRIBUTING.md Step 2 for test-first development requirements and README.md for project-specific implementation guidance.**
+
+### Step 3: Create First Meaningful Commit
+
+**🚨 CRITICAL: You MUST have at least one commit before creating a PR. GitHub requires commits to exist before PR creation.**
+
+Create your first commit with proper format - this will become your PR title:
 
 ```bash
+# Example - make this descriptive and follow the format exactly
 ./scripts/get-issue-title.sh <issue-number>
+git commit -m "<issue-title> #<issue-number>"
 ```
 
+**📖 Refer to CONTRIBUTING.md for commit message format requirements.**
+
+### Step 4: Create Draft PR Immediately
+
+**🚨 IMPORTANT: Create a draft PR as soon as you have your first commit for early feedback and visibility.**
+
 ```bash
+# Get the exact issue title for consistency
+./scripts/get-issue-title.sh <issue-number>
+
+# Create draft PR - title should match your first commit message exactly
 gh pr create --draft --title "<issue-title> #<issue-number>" --body-file .PR_BODY.md
 ```
 
+**Benefits of Early Draft PR:**
+
+- Early feedback on approach
+- Team visibility into your work
+- Collaborative problem-solving
+- Document your thinking process in comments
+
 **📖 Refer to CONTRIBUTING.md Step 2 for draft PR creation details.**
 
-### Step 3: Follow Test-First Development
+### Step 5: Continue Development
 
-1. **Write tests first** (mandatory - ≥80% coverage)
-2. **Develop solution** (commit freely with any messages)
-3. **Ensure all tests pass**
+**🎯 For ongoing development work, proceed to [Workflow 3: Development Flow](#workflow-3-development-flow)**
 
-**📖 MANDATORY: Read CONTRIBUTING.md Step 2 for test-first development requirements and README.md for project-specific implementation guidance.**
+### Step 6: Finalize PR for Review
+
+**📖 CRITICAL: Follow CONTRIBUTING.md Step 3 for exact process requirements.**
+
+**6a. Clean Up Git History:**
+
+```bash
+./scripts/squash-commits.sh
+```
+
+**6b. Complete PR Submission:**
+
+**Prepare PR body:**
+
+- Copy the template from `.github/PULL_REQUEST_TEMPLATE.md`
+- Create `.PR_BODY.md` in the project root using your code editor
+- Fill out all sections completely
+
+**Update Draft PR to Ready:**
+
+```bash
+# Update PR body with the completed template
+gh pr edit <pr-number> --body-file .PR_BODY.md
+
+# Mark PR as ready for review
+gh pr ready <pr-number>
+
+# Clean up the temporary file
+rm .PR_BODY.md
+```
+
+**6c. Verification Checklist:**
+
+- [ ] All tests pass
+- [ ] Build succeeds
+- [ ] Code follows standards (TOC at the top of files, functions >10 lines documented)
+- [ ] Clean commit history with proper format
+- [ ] PR template fully completed
+- [ ] PR title matches the first commit message exactly
+
+### Step 7: Clean Up
+
+Your work is done. Ensure all temporary files are removed.
+
+---
+
+## 📝 Workflow 2: Create Pull Request
+
+**Trigger:** Human says "create a PR for issue #42" or "create a PR"
+**Prerequisites:** Development work is complete, code is ready for review, commits already exist
+
+**🚨 CRITICAL: This workflow assumes your feature/fix is already implemented and tested with existing commits. If you need to start development, use Workflow 1 instead.**
+
+**🚨 Before starting, read CONTRIBUTING.md for the complete PR creation workflow and README.md for the project overview.**
+
+### Step 1: Identify Issue Number
+
+- If not provided, extract from the branch name (e.g., `45-feature-name` → issue #45)
+- Verify the issue exists: `gh issue view <issue-number>`
+
+**📖 Refer to CONTRIBUTING.md for branch naming conventions.**
+
+### Step 2: Verify Readiness
+
+- [ ] All tests pass
+- [ ] Build succeeds
+- [ ] Code follows standards (TOC at the top of files, functions >10 lines documented)
+- [ ] At least one commit exists (required for PR creation)
+
+**📖 MANDATORY: Check CONTRIBUTING.md for the complete pre-submission checklist and README.md for build requirements.**
+
+### Step 3: Determine PR Creation Method
+
+**If Draft PR Already Exists:**
+
+- Skip to Step 4b (Update existing draft)
+
+**If No PR Exists:**
+
+- Continue to Step 4a (Create new PR)
 
 ### Step 4: Finalize PR for Review
 
@@ -102,88 +210,183 @@ gh pr create --draft --title "<issue-title> #<issue-number>" --body-file .PR_BOD
 
 **Prepare PR body:**
 
-- Copy template from `.github/PULL_REQUEST_TEMPLATE.md`
-- Create `.PR_BODY.md` in project root using your code editor
+- Copy the template from `.github/PULL_REQUEST_TEMPLATE.md`
+- Create `.PR_BODY.md` in the project root using your code editor
 - Fill out all sections completely
 
-**Update/Create PR:**
-
-- If draft exists: `gh pr edit <pr-number> --body-file .PR_BODY.md && gh pr ready <pr-number>`
-- If no PR: `gh pr create --title "<issue-title> #<issue-number>" --body-file .PR_BODY.md`
-
-**4c. Verification Checklist:**
-
-- [ ] All tests pass
-- [ ] Build succeeds
-- [ ] Code follows standards (TOC at top of files, functions >10 lines documented)
-- [ ] Clean commit history with proper format
-- [ ] PR template fully completed
-
-### Step 5: Clean Up
-
-Your work is done. Ensure all temporary files (e.g., `.PR_BODY.md` after successful conversion) are removed.
-
----
-
-## 📝 Workflow 2: Create Pull Request
-
-**Trigger:** Human says "create a PR for issue 42" or "create a PR"
-**Prerequisites:** Development work is complete, code is ready for review
-
-**🚨 CRITICAL: This workflow assumes your feature/fix is already implemented and tested. If you need to start development, use Workflow 1 instead.**
-
-**🚨 Before starting, read CONTRIBUTING.md for complete PR creation workflow and README.md for project overview.**
-
-### Step 1: Identify Issue Number
-
-- If not provided, extract from branch name (e.g., `45-feature-name` → issue #45)
-- Verify issue exists: `gh issue view <issue-number>`
-
-**📖 Refer to CONTRIBUTING.md for branch naming conventions.**
-
-### Step 2: Verify Readiness
-
-- [ ] All tests pass
-- [ ] Build succeeds
-- [ ] Code follows standards (TOC at top of files, functions >10 lines documented)
-
-**📖 MANDATORY: Check CONTRIBUTING.md for complete pre-submission checklist and README.md for build requirements.**
-
-### Step 3: Finalize PR for Review
-
-**📖 CRITICAL: Follow CONTRIBUTING.md Step 3 for exact process requirements.**
-
-**3a. Clean Up Git History:**
+**Option A - If Draft PR Exists:**
 
 ```bash
-./scripts/squash-commits.sh
+# Update the existing draft PR
+gh pr edit <pr-number> --body-file .PR_BODY.md
+gh pr ready <pr-number>
 ```
 
-**3b. Complete PR Submission:**
-
-**Prepare PR body:**
-
-- Copy template from `.github/PULL_REQUEST_TEMPLATE.md`
-- Create `.PR_BODY.md` in project root using your code editor
-- Fill out all sections completely
-
-**Create PR:**
+**Option B - If No PR Exists:**
 
 ```bash
+# Create a new PR
 gh pr create --title "<issue-title> #<issue-number>" --body-file .PR_BODY.md
 ```
 
-**3c. Verification Checklist:**
+**4c. Verification Checklist:**
 
 - [ ] Clean commit history with proper format
 - [ ] PR template fully completed
 - [ ] Correct title format: `<issue-title> #<issue-number>`
+- [ ] PR title matches the first commit message exactly
 
-### Step 4: Clean Up
+### Step 5: Clean Up
 
-Your work is done. Ensure all temporary files (e.g., `.PR_BODY.md` after successful conversion) are removed.
+```bash
+# Clean up the temporary file
+rm .PR_BODY.md
+```
+
+Your work is done.
 
 **📖 Final verification: Ensure all CONTRIBUTING.md Step 3 requirements are satisfied.**
+
+---
+
+## 🔧 Workflow 3: Development Flow
+
+**Trigger:** Human asks for development help, code improvements, feature implementation, or ongoing work on existing issue/branch
+**Prerequisites:** Working on existing issue/feature (may or may not have existing commits)
+
+**🚨 CRITICAL: Before starting, read CONTRIBUTING.md for development guidelines and README.md for project-specific tech stack and implementation constraints.**
+
+### Step 1: Context Assessment
+
+**Understand Current State:**
+
+- [ ] Which issue/feature are we working on?
+- [ ] What branch are we on? (`git branch --show-current`)
+- [ ] What commits already exist? (`git log --oneline`)
+- [ ] What's the current test status? (Run test suite)
+
+**📖 Essential References (Read These):**
+
+- **README.md** → Tech stack, implementation patterns, project-specific constraints
+- **CONTRIBUTING.md** → Development guidelines, coding standards, testing requirements
+
+### Step 2: Apply Test-Driven Development
+
+**🚨 MANDATORY: Follow test-first approach for all development**
+
+```bash
+# Add tests for new functionality first
+git commit -m "test: add validation tests for edge cases #<issue-number>"
+
+# Implement the functionality to make tests pass
+git commit -m "feat: implement password strength validation #<issue-number>"
+
+# Refactor and improve
+git commit -m "refactor: extract validation logic to utility #<issue-number>"
+```
+
+**Test-First Benefits:**
+
+- Clarifies requirements before implementation
+- Ensures comprehensive test coverage (≥80%)
+- Enables confident refactoring
+- Documents expected behavior
+
+### Step 3: Apply Programming Best Practices
+
+**🔧 Development Approach:**
+
+**3a. Architecture & Design:**
+
+- Choose appropriate design patterns for the problem
+- Follow existing codebase patterns and conventions
+- Consider separation of concerns and modularity
+- Plan for extensibility and maintainability
+
+**3b. Implementation Excellence:**
+
+- **Performance:** Consider efficiency and scalability implications
+- **Security:** Follow security best practices for the tech stack
+- **Error Handling:** Implement comprehensive error handling and edge cases
+- **Code Quality:** Write clean, readable, and maintainable code
+
+**3c. Documentation Standards:**
+
+- Add TOC at the top of new/modified files
+- Document functions >10 lines with clear comments
+- Explain complex logic and business rules
+- Update relevant documentation files
+
+### Step 4: Iterative Development Process
+
+**4a. Problem-Solving Approach:**
+
+1. **Break down complex problems** into smaller, manageable pieces
+2. **Research solutions** using documentation, existing codebase patterns
+3. **Experiment and validate** your approach with tests
+4. **Refactor and optimize** as you learn more about the problem
+5. **Document your decisions** in commit messages and code comments
+
+**4b. Commit Strategy During Development:**
+
+```bash
+# Commit frequently with descriptive messages - these will be cleaned up later
+git commit -m "WIP: initial OAuth integration setup #<issue-number>"
+git commit -m "fix: handle expired token edge case #<issue-number>"
+git commit -m "add: comprehensive input validation #<issue-number>"
+git commit -m "debug: add logging for authentication flow #<issue-number>"
+git commit -m "test: add integration tests for login workflow #<issue-number>"
+git commit -m "docs: update API documentation #<issue-number>"
+```
+
+**4c. Continuous Quality Checks:**
+
+- [ ] All existing tests still pass
+- [ ] New functionality is thoroughly tested (≥80% coverage)
+- [ ] Code follows project conventions and standards
+- [ ] Edge cases and error conditions are handled
+- [ ] Performance implications considered
+- [ ] Security vulnerabilities addressed
+
+### Step 5: Collaboration & Documentation
+
+**5a. Progress Documentation:**
+
+- Use PR comments to document design decisions and rationale
+- Note challenges encountered and solutions implemented
+- Ask questions for areas needing clarification
+- Highlight areas that need additional attention
+
+**5b. Code Review Preparation:**
+
+- Ensure code is self-documenting with clear variable/function names
+- Add comments for complex business logic
+- Verify all edge cases are tested
+- Check that error messages are user-friendly
+
+### Step 6: Quality Validation
+
+**Final Checks Before Completion:**
+
+- [ ] Issue #<number> requirements fully implemented
+- [ ] All tests pass (both new and existing)
+- [ ] Code quality meets project standards
+- [ ] No breaking changes introduced
+- [ ] Performance is acceptable
+- [ ] Security considerations addressed
+- [ ] Documentation is complete and accurate
+- [ ] Ready for peer review
+
+**✅ Completion Criteria:**
+Your development work is complete when all requirements are implemented, thoroughly tested, and the code meets quality standards.
+
+**🎯 Next Steps:**
+
+- If working within Workflow 1: Return to Step 6 (Finalize PR)
+- If working independently: Consider creating a PR using Workflow 2
+- If more development needed: Continue iterating through this workflow
+
+**📝 Remember:** You are an experienced developer - trust your judgment on technical decisions while staying aligned with project patterns and standards. When in doubt, refer to existing codebase examples or ask questions in PR comments.
 
 ---
 
@@ -194,9 +397,9 @@ Your work is done. Ensure all temporary files (e.g., `.PR_BODY.md` after success
 **Problem:** `gh issue view <number>` fails
 **Solution:**
 
-- Verify issue number with human
-- Ask human to create issue first if missing
-- Check if issue is in different repository
+- Verify the issue number with the human
+- Ask the human to create the issue first if missing
+- Check if the issue is in a different repository
 
 ### Branch Already Exists
 
@@ -213,12 +416,22 @@ git pull origin <branch-name>
 
 ```
 
+### Cannot Create PR - No Commits
+
+**Problem:** `gh pr create` fails with "no commits between branches"
+**Solution:**
+
+1. Verify you have commits: `git log --oneline`
+2. If no commits, you need to complete development first
+3. Make sure you're on the correct branch
+4. Use Workflow 1 if starting from scratch
+
 ### Tests Failing
 
 **Problem:** Test suite doesn't pass
 **Solution:**
 
-1. Run tests locally: See README.md for Run all tests command
+1. Run tests locally: See README.md for the "Run all tests" command
 2. Fix failing tests before proceeding
 3. Refer to CONTRIBUTING.md for test requirements
 4. Ask for help if blocked on test failures
@@ -228,7 +441,7 @@ git pull origin <branch-name>
 **Problem:** Conflicts during rebase
 **Solution:**
 
-1. Resolve conflicts in affected files
+1. Resolve conflicts in the affected files
 2. Stage resolved files: `git add <file>`
 3. Continue rebase: `git rebase --continue`
 4. If stuck, abort and ask for help: `git rebase --abort`
@@ -239,21 +452,24 @@ git pull origin <branch-name>
 
 ### Code Quality Standards
 
-- [ ] TOC at top of all new/modified files
+- [ ] TOC at the top of all new/modified files
 - [ ] Functions >10 lines documented
 - [ ] Test coverage ≥80%
 - [ ] All tests passing
 
 ### Git Standards
 
-- [ ] Clean commit history before PR
+- [ ] At least one commit exists before creating a PR
+- [ ] Clean commit history before PR submission
 - [ ] Issue numbers in all commits
-- [ ] Proper commit message format: `type(scope): description #issue-number`
-- [ ] No commits >100 characters in header
+- [ ] Proper commit message format: `type(scope): description #<issue-number>`
+- [ ] No commits >100 characters in the header
+- [ ] First commit message matches PR title exactly
 
 ### PR Standards
 
 - [ ] Title matches issue exactly + `#<issue-number>`
+- [ ] Title matches the first commit message exactly
 - [ ] Template completely filled out
 - [ ] All CI checks passing
 
@@ -269,7 +485,7 @@ git pull origin <branch-name>
 
 ```bash
 ❌ feat(AUTH): implement login #123     (scope must be lowercase)
-❌ feat(auth): implement login. #123    (no period at end)
+❌ feat(auth): implement login. #123    (no period at the end)
 ❌ feat(auth): implement login          (missing issue number)
 ❌ feat(auth): #123                     (empty description)
 ```
@@ -288,7 +504,7 @@ git pull origin <branch-name>
 **Quick Facts:**
 
 - **Issue branch naming:** `<number>-<slugified-title>`
-- **PR title:** Must match issue title exactly + `#<number>`
+- **PR title:** Must match issue title exactly + `#<number>` AND match the first commit message
 - **Scripts location:** `./scripts/` directory
 - **Template location:** `.github/PULL_REQUEST_TEMPLATE.md`
 
@@ -297,13 +513,15 @@ git pull origin <branch-name>
 ## ❌ Common Mistakes to Avoid
 
 - Don't skip writing tests first
-- Don't submit PR without cleaning commits
+- Don't try to create a PR without any commits (will fail)
+- Don't submit a PR without cleaning commits
 - Don't forget issue numbers in commits
 - Don't use uppercase scopes in commit messages
 - Don't exceed 100 characters in commit headers
-- Don't forget TOC at top of new files
+- Don't forget TOC at the top of new files
 - Don't assume scripts exist without checking
 - Don't proceed with failing tests
+- Don't make the PR title different from the first commit message
 
 ---
 

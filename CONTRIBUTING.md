@@ -9,7 +9,7 @@
 ### 🚀 Core Workflow (4 Steps)
 
 1. **[📋 Issue → Branch](#-step-1-issue--branch)** → Create issue, start branch
-2. **[✅ Test-First Development](#-step-2-test-first-development)** → Write tests, develop, commit freely
+2. **[✅ Test-First Development](#-step-2-test-first-development)** → Write tests, develop, commit, create Draft PR
 3. **[🧹 Clean & Submit](#-step-3-clean--submit)** → Clean commits, create PR
 4. **[🔀 Review & Merge](#-step-4-review--merge)** → Get approval, maintainer merges
 
@@ -56,6 +56,7 @@ All work must begin with a GitHub Issue for proper tracking.
 This script:
 
 - Creates branch named `<issue-number>-<slugified-title>`
+  **Example:** Issue #71 "Update Draft PR workflow documentation" → `71-docs-update-draft-pr-workflow-documentation-to-reflect-correct-process`
 - Assigns issue to you
 - Checks out the new branch
 
@@ -93,14 +94,41 @@ src/
 
 ### Development Phase
 
-**Commit freely** during development with any messages:(These will be cleaned up later — focus on progress and don't worry about perfect messages at this stage!)
+**Step 1: Create Your First Meaningful Commit**
+
+After writing initial tests and some working code, create your first commit with the proper format:
+
+```bash
+
+# Get the exact issue title for consistency
+./scripts/get-issue-title.sh <issue-number>
+
+# Example first commit - this will become your PR title
+git commit -m "<issue-title> #<issue-number>"
+```
+
+**IMPORTANT:** This first commit message will be used as your PR title
+
+**Step 2: Create Draft PR Immediately**
+
+Once you have your first commit, create a Draft PR as soon as possible for early feedback:
+
+```bash
+
+# Create Draft PR - title should match your first commit message
+gh pr create --draft --title "<issue-title> #<issue-number>" --body-file .PR_BODY.md
+```
+
+**Step 3: Continue Development**
+
+After creating the Draft PR, **commit freely** during development with any messages (these will be cleaned up later):
 
 ```bash
 # These will be cleaned up later - focus on progress!
-git commit -m "WIP: initial auth setup"
-git commit -m "add password validation"
+git commit -m "WIP: add password validation"
 git commit -m "fix edge case"
 git commit -m "debug logging"
+git commit -m "add integration tests"
 ```
 
 ### Code Standards
@@ -170,13 +198,12 @@ import { describe, test, expect } from '@jest/globals';
 - Predicts function names and responsibilities better
 - Reduces token usage by understanding context faster
 
-### Creating a Draft PR (Optional but Recommended)
+### Draft PR Benefits
 
-```bash
-gh pr create --draft --title "<issue-title> #<issue-number>" --body-file .PR_BODY.md
-```
-
-**Benefits:** Early feedback, communicate approach, collaborative problem-solving
+**Early Feedback:** Get input on approach before investing too much time
+**Visibility:** Team knows what you're working on
+**Collaboration:** Others can offer help or spot potential issues
+**Documentation:** Track your thinking process in PR comments
 
 ---
 
@@ -201,7 +228,7 @@ This script rebases your branch onto main, helps you squash commits interactivel
 
 ### Commit Message Format (ENFORCED)
 
-- The **first commit** must match the PR title format exactly
+- The **first commit** (after squashing) must match the PR title format exactly
 - Always reference the issue number in the commit
 
 **Format:** `type(scope): description #issue-number`
@@ -233,23 +260,27 @@ This script rebases your branch onto main, helps you squash commits interactivel
 - Must include issue number
 - Use `feat:` or `fix:` for version updates
 
-### Create or Update PR
+### Finalize PR for Review
 
 #### PR Body Creation Process
 
 1. **Prepare the template content**: Copy the template from `.github/PULL_REQUEST_TEMPLATE.md`
 2. **Create temporary file**: Create `.PR_BODY.md` in your project root using your code editor
 3. **Fill out all sections**: Complete the template based on your changes (see example below)
-4. **Create the PR**: Use the body file when creating your PR
-5. **Clean up**: Delete the temporary file after successful PR creation
+4. **Update the PR**: Use the body file when updating your existing Draft PR
+5. **Clean up**: Delete the temporary file after successful PR update
 
 **Important:** Use your code editor to create `.PR_BODY.md` rather than terminal commands to avoid issues with long content.
 
-#### If You Created a Draft PR
+#### Update Draft PR to Ready
 
-Convert when ready:
+Since you already have a Draft PR, update it and mark as ready:
 
 ```bash
+# Update the PR body with completed template
+gh pr edit <pr-number> --body-file .PR_BODY.md
+
+# Mark PR as ready for review
 gh pr ready <pr-number>
 ```
 
@@ -264,7 +295,7 @@ gh pr create \
   --body-file .PR_BODY.md \
   --base main
 
-# Clean up the temporary file after successful PR creation
+# Clean up the temporary file after successful PR update or creation
 rm .PR_BODY.md
 ```
 
@@ -299,11 +330,13 @@ rm .PR_BODY.md
 
 ## 📝 PR Guidelines
 
-### PR Title Format
+### PR Title && First Commit Message Format
 
 **Must match:** `<issue-title> #<issue-number>`
 
 Get the exact title: `./scripts/get-issue-title.sh <issue-number>`
+
+**IMPORTANT:** Your PR title should match your first commit message exactly.
 
 ### PR Body Template
 
@@ -315,7 +348,7 @@ Use the template at `.github/PULL_REQUEST_TEMPLATE.md`:
 - **AI Assistance** → Transparency about AI use
 - **Reviewer Notes** → Areas needing attention
 
-**Draft PRs:** Just paste template
+**Draft PRs:** Just paste template initially
 **Ready PRs:** Complete all sections
 
 **Note:** The `.PR_BODY.md` file is automatically ignored by git (already in .gitignore) and needs to be cleaned up after successful PR creation.
@@ -330,6 +363,12 @@ Use the template at `.github/PULL_REQUEST_TEMPLATE.md`:
 #### Example
 
 **Issue title:**
+
+```bash
+"docs: create AI pull request assistant guide #43"
+```
+
+**First commit message (matches PR title):**
 
 ```bash
 "docs: create AI pull request assistant guide #43"
@@ -424,10 +463,10 @@ Context: Issue #142 - Payment gateway integration
 A: Common issues - header >100 chars, uppercase scope, missing issue number, ends with period. Use `git commit --amend` to fix.
 
 **Q: When should I create a Draft PR?**
-A: After you have a clear development direction and some initial progress. This enables early feedback and collaboration.
+A: Immediately after your first meaningful commit. This enables early feedback and collaboration throughout development.
 
 **Q: When do I clean commits?**
-A: Before creating a PR or marking a Draft as ready. This is mandatory - reviewers expect clean history.
+A: Before marking your Draft PR as ready for review. This is mandatory - reviewers expect clean history.
 
 **Q: Do all commits need issue numbers?**
 A: Yes, mandatory for traceability (except `chore(main):` commits).
