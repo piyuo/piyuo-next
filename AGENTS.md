@@ -108,11 +108,12 @@ git commit -m "refactor validation logic"
 # Get the exact issue title for consistency
 ./scripts/get-issue-title.sh <issue-number>
 
-# Create PR
+# Create PR, add --push to eliminates the interactive prompt.
 gh pr create \
   --title "<issue-title> #<issue-number>" \
   --body-file .PR_BODY.md \
   --base main
+  --push
 
 # Clean up the temporary file
 rm .PR_BODY.md
@@ -182,11 +183,12 @@ Your work is done. Ensure all temporary files are removed.
 # Get the exact issue title for consistency
 ./scripts/get-issue-title.sh <issue-number>
 
-# Create PR
+# Create PR, add --push to eliminates the interactive prompt.
 gh pr create \
   --title "<issue-title> #<issue-number>" \
   --body-file .PR_BODY.md \
   --base main
+  --push
 
 # Clean up the temporary file
 rm .PR_BODY.md

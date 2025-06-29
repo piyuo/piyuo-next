@@ -259,11 +259,12 @@ This script rebases your branch onto main, helps you squash commits interactivel
 # Get the exact issue title for consistency
 ./scripts/get-issue-title.sh <issue-number>
 
-# Create the PR using the body file
+# Create the PR using the body file, add --push to eliminates the interactive prompt.
 gh pr create \
   --title "<issue-title> #<issue-number>" \
   --body-file .PR_BODY.md \
   --base main
+  --push
 
 # Clean up the temporary file after successful PR creation
 rm .PR_BODY.md
