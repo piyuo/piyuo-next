@@ -1,61 +1,19 @@
-import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// ===============================================
+// Root Layout: layout.tsx
+// Description: Root layout that passes through to locale-specific layouts
+//
+// Purpose:
+//   - Provides base structure for Next.js App Router
+//   - Delegates HTML structure to locale-specific layouts
+//   - All metadata and fonts are handled in locale layouts
+// ===============================================
+
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
-
-export const metadata: Metadata = {
-  metadataBase: new URL('https://piyuo.com'),
-  title: "Piyuo - AI-Powered People Counter",
-  description: "Piyuo is an AI-powered counter app that automatically tracks and counts people using your phone's camera—no internet required.",
-  keywords: ["AI counter", "people counter", "traffic counting", "AI-powered tracking", "offline people counting", "smart counter", "Piyuo app"],
-  authors: [{ name: "Piyuo" }],
-  other: {
-    "mobile-web-app-capable": "yes",
-    "apple-mobile-web-app-status-bar-style": "black",
-    "apple-mobile-web-app-title": "Piyuo",
-  },
-  openGraph: {
-    title: "Piyuo - AI-Powered People Counter",
-    description: "No more manual counting! Piyuo uses AI and your phone's camera to track and count people automatically—completely offline.",
-    url: "https://piyuo.com",
-    type: "website",
-    images: [
-      {
-        url: "/icons/icon.png",
-        width: 192,
-        height: 192,
-        alt: "Piyuo App Icon",
-      },
-    ],
-  },
-};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
-  );
+  return children;
 }
