@@ -6,7 +6,7 @@ Since AI assistants tend to focus on the section that seems most relevant and sk
 
 ## 📋 Table of Contents & Quick Navigation
 
-## 📖 **Critical**
+ 📖 **Critical**
 
 Always confirm understanding with the user before proceeding. If any required information is missing, proactively prompt the user to provide it.
 
