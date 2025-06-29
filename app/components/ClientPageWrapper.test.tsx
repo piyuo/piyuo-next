@@ -35,6 +35,16 @@ jest.mock('../utils/language-utils', () => ({
   }),
 }));
 
+// Mock the EnhancedLanguageSelector to prevent async state updates during tests
+jest.mock('./EnhancedLanguageSelector', () => ({
+  EnhancedLanguageSelector: ({ currentLocale, languageLabel }: { currentLocale: string; languageLabel: string }) => (
+    <div data-testid="mock-language-selector">
+      <span>{languageLabel}</span>
+      <span data-testid="current-locale">{currentLocale}</span>
+    </div>
+  ),
+}));
+
 const mockPush = jest.fn();
 const mockUseRouter = useRouter as jest.MockedFunction<typeof useRouter>;
 const mockUsePathname = usePathname as jest.MockedFunction<typeof usePathname>;

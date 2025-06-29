@@ -69,33 +69,38 @@ describe('EnhancedLanguageSelector', () => {
   });
 
   it('renders language selector button', async () => {
-    await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
+    render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
+
+    // Wait for the async language loading to complete
+    await waitFor(() => {
+      expect(screen.getByRole('button')).toBeInTheDocument();
     });
 
-    expect(screen.getByRole('button')).toBeInTheDocument();
     expect(screen.getByText('Language')).toBeInTheDocument();
   });
 
   it('displays translated language label', async () => {
-    await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="zh" languageLabel="語言" />);
+    render(<EnhancedLanguageSelector currentLocale="zh" languageLabel="語言" />);
+
+    // Wait for the async language loading to complete
+    await waitFor(() => {
+      expect(screen.getByRole('button')).toBeInTheDocument();
     });
 
-    expect(screen.getByRole('button')).toBeInTheDocument();
     expect(screen.getByText('語言')).toBeInTheDocument();
   });
 
   it('opens dropdown when button is clicked', async () => {
-    await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
-    });
+    render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
 
     const button = screen.getByRole('button');
 
-    await act(async () => {
-      fireEvent.click(button);
+    // Wait for component to fully load before interaction
+    await waitFor(() => {
+      expect(button).not.toBeDisabled();
     });
+
+    fireEvent.click(button);
 
     // Wait for languages to load and dropdown to appear
     await waitFor(() => {
@@ -106,15 +111,16 @@ describe('EnhancedLanguageSelector', () => {
   });
 
   it('shows current language with check mark', async () => {
-    await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="zh" languageLabel="語言" />);
-    });
+    render(<EnhancedLanguageSelector currentLocale="zh" languageLabel="語言" />);
 
     const button = screen.getByRole('button');
 
-    await act(async () => {
-      fireEvent.click(button);
+    // Wait for component to fully load before interaction
+    await waitFor(() => {
+      expect(button).not.toBeDisabled();
     });
+
+    fireEvent.click(button);
 
     await waitFor(() => {
       const currentLanguageButton = screen.getByText('中文').closest('button');
@@ -128,23 +134,24 @@ describe('EnhancedLanguageSelector', () => {
   it('redirects to correct URL when language is selected', async () => {
     mockUsePathname.mockReturnValue('/en/about');
 
-    await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
-    });
+    render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
 
     const button = screen.getByRole('button');
 
-    await act(async () => {
-      fireEvent.click(button);
+    // Wait for component to fully load before interaction
+    await waitFor(() => {
+      expect(button).not.toBeDisabled();
     });
+
+    fireEvent.click(button);
 
     await waitFor(() => {
       const frenchButton = screen.getByText('Français').closest('button');
       expect(frenchButton).toBeInTheDocument();
 
-      act(() => {
-        fireEvent.click(frenchButton!);
-      });
+      if (frenchButton) {
+        fireEvent.click(frenchButton);
+      }
     });
 
     expect(mockPush).toHaveBeenCalledWith('/fr/about');
@@ -153,47 +160,47 @@ describe('EnhancedLanguageSelector', () => {
   it('handles root path correctly', async () => {
     mockUsePathname.mockReturnValue('/en');
 
-    await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
-    });
+    render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
 
     const button = screen.getByRole('button');
 
-    await act(async () => {
-      fireEvent.click(button);
+    // Wait for component to fully load before interaction
+    await waitFor(() => {
+      expect(button).not.toBeDisabled();
     });
+
+    fireEvent.click(button);
 
     await waitFor(() => {
       const spanishButton = screen.getByText('Español').closest('button');
       expect(spanishButton).toBeInTheDocument();
 
-      act(() => {
-        fireEvent.click(spanishButton!);
-      });
+      if (spanishButton) {
+        fireEvent.click(spanishButton);
+      }
     });
 
     expect(mockPush).toHaveBeenCalledWith('/es');
   });
 
   it('closes dropdown when clicking outside', async () => {
-    await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
-    });
+    render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
 
     const button = screen.getByRole('button');
 
-    await act(async () => {
-      fireEvent.click(button);
+    // Wait for component to fully load before interaction
+    await waitFor(() => {
+      expect(button).not.toBeDisabled();
     });
+
+    fireEvent.click(button);
 
     await waitFor(() => {
       expect(screen.getByText('English')).toBeInTheDocument();
     });
 
     // Click outside
-    await act(async () => {
-      fireEvent.mouseDown(document.body);
-    });
+    fireEvent.mouseDown(document.body);
 
     await waitFor(() => {
       expect(screen.queryByText('English')).not.toBeInTheDocument();
@@ -208,9 +215,7 @@ describe('EnhancedLanguageSelector', () => {
     });
     mockGetAvailableLanguages.mockReturnValue(slowPromise);
 
-    await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
-    });
+    render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
 
     const button = screen.getByRole('button');
 
@@ -218,26 +223,33 @@ describe('EnhancedLanguageSelector', () => {
     expect(button).toBeDisabled();
 
     // Resolve the promise
-    await act(async () => {
+    act(() => {
       resolvePromise!(['en', 'zh']);
     });
 
-    // Button should now be enabled
-    expect(button).not.toBeDisabled();
+    // Wait for button to be enabled
+    await waitFor(() => {
+      expect(button).not.toBeDisabled();
+    });
   });
 
   it('falls back gracefully when language loading fails', async () => {
+    // Mock console.error to suppress the expected error message during this test
+    const originalConsoleError = console.error;
+    console.error = jest.fn();
+
     mockGetAvailableLanguages.mockRejectedValue(new Error('Failed to load languages'));
 
-    await act(async () => {
-      render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
-    });
+    render(<EnhancedLanguageSelector currentLocale="en" languageLabel="Language" />);
 
     const button = screen.getByRole('button');
 
-    await act(async () => {
-      fireEvent.click(button);
+    // Wait for component to load and handle error
+    await waitFor(() => {
+      expect(button).not.toBeDisabled();
     });
+
+    fireEvent.click(button);
 
     // Wait for error handling and fallback
     await waitFor(() => {
@@ -245,5 +257,11 @@ describe('EnhancedLanguageSelector', () => {
       expect(screen.getByText('English')).toBeInTheDocument();
       expect(screen.getByText('中文')).toBeInTheDocument();
     });
+
+    // Verify that console.error was called (testing the error handling)
+    expect(console.error).toHaveBeenCalledWith('Failed to load available languages:', expect.any(Error));
+
+    // Restore original console.error
+    console.error = originalConsoleError;
   });
 });

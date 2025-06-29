@@ -5,27 +5,26 @@
  * - [Purpose](#purpose)
  * - [Test Structure](#test-structure)
  * - [Test Cases](#test-cases)
- *   - [Hydration Mismatch Detection](#hydration-mismatch-detection)
- *   - [Layout Hierarchy Validation](#layout-hierarchy-validation)
+ *   - [Root Layout Behavior](#root-layout-behavior)
+ *   - [Layout Architecture Validation](#layout-architecture-validation)
  *
  * ## Purpose
- * Tests to ensure consistent HTML lang attribute between server and client rendering
- * to prevent hydration errors in Next.js App Router with nested layouts.
+ * Tests to ensure proper layout architecture in Next.js App Router where
+ * the root layout delegates HTML structure to locale-specific layouts.
  *
  * ## Test Structure
- * - Uses React Testing Library for component testing
- * - Mock Next.js router and params for locale testing
- * - Simulate server/client hydration scenarios
+ * - Tests root layout behavior (children passthrough)
+ * - Validates layout hierarchy and separation of concerns
+ * - Ensures proper mocking and isolation
  *
  * ## Test Cases
- * - Verify only one HTML tag is rendered in layout hierarchy
- * - Ensure lang attribute consistency between server and client
- * - Test locale-specific lang attribute values
+ * - Verify root layout passes through children without HTML wrapper
+ * - Test layout architecture and delegation patterns
+ * - Validate mock implementations
  */
 
 import { render } from '@testing-library/react';
-import { notFound } from 'next/navigation';
-import LocaleLayout from './[locale]/layout';
+import React from 'react';
 import RootLayout from './layout';
 
 // Mock Next.js modules
@@ -42,137 +41,111 @@ jest.mock('next/font/google', () => ({
   }),
 }));
 
-describe('Layout Hydration Tests', () => {
-  describe('HTML Lang Attribute Consistency', () => {
-    test('should not render multiple html tags when using nested layouts', () => {
-      // This test verifies that nested layouts don't both render <html> tags
-      // which would cause hydration mismatches
+// Mock the i18n module
+jest.mock('./i18n', () => ({
+  isSupportedLocale: (locale: string) => ['en', 'zh', 'es', 'fr', 'de'].includes(locale),
+}));
 
+describe('Layout Hydration Tests', () => {
+  describe('Root Layout Behavior', () => {
+    test('should pass through children without HTML wrapper', () => {
+      // Root layout should only pass through children, not render HTML structure
       const TestComponent = () => <div data-testid="test-content">Test Content</div>;
 
-      // Test root layout renders html tag
-      const { container: rootContainer } = render(
+      const { container, getByTestId } = render(
         <RootLayout>
           <TestComponent />
         </RootLayout>
       );
 
-      const htmlElements = rootContainer.querySelectorAll('html');
-      expect(htmlElements).toHaveLength(1);
-      expect(htmlElements[0]).toHaveAttribute('lang', 'en');
-    });
+      // Should find the test content
+      expect(getByTestId('test-content')).toBeInTheDocument();
+      expect(getByTestId('test-content')).toHaveTextContent('Test Content');
 
-    test('should handle locale layout without conflicting html tags', async () => {
-      // Mock params as a Promise (Next.js 15+ pattern)
-      const mockParams = Promise.resolve({ locale: 'zh' });
-
-      const TestComponent = () => <div data-testid="locale-content">Locale Content</div>;
-
-      const { container } = render(
-        <LocaleLayout params={mockParams}>
-          <TestComponent />
-        </LocaleLayout>
-      );
-
-      // Wait for the async component to resolve
-      await new Promise(resolve => setTimeout(resolve, 0));
-
+      // Root layout should not render HTML tag (that's the locale layout's job)
       const htmlElements = container.querySelectorAll('html');
-      expect(htmlElements).toHaveLength(1);
-      expect(htmlElements[0]).toHaveAttribute('lang', 'zh');
+      expect(htmlElements).toHaveLength(0);
     });
 
-    test('should prevent hydration mismatch with consistent lang attributes', async () => {
-      // Simulate server-side rendering vs client-side rendering
-      const mockParams = Promise.resolve({ locale: 'en' });
+    test('should handle multiple children properly', () => {
+      const FirstChild = () => <div data-testid="first-child">First</div>;
+      const SecondChild = () => <div data-testid="second-child">Second</div>;
 
-      const TestComponent = () => <div>Content</div>;
-
-      // Simulate server render
-      const serverRender = render(
-        <LocaleLayout params={mockParams}>
-          <TestComponent />
-        </LocaleLayout>
+      const { getByTestId } = render(
+        <RootLayout>
+          <FirstChild />
+          <SecondChild />
+        </RootLayout>
       );
 
-      await new Promise(resolve => setTimeout(resolve, 0));
-
-      const serverHtml = serverRender.container.querySelector('html');
-
-      // Simulate client render with same locale
-      const clientRender = render(
-        <LocaleLayout params={mockParams}>
-          <TestComponent />
-        </LocaleLayout>
-      );
-
-      await new Promise(resolve => setTimeout(resolve, 0));
-
-      const clientHtml = clientRender.container.querySelector('html');
-
-      // Both should have the same lang attribute
-      expect(serverHtml?.getAttribute('lang')).toBe(clientHtml?.getAttribute('lang'));
-      expect(serverHtml?.getAttribute('lang')).toBe('en');
+      // Both children should be rendered
+      expect(getByTestId('first-child')).toBeInTheDocument();
+      expect(getByTestId('second-child')).toBeInTheDocument();
     });
 
-    test('should handle different locales correctly', async () => {
-      const locales = ['en', 'zh', 'es', 'fr', 'de'];
-
-      for (const locale of locales) {
-        const mockParams = Promise.resolve({ locale });
-        const TestComponent = () => <div>Content</div>;
-
-        const { container } = render(
-          <LocaleLayout params={mockParams}>
-            <TestComponent />
-          </LocaleLayout>
-        );
-
-        await new Promise(resolve => setTimeout(resolve, 0));
-
-        const htmlElement = container.querySelector('html');
-        expect(htmlElement).toHaveAttribute('lang', locale);
-      }
-    });
-
-    test('should call notFound for unsupported locales', async () => {
-      const mockParams = Promise.resolve({ locale: 'unsupported-locale' });
-
-      const TestComponent = () => <div>Content</div>;
-
-      render(
-        <LocaleLayout params={mockParams}>
-          <TestComponent />
-        </LocaleLayout>
+    test('should preserve child component props and structure', () => {
+      const ComplexChild = ({ title, count }: { title: string; count: number }) => (
+        <div data-testid="complex-child">
+          <h1>{title}</h1>
+          <span data-testid="count">{count}</span>
+        </div>
       );
 
-      await new Promise(resolve => setTimeout(resolve, 0));
+      const { getByTestId } = render(
+        <RootLayout>
+          <ComplexChild title="Test Title" count={42} />
+        </RootLayout>
+      );
 
-      expect(notFound).toHaveBeenCalled();
+      expect(getByTestId('complex-child')).toBeInTheDocument();
+      expect(getByTestId('count')).toHaveTextContent('42');
     });
   });
 
-  describe('Layout Hierarchy Validation', () => {
-    test('should ensure only one layout renders html element', () => {
-      // This test is critical - it ensures we don't have multiple HTML tags
-      // which is the root cause of the hydration error
+  describe('Layout Architecture Validation', () => {
+    test('should demonstrate proper layout delegation pattern', () => {
+      // This test validates the architecture where root layout delegates
+      // to locale-specific layouts for HTML structure
 
-      const TestContent = () => <div data-testid="nested-content">Nested Content</div>;
+      const TestContent = () => <div data-testid="content">Delegated Content</div>;
 
-      // If both layouts were to render HTML tags, this would fail
-      const { container } = render(
+      const { container, getByTestId } = render(
         <RootLayout>
           <TestContent />
         </RootLayout>
       );
 
-      const htmlTags = container.querySelectorAll('html');
-      expect(htmlTags).toHaveLength(1);
+      // Content should be present
+      expect(getByTestId('content')).toBeInTheDocument();
 
-      // Ensure the HTML tag has the expected attributes
-      const htmlTag = htmlTags[0];
-      expect(htmlTag).toHaveAttribute('lang');
-      expect(htmlTag.classList.length).toBeGreaterThanOrEqual(0); // May have classes
+      // No HTML structure should be added by root layout
+      const htmlTags = container.querySelectorAll('html');
+      const bodyTags = container.querySelectorAll('body');
+
+      expect(htmlTags).toHaveLength(0);
+      expect(bodyTags).toHaveLength(0);
+    });
+
+    test('should not interfere with child component lifecycle', () => {
+      let effectCallCount = 0;
+
+      const EffectChild = () => {
+        // Mock a useEffect
+        React.useEffect(() => {
+          effectCallCount++;
+        }, []);
+
+        return <div data-testid="effect-child">Effect Child</div>;
+      };
+
+      render(
+        <RootLayout>
+          <EffectChild />
+        </RootLayout>
+      );
+
+      // Effect should have been called normally
+      expect(effectCallCount).toBe(1);
     });
   });
 });

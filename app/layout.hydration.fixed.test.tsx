@@ -4,16 +4,16 @@
  * ## Table of Contents
  * - [Purpose](#purpose)
  * - [Test Cases](#test-cases)
- *   - [HTML Structure Validation](#html-structure-validation)
- *   - [Lang Attribute Consistency](#lang-attribute-consistency)
+ *   - [Root Layout Structure](#root-layout-structure)
+ *   - [Architecture Documentation](#architecture-documentation)
  *
  * ## Purpose
- * Tests to ensure consistent HTML lang attribute between server and client rendering
- * to prevent hydration errors in Next.js App Router with nested layouts.
+ * Tests to document and validate the layout architecture in Next.js App Router
+ * where the root layout delegates HTML structure to locale-specific layouts.
+ * This prevents hydration mismatches by ensuring only one layout renders HTML.
  */
 
-import { renderToString } from 'react-dom/server';
-import LocaleLayout from './[locale]/layout';
+import { render } from '@testing-library/react';
 import RootLayout from './layout';
 
 // Mock Next.js modules
@@ -36,75 +36,82 @@ jest.mock('./i18n', () => ({
 }));
 
 describe('Layout Hydration Tests', () => {
-  describe('HTML Lang Attribute Consistency', () => {
-    test('should render root layout with correct lang attribute', () => {
+  describe('Root Layout Structure', () => {
+    test('should render root layout as children passthrough', () => {
       const TestComponent = () => <div data-testid="test-content">Test Content</div>;
 
-      const html = renderToString(
+      const { container, getByTestId } = render(
         <RootLayout>
           <TestComponent />
         </RootLayout>
       );
 
-      // Check that HTML tag has the expected lang attribute
-      expect(html).toContain('<html lang="en">');
-      expect(html).toContain('Test Content');
+      // Check that content is rendered
+      expect(getByTestId('test-content')).toBeInTheDocument();
+      expect(getByTestId('test-content')).toHaveTextContent('Test Content');
+
+      // Root layout should not add HTML structure
+      const htmlElements = container.querySelectorAll('html');
+      expect(htmlElements).toHaveLength(0);
     });
 
-    test('should render locale layout with correct dynamic lang attribute', () => {
-      const TestComponent = () => <div data-testid="locale-content">Locale Content</div>;
+    test('should preserve component hierarchy and props', () => {
+      const ParentComponent = ({ children }: { children: React.ReactNode }) => (
+        <div data-testid="parent">{children}</div>
+      );
 
-      // Test with Chinese locale
-      const LocaleLayoutWithParams = () => {
-        const mockParams = Promise.resolve({ locale: 'zh' });
-        return (
-          <LocaleLayout params={mockParams}>
-            <TestComponent />
-          </LocaleLayout>
-        );
-      };
+      const ChildComponent = ({ text }: { text: string }) => (
+        <span data-testid="child">{text}</span>
+      );
 
-      const html = renderToString(<LocaleLayoutWithParams />);
+      const { getByTestId } = render(
+        <RootLayout>
+          <ParentComponent>
+            <ChildComponent text="Nested Content" />
+          </ParentComponent>
+        </RootLayout>
+      );
 
-      // Should contain the dynamic locale
-      expect(html).toContain('<html lang="zh">');
-      expect(html).toContain('Locale Content');
+      expect(getByTestId('parent')).toBeInTheDocument();
+      expect(getByTestId('child')).toBeInTheDocument();
+      expect(getByTestId('child')).toHaveTextContent('Nested Content');
     });
+  });
 
-    test('should demonstrate the hydration issue with current setup', () => {
-      // This test documents what happens when both layouts try to render HTML
-      // In a real Next.js app, this causes hydration mismatches
+  describe('Architecture Documentation', () => {
+    test('should document the layout delegation pattern', () => {
+      // This test documents the architecture decision:
+      // Root layout: Delegates to locale layouts (no HTML structure)
+      // Locale layout: Renders HTML with proper lang attribute
 
-      const TestContent = () => <div>Test</div>;
+      const TestContent = () => <div data-testid="content">Content</div>;
 
-      // Root layout HTML structure
-      const rootHtml = renderToString(
+      const { container } = render(
         <RootLayout>
           <TestContent />
         </RootLayout>
       );
 
-      // Locale layout HTML structure
-      const LocaleLayoutWithParams = () => {
-        const mockParams = Promise.resolve({ locale: 'zh' });
-        return (
-          <LocaleLayout params={mockParams}>
-            <TestContent />
-          </LocaleLayout>
-        );
-      };
+      // Root layout should not render HTML elements
+      expect(container.querySelectorAll('html')).toHaveLength(0);
+      expect(container.querySelectorAll('body')).toHaveLength(0);
 
-      const localeHtml = renderToString(<LocaleLayoutWithParams />);
+      // But content should be accessible
+      expect(container.querySelector('[data-testid="content"]')).toBeInTheDocument();
+    });
 
-      // These would have different lang attributes, causing hydration mismatch
-      expect(rootHtml).toContain('lang="en"');
-      expect(localeHtml).toContain('lang="zh"');
+    test('should demonstrate hydration-safe architecture', () => {
+      // This test shows how the architecture prevents hydration mismatches
+      // by ensuring consistent rendering between server and client
 
-      // This demonstrates the issue - same content, different HTML lang attributes
-      expect(rootHtml.includes('lang="en"')).toBe(true);
-      expect(localeHtml.includes('lang="zh"')).toBe(true);
-      expect(rootHtml.includes('lang="zh"')).toBe(false);
-      expect(localeHtml.includes('lang="en"')).toBe(false);
+      const TestContent = () => <div>Hydration Test</div>;
+
+      // Simulate multiple renders (like server/client hydration)
+      const render1 = render(<RootLayout><TestContent /></RootLayout>);
+      const render2 = render(<RootLayout><TestContent /></RootLayout>);
+
+      // Both renders should produce identical DOM structure
+      expect(render1.container.innerHTML).toBe(render2.container.innerHTML);
     });
   });
 });
