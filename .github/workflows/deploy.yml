@@ -27,7 +27,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "22"
           cache: "pnpm"
 
       - name: Install dependencies
@@ -40,9 +40,8 @@ jobs:
         run: pnpm pages:build
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: piyuo-next
-          directory: .next
+          command: pages deploy .vercel/output/static --project-name=piyuo-next --branch=${{ github.ref_name }}
