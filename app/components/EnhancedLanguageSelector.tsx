@@ -127,9 +127,6 @@ export function EnhancedLanguageSelector({ currentLocale }: EnhancedLanguageSele
                   <div className="text-gray-900 font-medium">
                     {getLanguageDisplayName(languageCode)}
                   </div>
-                  <div className="text-gray-500 text-sm">
-                    {languageCode}
-                  </div>
                 </div>
               </button>
             ))
