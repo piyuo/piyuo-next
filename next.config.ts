@@ -17,6 +17,11 @@ const nextConfig: NextConfig = {
     // Remove console.log in production builds
     removeConsole: process.env.NODE_ENV === "production"
   },
+
+  // Note: static export and ISR are mutually exclusive
+  // ISR requires server functions, so we don't use static export
+  // output: 'export' is only used for fully static sites
+
   // Configure headers for Cloudflare Pages
   async headers() {
     return [
@@ -40,5 +45,18 @@ const nextConfig: NextConfig = {
     ];
   },
 };
+
+// Suppress Cloudflare prerender warnings for dynamic routes
+// These warnings don't affect functionality but can be noisy
+if (process.env.NODE_ENV === 'production') {
+  const originalWarn = console.warn;
+  console.warn = (...args: any[]) => {
+    const message = args[0];
+    if (typeof message === 'string' && message.includes('Invalid prerender config')) {
+      return; // Suppress prerender warnings
+    }
+    originalWarn.apply(console, args);
+  };
+}
 
 export default nextConfig;

@@ -47,6 +47,20 @@ export const metadata: Metadata = {
   },
 };
 
+// Generate static params for priority locales (matching page.tsx)
+export async function generateStaticParams() {
+  const priorityLocales = [
+    'en', 'es', 'fr', 'de', 'zh', 'ja', 'pt', 'ru', 'ar', 'hi', 'it', 'ko'
+  ] as const;
+
+  return priorityLocales.map((locale) => ({
+    locale: locale,
+  }));
+}
+
+// Enable ISR for non-priority locales
+export const dynamicParams = true;
+
 export default async function LocaleLayout({
   children,
   params,
