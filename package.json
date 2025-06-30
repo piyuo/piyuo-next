@@ -2,11 +2,12 @@
   "name": "piyuo-next",
   "version": "1.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
-    "preview": "wrangler pages dev .next --compatibility-date=2024-01-15",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "wrangler pages dev .vercel/output/static --compatibility-date=2024-01-15",
     "deploy": "wrangler pages deploy .next --project-name=piyuo-next",
     "lint": "next lint",
     "test": "jest",
@@ -15,7 +16,6 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "i18n:convert": "node scripts/csv-to-locale.js",
-    "pages:build": "npx @cloudflare/next-on-pages",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
@@ -38,17 +38,26 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
-    "jest": "^30.0.0",
+    "jest": "30.0.3",
     "jest-environment-jsdom": "^30.0.0",
     "only-allow": "^1.2.1",
     "tailwindcss": "^4",
     "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5",
+    "typescript": "5.8.3",
     "wrangler": "^4.22.0"
   },
+  "packageManager": "pnpm@10.12.4",
   "engines": {
-    "pnpm": ">=8.0.0"
+    "node": ">=22",
+    "pnpm": ">=9"
   },
-  "engineStrict": true
+  "engineStrict": true,
+  "x-notes": {
+    "pages:build": "must not changed to `build` as it is required for Cloudflare Pages deployment.",
+    "typescript": "pin to 5.8.3 to avoid minor version surprises across environments.",
+    "jest": "pin to 30.0.3 to avoid minor version surprises across environments.",
+    "node": "Pinned to v22 for long-term LTS support. Consider upgrading to v24 in Oct 2025 when it becomes LTS.",
+    "pnpm": "Using Corepack + pnpm@10.12.4 for consistent builds across dev and CI. run corepack enable | corepack prepare pnpm@10.12.4 --activate to set up."
+  }
 }

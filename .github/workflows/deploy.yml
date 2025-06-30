@@ -19,10 +19,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: ">=8.0.0"
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Use pnpm 10.12.4
+        run: corepack prepare pnpm@10.12.4 --activate
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -48,4 +49,4 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy .vercel/output/static --project-name=piyuo-next --branch=${{ github.ref_name }}
         #env:
-        #NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: ${{ secrets.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID }}
+        #SOME_ENV: ${{ SOME_ENV }}
