@@ -8,7 +8,7 @@ import { GlassContainer } from "../components/GlassContainer";
 import { LinkView } from "../components/LinkView";
 import { ScreenshotPlayer } from "../components/ScreenshotPlayer";
 import { ScreenshotView } from "../components/ScreenshotView";
-import { getTranslator, isSupportedLocale, type SupportedLocale } from "../i18n";
+import { getTranslator, isSupportedLocale, supportedLocales, type SupportedLocale } from "../i18n";
 
 // Enable ISR with 24-hour revalidation
 // Content is typically stable but allows for updates without full rebuilds
@@ -37,28 +37,9 @@ interface Translations {
   privacy: string;
 }
 
-// Generate static params for priority locales only (ISR handles the rest)
-// This balances build performance with coverage for high-traffic languages
+// Generate static params for all supported locales
 export async function generateStaticParams() {
-  // Priority locales for static pre-generation
-  // Based on global web traffic and common business locales
-  const priorityLocales = [
-    'en',    // English (global)
-    'es',    // Spanish (Spain + Latin America)
-    'fr',    // French (France + Canada)
-    'de',    // German (Germany + Austria + Switzerland)
-    'zh',    // Chinese (Traditional)
-    'zh_CN', // Chinese (Simplified)
-    'ja',    // Japanese
-    'pt',    // Portuguese (Brazil + Portugal)
-    'ru',    // Russian
-    'ar',    // Arabic
-    'hi',    // Hindi
-    'it',    // Italian
-    'ko',    // Korean
-  ] as const;
-
-  return priorityLocales.map((locale) => ({
+  return supportedLocales.map((locale) => ({
     locale: locale,
   }));
 }

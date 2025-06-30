@@ -36,10 +36,13 @@ This document outlines the migration from Static Site Generation (SSG) to Increm
   - ✅ Maintained static generation for all locales
   - ✅ Enhanced SEO with server-side rendering
 
-### 3. Internationalization (`app/i18n.ts`)
+### 3. Internationalization & Middleware
 - ✅ Enhanced `getBestMatchingLocale()` to handle Accept-Language headers
 - ✅ Better quality value parsing (e.g., "en-US,en;q=0.9,zh;q=0.8")
 - ✅ Maintained backward compatibility
+- ✅ **BREAKING**: Replaced next-intl middleware with custom lightweight middleware
+- ✅ Custom middleware is fully edge-compatible and Cloudflare Pages optimized
+- ✅ Supports all 83 locales with proper Accept-Language header parsing
 
 ### 4. API Routes
 - ✅ Added `/api/revalidate` for on-demand content updates
