@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
+import GoogleAnalytics from "../components/GoogleAnalytics";
 import "../globals.css";
 import { isSupportedLocale } from "../i18n";
 
@@ -67,6 +68,7 @@ export default async function LocaleLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <GoogleAnalytics />
       </body>
     </html>
   );
