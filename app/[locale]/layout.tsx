@@ -22,44 +22,27 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://piyuo.com'),
-  title: "Piyuo - AI-Powered People Counter",
-  description: "Piyuo is an AI-powered counter app that automatically tracks and counts people using your phone's camera—no internet required.",
-  keywords: ["AI counter", "people counter", "traffic counting", "AI-powered tracking", "offline people counting", "smart counter", "Piyuo app"],
-  authors: [{ name: "Piyuo" }],
+  icons: {
+    icon: '/favicon.png',
+  },
   other: {
     "mobile-web-app-capable": "yes",
-    "apple-mobile-web-app-status-bar-style": "black",
-    "apple-mobile-web-app-title": "Piyuo",
+    "apple-mobile-web-app-title": "piyuo.com",
   },
   openGraph: {
-    title: "Piyuo - AI-Powered People Counter",
-    description: "No more manual counting! Piyuo uses AI and your phone's camera to track and count people automatically—completely offline.",
     url: "https://piyuo.com",
     type: "website",
     images: [
       {
-        url: "/icons/icon.png",
+        url: "/icons/Icon-192.png",
         width: 192,
         height: 192,
-        alt: "Piyuo App Icon",
+        alt: "piyuo.com",
       },
     ],
   },
 };
 
-// Generate static params for priority locales (matching page.tsx)
-export async function generateStaticParams() {
-  const priorityLocales = [
-    'en', 'es', 'fr', 'de', 'zh', 'zh_CN', 'ja', 'pt', 'ru', 'ar', 'hi', 'it', 'ko'
-  ] as const;
-
-  return priorityLocales.map((locale) => ({
-    locale: locale,
-  }));
-}
-
-// Enable ISR for non-priority locales
-export const dynamicParams = true;
 
 export default async function LocaleLayout({
   children,
