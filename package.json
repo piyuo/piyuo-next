@@ -7,8 +7,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "pages:build": "npx @cloudflare/next-on-pages",
-    "preview": "wrangler pages dev .vercel/output/static --compatibility-date=2024-01-15",
-    "deploy": "wrangler pages deploy .next --project-name=piyuo-next",
+    "preview": "wrangler pages dev .vercel/output/static --compatibility-date=2024-01-15  --compatibility-flag=nodejs_compat",
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -54,6 +53,7 @@
   },
   "engineStrict": true,
   "x-notes": {
+    "deploy": "merge release-please branch into main to trigger deployment.",
     "pages:build": "must not changed to `build` as it is required for Cloudflare Pages deployment.",
     "typescript": "pin to 5.8.3 to avoid minor version surprises across environments.",
     "jest": "pin to 30.0.3 to avoid minor version surprises across environments.",
