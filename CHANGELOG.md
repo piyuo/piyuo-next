@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/piyuo/piyuo-next/compare/v1.0.0...v1.1.0) (2025-06-30)
+
+
+### Features
+
+* **main:** add google analytics to the project [#81](https://github.com/piyuo/piyuo-next/issues/81) ([024ace8](https://github.com/piyuo/piyuo-next/commit/024ace83dfd464f18f2bdbe1710eaf4b22aab970))
+
 ## 1.0.0 (2025-06-30)
 
 
