@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 // Generate static params for priority locales (matching page.tsx)
 export async function generateStaticParams() {
   const priorityLocales = [
-    'en', 'es', 'fr', 'de', 'zh', 'ja', 'pt', 'ru', 'ar', 'hi', 'it', 'ko'
+    'en', 'es', 'fr', 'de', 'zh', 'zh_CN', 'ja', 'pt', 'ru', 'ar', 'hi', 'it', 'ko'
   ] as const;
 
   return priorityLocales.map((locale) => ({

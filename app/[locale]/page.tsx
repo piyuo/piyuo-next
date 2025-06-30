@@ -47,7 +47,8 @@ export async function generateStaticParams() {
     'es',    // Spanish (Spain + Latin America)
     'fr',    // French (France + Canada)
     'de',    // German (Germany + Austria + Switzerland)
-    'zh',    // Chinese (Simplified)
+    'zh',    // Chinese (Traditional)
+    'zh_CN', // Chinese (Simplified)
     'ja',    // Japanese
     'pt',    // Portuguese (Brazil + Portugal)
     'ru',    // Russian
