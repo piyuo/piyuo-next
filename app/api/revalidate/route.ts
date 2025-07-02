@@ -1,6 +1,6 @@
 import { revalidatePath } from 'next/cache';
 import { NextRequest, NextResponse } from 'next/server';
-import { supportedLocales } from '../../i18n';
+import { isSupportedLocale, supportedLocales } from '../../i18n';
 
 interface RevalidateRequestBody {
   path?: string;
@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
       // Revalidate specific locales
       const localesToRevalidate = Array.isArray(locales) ? locales : [locales];
       for (const locale of localesToRevalidate) {
-        if (supportedLocales.includes(locale)) {
+        if (isSupportedLocale(locale)) {
           revalidatePath(`/${locale}`);
         }
       }
