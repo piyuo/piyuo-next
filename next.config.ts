@@ -4,10 +4,7 @@ const nextConfig: NextConfig = {
   // Enable ISR and Cloudflare Pages compatibility
   trailingSlash: true,
   images: {
-    // Enable optimized images for Cloudflare
-    formats: ['image/webp', 'image/avif'],
-    deviceSizes: [640, 768, 1024, 1280, 1600],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    unoptimized: true, // <--- Add this line
   },
   experimental: {
     // Enable experimental features for better performance
@@ -18,9 +15,6 @@ const nextConfig: NextConfig = {
     removeConsole: process.env.NODE_ENV === "production"
   },
 
-  // Note: static export and ISR are mutually exclusive
-  // ISR requires server functions, so we don't use static export
-  // output: 'export' is only used for fully static sites
 
   // Configure headers for Cloudflare Pages
   async headers() {
@@ -58,5 +52,10 @@ if (process.env.NODE_ENV === 'production') {
     originalWarn.apply(console, args);
   };
 }
+
+// added by create cloudflare to enable calling `getCloudflareContext()` in `next dev`
+import { initOpenNextCloudflareForDev } from '@opennextjs/cloudflare';
+initOpenNextCloudflareForDev();
+
 
 export default nextConfig;
