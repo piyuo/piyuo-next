@@ -1,19 +1,17 @@
-import { headers } from 'next/headers';
-import { redirect } from 'next/navigation';
-import { getBestMatchingLocale } from './i18n';
-
-// Root page that handles locale detection and redirection
-// Uses server-side redirection for better SEO and performance with ISR
-export default async function RootPage() {
-  // Get headers to detect user's preferred language
-  const headersList = await headers();
-	const acceptLanguage = headersList.get('accept-language') || 'en';
-	console.log('Accept-Language:', acceptLanguage);
-
-  // Detect best matching locale
-  const bestLocale = getBestMatchingLocale(acceptLanguage);
-
-  // Server-side redirect to the best matching locale
-  redirect(`/${bestLocale}/`);
-
+// Root page - now handled by middleware
+// This page should not be reached in normal operation as middleware
+// redirects all root requests to the appropriate locale
+export default function RootPage() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="text-center">
+        <h1 className="text-2xl font-bold text-gray-800 mb-4">
+          Redirecting...
+        </h1>
+        <p className="text-gray-600">
+          If you see this page, please check your locale configuration.
+        </p>
+      </div>
+    </div>
+  );
 }

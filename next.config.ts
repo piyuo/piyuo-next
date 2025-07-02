@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   // Enable ISR and Cloudflare Pages compatibility
   trailingSlash: true,
   images: {
-    unoptimized: true, // <--- Add this line
+    unoptimized: true, // Required for Cloudflare Workers
   },
   experimental: {
     // Enable experimental features for better performance
@@ -15,8 +15,7 @@ const nextConfig: NextConfig = {
     removeConsole: process.env.NODE_ENV === "production"
   },
 
-
-  // Configure headers for Cloudflare Pages
+  // Configure headers for Cloudflare Workers
   async headers() {
     return [
       {
