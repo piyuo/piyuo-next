@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: Deploy to Cloudflare Workers
 
 on:
   push:
@@ -12,9 +12,9 @@ jobs:
     permissions:
       contents: read
       deployments: write
-    name: Deploy to Cloudflare Pages
+    name: Deploy to Cloudflare Workers
     # Only deploy if this is a release commit from release-please
-    if: ${{ contains(github.event.head_commit.message, 'chore(main)') }}
+    #if: ${{ contains(github.event.head_commit.message, 'chore(main)') }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,15 +38,17 @@ jobs:
         run: pnpm test
 
       - name: Build application
-        run: pnpm pages:build
+        run: pnpm workers:build
         env:
           NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: ${{ secrets.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID }}
 
-      - name: Deploy to Cloudflare Pages
+      - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy .vercel/output/static --project-name=piyuo-next --branch=${{ github.ref_name }}
-        #env:
-        #SOME_ENV: ${{ SOME_ENV }}
+          command: deploy
+          workingDirectory: "."
+          wranglerVersion: "3"
+        env:
+          NEXT_PUBLIC_GOOGLE_ANALYTICS_ID: ${{ secrets.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID }}
