@@ -1,0 +1,45 @@
+{
+  "privacy_title": "Sera ya Preifatrwydd ar gyfer Piyuo Counter",
+  "privacy_effective_date": "Dyddiad dod i rym: 12 Ebrill 2025",
+
+  "privacy_introduction_title": "Cyflwyniad",
+  "privacy_introduction_1": "Croeso i Piyuo Counter! Mae'r Polisi Preifatrwydd hwn yn egluro sut rydym yn trin gwybodaeth pan fyddwch yn defnyddio ein rhaglen feddalwedd (\"Ap\"). Ein hymrwymiad yw eich preifatrwydd. Mae'r Ap hwn wedi'i gynllunio i weithio heb gasglu na phrosesu unrhyw ddata personol gennych.",
+  "privacy_introduction_2": "Mae'r Polisi Preifatrwydd hwn yn berthnasol i raglen feddalwedd Piyuo Counter (\"Ap\") ar gyfer dyfeisiau symudol a chyfrifiaduron, sydd ar gael ar wahanol lwyfannau a siopau apiau.",
+
+  "privacy_who_we_are_title": "Pwy ydym ni",
+  "privacy_who_we_are": "Mae'r ap Piyuo Counter yn cael ei ddarparu gan Piyuo (\"ni\", \"ein\" neu \"ein\"). Ein gwefan yw {website}. Os oes gennych gwestiynau am y polisi hwn, gallwch gysylltu â ni yn {email}.",
+
+  "privacy_no_collect_title": "Gwybodaeth nad ydym yn ei chasglu",
+  "privacy_no_collect_intro": "Nid ydym yn casglu, storio, trosglwyddo na phrosesu unrhyw wybodaeth bersonol neu ddata defnydd gennych drwy'r ap Piyuo Counter.",
+  "privacy_no_collect_personal": "Dim data personol: Nid ydym yn gofyn am, cael mynediad at neu olrhain unrhyw wybodaeth a allai eich adnabod, fel eich enw, cyfeiriad e-bost, lleoliad, adnabyddwyr dyfais neu gysylltiadau.",
+  "privacy_no_collect_usage": "Dim data defnydd: Nid yw'r ap yn cofnodi sut rydych yn ei ddefnyddio. Mae'r holl ddata cyfrif rydych yn ei greu yn cael ei storio'n lleol ar eich dyfais yn unig ac nid yw'n hygyrch i ni.",
+  "privacy_no_collect_third_party": "Dim gwasanaethau trydydd parti: Nid ydym yn integreiddio unrhyw wasanaethau trydydd parti ar gyfer dadansoddi (fel Firebase Analytics), hysbysebu (fel AdMob), storio cwmwl neu unrhyw ddiben arall a fyddai'n cynnwys rhannu data gyda phartïon allanol. Mae'r ap yn gweithredu'n gwbl all-lein o ran trin data.",
+
+  "privacy_use_title": "Sut rydym yn defnyddio gwybodaeth",
+  "privacy_use": "Gan nad ydym yn casglu unrhyw wybodaeth, nid ydym yn defnyddio eich gwybodaeth at unrhyw ddiben.",
+
+  "privacy_sharing_title": "Rhannu a datgelu gwybodaeth",
+  "privacy_sharing": "Nid ydym yn rhannu nac yn datgelu unrhyw wybodaeth bersonol oherwydd nad ydym yn casglu dim. Mae eich data (y cyfrif rydych yn eu holrhain) yn aros ar eich dyfais.",
+
+  "privacy_security_title": "Diogelwch data",
+  "privacy_security": "Mae unrhyw ddata a gynhyrchir trwy ddefnyddio'r ap Piyuo Counter (fel eich cyfrif) yn cael ei storio'n lleol ar eich dyfais yn unig. Nid oes gennym fynediad at y data hwn. Er ein bod yn adeiladu ein ap gydag arferion diogelwch safonol, mae diogelwch y data a storir ar eich dyfais yn dibynnu ar y mesurau diogelwch rydych yn eu cymryd ar gyfer y ddyfais ei hun.",
+
+  "privacy_children_title": "Preifatrwydd plant",
+  "privacy_children": "Nid yw ein Ap yn casglu gwybodaeth bersonol gan unrhyw un, gan gynnwys plant. Rydym yn cydymffurfio â Deddf Diogelu Preifatrwydd Plant Ar-lein (COPPA) yn yr UD a rheoliadau tebyg fel GDPR ynghylch data plant. Gan nad ydym yn casglu data, yn gynhenid nid ydym yn casglu data gan blant dan 13 oed (neu 16 oed mewn rhai gwledydd yr UE).",
+
+  "privacy_rights_title": "Eich hawliau (GDPR a chyfreithiau eraill)",
+  "privacy_rights_1": "Mae cyfreithiau preifatrwydd fel y Rheoliad Cyffredinol ar Ddiogelu Data (GDPR) yn Ewrop a chyfreithiau talaith amrywiol yr UD yn rhoi hawliau i unigolion dros eu data personol (fel mynediad, cywiro, dileu).",
+  "privacy_rights_2": "Oherwydd nad yw'r ap Piyuo Counter yn casglu, storio na phrosesu unrhyw o'ch data personol, nid yw'r hawliau hyn yn gyffredinol yn berthnasol yng nghyd-destun ein Ap, gan nad oes data yn cael ei ddal gennym i chi gael mynediad ato, ei gywiro neu ei ddileu. Mae unrhyw ddata sy'n gysylltiedig â'r ap yn bodoli'n unig ar eich dyfais, dan eich rheolaeth.",
+
+  "privacy_changes_title": "Newidiadau i'r Polisi Preifatrwydd hwn",
+  "privacy_changes_1": "Efallai y byddwn yn diweddaru'r Polisi Preifatrwydd hwn o dro i dro. Byddwn yn eich hysbysu am unrhyw newidiadau trwy gyhoeddi'r Polisi Preifatrwydd newydd yn yr Ap neu ar ein gwefan ({website}). Cynghorir eich bod yn adolygu'r Polisi Preifatrwydd hwn yn rheolaidd ar gyfer unrhyw newidiadau.",
+  "privacy_changes_2": "Mae newidiadau i'r Polisi Preifatrwydd hwn yn dod i rym pan gânt eu cyhoeddi ar y dudalen hon.",
+
+  "privacy_contact_title": "Cysylltwch â ni",
+  "privacy_contact_intro": "Os oes gennych unrhyw gwestiynau am y Polisi Preifatrwydd hwn, cysylltwch â ni:",
+  "privacy_contact_email": "Trwy e-bost: {email}",
+  "privacy_contact_website": "Trwy ymweld â'r dudalen hon ar ein gwefan: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com"
+}

@@ -1,0 +1,45 @@
+{
+  "privacy_title": "Política de Privacitat per al Comptador Piyuo",
+  "privacy_effective_date": "Data d'Efectivitat: 12 d'abril de 2025",
+
+  "privacy_introduction_title": "Introducció",
+  "privacy_introduction_1": "Benvinguts al Comptador Piyuo! Aquesta Política de Privacitat explica com gestionem la informació quan utilitzeu la nostra aplicació de programari (\"App\"). El nostre compromís és amb la vostra privacitat. Aquesta App està dissenyada per funcionar sense recopilar o processar cap de les vostres dades personals.",
+  "privacy_introduction_2": "Aquesta Política de Privacitat s'aplica a l'aplicació de programari Comptador Piyuo (\"App\") per a dispositius mòbils i ordinadors, disponible a través de diverses plataformes i botigues d'aplicacions.",
+
+  "privacy_who_we_are_title": "Qui Som",
+  "privacy_who_we_are": "L'aplicació Comptador Piyuo està proporcionada per Piyuo (\"nosaltres,\" \"nos,\" o \"nostre\"). El nostre lloc web és {website}. Si teniu preguntes sobre aquesta política, podeu contactar-nos a {email}.",
+
+  "privacy_no_collect_title": "Informació que No Recollim",
+  "privacy_no_collect_intro": "No recollim, emmagatzemem, transmetem o processem cap informació personal o dades d'ús vostre a través de l'aplicació Comptador Piyuo.",
+  "privacy_no_collect_personal": "Cap Dada Personal: No demanem, accedim o rastregem cap informació que us pugui identificar, com ara el vostre nom, adreça de correu electrònic, ubicació, identificadors de dispositiu o contactes.",
+  "privacy_no_collect_usage": "Cap Dada d'Ús: L'aplicació no registra com la utilitzeu. Totes les dades del comptador que creeu s'emmagatzemen localment només al vostre dispositiu i no són accessibles per a nosaltres.",
+  "privacy_no_collect_third_party": "Cap Servei de Tercers: No integrem cap servei de tercers per a analítiques (com Firebase Analytics), publicitat (com AdMob), emmagatzematge al núvol, o qualsevol altre propòsit que impliqui compartir dades amb parts externes. L'aplicació funciona completament fora de línia en termes de gestió de dades.",
+
+  "privacy_use_title": "Com Utilitzem la Informació",
+  "privacy_use": "Com que no recollim cap informació, no utilitzem la vostra informació per a cap propòsit.",
+
+  "privacy_sharing_title": "Compartició i Divulgació d'Informació",
+  "privacy_sharing": "No compartim ni divulguem cap informació personal perquè no en recollim cap. Les vostres dades (els recomptes que seguiu) es queden al vostre dispositiu.",
+
+  "privacy_security_title": "Seguretat de les Dades",
+  "privacy_security": "Qualsevol dada generada utilitzant l'aplicació Comptador Piyuo (com ara els vostres recomptes) s'emmagatzema localment només al vostre dispositiu. No tenim accés a aquestes dades. Tot i que construïm la nostra aplicació amb pràctiques de seguretat estàndard, la seguretat de les dades emmagatzemades al vostre dispositiu depèn de les mesures de seguretat que preneu per al vostre dispositiu.",
+
+  "privacy_children_title": "Privacitat dels Infants",
+  "privacy_children": "La nostra App no recull informació personal de ningú, incloent-hi els infants. Complim amb la Llei de Protecció de la Privacitat en Línia dels Infants (COPPA) als EUA i regulacions similars com el GDPR respecte a les dades dels infants. Com que no recollim dades, inherentment no recollim dades d'infants menors de 13 anys (o 16 en alguns països de la UE).",
+
+  "privacy_rights_title": "Els Vostres Drets (GDPR i Altres Lleis)",
+  "privacy_rights_1": "Les lleis de privacitat com el Reglament General de Protecció de Dades (GDPR) a Europa i diverses lleis estatals dels EUA concedeixen als individus drets sobre les seves dades personals (com l'accés, correcció, eliminació).",
+  "privacy_rights_2": "Com que l'aplicació Comptador Piyuo no recull, emmagatzema o processa cap de les vostres dades personals, aquests drets generalment no són aplicables en el context de la nostra App, ja que no hi ha dades mantingudes per nosaltres perquè pugueu accedir, corregir o eliminar. Qualsevol dada relacionada amb l'aplicació resideix únicament al vostre dispositiu, sota el vostre control.",
+
+  "privacy_changes_title": "Canvis en Aquesta Política de Privacitat",
+  "privacy_changes_1": "Podem actualitzar aquesta Política de Privacitat de tant en tant. Us notificarem de qualsevol canvi publicant la nova Política de Privacitat dins l'App o al nostre lloc web ({website}). S'aconsella revisar aquesta Política de Privacitat periòdicament per a qualsevol canvi.",
+  "privacy_changes_2": "Els canvis en aquesta Política de Privacitat són efectius quan es publiquen en aquesta pàgina.",
+
+  "privacy_contact_title": "Contacteu-nos",
+  "privacy_contact_intro": "Si teniu preguntes sobre aquesta Política de Privacitat, si us plau contacteu-nos:",
+  "privacy_contact_email": "Per correu electrònic: {email}",
+  "privacy_contact_website": "Visitant aquesta pàgina al nostre lloc web: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com"
+}

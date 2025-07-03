@@ -1,0 +1,69 @@
+{
+  "terms_title": "Piyuo Counter paslaugų teikimo sąlygos",
+  "terms_effective_date": "Įsigaliojimo data: 2025 m. balandžio 12 d.",
+
+  "terms_acceptance_title": "1. Sąlygų priėmimas",
+  "terms_acceptance": "Atsisiųsdami, įdiegdami ar naudodami Piyuo Counter programėlę (\"Paslauga\"), sutinkate laikytis šių Paslaugų teikimo sąlygų (\"Sąlygos\"). Jei nesutinkate su bet kuria šių sąlygų dalimi, negalite naudotis Paslauga.",
+
+  "terms_description_title": "2. Paslaugos aprašymas",
+  "terms_description_1": "Piyuo Counter yra programinės įrangos programa, kuri naudoja jūsų įrenginio kamerą ir kompiuterinio matymo technologiją, kad automatiškai skaičiuotų ir sektų objektus, tokius kaip pėstieji, transporto priemonės ar kiti daiktai realiuoju laiku.",
+  "terms_description_2": "Paslauga veikia visiškai jūsų vietiniame įrenginyje. Mes nerenkame, nesaugome ir neperduodame jokių duomenų iš jūsų programėlės naudojimo.",
+
+  "terms_license_title": "3. Licencija",
+  "terms_license_1": "Laikydamiesi šių Sąlygų, Piyuo suteikia jums ribotą, neišskirtinę, neperduodamą, nesubolicencijuojamą licenciją atsisiųsti, įdiegti ir naudoti Paslaugą tik asmeniniam, nekomerciniam naudojimui.",
+  "terms_license_2": "Ši licencija nesuteikia jums jokių teisių:",
+  "terms_license_reverse": "Atlikti atvirkštinę inžineriją, dekompiliuoti ar išardyti Paslaugą;",
+  "terms_license_distribute": "Platinti, parduoti, nuomoti, skolinti ar kitaip perduoti Paslaugą bet kuriai trečiajai šaliai;",
+  "terms_license_modify": "Keisti, pritaikyti, modifikuoti, versti ar kurti Paslaugos išvestinius darbus;",
+  "terms_license_remove": "Šalinti, keisti ar slėpti bet kokius nuosavybės pranešimus Paslaugoje.",
+
+  "terms_use_title": "4. Priimtinas naudojimas",
+  "terms_use_intro": "Sutinkate naudoti Paslaugą tik teisėtiems tikslams ir laikydamiesi šių Sąlygų. Sutinkate nenaudoti Paslaugos:",
+  "terms_use_illegal": "Bet kokiu būdu, kuris pažeidžia bet kuriuos taikomus federalinius, valstijinius, vietinius ar tarptautinius įstatymus ar reglamentus;",
+  "terms_use_privacy": "Pažeisti kitų privatumo teises ar dalyvauti bet kokioje įstatymo draudžiamoje stebėjimo formoje;",
+  "terms_use_harm": "Bet kokiu būdu, kuris galėtų išjungti, perkrauti, pažeisti ar sutrikdyti Paslaugą;",
+  "terms_use_malware": "Įdiegti bet kokius virusus, trojos arklius, kirminus, logikos bombas ar kitą kenkėjišką ar techniškai žalingą medžiagą.",
+
+  "terms_privacy_title": "5. Privatumas ir duomenys",
+  "terms_privacy_1": "Piyuo Counter programėlė sukurta atsižvelgiant į privatumo aspektus. Programėlė apdoroja vaizdo duomenis vietiškai jūsų įrenginyje objektų aptikimo ir skaičiavimo tikslais.",
+  "terms_privacy_2": "Mes nerenkame, nesaugome, neprieigme ir neperduodame jokios asmeninės informacijos, vaizdo duomenų, skaičiavimo duomenų ar naudojimo duomenų iš programėlės. Visas apdorojimas vyksta vietiškai jūsų įrenginyje.",
+  "terms_privacy_3": "Daugiau informacijos apie mūsų privatumo praktikas rasite mūsų Privatumo politikoje adresu {privacy_link}.",
+
+  "terms_disclaimer_title": "6. Garantijų atsisakymas",
+  "terms_disclaimer_1": "PASLAUGA TEIKIAMA \"KAIP YRA\" IR \"KAIP PRIEINAMA\" BE JOKIŲ GARANTIJŲ. MAKSIMALIU TAIKOMO ĮSTATYMO LEIDIMU PIYUO AIŠKIAI ATSISAKO VISŲ GARANTIJŲ, BŪTŲ JOS TIESIOGIAI IŠREIKŠTOS, NUMANOMAS, ĮSTATYMŲ NUSTATYTOS AR KITOKIOS, SUSIJUSIOS SU PASLAUGA, ĮSKAITANT VISAS NUMANOMAS PREKYBINĖS BŪKLĖS, TINKAMUMO KONKRETAM TIKSLUI, NUOSAVYBĖS TEISĖS IR NEPAŽEIDIMO GARANTIJAS BEI GARANTIJAS, KURIOS GALI KILTI IŠ VERSLO EIGOS, VEIKLOS EIGOS, NAUDOJIMO AR PREKYBOS PRAKTIKOS.",
+  "terms_disclaimer_2": "NERIBOJANT AUKŠČIAU IŠDĖSTYTO, PIYUO NESUTEIKIA JOKIŲ GARANTIJŲ AR ĮSIPAREIGOJIMŲ IR NEDARO JOKIŲ PAREIŠKIMŲ, KAD PASLAUGA ATITIKS JŪSŲ REIKALAVIMUS, PASIEKS BET KOKIUS NUMATYTUS REZULTATUS, BUS SUDERINAMA AR VEIKS SU BET KOKIA KITA PROGRAMINE ĮRANGA, PROGRAMĖLĖMIS, SISTEMOMIS AR PASLAUGOMIS, VEIKS BE PERTRAUKŲ, ATITIKS BET KOKIUS NAŠUMO AR PATIKIMUMO STANDARTUS AR BUS BE KLAIDŲ, ARBA KAD BET KOKIOS KLAIDOS AR TRŪKUMAI GALI BŪTI AR BUS IŠTAISYTI.",
+  "terms_disclaimer_3": "MES NEGARANTUOJAME NAUDOJANT PROGRAMĖLĘ GAUTŲ DUOMENŲ AR REZULTATŲ (PAVYZDŽIUI, PĖSČIŲJŲ SKAIČIAVIMO) TIKSLUMO, IŠSAMUMO AR PATIKIMUMO. PROGRAMĖLĖ YRA ĮRANKIS, O JOS IŠVESTĮ GALI PAVEIKTI ĮVAIRŪS VEIKSNIAI, ĮSKAITANT KAMEROS KOKYBĘ, APŠVIETIMO SĄLYGAS, KLIŪTIS IR ALGORITMO APRIBOJIMUS.",
+
+  "terms_liability_title": "7. Atsakomybės apribojimas",
+  "terms_liability_intro": "MAKSIMALIU TAIKOMO ĮSTATYMO LEIDIMU, JOKIOMIS APLINKYBĖMIS PIYUO, JO FILIALAI, PAREIGŪNAI, DIREKTORIAI, DARBUOTOJAI, AGENTAI, TIEKĖJAI AR LICENCIJŲ DAVĖJAI NEBUS ATSAKINGI UŽ BET KOKIUS NETIESIOGINIUS, ATSITIKTINIUS, SPECIALIUS, PASEKMINIUS AR BAUDŽIAMUOSIUS NUOSTOLIUS, ĮSKAITANT BE APRIBOJIMO PELNO, DUOMENŲ, NAUDOJIMO, PRESTIŽO AR KITŲ NEMATERIALIŲ NUOSTOLIŲ PRARADIMĄ, ATSIRANDANTĮ DĖL:",
+  "terms_liability_access": "Jūsų prieigos ar naudojimo arba negebėjimo prisijungti ar naudotis Paslauga;",
+  "terms_liability_third_party": "Bet kokio trečiosios šalies elgesio ar turinio Paslaugoje;",
+  "terms_liability_content": "Bet kokio iš Paslaugos gauto turinio; ir",
+  "terms_liability_unauthorized": "Neleistinos jūsų perdavimų ar turinio prieigos, naudojimo ar keitimo (nors pažymime, kad Programėlė neperduoda jūsų skaičiavimo duomenų).",
+  "terms_liability_basis": "ŠIS ATSAKOMYBĖS APRIBOJIMAS TAIKOMAS NEPRIKLAUSOMAI NUO TO, AR TEIGIAMA ATSAKOMYBĖ GRINDŽIAMA SUTARTIMI, DELIKTU, APLAIDUMU, GRIEŽTA ATSAKOMYBE AR BET KOKIU KITU PAGRINDU, NET JEI PIYUO BUVO ĮSPĖTAS APIE TOKIŲ NUOSTOLIŲ GALIMYBĘ.",
+  "terms_liability_risk": "PRIPAŽĮSTATE IR SUTINKATE, KAD PASLAUGA TEIKIAMA NEMOKAMAI KAIP ĮRANKIS. PASLAUGĄ NAUDOJATE VISIŠKAI SAVO RIZIKA. PIYUO NEPRISIIMA JOKIOS ATSAKOMYBĖS UŽ BET KOKIUS JŪSŲ ĮRENGINIŲ AR KITOS PROGRAMINĖS ĮRANGOS PAŽEIDIMUS AR BET KOKIAS PASEKMES, ATSIRANDANČIAS DĖL JŪSŲ PASLAUGOS NAUDOJIMO.",
+
+  "terms_support_title": "8. Jokio palaikymo ar priežiūros",
+  "terms_support": "Piyuo Counter teikiamas nemokamai. Mes neturime jokių įsipareigojimų teikti Paslaugos priežiūrą, techninį palaikymą, atnaujinimus ar patobulinimus. Pasiliekame teisę keisti, sustabdyti ar nutraukti, laikinai ar visam laikui, Paslaugą ar bet kurią su ja susijusią paslaugą, pranešdami ar nepranešdami ir be atsakomybės jums.",
+
+  "terms_changes_title": "9. Šių sąlygų keitimai",
+  "terms_changes": "Pasiliekame teisę savo nuožiūra bet kada keisti ar pakeisti šias Sąlygas. Jei pataisymas yra esminis, darysime pagrįstus pastangus pranešti (pvz., per Programėlę ar Svetainėje) prieš įsigaliojant bet kokioms naujoms sąlygoms. Kas sudaro esminį pokytį, bus nustatoma mūsų nuožiūra. Toliau naudodamiesi mūsų Paslauga po šių pataisymų įsigaliojimo, sutinkate laikytis pakeistų sąlygų.",
+
+  "terms_governing_title": "10. Taikomi įstatymai",
+  "terms_governing": "Šios Sąlygos bus valdomos ir aiškinamos pagal Kalifornijos valstijos, Jungtinių Amerikos Valstijų įstatymus, neatsižvelgiant į jos įstatymų kolizijos principus. (Pastaba: Pasitarkite su advokatu, kad patvirtintumėte, ar tai tinkama jums jurisdikcija).",
+
+  "terms_severability_title": "11. Atskyriamumas ir atsisakymas",
+  "terms_severability": "Jei bet kuris šių Sąlygų nuostatas bus laikomas nevykdomu ar negaliojančiu, toks nuostatas bus keičiamas ir aiškinamas siekiant įgyvendinti tokio nuostato tikslus maksimaliu pagal taikomą įstatymą leidimu, o likę nuostatai išliks galioti pilnu tuo. Bet kokio šių Sąlygų termino atsisakymas nebus laikomas tolesniu ar nuolatiniu tokio termino ar bet kokio kito termino atsisasymu.",
+
+  "terms_entire_title": "12. Visas susitarimas",
+  "terms_entire": "Šios Sąlygos kartu su mūsų Privatumo politika (prieinama adresu {privacy_link}) sudaro visą susitarimą tarp jūsų ir Piyuo dėl Paslaugos ir pakeičia visus ankstesnius ir vienaaikščius susitarimus, susitarimus, pareiškimus ir garantijas, tiek rašytinius, tiek žodinius, susijusius su Paslauga.",
+
+  "terms_contact_title": "13. Kontaktinė informacija",
+  "terms_contact_intro": "Jei turite klausimų dėl šių Sąlygų, prašome susisiekti su mumis:",
+  "terms_contact_email": "El. paštu: {email}",
+  "terms_contact_website": "Aplankę šį puslapį mūsų svetainėje: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

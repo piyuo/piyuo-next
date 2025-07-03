@@ -1,0 +1,45 @@
+{
+  "privacy_title": "Piyuo Counter Gizlilik Politikası",
+  "privacy_effective_date": "Yürürlük Tarihi: 12 Nisan 2025",
+
+  "privacy_introduction_title": "Giriş",
+  "privacy_introduction_1": "Piyuo Counter'a hoş geldiniz! Bu Gizlilik Politikası, yazılım uygulamamızı (\"Uygulama\") kullandığınızda bilgileri nasıl ele aldığımızı açıklar. Taahhüdümüz gizliliğinizedir. Bu Uygulama, kişisel verilerinizi toplamadan veya işlemeden çalışacak şekilde tasarlanmıştır.",
+  "privacy_introduction_2": "Bu Gizlilik Politikası, çeşitli platformlarda ve uygulama mağazalarında mevcut olan mobil cihazlar ve bilgisayarlar için Piyuo Counter yazılım uygulaması (\"Uygulama\") için geçerlidir.",
+
+  "privacy_who_we_are_title": "Biz Kimiz",
+  "privacy_who_we_are": "Piyuo Counter uygulaması Piyuo (\"biz\", \"bizim\" veya \"bizimki\") tarafından sağlanmaktadır. Web sitemiz {website}'dir. Bu politika hakkında sorularınız varsa, {email} adresinden bize ulaşabilirsiniz.",
+
+  "privacy_no_collect_title": "Toplamadığımız Bilgiler",
+  "privacy_no_collect_intro": "Piyuo Counter uygulaması aracılığıyla sizden herhangi bir kişisel bilgi veya kullanım verisi toplamıyor, saklamıyor, iletmiyor veya işlemiyoruz.",
+  "privacy_no_collect_personal": "Kişisel Veri Yok: Adınız, e-posta adresiniz, konumunuz, cihaz tanımlayıcıları veya kişileriniz gibi sizi tanımlayabilecek herhangi bir bilgiyi talep etmiyor, bunlara erişmiyor veya izlemiyoruz.",
+  "privacy_no_collect_usage": "Kullanım Verisi Yok: Uygulama nasıl kullandığınızı kaydetmez. Oluşturduğunuz tüm sayaç verileri yalnızca cihazınızda yerel olarak saklanır ve bizim tarafımızdan erişilebilir değildir.",
+  "privacy_no_collect_third_party": "Üçüncü Taraf Hizmetleri Yok: Analitik (Firebase Analytics gibi), reklamcılık (AdMob gibi), bulut depolama veya harici taraflarla veri paylaşımını içerecek başka herhangi bir amaç için herhangi bir üçüncü taraf hizmeti entegre etmiyoruz. Uygulama, veri işleme açısından tamamen çevrimdışı çalışır.",
+
+  "privacy_use_title": "Bilgileri Nasıl Kullanırız",
+  "privacy_use": "Herhangi bir bilgi toplamadığımız için, bilgilerinizi herhangi bir amaçla kullanmıyoruz.",
+
+  "privacy_sharing_title": "Bilgi Paylaşımı ve İfşası",
+  "privacy_sharing": "Herhangi bir kişisel bilgiyi paylaşmıyor veya ifşa etmiyoruz çünkü hiçbirini toplamıyoruz. Verileriniz (izlediğiniz sayımlar) cihazınızda kalır.",
+
+  "privacy_security_title": "Veri Güvenliği",
+  "privacy_security": "Piyuo Counter uygulamasını kullanarak oluşturulan herhangi bir veri (sayımlarınız gibi) yalnızca cihazınızda yerel olarak saklanır. Bu verilere erişimimiz yoktur. Uygulamamızı standart güvenlik uygulamalarıyla geliştirmemize rağmen, cihazınızda saklanan verilerin güvenliği, cihazın kendisi için aldığınız güvenlik önlemlerine bağlıdır.",
+
+  "privacy_children_title": "Çocukların Gizliliği",
+  "privacy_children": "Uygulamamız çocuklar dahil hiç kimseden kişisel bilgi toplamaz. ABD'deki Çocukların Çevrimiçi Gizlilik Koruma Yasası'na (COPPA) ve çocuk verileriyle ilgili GDPR gibi benzer düzenlemelere uyuyoruz. Veri toplamadığımız için, doğal olarak 13 yaşın altındaki (veya bazı AB ülkelerinde 16 yaşın altındaki) çocuklardan veri toplamıyoruz.",
+
+  "privacy_rights_title": "Haklarınız (GDPR ve Diğer Yasalar)",
+  "privacy_rights_1": "Avrupa'daki Genel Veri Koruma Yönetmeliği (GDPR) ve çeşitli ABD eyalet yasaları gibi gizlilik yasaları, bireylere kişisel verileri üzerinde haklar (erişim, düzeltme, silme gibi) verir.",
+  "privacy_rights_2": "Piyuo Counter uygulaması kişisel verilerinizin hiçbirini toplamadığı, saklamadığı veya işlemediği için, bu haklar genellikle Uygulamamız bağlamında geçerli değildir, çünkü erişebileceğiniz, düzeltebileceğiniz veya silebileceğiniz bizim tarafımızdan tutulan veri yoktur. Uygulamayla ilgili herhangi bir veri yalnızca cihazınızda, kontrolünüz altında bulunur.",
+
+  "privacy_changes_title": "Bu Gizlilik Politikasındaki Değişiklikler",
+  "privacy_changes_1": "Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Uygulama içinde veya web sitemizde ({website}) yeni Gizlilik Politikasını yayınlayarak herhangi bir değişikliği size bildireceğiz. Herhangi bir değişiklik için bu Gizlilik Politikasını periyodik olarak gözden geçirmeniz tavsiye edilir.",
+  "privacy_changes_2": "Bu Gizlilik Politikasındaki değişiklikler bu sayfada yayınlandığında yürürlüğe girer.",
+
+  "privacy_contact_title": "Bize Ulaşın",
+  "privacy_contact_intro": "Bu Gizlilik Politikası hakkında herhangi bir sorunuz varsa, lütfen bizimle iletişime geçin:",
+  "privacy_contact_email": "E-posta ile: {email}",
+  "privacy_contact_website": "Web sitemizde bu sayfayı ziyaret ederek: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com"
+}

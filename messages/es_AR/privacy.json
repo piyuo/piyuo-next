@@ -1,0 +1,45 @@
+{
+  "privacy_title": "Política de Privacidad para Piyuo Counter",
+  "privacy_effective_date": "Fecha de vigencia: 12 de abril de 2025",
+
+  "privacy_introduction_title": "Introducción",
+  "privacy_introduction_1": "¡Bienvenido a Piyuo Counter! Esta Política de Privacidad explica cómo manejamos la información cuando utilizás nuestra aplicación de software (\"Aplicación\"). Nuestro compromiso es con tu privacidad. Esta Aplicación está diseñada para funcionar sin recopilar ni procesar ninguno de tus datos personales.",
+  "privacy_introduction_2": "Esta Política de Privacidad se aplica a la aplicación de software Piyuo Counter (\"Aplicación\") para dispositivos móviles y computadoras, disponible en varias plataformas y tiendas de aplicaciones.",
+
+  "privacy_who_we_are_title": "Quiénes somos",
+  "privacy_who_we_are": "La aplicación Piyuo Counter es proporcionada por Piyuo (\"nosotros\", \"nos\" o \"nuestro\"). Nuestro sitio web es {website}. Si tenés preguntas sobre esta política, podés contactarnos en {email}.",
+
+  "privacy_no_collect_title": "Información que no recopilamos",
+  "privacy_no_collect_intro": "No recopilamos, almacenamos, transmitimos ni procesamos ninguna información personal o datos de uso de vos a través de la aplicación Piyuo Counter.",
+  "privacy_no_collect_personal": "Sin datos personales: No solicitamos, accedemos ni rastreamos ninguna información que pueda identificarte, como tu nombre, dirección de correo electrónico, ubicación, identificadores de dispositivo o contactos.",
+  "privacy_no_collect_usage": "Sin datos de uso: La aplicación no registra cómo la utilizás. Todos los datos del contador que creás se almacenan localmente solo en tu dispositivo y no son accesibles para nosotros.",
+  "privacy_no_collect_third_party": "Sin servicios de terceros: No integramos ningún servicio de terceros para análisis (como Firebase Analytics), publicidad (como AdMob), almacenamiento en la nube o cualquier otro propósito que involucre compartir datos con partes externas. La aplicación opera completamente fuera de línea en términos de manejo de datos.",
+
+  "privacy_use_title": "Cómo utilizamos la información",
+  "privacy_use": "Dado que no recopilamos ninguna información, no utilizamos tu información para ningún propósito.",
+
+  "privacy_sharing_title": "Compartir y divulgación de información",
+  "privacy_sharing": "No compartimos ni divulgamos ninguna información personal porque no recopilamos ninguna. Tus datos (los conteos que rastreás) permanecen en tu dispositivo.",
+
+  "privacy_security_title": "Seguridad de datos",
+  "privacy_security": "Cualquier dato generado por el uso de la aplicación Piyuo Counter (como tus conteos) se almacena localmente solo en tu dispositivo. No tenemos acceso a estos datos. Aunque construimos nuestra aplicación con prácticas de seguridad estándar, la seguridad de los datos almacenados en tu dispositivo depende de las medidas de seguridad que tomes para tu dispositivo mismo.",
+
+  "privacy_children_title": "Privacidad de menores",
+  "privacy_children": "Nuestra Aplicación no recopila información personal de nadie, incluidos los menores. Cumplimos con la Ley de Protección de la Privacidad en Línea de los Niños (COPPA) en los EE.UU. y regulaciones similares como GDPR con respecto a los datos de menores. Como no recopilamos datos, inherentemente no recopilamos datos de niños menores de 13 años (o 16 en algunos países de la UE).",
+
+  "privacy_rights_title": "Tus derechos (GDPR y otras leyes)",
+  "privacy_rights_1": "Las leyes de privacidad como el Reglamento General de Protección de Datos (GDPR) en Europa y varias leyes estatales de EE.UU. otorgan a las personas derechos sobre sus datos personales (como acceso, corrección, eliminación).",
+  "privacy_rights_2": "Debido a que la aplicación Piyuo Counter no recopila, almacena ni procesa ninguno de tus datos personales, estos derechos generalmente no son aplicables en el contexto de nuestra Aplicación, ya que no hay datos en nuestro poder para que vos accedas, corrijas o elimines. Cualquier dato relacionado con la aplicación reside únicamente en tu dispositivo, bajo tu control.",
+
+  "privacy_changes_title": "Cambios a esta Política de Privacidad",
+  "privacy_changes_1": "Podemos actualizar esta Política de Privacidad de vez en cuando. Te notificaremos cualquier cambio publicando la nueva Política de Privacidad dentro de la Aplicación o en nuestro sitio web ({website}). Se te aconseja revisar esta Política de Privacidad periódicamente para cualquier cambio.",
+  "privacy_changes_2": "Los cambios a esta Política de Privacidad son efectivos cuando se publican en esta página.",
+
+  "privacy_contact_title": "Contactanos",
+  "privacy_contact_intro": "Si tenés alguna pregunta sobre esta Política de Privacidad, por favor contactanos:",
+  "privacy_contact_email": "Por correo electrónico: {email}",
+  "privacy_contact_website": "Visitando esta página en nuestro sitio web: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com"
+}

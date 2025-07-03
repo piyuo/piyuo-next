@@ -1,0 +1,69 @@
+{
+  "terms_title": "Podmínky služby pro Piyuo Counter",
+  "terms_effective_date": "Datum účinnosti: 12. dubna 2025",
+
+  "terms_acceptance_title": "1. Přijetí podmínek",
+  "terms_acceptance": "Stažením, instalací nebo používáním aplikace Piyuo Counter (\"Služba\") souhlasíte s tím, že budete vázáni těmito Podmínkami služby (\"Podmínky\"). Pokud s jakoukoli částí těchto podmínek nesouhlasíte, nesmíte přistupovat ke Službě.",
+
+  "terms_description_title": "2. Popis služby",
+  "terms_description_1": "Piyuo Counter je softwarová aplikace, která používá kameru vašeho zařízení a technologii počítačového vidění k automatickému počítání a sledování objektů, jako jsou chodci, vozidla nebo jiné předměty v reálném čase.",
+  "terms_description_2": "Služba funguje zcela na vašem místním zařízení. Neshromažďujeme, neukládáme ani nepřenášíme žádná data z vašeho používání aplikace.",
+
+  "terms_license_title": "3. Licence",
+  "terms_license_1": "Za podmínky vašeho dodržování těchto Podmínek vám Piyuo uděluje omezenou, nevýhradní, nepřenosnou, nesublicencovatelnou licenci ke stažení, instalaci a používání Služby pouze pro vaše osobní, nekomerční použití.",
+  "terms_license_2": "Tato licence vám neuděluje žádná práva:",
+  "terms_license_reverse": "Provádět reverzní inženýrství, dekompilovat nebo demontovat Službu;",
+  "terms_license_distribute": "Distribuovat, prodávat, pronajímat, půjčovat nebo jinak převádět Službu jakékoli třetí straně;",
+  "terms_license_modify": "Upravovat, přizpůsobovat, měnit, překládat nebo vytvářet odvozená díla Služby;",
+  "terms_license_remove": "Odstraňovat, měnit nebo zakrývat jakékoli oznámení o vlastnictví ve Službě.",
+
+  "terms_use_title": "4. Přijatelné používání",
+  "terms_use_intro": "Souhlasíte s používáním Služby pouze pro zákonné účely a v souladu s těmito Podmínkami. Souhlasíte s tím, že nebudete používat Službu:",
+  "terms_use_illegal": "Jakýmkoli způsobem, který porušuje jakýkoli platný federální, státní, místní nebo mezinárodní zákon nebo nařízení;",
+  "terms_use_privacy": "K porušování práv na soukromí ostatních nebo k účasti v jakékoli formě sledování, která je zakázána zákonem;",
+  "terms_use_harm": "Jakýmkoli způsobem, který by mohl deaktivovat, přetížit, poškodit nebo zhoršit Službu;",
+  "terms_use_malware": "K zavádění jakýchkoli virů, trojských koní, červů, logických bomb nebo jiného materiálu, který je škodlivý nebo technologicky škodlivý.",
+
+  "terms_privacy_title": "5. Soukromí a data",
+  "terms_privacy_1": "Aplikace Piyuo Counter je navržena s ohledem na soukromí. Aplikace zpracovává video data lokálně na vašem zařízení pro účely detekce a počítání objektů.",
+  "terms_privacy_2": "Neshromažďujeme, neukládáme, nepřistupujeme ani nepřenášíme žádné osobní údaje, video data, data počítání nebo data o používání z aplikace. Veškeré zpracování probíhá lokálně na vašem zařízení.",
+  "terms_privacy_3": "Pro více podrobností o našich postupech týkajících se soukromí si prosím přečtěte naše Zásady ochrany osobních údajů na {privacy_link}.",
+
+  "terms_disclaimer_title": "6. Vyloučení záruk",
+  "terms_disclaimer_1": "SLUŽBA JE POSKYTOVÁNA \"JAK JE\" A \"JAK JE DOSTUPNÁ\" BEZ ZÁRUKY JAKÉHOKOLI DRUHU. V MAXIMÁLNÍM ROZSAHU POVOLENÉM PLATNÝM PRÁVEM PIYUO VÝSLOVNĚ VYLUČUJE VŠECHNY ZÁRUKY, AŤ UŽ VÝSLOVNÉ, PŘEDPOKLÁDANÉ, ZÁKONNÉ NEBO JINÉ, TÝKAJÍCÍ SE SLUŽBY, VČETNĚ VŠECH PŘEDPOKLÁDANÝCH ZÁRUK PRODEJNOSTI, VHODNOSTI PRO KONKRÉTNÍ ÚČEL, VLASTNICTVÍ A NEPORUŠENÍ.",
+  "terms_disclaimer_2": "BEZ OMEZENÍ VÝŠE UVEDENÉHO PIYUO NEPOSKYTUJE ŽÁDNOU ZÁRUKU NEBO ZÁVAZEK A NEDĚLÁ ŽÁDNÉ PROHLÁŠENÍ JAKÉHOKOLI DRUHU, ŽE SLUŽBA SPLNÍ VAŠE POŽADAVKY, DOSÁHNE JAKÝCHKOLI ZAMÝŠLENÝCH VÝSLEDKŮ, BUDE KOMPATIBILNÍ NEBO BUDE FUNGOVAT S JAKÝMKOLI JINÝM SOFTWAREM, APLIKACEMI, SYSTÉMY NEBO SLUŽBAMI.",
+  "terms_disclaimer_3": "NEZARUČUJEME PŘESNOST, ÚPLNOST NEBO SPOLEHLIVOST JAKÝCHKOLI DAT NEBO VÝSLEDKŮ ZÍSKANÝCH PROSTŘEDNICTVÍM POUŽÍVÁNÍ APLIKACE (JAKO JSOU POČTY CHODCŮ). APLIKACE JE NÁSTROJ A JEJÍ VÝSTUP MŮŽE BÝT OVLIVNĚN RŮZNÝMI FAKTORY VČETNĚ KVALITY KAMERY, SVĚTELNÝCH PODMÍNEK, PŘEKÁŽEK A OMEZENÍ ALGORITMU.",
+
+  "terms_liability_title": "7. Omezení odpovědnosti",
+  "terms_liability_intro": "V PLNÉM ROZSAHU POVOLENÉM PLATNÝM PRÁVEM V ŽÁDNÉM PŘÍPADĚ NEBUDOU PIYUO, JEJÍ PŘIDRUŽENÉ SPOLEČNOSTI, FUNKCIONÁŘI, ŘEDITELÉ, ZAMĚSTNANCI, ZÁSTUPCI, DODAVATELÉ NEBO POSKYTOVATELÉ LICENCÍ ODPOVĚDNI ZA JAKÉKOLI NEPŘÍMÉ, NÁHODNÉ, SPECIÁLNÍ, NÁSLEDNÉ NEBO TRESTNÍ ŠKODY, VČETNĚ BEZ OMEZENÍ, ZTRÁTY ZISKU, DAT, POUŽÍVÁNÍ, OBCHODNÍHO JMÉNA NEBO JINÝCH NEHMOTNÝCH ZTRÁT, VYPLÝVAJÍCÍCH Z:",
+  "terms_liability_access": "Vašeho přístupu ke Službě nebo jejího používání nebo neschopnosti přistupovat ke Službě nebo ji používat;",
+  "terms_liability_third_party": "Jakéhokoli chování nebo obsahu jakékoli třetí strany ve Službě;",
+  "terms_liability_content": "Jakéhokoli obsahu získaného ze Služby; a",
+  "terms_liability_unauthorized": "Neoprávněného přístupu, používání nebo změny vašich přenosů nebo obsahu (i když poznamenáváme, že Aplikace nepřenáší vaše data počítání).",
+  "terms_liability_basis": "TOTO OMEZENÍ ODPOVĚDNOSTI SE VZTAHUJE BEZ OHLEDU NA TO, ZDA JE ÚDAJNÁ ODPOVĚDNOST ZALOŽENA NA SMLOUVĚ, DELIKTU, NEDBALOSTI, PŘÍSNÉ ODPOVĚDNOSTI NEBO JAKÉMKOLI JINÉM ZÁKLADĚ, I KDYŽ BYLO PIYUO UPOZORNĚNO NA MOŽNOST TAKOVÉ ŠKODY.",
+  "terms_liability_risk": "UZNÁVÁTE A SOUHLASÍTE S TÍM, ŽE SLUŽBA JE POSKYTOVÁNA ZDARMA JAKO NÁSTROJ. POUŽÍVÁTE SLUŽBU ZCELA NA VLASTNÍ RIZIKO. PIYUO NEPŘEBÍRÁ ŽÁDNOU ODPOVĚDNOST ZA JAKÉKOLI POŠKOZENÍ VAŠEHO ZAŘÍZENÍ (ZAŘÍZENÍ) NEBO JINÉHO SOFTWARU NEBO JAKÉKOLI DŮSLEDKY VYPLÝVAJÍCÍ Z VAŠEHO POUŽÍVÁNÍ SLUŽBY.",
+
+  "terms_support_title": "8. Žádná podpora nebo údržba",
+  "terms_support": "Piyuo Counter je poskytován zdarma. Nejsme povinni poskytovat údržbu, technickou podporu, aktualizace nebo vylepšení pro Službu. Vyhrazujeme si právo upravit, pozastavit nebo ukončit, dočasně nebo trvale, Službu nebo jakoukoli službu, ke které se připojuje, s oznámením nebo bez něj a bez odpovědnosti vůči vám.",
+
+  "terms_changes_title": "9. Změny těchto podmínek",
+  "terms_changes": "Vyhrazujeme si právo podle našeho výhradního uvážení upravit nebo nahradit tyto Podmínky kdykoli. Pokud je revize podstatná, vyvineme přiměřené úsilí k poskytnutí oznámení (např. prostřednictvím Aplikace nebo na Webových stránkách) před tím, než jakékoli nové podmínky vstoupí v platnost. Co představuje podstatnou změnu, bude určeno podle našeho výhradního uvážení.",
+
+  "terms_governing_title": "10. Rozhodné právo",
+  "terms_governing": "Tyto Podmínky se budou řídit a vykládat v souladu se zákony státu Kalifornie, Spojené státy americké, bez ohledu na jeho principy kolize zákonů. (Poznámka: Poraďte se s právníkem, abyste potvrdili, zda se jedná o vhodnou jurisdikci pro vás).",
+
+  "terms_severability_title": "11. Dělitelnost a vzdání se práva",
+  "terms_severability": "Pokud bude jakékoli ustanovení těchto Podmínek považováno za nevymahatelné nebo neplatné, takové ustanovení bude změněno a vykládáno tak, aby dosáhlo cílů takového ustanovení v největší možné míře podle platného práva, a zbývající ustanovení budou nadále platit v plné síle.",
+
+  "terms_entire_title": "12. Celá dohoda",
+  "terms_entire": "Tyto Podmínky spolu s našimi Zásadami ochrany osobních údajů (dostupnými na {privacy_link}) tvoří celou dohodu mezi vámi a Piyuo týkající se Služby a nahrazují všechna předchozí a současná porozumění, dohody, prohlášení a záruky, písemné i ústní, týkající se Služby.",
+
+  "terms_contact_title": "13. Kontaktní informace",
+  "terms_contact_intro": "Pokud máte jakékoli otázky ohledně těchto Podmínek, kontaktujte nás:",
+  "terms_contact_email": "E-mailem: {email}",
+  "terms_contact_website": "Navštívením této stránky na našich webových stránkách: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

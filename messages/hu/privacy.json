@@ -1,0 +1,45 @@
+{
+  "privacy_title": "Adatvédelmi Irányelvek a Piyuo Counter alkalmazáshoz",
+  "privacy_effective_date": "Hatálybalépés dátuma: 2025. április 12.",
+
+  "privacy_introduction_title": "Bevezetés",
+  "privacy_introduction_1": "Üdvözöljük a Piyuo Counter alkalmazásban! Ez az Adatvédelmi Irányelv elmagyarázza, hogyan kezeljük az információkat, amikor a szoftver alkalmazásunkat (\"Alkalmazás\") használja. Elkötelezettek vagyunk az Ön adatvédelme iránt. Ez az Alkalmazás úgy lett tervezve, hogy az Ön személyes adatainak gyűjtése vagy feldolgozása nélkül működjön.",
+  "privacy_introduction_2": "Ez az Adatvédelmi Irányelv a mobil eszközökre és számítógépekre szánt Piyuo Counter szoftver alkalmazásra (\"Alkalmazás\") vonatkozik, amely különböző platformokon és alkalmazásboltokban elérhető.",
+
+  "privacy_who_we_are_title": "Kik vagyunk",
+  "privacy_who_we_are": "A Piyuo Counter alkalmazást a Piyuo (\"mi\", \"miénk\" vagy \"cégünk\") biztosítja. Weboldalunk: {website}. Ha kérdései vannak ezzel a szabályzattal kapcsolatban, kapcsolatba léphet velünk a {email} címen.",
+
+  "privacy_no_collect_title": "Információk, amelyeket nem gyűjtünk",
+  "privacy_no_collect_intro": "Nem gyűjtünk, tárolunk, továbbítunk vagy dolgozunk fel semmilyen személyes információt vagy használati adatot Öntől a Piyuo Counter alkalmazáson keresztül.",
+  "privacy_no_collect_personal": "Nincsenek személyes adatok: Nem kérünk, nem férünk hozzá és nem követünk olyan információkat, amelyek azonosíthatnák Önt, mint például a neve, e-mail címe, helye, eszközazonosítók vagy kapcsolatok.",
+  "privacy_no_collect_usage": "Nincsenek használati adatok: Az alkalmazás nem rögzíti, hogyan használja. Az összes számláló adat, amelyet létrehoz, csak helyileg tárolódik az eszközén, és számunkra nem hozzáférhető.",
+  "privacy_no_collect_third_party": "Nincsenek harmadik fél szolgáltatások: Nem integrálunk harmadik fél szolgáltatásokat elemzésekhez (mint a Firebase Analytics), hirdetésekhez (mint az AdMob), felhő tároláshoz vagy bármely más célra, amely külső felekkel való adatmegosztást foglalna magában. Az alkalmazás az adatkezelés tekintetében teljesen offline működik.",
+
+  "privacy_use_title": "Hogyan használjuk az információkat",
+  "privacy_use": "Mivel nem gyűjtünk semmilyen információt, nem használjuk az Ön információit semmilyen célra.",
+
+  "privacy_sharing_title": "Információk megosztása és közzététele",
+  "privacy_sharing": "Nem osztunk meg vagy teszünk közzé személyes információkat, mert nem gyűjtünk ilyeneket. Az Ön adatai (a számlálások, amelyeket követ) az eszközén maradnak.",
+
+  "privacy_security_title": "Adatbiztonság",
+  "privacy_security": "A Piyuo Counter alkalmazás használatával generált bármilyen adat (mint például a számlálásai) csak helyileg tárolódik az eszközén. Nem férünk hozzá ezekhez az adatokhoz. Bár standard biztonsági gyakorlatokkal építjük az alkalmazásunkat, az eszközén tárolt adatok biztonsága az eszköz számára tett biztonsági intézkedésektől függ.",
+
+  "privacy_children_title": "Gyermekek adatvédelme",
+  "privacy_children": "Alkalmazásunk nem gyűjt személyes információkat senkitől, beleértve a gyermekeket is. Betartjuk az Egyesült Államok Gyermekek Online Adatvédelmi Törvényét (COPPA) és hasonló szabályozásokat, mint a GDPR a gyermekek adataival kapcsolatban. Mivel nem gyűjtünk adatokat, jellegzetesen nem gyűjtünk adatokat 13 év alatti gyermekektől (vagy 16 év alatti gyermekektől egyes EU országokban).",
+
+  "privacy_rights_title": "Az Ön jogai (GDPR és egyéb törvények)",
+  "privacy_rights_1": "Az adatvédelmi törvények, mint az Európai Általános Adatvédelmi Rendelet (GDPR) és különböző amerikai állami törvények jogokat biztosítanak az egyéneknek a személyes adataik felett (mint hozzáférés, javítás, törlés).",
+  "privacy_rights_2": "Mivel a Piyuo Counter alkalmazás nem gyűjt, tárol vagy dolgoz fel semmilyen személyes adatot, ezek a jogok általában nem alkalmazhatók alkalmazásunk kontextusában, mivel nincsenek általunk tárolt adatok, amelyekhez hozzáférhetne, javíthatna vagy törölhetne. Az alkalmazáshoz kapcsolódó bármilyen adat kizárólag az eszközén található, az Ön irányítása alatt.",
+
+  "privacy_changes_title": "Változások ebben az Adatvédelmi Irányelvben",
+  "privacy_changes_1": "Időről időre frissíthetjük ezt az Adatvédelmi Irányelvet. Értesíteni fogjuk Önt bármilyen változásról az új Adatvédelmi Irányelv közzétételével az Alkalmazásban vagy weboldalunkon ({website}). Javasoljuk, hogy rendszeresen tekintse át ezt az Adatvédelmi Irányelvet bármilyen változás miatt.",
+  "privacy_changes_2": "Az Adatvédelmi Irányelvben bekövetkező változások akkor lépnek hatályba, amikor közzétesszük őket ezen az oldalon.",
+
+  "privacy_contact_title": "Kapcsolat",
+  "privacy_contact_intro": "Ha bármilyen kérdése van ezzel az Adatvédelmi Irányelvvel kapcsolatban, kérjük, lépjen kapcsolatba velünk:",
+  "privacy_contact_email": "E-mailben: {email}",
+  "privacy_contact_website": "Az oldal meglátogatásával weboldalunkon: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com"
+}

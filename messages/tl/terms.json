@@ -1,0 +1,69 @@
+{
+  "terms_title": "Mga Tuntunin ng Serbisyo para sa Piyuo Counter",
+  "terms_effective_date": "Petsa ng Pagkakaepekto: Abril 12, 2025",
+
+  "terms_acceptance_title": "1. Pagtanggap ng mga Tuntunin",
+  "terms_acceptance": "Sa pag-download, pag-install, o paggamit ng Piyuo Counter app (\"Serbisyo\"), ikaw ay sumasang-ayon na maging nakatali sa mga Tuntunin ng Serbisyong ito (\"Mga Tuntunin\"). Kung hindi ka sumasang-ayon sa kahit anong bahagi ng mga tuntuning ito, hindi ka maaaring mag-access sa Serbisyo.",
+
+  "terms_description_title": "2. Paglalarawan ng Serbisyo",
+  "terms_description_1": "Ang Piyuo Counter ay isang software application na gumagamit ng camera ng inyong device at computer vision technology para sa awtomatikong pagbibilang at pagsubaybay sa mga bagay tulad ng mga naglalakad, sasakyan, o iba pang mga item sa real-time.",
+  "terms_description_2": "Ang Serbisyo ay tumutupad nang buo sa inyong lokal na device. Hindi namin kinokolekta, nag-iimbak, o naglilipat ng anumang data mula sa inyong paggamit ng app.",
+
+  "terms_license_title": "3. Lisensya",
+  "terms_license_1": "Sa pag-sunod ninyo sa mga Tuntuning ito, binibigyan kayo ng Piyuo ng limitadong, hindi-eksklusibong, hindi-maaaring-malipat, hindi-maaaring-sublisensya na lisensya para i-download, i-install, at gamitin ang Serbisyo nang eksklusibo para sa inyong personal, hindi-komersyal na paggamit.",
+  "terms_license_2": "Ang lisensyang ito ay hindi nagbibigay sa inyo ng anumang mga karapatan sa:",
+  "terms_license_reverse": "Reverse engineer, i-decompile, o i-disassemble ang Serbisyo;",
+  "terms_license_distribute": "Ipamahagi, ibenta, i-lease, i-rent, magpahiram, o kung paanong-mang paraan ay ilipat ang Serbisyo sa kahit anong third party;",
+  "terms_license_modify": "Baguhin, i-adapt, i-alter, isalin, o lumikha ng mga derivative works ng Serbisyo;",
+  "terms_license_remove": "Alisin, baguhin, o itago ang anumang mga proprietary notices sa Serbisyo.",
+
+  "terms_use_title": "4. Katanggap-tanggap na Paggamit",
+  "terms_use_intro": "Sumasang-ayon kayo na gamitin ang Serbisyo lamang para sa mga layuning legal at naaayon sa mga Tuntuning ito. Sumasang-ayon kayo na hindi gamitin ang Serbisyo:",
+  "terms_use_illegal": "Sa anumang paraan na lumalabag sa anumang naaangkop na federal, state, lokal, o internasyonal na batas o regulasyon;",
+  "terms_use_privacy": "Para labaging ang mga karapatan sa privacy ng iba o makisali sa anumang uri ng surveillance na ipinagbabawal ng batas;",
+  "terms_use_harm": "Sa anumang paraan na maaaring mag-disable, mag-overburden, makapinsala, o makasama sa Serbisyo;",
+  "terms_use_malware": "Para magpasok ng anumang mga virus, trojan horses, worms, logic bombs, o iba pang material na nakakasamang o teknolohiyang nakakasama.",
+
+  "terms_privacy_title": "5. Privacy at Data",
+  "terms_privacy_1": "Ang Piyuo Counter app ay dinisenyo na nasa isip ang privacy. Ang app ay nagpo-proseso ng video data nang lokal sa inyong device para sa mga layunin ng object detection at pagbibilang.",
+  "terms_privacy_2": "Hindi namin kinokolekta, nag-iimbak, naa-access, o naglilipat ng anumang personal na impormasyon, video data, counting data, o usage data mula sa app. Lahat ng processing ay nangyayari nang lokal sa inyong device.",
+  "terms_privacy_3": "Para sa mga detalye tungkol sa aming mga privacy practices, mangyaring suriin ang aming Privacy Policy sa {privacy_link}.",
+
+  "terms_disclaimer_title": "6. Disclaimer ng mga Warranty",
+  "terms_disclaimer_1": "ANG SERBISYO AY IBINIBIGAY \"AS IS\" AT \"AS AVAILABLE\" NANG WALANG WARRANTY NG ANUMANG URI. SA PINAKAMALAKING LAWAK NA PINAPAHINTULUTAN NG NAAANGKOP NA BATAS, TAHASANG TUMUTUOL ANG PIYUO SA LAHAT NG MGA WARRANTY, MAGING HAYAGAN, IMPLIED, STATUTORY O IBA PA, TUNGKOL SA SERBISYO, KASAMA ANG LAHAT NG IMPLIED WARRANTIES NG MERCHANTABILITY, FITNESS PARA SA ISANG PARTIKULAR NA LAYUNIN, TITLE AT NON-INFRINGEMENT, AT MGA WARRANTIES NA MAAARING LUMABAS MULA SA COURSE OF DEALING, COURSE OF PERFORMANCE, USAGE O TRADE PRACTICE.",
+  "terms_disclaimer_2": "NANG WALANG LIMITASYON SA NABANGGIT, ANG PIYUO AY HINDI NAGBIBIGAY NG ANUMANG WARRANTY O OBLIGASYON, AT HINDI GUMAGAWA NG ANUMANG REPRESENTASYON NA ANG SERBISYO AY MATUTUGUNAN ANG INYONG MGA REQUIREMENT, MAKAKAMIT ANG ANUMANG INTENDED RESULTS, MAGING COMPATIBLE O GAGANA SA IBANG SOFTWARE, APPLICATIONS, SYSTEMS O SERVICES, GAGANA NANG WALANG INTERRUPTION, MATUTUGUNAN ANG PERFORMANCE O RELIABILITY STANDARDS, O MAGING ERROR-FREE, O NA ANG ANUMANG MGA ERROR O DEFECTS AY MAAARI O MATATAMA.",
+  "terms_disclaimer_3": "HINDI NAMIN GINAGARANTIYA ANG ACCURACY, COMPLETENESS O RELIABILITY NG ANUMANG DATA O RESULTS NA NAKUHA SA PAMAMAGITAN NG PAGGAMIT NG APP (TULAD NG MGA PEDESTRIAN COUNTS). ANG APP AY ISANG TOOL, AT ANG OUTPUTS NITO AY MAAARING MAAPEKTUHAN NG IBA'T IBANG FACTORS KASAMA ANG CAMERA QUALITY, LIGHTING CONDITIONS, OBSTRUCTIONS, AT MGA LIMITATIONS NG ALGORITHM.",
+
+  "terms_liability_title": "7. Limitasyon ng Liability",
+  "terms_liability_intro": "SA BUONG LAWAK NA PINAPAHINTULUTAN NG NAAANGKOP NA BATAS, SA WALANG PANGYAYARI AY MAGING LIABLE ANG PIYUO, ANG MGA AFFILIATES NITO, OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, SUPPLIERS O LICENSORS PARA SA ANUMANG INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL O PUNITIVE DAMAGES, KASAMA NANG WALANG LIMITASYON ANG PAGKALUGI NG PROFITS, DATA, USE, GOODWILL O IBANG INTANGIBLE LOSSES, NA NAGRERESULTA MULA SA:",
+  "terms_liability_access": "Inyong pag-access o paggamit o hindi pagkaka-access o paggamit sa Serbisyo;",
+  "terms_liability_third_party": "Anumang conduct o content ng anumang third party sa Serbisyo;",
+  "terms_liability_content": "Anumang content na nakuha mula sa Serbisyo; at",
+  "terms_liability_unauthorized": "Unauthorized access, use, o alteration ng inyong mga transmissions o content (bagama't nabanggit namin na ang App ay hindi naglilipat ng inyong count data).",
+  "terms_liability_basis": "ANG LIMITASYON NG LIABILITY NA ITO AY NAAANGKOP MAGING ANG ALLEGED LIABILITY AY NAKABATAY SA CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, O ANUMANG IBANG BATAYAN, KAHIT PA MAN NA NADVICE ANG PIYUO SA POSIBILIDAD NG GANITONG DAMAGE.",
+  "terms_liability_risk": "KINIKILALA AT SUMASANG-AYON KAYO NA ANG SERBISYO AY IBINIBIGAY NANG LIBRE BILANG ISANG TOOL. GINAGAMIT NINYO ANG SERBISYO SA INYONG SARILING PANGANIB. ANG PIYUO AY HINDI TUMUTULONG NG ANUMANG RESPONSIBILIDAD O LIABILITY PARA SA ANUMANG DAMAGE SA INYONG DEVICE(S) O IBANG SOFTWARE, O ANUMANG CONSEQUENCES NA LUMALABAS MULA SA INYONG PAGGAMIT NG SERBISYO.",
+
+  "terms_support_title": "8. Walang Support o Maintenance",
+  "terms_support": "Ang Piyuo Counter ay ibinibigay nang libre. Wala kaming obligasyon na magbigay ng maintenance, technical support, updates, o upgrades para sa Serbisyo. Naglalaan kami ng karapatan na baguhin, i-suspend, o i-discontinue, pansamantala o permanente, ang Serbisyo o anumang serbisyo na konektado dito, na may o walang notice at walang liability sa inyo.",
+
+  "terms_changes_title": "9. Mga Pagbabago sa mga Tuntuning Ito",
+  "terms_changes": "Naglalaan kami ng karapatan, sa aming sariling discretion, na baguhin o palitan ang mga Tuntuning ito anumang oras. Kung ang revision ay material, gagawa kami ng makatwirang pagsisikap na magbigay ng notice (halimbawa, sa pamamagitan ng App o sa Website) bago maging epektibo ang anumang bagong mga tuntunin. Ang bumubuo ng material change ay matutukoy sa aming sariling discretion. Sa patuloy na pag-access o paggamit ng aming Serbisyo pagkatapos maging epektibo ng mga revision na ito, sumasang-ayon kayo na maging nakatali sa mga revised na tuntunin.",
+
+  "terms_governing_title": "10. Governing Law",
+  "terms_governing": "Ang mga Tuntuning ito ay papamahalaan at bibigyang-kahulugan ayon sa mga batas ng State of California, United States, nang hindi pinapansin ang mga prinsipyo ng conflict of law nito. (Note: Sumangguni sa isang abogado para kumpirmahin kung ito ang tamang jurisdiction para sa inyo).",
+
+  "terms_severability_title": "11. Severability at Waiver",
+  "terms_severability": "Kung ang anumang probisyon ng mga Tuntuning ito ay ituring na hindi-maipapaatupad o hindi-wasto, ang probisyong iyon ay babaguhin at bibigyang-kahulugan para makamit ang mga layunin ng ganitong probisyon sa pinakamalaking posibleng lawak sa ilalim ng naaangkop na batas, at ang mga natitirang probisyon ay magpapatuloy sa buong lakas at epekto. Walang waiver ng anumang term ng mga Tuntuning ito ay ituturing na karagdagang o patuloy na waiver ng ganitong term o anumang ibang term.",
+
+  "terms_entire_title": "12. Buong Agreement",
+  "terms_entire": "Ang mga Tuntuning ito, kasama ang aming Privacy Policy (available sa {privacy_link}), ay bumubuo ng buong agreement sa pagitan ninyo at ng Piyuo tungkol sa Serbisyo at pinapalitan ang lahat ng mga nakaraang at kasabay na mga pagkakaintindi, agreements, representations at warranties, parehong nakasulat at verbal, tungkol sa Serbisyo.",
+
+  "terms_contact_title": "13. Contact Information",
+  "terms_contact_intro": "Kung mayroon kayong mga tanong tungkol sa mga Tuntuning ito, mangyaring makipag-ugnayan sa amin:",
+  "terms_contact_email": "Sa pamamagitan ng email: {email}",
+  "terms_contact_website": "Sa pagbisita sa page na ito sa aming website: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

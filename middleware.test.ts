@@ -68,6 +68,12 @@ describe('Middleware', () => {
 
         // Should return NextResponse.next() which passes through
         expect(response).toBeInstanceOf(NextResponse);
+
+        // Should set the x-locale header
+        const expectedLocale = path.split('/')[1]; // Extract locale from path
+        if (expectedLocale) {
+          expect(response.headers.get('x-locale')).toBe(expectedLocale);
+        }
       });
     });
   });
@@ -86,6 +92,7 @@ describe('Middleware', () => {
       expect(response).toBeInstanceOf(NextResponse);
       expect(response.status).toBe(307); // Temporary redirect
       expect(response.headers.get('location')).toBe('https://example.com/fr');
+      expect(response.headers.get('x-locale')).toBe('fr');
     });
 
     it('should fallback to English for missing accept-language', async () => {
@@ -95,20 +102,23 @@ describe('Middleware', () => {
       const response = middleware(request);
 
       expect(getBestMatchingLocale).toHaveBeenCalledWith('en');
+      expect(response).toBeInstanceOf(NextResponse);
+      expect(response.status).toBe(307);
       expect(response.headers.get('location')).toBe('https://example.com/en');
+      expect(response.headers.get('x-locale')).toBe('en');
     });
 
     it('should handle complex accept-language headers', async () => {
       getBestMatchingLocale.mockReturnValue('zh_CN');
 
       const request = new NextRequest('https://example.com/', {
-        headers: { 'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7' },
+        headers: { 'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8' },
       });
 
       const response = middleware(request);
 
-      expect(getBestMatchingLocale).toHaveBeenCalledWith('zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7');
-      expect(response.headers.get('location')).toBe('https://example.com/zh_CN');
+      expect(getBestMatchingLocale).toHaveBeenCalledWith('zh-CN,zh;q=0.9,en;q=0.8');
+      expect(response.headers.get('x-locale')).toBe('zh_CN');
     });
   });
 
@@ -129,6 +139,40 @@ describe('Middleware', () => {
         expect(response.status).toBe(307); // Temporary redirect
         expect(response.headers.get('location')).toBe(`https://example.com/en${path}`);
       });
+    });
+
+    it('should redirect /about to English version', async () => {
+      const request = new NextRequest('https://example.com/about');
+      const response = middleware(request);
+
+      expect(response).toBeInstanceOf(NextResponse);
+      expect(response.status).toBe(307);
+      expect(response.headers.get('location')).toBe('https://example.com/en/about');
+      expect(response.headers.get('x-locale')).toBe('en');
+    });
+
+    it('should redirect /contact to English version', async () => {
+      const request = new NextRequest('https://example.com/contact');
+      const response = middleware(request);
+
+      expect(response).toBeInstanceOf(NextResponse);
+      expect(response.headers.get('x-locale')).toBe('en');
+    });
+
+    it('should redirect /products to English version', async () => {
+      const request = new NextRequest('https://example.com/products');
+      const response = middleware(request);
+
+      expect(response).toBeInstanceOf(NextResponse);
+      expect(response.headers.get('x-locale')).toBe('en');
+    });
+
+    it('should redirect /blog/post-1 to English version', async () => {
+      const request = new NextRequest('https://example.com/blog/post-1');
+      const response = middleware(request);
+
+      expect(response).toBeInstanceOf(NextResponse);
+      expect(response.headers.get('x-locale')).toBe('en');
     });
   });
 

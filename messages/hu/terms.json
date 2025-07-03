@@ -1,0 +1,69 @@
+{
+  "terms_title": "Szolgáltatási feltételek a Piyuo Counter alkalmazáshoz",
+  "terms_effective_date": "Hatályos: 2025. április 12.",
+
+  "terms_acceptance_title": "1. A feltételek elfogadása",
+  "terms_acceptance": "A Piyuo Counter alkalmazás (\"Szolgáltatás\") letöltésével, telepítésével vagy használatával elfogadja, hogy ezeket a Szolgáltatási feltételeket (\"Feltételek\") köti. Ha nem ért egyet ezen feltételek bármely részével, akkor nem használhatja a Szolgáltatást.",
+
+  "terms_description_title": "2. A szolgáltatás leírása",
+  "terms_description_1": "A Piyuo Counter egy szoftveralkalmazás, amely az eszköze kameráját és számítógépes látás technológiát használ a gyalogosok, járművek vagy egyéb tárgyak automatikus valós idejű számolásához és követéséhez.",
+  "terms_description_2": "A Szolgáltatás teljes mértékben az Ön helyi eszközén működik. Nem gyűjtünk, tárolunk vagy továbbítunk semmilyen adatot az alkalmazás használatából.",
+
+  "terms_license_title": "3. Licenc",
+  "terms_license_1": "Ezen Feltételek betartásának függvényében a Piyuo korlátozott, nem kizárólagos, át nem ruházható, tovább nem licencelhető licencet ad Önnek a Szolgáltatás letöltésére, telepítésére és használatára kizárólag személyes, nem kereskedelmi célokra.",
+  "terms_license_2": "Ez a licenc nem ad Önnek jogot a következőkre:",
+  "terms_license_reverse": "A Szolgáltatás visszafejtése, dekompilálása vagy szétszedése;",
+  "terms_license_distribute": "A Szolgáltatás terjesztése, eladása, lízingelése, kölcsönadása vagy más módon történő átadása harmadik félnek;",
+  "terms_license_modify": "A Szolgáltatás módosítása, átalakítása, megváltoztatása, fordítása vagy származékos művek létrehozása;",
+  "terms_license_remove": "A Szolgáltatáson található tulajdonosi megjegyzések eltávolítása, megváltoztatása vagy eltakarása.",
+
+  "terms_use_title": "4. Elfogadható használat",
+  "terms_use_intro": "Beleegyezik, hogy a Szolgáltatást csak törvényes célokra és ezen Feltételeknek megfelelően használja. Beleegyezik, hogy nem használja a Szolgáltatást:",
+  "terms_use_illegal": "Olyan módon, amely sérti bármely alkalmazandó szövetségi, állami, helyi vagy nemzetközi törvényt vagy rendeletet;",
+  "terms_use_privacy": "Mások magánélethez való jogának megsértésére vagy törvény által tiltott megfigyelési formákban való részvételre;",
+  "terms_use_harm": "Olyan módon, amely letilthatja, túlterhelheti, károsíthatja vagy ronthatja a Szolgáltatást;",
+  "terms_use_malware": "Vírusok, trójai programok, férgek, logikai bombák vagy más rosszindulatú vagy technológiailag káros anyagok bevitelére.",
+
+  "terms_privacy_title": "5. Adatvédelem és adatok",
+  "terms_privacy_1": "A Piyuo Counter alkalmazás az adatvédelmet szem előtt tartva készült. Az alkalmazás helyben, az Ön eszközén dolgozza fel a videoAdatokat objektumfelismerési és -számlálási célokra.",
+  "terms_privacy_2": "Nem gyűjtünk, tárolunk, nem férünk hozzá és nem továbbítunk semmilyen személyes információt, videoadatot, számlálási adatot vagy használati adatot az alkalmazásból. Minden feldolgozás helyben történik az Ön eszközén.",
+  "terms_privacy_3": "Adatvédelmi gyakorlatunkról további részletekért tekintse meg Adatvédelmi szabályzatunkat a {privacy_link} címen.",
+
+  "terms_disclaimer_title": "6. Szavatosság kizárása",
+  "terms_disclaimer_1": "A SZOLGÁLTATÁST \"JELEN ÁLLAPOTÁBAN\" ÉS \"AHOGY ELÉRHETŐ\" BIZTOSÍTJUK, MINDENFÉLE SZAVATOSSÁG NÉLKÜL. AZ ALKALMAZANDÓ JOG ÁLTAL MEGENGEDETT LEGNAGYOBB MÉRTÉKBEN A PIYUO KIFEJEZETTEN KIZÁR MINDEN SZAVATOSSÁGOT, LEGYEN AZ KIFEZETT, VÉLELMEZETT, TÖRVÉNYI VAGY EGYÉB, A SZOLGÁLTATÁSSAL KAPCSOLATBAN, BELEÉRTVE AZ ELADHATÓSÁG, ALKALMASSÁG MEGHATÁROZOTT CÉLRA, TULAJDONJOG ÉS JOGSÉRTÉS ELLENI MINDEN VÉLELMEZETT SZAVATOSSÁGOT, VALAMINT AZ ÜZLETMENET, TELJESÍTMÉNY, HASZNÁLAT VAGY KERESKEDELMI GYAKORLAT SORÁN FELMERÜLŐ SZAVATOSSÁGOKAT.",
+  "terms_disclaimer_2": "A FENTIEK KORLÁTOZÁSA NÉLKÜL A PIYUO NEM NYÚJT SEMMIFÉLE SZAVATOSSÁGOT VAGY KÖTELEZETTSÉGVÁLLALÁST, ÉS NEM TESZ SEMMIFÉLE KIJELENTÉST ARRÓL, HOGY A SZOLGÁLTATÁS MEGFELEL AZ ÖN KÖVETELMÉNYEINEK, ELÉRI A KÍVÁNT EREDMÉNYEKET, KOMPATIBILIS VAGY MŰKÖDIK BÁRMELY MÁS SZOFTVERREL, ALKALMAZÁSOKKAL, RENDSZEREKKEL VAGY SZOLGÁLTATÁSOKKAL, MEGSZAKÍTÁS NÉLKÜL MŰKÖDIK, MEGFELEL BÁRMELY TELJESÍTMÉNYI VAGY MEGBÍZHATÓSÁGI SZABVÁNYNAK, VAGY HIBAMENTES, VAGY HOGY BÁRMELY HIBÁT VAGY HIÁNYOSSÁGOT KI LEHET VAGY KI FOGNAK JAVÍTANI.",
+  "terms_disclaimer_3": "NEM GARANTÁLJUK AZ ALKALMAZÁS HASZNÁLATÁVAL KAPOTT ADATOK VAGY EREDMÉNYEK (MINT PÉLDÁUL A GYALOGOSSZÁMLÁLÁS) PONTOSSÁGÁT, TELJESSÉGÉT VAGY MEGBÍZHATÓSÁGÁT. AZ ALKALMAZÁS EGY ESZKÖZ, ÉS A KIMENETE KÜLÖNBÖZŐ TÉNYEZŐK HATÁSÁRA VÁLTOZHAT, BELEÉRTVE A KAMERA MINŐSÉGÉT, A VILÁGÍTÁSI VISZONYOKAT, AKADÁLYOKAT ÉS AZ ALGORITMUS KORLÁTAIT.",
+
+  "terms_liability_title": "7. Felelősség korlátozása",
+  "terms_liability_intro": "AZ ALKALMAZANDÓ JOG ÁLTAL MEGENGEDETT TELJES MÉRTÉKBEN, SEMMIFÉLE ESETBEN NEM LESZ A PIYUO, KAPCSOLT VÁLLALKOZÁSAI, TISZTSÉGVISELŐI, IGAZGATÓI, ALKALMAZOTTAI, ÜGYNÖKEI, BESZÁLLÍTÓI VAGY LICENCADÓI FELELŐS SEMMILYEN KÖZVETETT, VÉLETLEN, KÜLÖNLEGES, KÖVETKEZMÉNYES VAGY BÜNTETŐ KÁRÉRT, BELEÉRTVE KORLÁTOZÁS NÉLKÜL A PROFIT, ADATOK, HASZNÁLAT, GOODWILL VAGY EGYÉB IMMATERIÁLIS VESZTESÉGEKET, AMELYEK A KÖVETKEZŐKBŐL EREDNEK:",
+  "terms_liability_access": "Az Ön hozzáférése vagy használata, vagy a Szolgáltatáshoz való hozzáférés vagy használat képtelensége;",
+  "terms_liability_third_party": "Bármely harmadik fél magatartása vagy tartalma a Szolgáltatáson;",
+  "terms_liability_content": "A Szolgáltatásból származó bármely tartalom; és",
+  "terms_liability_unauthorized": "Az Ön átvitelei vagy tartalmának jogosulatlan hozzáférése, használata vagy megváltoztatása (bár megjegyezzük, hogy az Alkalmazás nem továbbítja a számlálási adatait).",
+  "terms_liability_basis": "EZ A FELELŐSSÉGKORLÁTOZÁS ALKALMAZANDÓ FÜGGETLENÜL ATTÓL, HOGY A FELTÉTELEZETT FELELŐSSÉG SZERZŐDÉSEN, KÁRTÉRÉSEN, GONDATLANSÁGON, OBJEKTÍV FELELŐSSÉGEN VAGY BÁRMELY MÁS ALAPON NYUGSZIK, MÉG AKKOR IS, HA A PIYUO-T TÁJÉKOZTATTÁK AZ ILYEN KÁR LEHETŐSÉGÉRŐL.",
+  "terms_liability_risk": "ELISMERI ÉS BELEEGYEZIK, HOGY A SZOLGÁLTATÁST ESZKÖZKÉNT INGYENESEN BIZTOSÍTJUK. A SZOLGÁLTATÁST TELJES MÉRTÉKBEN SAJÁT KOCKÁZATÁRA HASZNÁLJA. A PIYUO NEM VÁLLAL FELELŐSSÉGET AZ ÖN ESZKÖZEINEK VAGY MÁS SZOFTVERÉNEK KÁROSODÁSÁÉRT, VAGY A SZOLGÁLTATÁS HASZNÁLATÁBÓL EREDŐ KÖVETKEZMÉNYEKÉRT.",
+
+  "terms_support_title": "8. Nincs támogatás vagy karbantartás",
+  "terms_support": "A Piyuo Counter ingyenesen kerül biztosításra. Nem vagyunk kötelesek karbantartást, műszaki támogatást, frissítéseket vagy fejlesztéseket nyújtani a Szolgáltatáshoz. Fenntartjuk a jogot a Szolgáltatás vagy bármely kapcsolódó szolgáltatás ideiglenes vagy végleges módosítására, felfüggesztésére vagy megszüntetésére, értesítéssel vagy anélkül, és Önnel szemben való felelősség nélkül.",
+
+  "terms_changes_title": "9. A feltételek módosítása",
+  "terms_changes": "Fenntartjuk a jogot, hogy saját mérlegelésünk szerint bármikor módosítsuk vagy lecseréljük ezeket a Feltételeket. Ha a módosítás lényeges, ésszerű erőfeszítéseket teszünk az értesítés biztosítására (pl. az Alkalmazáson vagy a Weboldalon keresztül) az új feltételek hatálybalépése előtt. Azt, hogy mi minősül lényeges változásnak, kizárólagos mérlegelésünk alapján határozzuk meg. A Szolgáltatásunk folyamatos elérésével vagy használatával a módosítások hatálybalépése után beleegyezik a módosított feltételek betartásába.",
+
+  "terms_governing_title": "10. Alkalmazandó jog",
+  "terms_governing": "Ezeket a Feltételeket Kalifornia állam, Amerikai Egyesült Államok törvényei irányítják és értelmezik, jogkonfliktusi elvei figyelmen kívül hagyásával. (Megjegyzés: Konzultáljon ügyvéddel annak megerősítéséhez, hogy ez-e az Ön számára megfelelő joghatóság).",
+
+  "terms_severability_title": "11. Elválaszthatóság és lemondás",
+  "terms_severability": "Ha ezen Feltételek bármely rendelkezése végrehajthatatlannak vagy érvénytelennek bizonyul, az ilyen rendelkezést úgy kell módosítani és értelmezni, hogy az alkalmazandó jog szerinti legnagyobb lehetséges mértékben elérje az adott rendelkezés célkitűzéseit, és a fennmaradó rendelkezések teljes hatályban maradnak. Ezen Feltételek bármely kifejezéséről való lemondás nem tekintendő az adott kifejezés vagy bármely más kifejezés további vagy folyamatos lemondásának.",
+
+  "terms_entire_title": "12. Teljes megállapodás",
+  "terms_entire": "Ezek a Feltételek az Adatvédelmi szabályzatunkkal együtt ({privacy_link} címen elérhető) alkotják az Ön és a Piyuo között a Szolgáltatással kapcsolatos teljes megállapodást, és helyettesíti a Szolgáltatással kapcsolatos összes korábbi és egyidejű megértést, megállapodást, kijelentést és szavatosságot, mind írásos, mind szóbeli formában.",
+
+  "terms_contact_title": "13. Kapcsolattartási információk",
+  "terms_contact_intro": "Ha kérdése van ezekkel a Feltételekkel kapcsolatban, kérjük, lépjen kapcsolatba velünk:",
+  "terms_contact_email": "E-mailben: {email}",
+  "terms_contact_website": "Weboldalunk ezen oldalának meglátogatásával: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

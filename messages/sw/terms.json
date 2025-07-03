@@ -1,0 +1,69 @@
+{
+  "terms_title": "Masharti ya Huduma ya Piyuo Counter",
+  "terms_effective_date": "Tarehe ya kuanza kutumika: Aprili 12, 2025",
+
+  "terms_acceptance_title": "1. Kukubali masharti",
+  "terms_acceptance": "Kwa kupakua, kusakinisha, au kutumia programu ya Piyuo Counter (\"Huduma\"), unakubali kufungwa na Masharti haya ya Huduma (\"Masharti\"). Ikiwa hukubaliani na sehemu yoyote ya masharti haya, basi huwezi kufikia Huduma.",
+
+  "terms_description_title": "2. Maelezo ya huduma",
+  "terms_description_1": "Piyuo Counter ni programu ya kompyuta inayotumia kamera ya kifaa chako na teknolojia ya maono ya kompyuta ili kuhesabu na kufuatilia vitu kama vile watembea kwa mguu, magari, au vitu vingine kwa wakati halisi.",
+  "terms_description_2": "Huduma inafanya kazi kabisa kwenye kifaa chako cha ndani. Hatukusanyi, hatuhifadhi, wala hatuhamishi data yoyote kutoka matumizi yako ya programu.",
+
+  "terms_license_title": "3. Leseni",
+  "terms_license_1": "Kulingana na kuzingatia kwako kwa Masharti haya, Piyuo inakupa leseni iliyowekwa mipaka, isiyo ya kipekee, isiyoweza kuhamishwa, isiyoweza kupewa leseni ya chini ya kupakua, kusakinisha na kutumia Huduma kwa matumizi yako ya kibinafsi, yasiyo ya kibiashara tu.",
+  "terms_license_2": "Leseni hii haikupi haki zoyote za:",
+  "terms_license_reverse": "Uhandisi wa kurudi nyuma, kutenganisha au kubomoa Huduma;",
+  "terms_license_distribute": "Kusambaza, kuuza, kukodisha, kukopesha, au kuhamisha kwa njia nyingine Huduma kwa mtu wa tatu yoyote;",
+  "terms_license_modify": "Kubadilisha, kurekebisha, kubadili, kutafsiri au kuunda kazi za kutokanayo na Huduma;",
+  "terms_license_remove": "Kuondoa, kubadili au kuficha taarifa zoyote za umiliki kwenye Huduma.",
+
+  "terms_use_title": "4. Matumizi ya kukubalika",
+  "terms_use_intro": "Unakubali kutumia Huduma kwa madhumuni ya kisheria tu na kulingana na Masharti haya. Unakubali kutotumia Huduma:",
+  "terms_use_illegal": "Kwa njia yoyote inayovunja sheria yoyote inayotekelezwa ya shirikisho, serikali, ndogo au kimataifa au kanuni;",
+  "terms_use_privacy": "Kuvunja haki za faragha za wengine au kushiriki katika aina yoyote ya ufuatiliaji unaokataziwa na sheria;",
+  "terms_use_harm": "Kwa njia yoyote inayoweza kuzima, kupitiliza, kuharibu au kudhoofisha Huduma;",
+  "terms_use_malware": "Kuingiza virusi vyovyote, farasi wa Troy, funza, mabomba ya mantiki au nyenzo zingine ambazo ni za uchochezi au za madhara ya kiteknolojia.",
+
+  "terms_privacy_title": "5. Faragha na data",
+  "terms_privacy_1": "Programu ya Piyuo Counter imeundwa na faragha akili. Programu inachakata data ya video ndani ya kifaa chako kwa madhumuni ya kutambua na kuhesabu vitu.",
+  "terms_privacy_2": "Hatukusanyi, hatuhifadhi, hatufikii au kuhamisha maelezo yoyote ya kibinafsi, data ya video, data ya kuhesabu au data ya matumizi kutoka programu. Uchakataji wote unahutika ndani ya kifaa chako.",
+  "terms_privacy_3": "Kwa maelezo zaidi kuhusu mazoea yetu ya faragha, tafadhali kagua Sera yetu ya Faragha kwenye {privacy_link}.",
+
+  "terms_disclaimer_title": "6. Kukataa dhamana",
+  "terms_disclaimer_1": "HUDUMA INATOLEWA \"KAMA ILIVYO\" NA \"KAMA INAVYOPATIKANA\" BILA DHAMANA YA AINA YOYOTE. KWA KIWANGO KIKUU KINACHORUHUSIWA NA SHERIA INAYOTEKELEZWA, PIYUO INAKATAA KIWAZI DHAMANA ZOTE, ZIKIWA WAZI, ZILIZOONEKANA, ZA KISHERIA AU ZINGINE, KUHUSIANA NA HUDUMA, IKIJUMUISHA DHAMANA ZOTE ZILIZOONEKANA ZA BIASHARA, KUFAA KWA LENGO MAALUM, CHEO NA KUTOINGILIA, NA DHAMANA ZINAZOWEZA KUTOKEA KATIKA MZUNGUKO WA BIASHARA, MZUNGUKO WA UTENDAJI, MATUMIZI AU MAZOEA YA BIASHARA.",
+  "terms_disclaimer_2": "BILA KIWANGO CHA YALIYO HAPO JUU, PIYUO HAITOI DHAMANA YOYOTE AU AHADI, NA HAITOI UTAMBUZI WOWOTE KWAMBA HUDUMA ITAKIDHI MAHITAJI YAKO, KUFIKIA MATOKEO YOYOTE YALIYOKUSUDIWA, KUWA YANAYOLINGANA AU KUFANYA KAZI NA PROGRAMU NYINGINE YOYOTE, PROGRAMU, MIFUMO AU HUDUMA, KUFANYA KAZI BILA KUKATIZWA, KUKIDHI VIWANGO VYA UTENDAJI AU KUAMINIKA, AU KUWA BILA MAKOSA, AU KWAMBA MAKOSA YOYOTE AU KASORO VINAWEZA AU VITAREKEBISHWA.",
+  "terms_disclaimer_3": "HATUDHAMIN USAHIHI, UKAMILIFU AU KUAMINIKA KWA DATA YOYOTE AU MATOKEO YALIYOPATIKANA KUPITIA MATUMIZI YA PROGRAMU (KAMA VILE HESABU ZA WATEMBEA KWAL MGUU). PROGRAMU NI CHOMBO, NA MATOKEO YAKE YANAWEZA KUATHIRIWA NA MAMBO MBALIMBALI IKIJUMUISHA UBORA WA KAMERA, HALI ZA MWANGA, VIZUIZI NA MIPAKA YA ALGORITHM.",
+
+  "terms_liability_title": "7. Kiwango cha uwajibikaji",
+  "terms_liability_intro": "KWA KIWANGO KAMILI KINACHORUHUSIWA NA SHERIA INAYOTEKELEZWA, KATIKA HALI ZOYOTE PIYUO, MAKAMPUNI YAKE YANAYOHUSIANA, MAAFISA, WAKURUGENZI, WAFANYAKAZI, MAWAKALA, WASAMBAZAJI AU WATOA LESENI HAWATAKUWA NA UWAJIBIKAJI KWA UHARIBIFU WOWOTE WA MOJA KWA MOJA, WA BAHATI MBAYA, MAALUM, WA MATOKEO AU WA ADHABU, IKIJUMUISHA BILA KIWANGO UPOTEVU WA FAIDA, DATA, MATUMIZI, NIJA NZURI AU UPOTEVU MWINGINE WA KISIASA, UNAOKEANA NA:",
+  "terms_liability_access": "Ufikiaji wako au matumizi au kutoweza kufikia au kutumia Huduma;",
+  "terms_liability_third_party": "Tabia yoyote au maudhui ya mtu wa tatu yoyote kwenye Huduma;",
+  "terms_liability_content": "Maudhui yoyote yaliyopatikana kutoka Huduma; na",
+  "terms_liability_unauthorized": "Ufikiaji usioidhinishwa, matumizi au marekebisho ya mihamishiko yako au maudhui (ingawa tunafahamu kwamba Programu haihamishi data yako ya kuhesabu).",
+  "terms_liability_basis": "KIWANGO HII CHA UWAJIBIKAJI KINATEKELEZWA BILA KUJALI KAMA UWAJIBIKAJI UNAODAIWA UNATEGEMEA MKATABA, UHARIBIFU, UZEMBE, UWAJIBIKAJI MKALI AU MSINGI MWINGINE WOWOTE, HATA IKIWA PIYUO IMEONJWA KUHUSU UWEZEKANO WA UHARIBIFU WA NAMNA HIYO.",
+  "terms_liability_risk": "UNAKIRI NA UNAKUBALI KWAMBA HUDUMA INATOLEWA BURE KAMA CHOMBO. UNATUMIA HUDUMA KOTE KWA HATARI YAKO MWENYEWE. PIYUO HAICHUKUI UWAJIBIKAJI WOWOTE AU UWAJIBIKAJI KWA UHARIBIFU WOWOTE WA KIFAA (VIFAA) VYAKO AU PROGRAMU NYINGINE, AU MATOKEO YOYOTE YANAYOTOKANA NA MATUMIZI YAKO YA HUDUMA.",
+
+  "terms_support_title": "8. Hakuna msaada au uongozi",
+  "terms_support": "Piyuo Counter inatolewa bure. Hatuna wajibu wa kutoa uongozi, msaada wa kiufundi, masasisho au maboresho ya Huduma. Tunahifadhi haki ya kurekebisha, kusimamisha au kuacha, kwa muda au kwa kudumu, Huduma au huduma yoyote inayounganishwa nayo, kwa taarifa au bila taarifa na bila uwajibikaji kwako.",
+
+  "terms_changes_title": "9. Mabadiliko ya masharti haya",
+  "terms_changes": "Tunahifadhi haki, kwa uamuzi wetu pekee, wa kurekebisha au kubadilisha Masharti haya wakati wowote. Ikiwa upitaji ni wa muhimu, tutafanya juhudi za busara kutoa taarifa (k.m. kupitia Programu au kwenye Tovuti) kabla ya masharti mapya yoyote kuanza kutumika. Kile kinachoundwa mabadiliko ya muhimu kitaamuliwa kwa uamuzi wetu pekee. Kwa kuendelea kufikia au kutumia Huduma yetu baada ya mapitaji haya kuwa na athari, unakubali kufungwa na masharti yaliyopitiwa.",
+
+  "terms_governing_title": "10. Sheria inayotawala",
+  "terms_governing": "Masharti haya yatatawalliwa na kufafanuliwa kulingana na sheria za Jimbo la California, Marekani, bila kuzingatia kanuni zake za mgongano wa sheria. (Kumbuka: Shauriana na mwanasheria ili kuthibitisha kama hii ni mamlaka inayofaa kwako).",
+
+  "terms_severability_title": "11. Kutenganisha na kuacha",
+  "terms_severability": "Ikiwa sehemu yoyote ya Masharti haya itachukuliwa kuwa haitekelezeki au batili, sehemu hiyo itabadilishwa na kufafanuliwa ili kufikia malengo ya sehemu hiyo kwa kiwango kikuu kinachowezekana chini ya sheria inayotekelezwa, na masharti yaliyobaki yataendelea katika nguvu na athari kamili. Kuacha neno lolote la Masharti haya hakutachukuliwa kuwa ni kuacha kwa mbele au kuendelea kwa neno hilo au neno lingine lolote.",
+
+  "terms_entire_title": "12. Makubaliano kamili",
+  "terms_entire": "Masharti haya, pamoja na Sera yetu ya Faragha (inapatikana kwenye {privacy_link}), yanaunda makubaliano kamili kati yako na Piyuo kuhusu Huduma na yanachukua nafasi ya uelewa wote wa awali na wa sasa, makubaliano, uwakilishi na dhamana, zote za maandishi na za mdomo, kuhusu Huduma.",
+
+  "terms_contact_title": "13. Maelezo ya mawasiliano",
+  "terms_contact_intro": "Ikiwa una maswali yoyote kuhusu Masharti haya, tafadhali wasiliana nasi:",
+  "terms_contact_email": "Kwa barua pepe: {email}",
+  "terms_contact_website": "Kwa kutembelea ukurasa huu kwenye tovuti yetu: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}
