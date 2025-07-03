@@ -15,19 +15,19 @@ export const supportedLocales = [
 export type SupportedLocale = typeof supportedLocales[number];
 
 // Dynamic message loading
-export async function getMessages(locale: SupportedLocale) {
+export async function getMessages(locale: SupportedLocale, page:string) {
   try {
-    const messages = await import(`../messages/${locale}/page.json`);
+    const messages = await import(`../messages/${locale}/${page}.json`);
     return messages.default;
   } catch {
-    console.warn(`Failed to load messages for locale "${locale}", falling back to English`);
-    const fallback = await import('../messages/en/page.json');
+    console.warn(`Failed to load messages for locale "${locale}" and page "${page}", falling back to English`);
+    const fallback = await import(`../messages/en/${page}.json`);
     return fallback.default;
   }
 }
 
-export async function getTranslator(locale: SupportedLocale) {
-  const messages = await getMessages(locale);
+export async function getTranslator(locale: SupportedLocale, page: string) {
+  const messages = await getMessages(locale, page);
   return createTranslator({ locale, messages });
 }
 

@@ -1,0 +1,69 @@
+{
+  "terms_title": "Termos de Servizo para Piyuo Counter",
+  "terms_effective_date": "Data de entrada en vigor: 12 de abril de 2025",
+
+  "terms_acceptance_title": "1. Aceptación dos Termos",
+  "terms_acceptance": "Ao descargar, instalar ou usar a aplicación Piyuo Counter (o \"Servizo\"), aceptas estar vinculado por estes Termos de Servizo (os \"Termos\"). Se non estás de acordo con calquera parte destes termos, entón non podes acceder ao Servizo.",
+
+  "terms_description_title": "2. Descrición do Servizo",
+  "terms_description_1": "Piyuo Counter é unha aplicación de software que usa a cámara do teu dispositivo e tecnoloxía de visión por computador para contar e seguir automaticamente obxectos como peóns, vehículos ou outros elementos en tempo real.",
+  "terms_description_2": "O Servizo funciona completamente no teu dispositivo local. Non recollemos, almacenamos nin transmitimos ningún dato do teu uso da aplicación.",
+
+  "terms_license_title": "3. Licenza",
+  "terms_license_1": "Suxeito ao teu cumprimento destes Termos, Piyuo concédelle unha licenza limitada, non exclusiva, non transferible, non sublicenciable para descargar, instalar e usar o Servizo unicamente para o teu uso persoal e non comercial.",
+  "terms_license_2": "Esta licenza non che concede ningún dereito a:",
+  "terms_license_reverse": "Facer enxeñería inversa, decompilar ou desensamblar o Servizo;",
+  "terms_license_distribute": "Distribuír, vender, arrendar, alugar, prestar ou transferir doutra forma o Servizo a calquera terceiro;",
+  "terms_license_modify": "Modificar, adaptar, alterar, traducir ou crear obras derivadas do Servizo;",
+  "terms_license_remove": "Eliminar, alterar ou ocultar calquera aviso propietario no Servizo.",
+
+  "terms_use_title": "4. Uso Aceptable",
+  "terms_use_intro": "Aceptas usar o Servizo só para fins lícitos e de acordo con estes Termos. Aceptas non usar o Servizo:",
+  "terms_use_illegal": "De calquera forma que viole calquera lei ou regulamento federal, estatal, local ou internacional aplicable;",
+  "terms_use_privacy": "Para violar os dereitos de privacidade dos demais ou participar en calquera forma de vixilancia que estea prohibida pola lei;",
+  "terms_use_harm": "De calquera forma que poida desactivar, sobrecargar, danar ou prexudicar o Servizo;",
+  "terms_use_malware": "Para introducir calquera virus, troianos, vermes, bombas lóxicas ou outro material que sexa malicioso ou tecnoloxicamente nocivo.",
+
+  "terms_privacy_title": "5. Privacidade e Datos",
+  "terms_privacy_1": "A aplicación Piyuo Counter está deseñada coa privacidade en mente. A aplicación procesa datos de vídeo localmente no teu dispositivo para fins de detección e reconto de obxectos.",
+  "terms_privacy_2": "Non recollemos, almacenamos, accedemos nin transmitimos ningunha información persoal, datos de vídeo, datos de reconto ou datos de uso da aplicación. Todo o procesamento sucede localmente no teu dispositivo.",
+  "terms_privacy_3": "Para máis detalles sobre as nosas prácticas de privacidade, por favor revisa a nosa Política de Privacidade en {privacy_link}.",
+
+  "terms_disclaimer_title": "6. Renuncia de Garantías",
+  "terms_disclaimer_1": "O SERVIZO PROPORCIÓNASE \"TAL COMO ESTÁ\" E \"SEGUNDO DISPOÑIBILIDADE\" SEN GARANTÍA DE NINGÚN TIPO. NA MÁXIMA MEDIDA PERMITIDA POLA LEI APLICABLE, PIYUO RENUNCIA EXPRESAMENTE A TODAS AS GARANTÍAS, XA SEXAN EXPRESAS, IMPLÍCITAS, LEGAIS OU DOUTRO TIPO, CON RESPECTO AO SERVIZO, INCLUÍNDO TODAS AS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDADE, APTITUDE PARA UN PROPÓSITO PARTICULAR, TÍTULO E NON INFRACCIÓN, E GARANTÍAS QUE POIDAN XURDIR DO CURSO DO NEGOCIO, CURSO DE DESEMPEÑO, USO OU PRÁCTICA COMERCIAL.",
+  "terms_disclaimer_2": "SEN LIMITACIÓN AO ANTERIOR, PIYUO NON PROPORCIONA NINGUNHA GARANTÍA OU COMPROMISO, E NON FAI NINGUNHA REPRESENTACIÓN DE NINGUNHA CLASE DE QUE O SERVIZO CUMPRIRÁ OS TEUS REQUISITOS, LOGRARA CALQUERA RESULTADO PREVISTO, SEXA COMPATIBLE OU TRABALLE CON CALQUERA OUTRO SOFTWARE, APLICACIÓNS, SISTEMAS OU SERVIZOS, OPERE SEN INTERRUPCIÓN, CUMPRA CALQUERA ESTÁNDAR DE DESEMPEÑO OU FIABILIDADE, OU SEXA LIBRE DE ERROS, OU QUE CALQUERA ERRO OU DEFECTO POIDA OU SERÁ CORRIXIDO.",
+  "terms_disclaimer_3": "NON GARANTIMOS A PRECISIÓN, INTEGRIDADE OU FIABILIDADE DE CALQUERA DATO OU RESULTADO OBTIDO A TRAVÉS DO USO DA APLICACIÓN (COMO RECONTOS DE PEÓNS). A APLICACIÓN É UNHA FERRAMENTA, E A SÚA SAÍDA PODE VERSE AFECTADA POR VARIOS FACTORES INCLUÍNDO A CALIDADE DA CÁMARA, CONDICIÓNS DE ILUMINACIÓN, OBSTRUCIÓNS E AS LIMITACIÓNS DO ALGORITMO.",
+
+  "terms_liability_title": "7. Limitación de Responsabilidade",
+  "terms_liability_intro": "NA MÁXIMA MEDIDA PERMITIDA POLA LEI APLICABLE, EN NINGÚN EVENTO PIYUO, OS SEUS AFILIADOS, OFICIAIS, DIRECTORES, EMPREGADOS, AXENTES, PROVEDORES OU LICENCIANTES SERÁN RESPONSABLES POR CALQUERA DANO INDIRECTO, INCIDENTAL, ESPECIAL, CONSECUENCIAL OU PUNITIVO, INCLUÍNDO SEN LIMITACIÓN, PERDA DE BENEFICIOS, DATOS, USO, FONDO DE COMERCIO OU OUTRAS PERDAS INTANXIBLES, RESULTANTES DE:",
+  "terms_liability_access": "O teu acceso ou uso ou incapacidade de acceder ou usar o Servizo;",
+  "terms_liability_third_party": "Calquera conduta ou contido de calquera terceiro no Servizo;",
+  "terms_liability_content": "Calquera contido obtido do Servizo; e",
+  "terms_liability_unauthorized": "Acceso non autorizado, uso ou alteración das túas transmisións ou contido (aínda que anotamos que a Aplicación non transmite os teus datos de reconto).",
+  "terms_liability_basis": "ESTA LIMITACIÓN DE RESPONSABILIDADE APLÍCASE XA SEXA QUE A PRESUNTA RESPONSABILIDADE ESTEA BASEADA EN CONTRATO, AGRAVIO, NEGLIXENCIA, RESPONSABILIDADE ESTRITA OU CALQUERA OUTRA BASE, MESMO SE PIYUO FOI ADVERTIDO DA POSIBILIDADE DE TAL DANO.",
+  "terms_liability_risk": "RECOÑECES E ACEPTAS QUE O SERVIZO PROPORCIÓNASE GRATUITAMENTE COMO UNHA FERRAMENTA. USAS O SERVIZO COMPLETAMENTE BAIXO TEU PROPIO RISCO. PIYUO NON ASUME NINGUNHA RESPONSABILIDADE POR CALQUERA DANO AOS TEUS DISPOSITIVOS OU OUTRO SOFTWARE, OU CALQUERA CONSECUENCIA DERIVADA DO TEU USO DO SERVIZO.",
+
+  "terms_support_title": "8. Sen Soporte ou Mantemento",
+  "terms_support": "Piyuo Counter proporciónase gratuitamente. Non estamos baixo ningunha obriga de proporcionar mantemento, soporte técnico, actualizacións ou melloras para o Servizo. Reservámonos o dereito a modificar, suspender ou descontinuar, temporal ou permanentemente, o Servizo ou calquera servizo ao que se conecte, con ou sen aviso e sen responsabilidade cara a ti.",
+
+  "terms_changes_title": "9. Cambios nestes Termos",
+  "terms_changes": "Reservámonos o dereito, á nosa soa discreción, de modificar ou substituír estes Termos en calquera momento. Se unha revisión é material, faremos esforzos razonables para proporcionar aviso (p.ex., a través da Aplicación ou no Sitio Web) antes de que calquera termo novo entre en vigor. O que constitúe un cambio material determinarase á nosa soa discreción. Ao continuar accedendo ou usando o noso Servizo despois de que esas revisións entren en vigor, aceptas estar vinculado polos termos revisados.",
+
+  "terms_governing_title": "10. Lei Aplicable",
+  "terms_governing": "Estes Termos rexeranse e interpretaranse de acordo coas leis do Estado de California, Estados Unidos, sen ter en conta os seus principios de conflito de leis. (Nota: Consulta un avogado para confirmar se esta é a xurisdicción apropiada para ti).",
+
+  "terms_severability_title": "11. Separabilidade e Renuncia",
+  "terms_severability": "Se calquera disposición destes Termos se considera inaplicable ou non válida, tal disposición cambiarase e interpretarase para lograr os obxectivos de tal disposición na maior medida posible baixo a lei aplicable, e as disposicións restantes continuarán en pleno vigor e efecto. Ningunha renuncia de calquera termo destes Termos considerarase unha renuncia adicional ou continua de tal termo ou calquera outro termo.",
+
+  "terms_entire_title": "12. Acordo Completo",
+  "terms_entire": "Estes Termos, xunto coa nosa Política de Privacidade (dispoñible en {privacy_link}), constitúen o acordo completo entre ti e Piyuo con respecto ao Servizo e suplantan todos os entendementos, acordos, representacións e garantías previos e contemporáneos, tanto escritos como orais, con respecto ao Servizo.",
+
+  "terms_contact_title": "13. Información de Contacto",
+  "terms_contact_intro": "Se tes algunha pregunta sobre estes Termos, por favor contáctanos:",
+  "terms_contact_email": "Por correo electrónico: {email}",
+  "terms_contact_website": "Visitando esta páxina no noso sitio web: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

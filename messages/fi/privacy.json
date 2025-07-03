@@ -1,0 +1,45 @@
+{
+  "privacy_title": "Tietosuojakäytäntö Piyuo Counter -sovellukselle",
+  "privacy_effective_date": "Voimaantulopäivä: 12. huhtikuuta 2025",
+
+  "privacy_introduction_title": "Johdanto",
+  "privacy_introduction_1": "Tervetuloa Piyuo Counter -sovellukseen! Tämä tietosuojakäytäntö selittää, kuinka käsittelemme tietoja, kun käytät ohjelmistosovellustamme (\"Sovellus\"). Sitoudumme yksityisyytesi suojaamiseen. Tämä sovellus on suunniteltu toimimaan keräämättä tai käsittelemättä henkilökohtaisia tietojasi.",
+  "privacy_introduction_2": "Tämä tietosuojakäytäntö koskee Piyuo Counter -ohjelmistosovellusta (\"Sovellus\") mobiililaitteille ja tietokoneille, joka on saatavilla eri alustoilla ja sovelluskaupoissa.",
+
+  "privacy_who_we_are_title": "Keitä olemme",
+  "privacy_who_we_are": "Piyuo Counter -sovelluksen tarjoaa Piyuo (\"me\", \"meidän\" tai \"meidän\"). Verkkosivustomme on {website}. Jos sinulla on kysymyksiä tästä käytännöstä, voit ottaa meihin yhteyttä osoitteessa {email}.",
+
+  "privacy_no_collect_title": "Tiedot, joita emme kerää",
+  "privacy_no_collect_intro": "Emme kerää, tallenna, siirrä tai käsittele mitään henkilökohtaisia tietoja tai käyttötietoja sinulta Piyuo Counter -sovelluksen kautta.",
+  "privacy_no_collect_personal": "Ei henkilötietoja: Emme pyydä, käytä tai seuraa mitään tietoja, jotka voisivat tunnistaa sinut, kuten nimesi, sähköpostiosoitteesi, sijaintisi, laitetunnisteet tai yhteystietosi.",
+  "privacy_no_collect_usage": "Ei käyttötietoja: Sovellus ei tallenna, kuinka käytät sitä. Kaikki luomasi laskuritiedot tallennetaan paikallisesti vain laitteellesi, eivätkä ne ole meidän saatavilla.",
+  "privacy_no_collect_third_party": "Ei kolmannen osapuolen palveluita: Emme integroi kolmannen osapuolen palveluita analytiikkaa (kuten Firebase Analytics), mainontaa (kuten AdMob), pilvitallennusta tai mitään muuta tarkoitusta varten, joka sisältäisi tietojen jakamisen ulkopuolisten tahojen kanssa. Sovellus toimii täysin offline-tilassa tietojen käsittelyn osalta.",
+
+  "privacy_use_title": "Kuinka käytämme tietoja",
+  "privacy_use": "Koska emme kerää mitään tietoja, emme käytä tietojasi mihinkään tarkoitukseen.",
+
+  "privacy_sharing_title": "Tietojen jakaminen ja julkistaminen",
+  "privacy_sharing": "Emme jaa tai julkista henkilökohtaisia tietoja, koska emme kerää niitä. Tietosi (seuraamasi laskurit) pysyvät laitteellasi.",
+
+  "privacy_security_title": "Tietoturva",
+  "privacy_security": "Kaikki Piyuo Counter -sovelluksen käytöstä syntyvät tiedot (kuten laskurisi) tallennetaan paikallisesti vain laitteellesi. Meillä ei ole pääsyä näihin tietoihin. Vaikka rakennamme sovelluksemme vakio-tietoturvakäytäntöjen mukaisesti, laitteellesi tallennettujen tietojen turvallisuus riippuu niistä turvatoimista, joita toteutat laitteellesi itselleen.",
+
+  "privacy_children_title": "Lasten yksityisyys",
+  "privacy_children": "Sovelluksemme ei kerää henkilökohtaisia tietoja keneltäkään, mukaan lukien lapset. Noudatamme Yhdysvaltojen lasten verkossa tapahtuvan yksityisyyden suojaa koskevaa lakia (COPPA) ja vastaavia säädöksiä, kuten GDPR:ää lasten tietojen osalta. Koska emme kerää tietoja, emme luonnostaan kerää tietoja alle 13-vuotiailta lapsilta (tai 16-vuotiailta joissakin EU-maissa).",
+
+  "privacy_rights_title": "Oikeutesi (GDPR ja muut lait)",
+  "privacy_rights_1": "Yksityisyyslait, kuten Euroopan yleinen tietosuoja-asetus (GDPR) ja useat Yhdysvaltojen osavaltioiden lait, antavat henkilöille oikeuksia henkilötietoihinsa (kuten pääsy, korjaus, poisto).",
+  "privacy_rights_2": "Koska Piyuo Counter -sovellus ei kerää, tallenna tai käsittele mitään henkilötietojasi, nämä oikeudet eivät yleensä ole sovellettavissa sovelluksemme yhteydessä, koska meillä ei ole hallussaan tietoja, joihin voisit päästä käsiksi, joita voisit korjata tai poistaa. Kaikki sovellukseen liittyvät tiedot sijaitsevat yksinomaan laitteellasi, hallinnassasi.",
+
+  "privacy_changes_title": "Muutokset tähän tietosuojakäytäntöön",
+  "privacy_changes_1": "Saatamme päivittää tätä tietosuojakäytäntöä ajoittain. Ilmoitamme sinulle muutoksista julkaisemalla uuden tietosuojakäytännön sovelluksessa tai verkkosivustollamme ({website}). Suosittelemme tarkistamaan tämän tietosuojakäytännön säännöllisesti mahdollisten muutosten varalta.",
+  "privacy_changes_2": "Tämän tietosuojakäytännön muutokset tulevat voimaan, kun ne julkaistaan tällä sivulla.",
+
+  "privacy_contact_title": "Ota meihin yhteyttä",
+  "privacy_contact_intro": "Jos sinulla on kysymyksiä tästä tietosuojakäytännöstä, ota meihin yhteyttä:",
+  "privacy_contact_email": "Sähköpostitse: {email}",
+  "privacy_contact_website": "Vierailemalla tällä sivulla verkkosivustollamme: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com"
+}

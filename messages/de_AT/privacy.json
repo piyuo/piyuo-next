@@ -1,0 +1,45 @@
+{
+  "privacy_title": "Datenschutzrichtlinie für Piyuo Counter - Österreich",
+  "privacy_effective_date": "Wirksamkeitsdatum: 12. April 2025",
+
+  "privacy_introduction_title": "Einführung",
+  "privacy_introduction_1": "Willkommen bei Piyuo Counter! Diese Datenschutzrichtlinie erklärt, wie wir Informationen handhaben, wenn Sie unsere Software-Anwendung (\"App\") verwenden. Unser Engagement gilt Ihrem Datenschutz. Diese App ist darauf ausgelegt, ohne das Sammeln oder Verarbeiten Ihrer persönlichen Daten zu funktionieren.",
+  "privacy_introduction_2": "Diese Datenschutzrichtlinie gilt für die Piyuo Counter Software-Anwendung (\"App\") für mobile Geräte und Computer, die über verschiedene Plattformen und App-Stores verfügbar ist.",
+
+  "privacy_who_we_are_title": "Wer wir sind",
+  "privacy_who_we_are": "Die Piyuo Counter App wird von Piyuo (\"wir,\" \"uns\" oder \"unser\") bereitgestellt. Unsere Website ist {website}. Wenn Sie Fragen zu dieser Richtlinie haben, können Sie uns unter {email} kontaktieren.",
+
+  "privacy_no_collect_title": "Informationen, die wir nicht sammeln",
+  "privacy_no_collect_intro": "Wir sammeln, speichern, übertragen oder verarbeiten keine persönlichen Informationen oder Nutzungsdaten von Ihnen über die Piyuo Counter App.",
+  "privacy_no_collect_personal": "Keine persönlichen Daten: Wir fragen nicht nach, greifen nicht zu oder verfolgen keine Informationen, die Sie identifizieren könnten, wie Ihren Namen, E-Mail-Adresse, Standort, Geräte-IDs oder Kontakte.",
+  "privacy_no_collect_usage": "Keine Nutzungsdaten: Die App zeichnet nicht auf, wie Sie sie verwenden. Alle von Ihnen erstellten Zählerdaten werden nur lokal auf Ihrem Gerät gespeichert und sind für uns nicht zugänglich.",
+  "privacy_no_collect_third_party": "Keine Drittanbieter-Dienste: Wir integrieren keine Drittanbieter-Dienste für Analysen (wie Firebase Analytics), Werbung (wie AdMob), Cloud-Speicher oder andere Zwecke, die das Teilen von Daten mit externen Parteien beinhalten würden. Die App funktioniert in Bezug auf die Datenverarbeitung vollständig offline.",
+
+  "privacy_use_title": "Wie wir Informationen verwenden",
+  "privacy_use": "Da wir keine Informationen sammeln, verwenden wir Ihre Informationen für keinen Zweck.",
+
+  "privacy_sharing_title": "Informationsaustausch und Offenlegung",
+  "privacy_sharing": "Wir teilen oder offenbaren keine persönlichen Informationen, da wir keine sammeln. Ihre Daten (die Zählungen, die Sie verfolgen) bleiben auf Ihrem Gerät.",
+
+  "privacy_security_title": "Datensicherheit",
+  "privacy_security": "Alle durch die Nutzung der Piyuo Counter App generierten Daten (wie Ihre Zählungen) werden nur lokal auf Ihrem Gerät gespeichert. Wir haben keinen Zugang zu diesen Daten. Obwohl wir unsere App mit Standard-Sicherheitspraktiken erstellen, hängt die Sicherheit der auf Ihrem Gerät gespeicherten Daten von den Sicherheitsmaßnahmen ab, die Sie für Ihr Gerät selbst ergreifen.",
+
+  "privacy_children_title": "Datenschutz für Kinder",
+  "privacy_children": "Unsere App sammelt keine persönlichen Informationen von niemandem, einschließlich Kindern. Wir halten uns an die Datenschutz-Grundverordnung (DSGVO) und ähnliche Vorschriften bezüglich Kinderdaten. Da wir keine Daten sammeln, sammeln wir naturgemäß keine Daten von Kindern unter 13 Jahren (oder 16 in einigen EU-Ländern).",
+
+  "privacy_rights_title": "Ihre Rechte (DSGVO und andere Gesetze)",
+  "privacy_rights_1": "Datenschutzgesetze wie die Datenschutz-Grundverordnung (DSGVO) in Europa und verschiedene österreichische Gesetze gewähren Einzelpersonen Rechte über ihre persönlichen Daten (wie Zugang, Berichtigung, Löschung).",
+  "privacy_rights_2": "Da die Piyuo Counter App keine Ihrer persönlichen Daten sammelt, speichert oder verarbeitet, sind diese Rechte im Kontext unserer App im Allgemeinen nicht anwendbar, da es keine von uns gehaltenen Daten gibt, auf die Sie zugreifen, die Sie korrigieren oder löschen könnten. Alle App-bezogenen Daten befinden sich ausschließlich auf Ihrem Gerät, unter Ihrer Kontrolle.",
+
+  "privacy_changes_title": "Änderungen an dieser Datenschutzrichtlinie",
+  "privacy_changes_1": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzrichtlinie in der App oder auf unserer Website ({website}) veröffentlichen. Es wird empfohlen, diese Datenschutzrichtlinie regelmäßig auf Änderungen zu überprüfen.",
+  "privacy_changes_2": "Änderungen an dieser Datenschutzrichtlinie werden wirksam, wenn sie auf dieser Seite veröffentlicht werden.",
+
+  "privacy_contact_title": "Kontaktieren Sie uns",
+  "privacy_contact_intro": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte:",
+  "privacy_contact_email": "Per E-Mail: {email}",
+  "privacy_contact_website": "Durch Besuch dieser Seite auf unserer Website: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com"
+}

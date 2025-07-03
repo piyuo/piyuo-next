@@ -1,0 +1,69 @@
+{
+  "terms_title": "Regulamin Usługi dla Piyuo Counter",
+  "terms_effective_date": "Data wejścia w życie: 12 kwietnia 2025",
+
+  "terms_acceptance_title": "1. Akceptacja Regulaminu",
+  "terms_acceptance": "Pobierając, instalując lub korzystając z aplikacji Piyuo Counter (\"Usługa\"), zgadzasz się być związany niniejszym Regulaminem Usługi (\"Regulamin\"). Jeśli nie zgadzasz się z jakąkolwiek częścią tego regulaminu, nie możesz uzyskać dostępu do Usługi.",
+
+  "terms_description_title": "2. Opis Usługi",
+  "terms_description_1": "Piyuo Counter to aplikacja programowa, która wykorzystuje kamerę urządzenia i technologię widzenia komputerowego do automatycznego liczenia i śledzenia obiektów, takich jak piesi, pojazdy lub inne przedmioty w czasie rzeczywistym.",
+  "terms_description_2": "Usługa działa w całości na Twoim urządzeniu lokalnym. Nie gromadzimy, nie przechowujemy ani nie przesyłamy żadnych danych z Twojego korzystania z aplikacji.",
+
+  "terms_license_title": "3. Licencja",
+  "terms_license_1": "Z zastrzeżeniem przestrzegania przez Ciebie niniejszego Regulaminu, Piyuo udziela Ci ograniczonej, niewyłącznej, nieprzenośnej, nieublicencjonowanej licencji na pobieranie, instalowanie i korzystanie z Usługi wyłącznie do celów osobistych, niekomercyjnych.",
+  "terms_license_2": "Ta licencja nie przyznaje Ci żadnych praw do:",
+  "terms_license_reverse": "Inżynierii wstecznej, dekompilacji lub demontażu Usługi;",
+  "terms_license_distribute": "Dystrybuowania, sprzedaży, dzierżawy, wynajmu, pożyczania lub innego przekazywania Usługi jakiejkolwiek stronie trzeciej;",
+  "terms_license_modify": "Modyfikowania, adaptowania, zmieniania, tłumaczenia lub tworzenia dzieł pochodnych Usługi;",
+  "terms_license_remove": "Usuwania, zmieniania lub ukrywania jakichkolwiek informacji własnościowych w Usłudze.",
+
+  "terms_use_title": "4. Akceptowalne Użycie",
+  "terms_use_intro": "Zgadzasz się korzystać z Usługi wyłącznie w celach zgodnych z prawem i zgodnie z niniejszym Regulaminem. Zgadzasz się nie używać Usługi:",
+  "terms_use_illegal": "W sposób naruszający jakiekolwiek obowiązujące prawo federalne, stanowe, lokalne lub międzynarodowe bądź przepisy;",
+  "terms_use_privacy": "W celu naruszania praw do prywatności innych osób lub angażowania się w jakąkolwiek formę nadzoru zakazaną przez prawo;",
+  "terms_use_harm": "W sposób, który mógłby wyłączyć, przeciążyć, uszkodzić lub pogorszyć Usługę;",
+  "terms_use_malware": "W celu wprowadzania wirusów, koni trojańskich, robaków, bomb logicznych lub innego materiału złośliwego lub technicznie szkodliwego.",
+
+  "terms_privacy_title": "5. Prywatność i Dane",
+  "terms_privacy_1": "Aplikacja Piyuo Counter została zaprojektowana z myślą o prywatności. Aplikacja przetwarza dane wideo lokalnie na Twoim urządzeniu w celach wykrywania i liczenia obiektów.",
+  "terms_privacy_2": "Nie gromadzimy, nie przechowujemy, nie mamy dostępu ani nie przesyłamy żadnych danych osobowych, danych wideo, danych liczbowych lub danych użytkowania z aplikacji. Całe przetwarzanie odbywa się lokalnie na Twoim urządzeniu.",
+  "terms_privacy_3": "Aby uzyskać więcej szczegółów na temat naszych praktyk ochrony prywatności, zapoznaj się z naszą Polityką Prywatności pod adresem {privacy_link}.",
+
+  "terms_disclaimer_title": "6. Wyłączenie Gwarancji",
+  "terms_disclaimer_1": "USŁUGA JEST ŚWIADCZONA \"TAKIEJ, JAKA JEST\" I \"ZGODNIE Z DOSTĘPNOŚCIĄ\" BEZ GWARANCJI JAKIEGOKOLWIEK RODZAJU. W MAKSYMALNYM ZAKRESIE DOZWOLONYM PRZEZ OBOWIĄZUJĄCE PRAWO, PIYUO WYRAŹNIE WYŁĄCZA WSZYSTKIE GWARANCJE, CZY TO WYRAŹNE, DOROZUMIANE, USTAWOWE CZY INNE, W ODNIESIENIU DO USŁUGI, W TYM WSZYSTKIE DOROZUMIANE GWARANCJE PRZYDATNOŚCI HANDLOWEJ, PRZYDATNOŚCI DO OKREŚLONEGO CELU, TYTUŁU I NIENARUSZANIA, ORAZ GWARANCJE, KTÓRE MOGĄ WYNIKAĆ Z PRZEBIEGU TRANSAKCJI, PRZEBIEGU WYKONANIA, UŻYTKOWANIA LUB PRAKTYKI HANDLOWEJ.",
+  "terms_disclaimer_2": "BEZ OGRANICZENIA POWYŻSZEGO, PIYUO NIE UDZIELA ŻADNEJ GWARANCJI ANI ZOBOWIĄZANIA I NIE SKŁADA ŻADNYCH OŚWIADCZEŃ, ŻE USŁUGA SPEŁNI TWOJE WYMAGANIA, OSIĄGNIE ZAMIERZONE WYNIKI, BĘDZIE KOMPATYBILNA LUB BĘDZIE DZIAŁAĆ Z JAKIMKOLWIEK INNYM OPROGRAMOWANIEM, APLIKACJAMI, SYSTEMAMI LUB USŁUGAMI, BĘDZIE DZIAŁAĆ BEZ PRZERWAŃ, SPEŁNI STANDARDY WYDAJNOŚCI LUB NIEZAWODNOŚCI, LUB BĘDZIE WOLNA OD BŁĘDÓW, LUB ŻE JAKIEKOLWIEK BŁĘDY LUB WADY MOGĄ LUB ZOSTANĄ NAPRAWIONE.",
+  "terms_disclaimer_3": "NIE GWARANTUJEMY DOKŁADNOŚCI, KOMPLETNOŚCI LUB NIEZAWODNOŚCI JAKICHKOLWIEK DANYCH LUB WYNIKÓW UZYSKANYCH POPRZEZ KORZYSTANIE Z APLIKACJI (TAKICH JAK LICZBA PIESZYCH). APLIKACJA JEST NARZĘDZIEM, A JEGO WYNIKI MOGĄ BYĆ WPŁYWANE PRZEZ RÓŻNE CZYNNIKI, W TYM JAKOŚĆ KAMERY, WARUNKI OŚWIETLENIOWE, PRZESZKODY I OGRANICZENIA ALGORYTMU.",
+
+  "terms_liability_title": "7. Ograniczenie Odpowiedzialności",
+  "terms_liability_intro": "W NAJSZERSZYM ZAKRESIE DOZWOLONYM PRZEZ OBOWIĄZUJĄCE PRAWO, W ŻADNYM WYPADKU PIYUO, JEGO SPÓŁKI STOWARZYSZONE, OFICEROWIE, DYREKTORZY, PRACOWNICY, AGENCI, DOSTAWCY LUB LICENCJODAWCY NIE BĘDĄ ODPOWIEDZIALNI ZA JAKIEKOLWIEK SZKODY POŚREDNIE, PRZYPADKOWE, SPECJALNE, NASTĘPCZE LUB KARNE, W TYM BEZ OGRANICZEŃ, UTRATĘ ZYSKÓW, DANYCH, UŻYTKOWANIA, GOODWILL LUB INNE STRATY NIEMATERIALNE, WYNIKAJĄCE Z:",
+  "terms_liability_access": "Twojego dostępu do lub korzystania z lub niemożności dostępu do lub korzystania z Usługi;",
+  "terms_liability_third_party": "Jakiegokolwiek postępowania lub treści jakiejkolwiek strony trzeciej w Usłudze;",
+  "terms_liability_content": "Jakiejkolwiek treści uzyskanej z Usługi; oraz",
+  "terms_liability_unauthorized": "Nieautoryzowanego dostępu, użycia lub zmiany Twoich transmisji lub treści (chociaż zauważamy, że Aplikacja nie przesyła Twoich danych liczbowych).",
+  "terms_liability_basis": "TO OGRANICZENIE ODPOWIEDZIALNOŚCI OBOWIĄZUJE NIEZALEŻNIE OD TEGO, CZY DOMNIEMANA ODPOWIEDZIALNOŚĆ OPARTA JEST NA UMOWIE, DELIKCIE, ZANIEDBANIU, ODPOWIEDZIALNOŚCI BEZWZGLĘDNEJ LUB JAKIEJKOLWIEK INNEJ PODSTAWIE, NAWET JEŚLI PIYUO ZOSTAŁO POINFORMOWANE O MOŻLIWOŚCI TAKIEJ SZKODY.",
+  "terms_liability_risk": "POTWIERDZASZ I ZGADZASZ SIĘ, ŻE USŁUGA JEST ŚWIADCZONA BEZPŁATNIE JAKO NARZĘDZIE. KORZYSTASZ Z USŁUGI CAŁKOWICIE NA WŁASNE RYZYKO. PIYUO NIE PONOSI ŻADNEJ ODPOWIEDZIALNOŚCI ZA JAKIEKOLWIEK USZKODZENIA TWOJEGO URZĄDZENIA(ÓW) LUB INNEGO OPROGRAMOWANIA, LUB JAKIEKOLWIEK KONSEKWENCJE WYNIKAJĄCE Z TWOJEGO KORZYSTANIA Z USŁUGI.",
+
+  "terms_support_title": "8. Brak Wsparcia lub Konserwacji",
+  "terms_support": "Piyuo Counter jest dostarczany bezpłatnie. Nie mamy obowiązku świadczenia konserwacji, wsparcia technicznego, aktualizacji lub ulepszeń dla Usługi. Zastrzegamy sobie prawo do modyfikacji, zawieszenia lub zaprzestania, tymczasowo lub na stałe, Usługi lub jakiejkolwiek usługi, z którą się łączy, z powiadomieniem lub bez powiadomienia i bez odpowiedzialności wobec Ciebie.",
+
+  "terms_changes_title": "9. Zmiany w Niniejszym Regulaminie",
+  "terms_changes": "Zastrzegamy sobie prawo, według własnego uznania, do modyfikacji lub zastąpienia niniejszego Regulaminu w dowolnym czasie. Jeśli rewizja jest istotna, dołożymy rozsądnych starań, aby zapewnić powiadomienie (np. poprzez Aplikację lub na Stronie Internetowej) przed wejściem w życie nowych warunków. To, co stanowi istotną zmianę, zostanie określone według naszego własnego uznania. Kontynuując dostęp do lub korzystanie z naszej Usługi po wejściu w życie tych rewizji, zgadzasz się być związany zrewidowanymi warunkami.",
+
+  "terms_governing_title": "10. Prawo Właściwe",
+  "terms_governing": "Niniejszy Regulamin będzie regulowany i interpretowany zgodnie z prawem stanu Kalifornia, Stany Zjednoczone, bez względu na jego zasady kolizji prawa. (Uwaga: Skonsultuj się z prawnikiem, aby potwierdzić, czy jest to właściwa jurysdykcja dla Ciebie).",
+
+  "terms_severability_title": "11. Rozdzielność i Zrzeczenie się",
+  "terms_severability": "Jeśli jakiekolwiek postanowienie niniejszego Regulaminu zostanie uznane za niewykonalne lub nieważne, takie postanowienie zostanie zmienione i zinterpretowane w celu osiągnięcia celów takiego postanowienia w najszerszym możliwym zakresie zgodnie z obowiązującym prawem, a pozostałe postanowienia będą nadal obowiązywać w pełnej mocy. Żadne zrzeczenie się jakiegokolwiek terminu niniejszego Regulaminu nie będzie uznane za dalsze lub ciągłe zrzeczenie się takiego terminu lub jakiegokolwiek innego terminu.",
+
+  "terms_entire_title": "12. Całość Umowy",
+  "terms_entire": "Niniejszy Regulamin, wraz z naszą Polityką Prywatności (dostępną pod adresem {privacy_link}), stanowi całość umowy między Tobą a Piyuo dotyczącą Usługi i zastępuje wszystkie wcześniejsze i współczesne porozumienia, umowy, oświadczenia i gwarancje, zarówno pisemne, jak i ustne, dotyczące Usługi.",
+
+  "terms_contact_title": "13. Informacje Kontaktowe",
+  "terms_contact_intro": "Jeśli masz jakiekolwiek pytania dotyczące niniejszego Regulaminu, skontaktuj się z nami:",
+  "terms_contact_email": "Przez e-mail: {email}",
+  "terms_contact_website": "Odwiedzając tę stronę na naszej stronie internetowej: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

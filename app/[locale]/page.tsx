@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return {};
   }
 
-  const t = await getTranslator(locale);
+  const t = await getTranslator(locale,'page');
 
   return {
     title: `Piyuo - ${t('app_desc')}`,
@@ -84,7 +84,7 @@ export default async function LocalePage({ params }: PageProps) {
   }
 
   // Get translator for this locale
-  const t = await getTranslator(locale);
+  const t = await getTranslator(locale,'page');
 
   // Pre-compute all translations for static export
   const translations: Translations = {

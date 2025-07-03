@@ -1,0 +1,69 @@
+{
+  "terms_title": "Piyuo Sayğac üçün Xidmət Şərtləri",
+  "terms_effective_date": "Qüvvəyə Minmə Tarixi: 12 Aprel 2025",
+
+  "terms_acceptance_title": "1. Şərtlərin Qəbulu",
+  "terms_acceptance": "Piyuo Sayğac tətbiqini (\"Xidmət\") yükləmək, quraşdırmaq və ya istifadə etməklə siz bu Xidmət Şərtləri (\"Şərtlər\") ilə bağlı olmağı qəbul edirsiniz. Bu şərtlərin hər hansı hissəsi ilə razılaşmırsınızsa, Xidmətə daxil ola bilməzsiniz.",
+
+  "terms_description_title": "2. Xidmətin Təsviri",
+  "terms_description_1": "Piyuo Sayğac cihazınızın kamerasını və kompüter görmə texnologiyasından istifadə edərək piyadalar, nəqliyyat vasitələri və ya digər əşyalar kimi obyektləri real vaxtda avtomatik saymaq və izləmək üçün proqram tətbiqidir.",
+  "terms_description_2": "Xidmət tamamilə sizin yerli cihazınızda işləyir. Biz tətbiqin istifadəsindən heç bir məlumat toplamır, saxlamır və ya ötürmürük.",
+
+  "terms_license_title": "3. Lisenziya",
+  "terms_license_1": "Bu Şərtlərə riayət etmək şərti ilə Piyuo sizə yalnız şəxsi, qeyri-kommersiya məqsədləri üçün Xidməti yükləmək, quraşdırmaq və istifadə etmək üçün məhdud, qeyri-eksklüziv, köçürülməz, alt-lisenziya verilməz lisenziya verir.",
+  "terms_license_2": "Bu lisenziya sizə aşağıdakı hüquqları vermir:",
+  "terms_license_reverse": "Xidməti tərs mühəndislik etmək, dekompilə etmək və ya sökülməsi;",
+  "terms_license_distribute": "Xidməti üçüncü tərəfə paylamaq, satmaq, icarəyə vermək, borc vermək və ya başqa şəkildə köçürmək;",
+  "terms_license_modify": "Xidməti dəyişdirmək, uyğunlaşdırmaq, dəyişiklik etmək, tərcümə etmək və ya törəmə əsərlər yaratmaq;",
+  "terms_license_remove": "Xidmətdəki hər hansı mülkiyyət bildirişlərini çıxarmaq, dəyişdirmək və ya gizlətmək.",
+
+  "terms_use_title": "4. Məqbul İstifadə",
+  "terms_use_intro": "Siz Xidməti yalnız qanuni məqsədlər üçün və bu Şərtlərə uyğun istifadə etməyi razılaşırsınız. Xidməti istifadə etməməyi razılaşırsınız:",
+  "terms_use_illegal": "Hər hansı tətbiq olunan federal, dövlət, yerli və ya beynəlxalq qanun və ya qaydanı pozan hər hansı şəkildə;",
+  "terms_use_privacy": "Başqalarının məxfilik hüquqlarını pozmaq və ya qanunla qadağan olunmuş hər hansı müşahidə formasında iştirak etmək üçün;",
+  "terms_use_harm": "Xidməti sıradan çıxara, yükləyə, zərər verə və ya pozacaq hər hansı şəkildə;",
+  "terms_use_malware": "Hər hansı virus, troyan atları, qurd, məntiqi bomba və ya zərərli və ya texnoloji cəhətdən zərərli olan digər materialları daxil etmək üçün.",
+
+  "terms_privacy_title": "5. Məxfilik və Məlumat",
+  "terms_privacy_1": "Piyuo Sayğac tətbiqi məxfilik nəzərə alınaraq dizayn edilmişdir. Tətbiq obyekt aşkarlama və sayma məqsədləri üçün video məlumatlarını cihazınızda yerli olaraq emal edir.",
+  "terms_privacy_2": "Biz tətbiqdən hər hansı şəxsi məlumat, video məlumat, sayma məlumat və ya istifadə məlumatını toplamır, saxlamır, əldə etmir və ya ötürmürük. Bütün emal cihazınızda yerli olaraq baş verir.",
+  "terms_privacy_3": "Məxfilik təcrübələrimiz haqqında ətraflı məlumat üçün {privacy_link} ünvanında Məxfilik Siyasətimizi nəzərdən keçirin.",
+
+  "terms_disclaimer_title": "6. Zəmanətlərin İnkarı",
+  "terms_disclaimer_1": "XİDMƏT \"OLDUĞU KİMİ\" VƏ \"MÖVCUD OLDUĞU KİMİ\" HƏR HANSIB ZƏMANƏTSİZ TƏQDİM EDİLİR. TƏTBİQ OLUNAN QANUNUN İCAZƏ VERDİYİ MAKSIMUM HƏDDƏ, PIYUO XİDMƏTLƏ BAĞLI BÜTÜN AÇIQ, ÜSTÜÖRTÜLÜ, QANUNİ VƏ DİGƏR ZƏMANƏTLƏRİ, TİCARƏT QABİLİYYƏTİ, XÜSUSİ MƏQSƏDƏ UYĞUNLUQ, BAŞLIQ VƏ HÜQUQ POZUNTUSU KIMI BÜTÜN ÜSTÜÖRTÜLÜ ZƏMANƏTLƏRİ AÇIQ ŞƏKILDƏ İNKAR EDİR.",
+  "terms_disclaimer_2": "YUXARIDA GÖSTƏRILƏNLƏRLƏ MƏHDUDLAŞMADAN, PIYUO XİDMƏTİN SİZİN TƏLƏBLƏRİNİZİ QARŞILAYACAĞI, HƏR HANSIB NƏZƏRDƏ TUTULAN NƏTİCƏLƏRƏ NAIL OLACAĞI, DİGƏR PROQRAM, TƏTBİQLƏR, SİSTEMLƏR VƏ YA XİDMƏTLƏRLƏ UYĞUN OLACAĞI VƏ YA İŞLƏYƏCƏYİ HEÇ BİR ZƏMANƏT VƏ ÖHDƏLƏ GÖTÜRMÜR.",
+  "terms_disclaimer_3": "BİZ TƏTBİQİN İSTİFADƏSİ İLƏ ƏLD EDİLƏN HƏR HANSIB MƏLUMAT VƏ YA NƏTİCƏLƏRİN (PİYADALARIN SAYI KİMİ) DÜZGÜNLÜYÜNƏ, TAMLĞINA VƏ ETİBARLILIĞINA ZƏMANƏT VERMİRİK. TƏTBİQ ALƏTDIR VƏ ONUN ÇIXIŞI KAMERA KEYFİYYƏTİ, İŞIQRANDANLIQ ŞƏRAİTİ, MANEƏLƏR VƏ ALQORİTMİN MƏHDUDLUQLARI DAXİL OLMAQLA MÜXTƏLİF AMİLLƏRDƏN TƏSİRLƏNƏ BİLƏR.",
+
+  "terms_liability_title": "7. Məsuliyyətin Məhdudlaşdırılması",
+  "terms_liability_intro": "TƏTBİQ OLUNAN QANUNUN İCAZƏ VERDİYİ TAM HƏDDƏ, HEÇ BİR HALDA PIYUO, ONUN ƏLAQƏDAR ŞİRKƏTLƏRİ, MƏMURLARİ, DİREKTORLARI, İŞÇİLƏRİ, AGENTLƏRİ, TƏMİNATÇILARI VƏ LİSENZİYAÇILARI AŞAĞIDAKILAR DAXİL OLMAQLA HƏR HANSIB DOLAYI, TƏSADÜFİ, XÜSUSİ, NƏTİCƏVİ VƏ CƏZA XARACTERLİ ZƏRƏRLƏR ÜÇÜN MƏSULİYYƏT DAŞIMAYACAQ:",
+  "terms_liability_access": "Xidmətə daxil olmanız və ya istifadə etməyiniz və ya daxil ola bilməməyiniz və ya istifadə edə bilməməyiniz;",
+  "terms_liability_third_party": "Xidmətdə hər hansı üçüncü tərəfin davranışı və ya məzmunu;",
+  "terms_liability_content": "Xidmətdən əldə edilən hər hansı məzmun; və",
+  "terms_liability_unauthorized": "Sizin ötürmələrinizə və ya məzmununuza icazəsiz daxil olma, istifadə və ya dəyişdirmə (biz qeyd edirik ki, Tətbiq sizin sayma məlumatlarınızı ötürmür).",
+  "terms_liability_basis": "BU MƏSULİYYƏT MƏHDUDLAŞDIRILMASI İDDİA EDİLƏN MƏSULİYYƏTİN MÜQAVILƏ, HÜQUQPOZMA, SƏHLƏNKARLIQ, SƏRT MƏSULİYYƏT VƏ DİGƏR HƏR HANSIB ƏSASDA OLMASINA BAXMAYARAQ TƏTBİQ EDİLİR.",
+  "terms_liability_risk": "SİZ EQRAR EDİRSİNİZ VƏ RAZILAŞIRSINIZ Kİ XİDMƏT ALƏT KİMİ PULSUZ TƏQDİM EDİLİR. SİZ XİDMƏTİ TAMAMİLƏ ÖZ RİSKİNİZƏ İSTİFADƏ EDİRSİNİZ. PIYUO CİHAZINIZA (CİHAZLARINIZA) VƏ DİGƏR PROQRAM TƏMİNATINA VƏ YA XİDMƏTİN İSTİFADƏSİNDƏN YARANAN HƏR HANSIB NƏTİCƏLƏRƏ GÖRƏ HEÇ BİR MƏSULİYYƏT VƏ ÖHDƏLIK GÖTÜRMÜR.",
+
+  "terms_support_title": "8. Dəstək və ya Texniki Xidmət Yoxdur",
+  "terms_support": "Piyuo Sayğac pulsuz təqdim edilir. Biz Xidmət üçün texniki xidmət, texniki dəstək, yeniləmələr və ya təkmilləşdirmələr təqdim etmək öhdəliyi altında deyilik. Bildiriş ilə və ya bildiriş vermədən, sizə qarşı məsuliyyət daşımadan Xidməti və ya ona qoşulan hər hansı xidməti müvəqqəti və ya daimi olaraq dəyişdirmək, dayandırmaq və ya ləğv etmək hüququmuzu özümüzdə saxlayırıq.",
+
+  "terms_changes_title": "9. Bu Şərtlərə Dəyişikliklər",
+  "terms_changes": "Biz öz mülahizəmizə görə bu Şərtləri istənilən vaxt dəyişdirmək və ya əvəz etmək hüququnu özümüzdə saxlayırıq. Əgər dəyişiklik əhəmiyyətli olarsa, yeni şərtlər qüvvəyə minməzdən əvvəl bildiriş vermək üçün ağlabatan səylər göstərəcəyik (məsələn, Tətbiq vasitəsilə və ya Vebsaytda). Əhəmiyyətli dəyişikliyin nədən ibarət olduğu bizim mülahizəmizlə müəyyən ediləcək.",
+
+  "terms_governing_title": "10. Hakim Qanun",
+  "terms_governing": "Bu Şərtlər Kaliforniya ştatının, ABŞ-ın qanunlarına uyğun olaraq idarə olunacaq və şərh ediləcək, qanun münaqişəsi prinsiplərinə əhəmiyyət verilmədən. (Qeyd: Bu sizin üçün uyğun yurisdiksiya olduğunu təsdiqləmək üçün hüquqşünasla məsləhətləşin).",
+
+  "terms_severability_title": "11. Ayrılabilirlik və İmtina",
+  "terms_severability": "Bu Şərtlərin hər hansı müddəasının tətbiq olunmaz və ya etibarsız olduğu müəyyən edilərsə, həmin müddəa tətbiq olunan qanun çərçivəsində bu müddəanın məqsədlərini maksimum dərəcədə həyata keçirmək üçün dəyişdiriləcək və şərh ediləcək və qalan müddəalar tam qüvvədə qalacaq.",
+
+  "terms_entire_title": "12. Tam Razılaşma",
+  "terms_entire": "Bu Şərtlər Məxfilik Siyasətimizlə ({privacy_link} ünvanında mövcuddur) birlikdə Xidmətlə bağlı sizinlə Piyuo arasında tam razılaşmanı təşkil edir və Xidmətlə bağlı əvvəlki və müasir bütün anlaşmaları, razılaşmaları, təqdimatları və zəmanətləri, yazılı və şifahi, əvəz edir.",
+
+  "terms_contact_title": "13. Əlaqə Məlumatları",
+  "terms_contact_intro": "Bu Şərtlərlə bağlı hər hansı sualınız varsa, bizimlə əlaqə saxlayın:",
+  "terms_contact_email": "E-poçt vasitəsilə: {email}",
+  "terms_contact_website": "Vebsaytımızda bu səhifəni ziyarət etməklə: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

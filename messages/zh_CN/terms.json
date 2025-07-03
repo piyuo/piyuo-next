@@ -1,0 +1,69 @@
+{
+  "terms_title": "Piyuo Counter 服务条款",
+  "terms_effective_date": "生效日期：2025年4月12日",
+
+  "terms_acceptance_title": "1. 接受条款",
+  "terms_acceptance": "通过下载、安装或使用 Piyuo Counter 应用程序（\"服务\"），您同意受这些服务条款（\"条款\"）的约束。如果您不同意这些条款的任何部分，您不得访问服务。",
+
+  "terms_description_title": "2. 服务说明",
+  "terms_description_1": "Piyuo Counter 是一个软件应用程序，使用您设备的摄像头和计算机视觉技术实时自动计数和跟踪行人、车辆或其他物体。",
+  "terms_description_2": "该服务完全在您的本地设备上运行。我们不会收集、存储或传输您使用应用程序的任何数据。",
+
+  "terms_license_title": "3. 许可证",
+  "terms_license_1": "在您遵守这些条款的前提下，Piyuo 授予您有限的、非独家的、不可转让的、不可再许可的许可证，仅供您个人、非商业用途下载、安装和使用服务。",
+  "terms_license_2": "此许可证不授予您以下权利：",
+  "terms_license_reverse": "逆向工程、反编译或反汇编服务；",
+  "terms_license_distribute": "向任何第三方分发、出售、租赁、出租、借出或以其他方式转让服务；",
+  "terms_license_modify": "修改、改编、更改、翻译或创建服务的衍生作品；",
+  "terms_license_remove": "删除、更改或掩盖服务上的任何专有声明。",
+
+  "terms_use_title": "4. 可接受的使用",
+  "terms_use_intro": "您同意仅将服务用于合法目的并按照这些条款使用。您同意不将服务用于：",
+  "terms_use_illegal": "以任何违反任何适用的联邦、州、地方或国际法律或法规的方式；",
+  "terms_use_privacy": "侵犯他人隐私权或参与任何法律禁止的监视形式；",
+  "terms_use_harm": "以任何可能禁用、使负担过重、损害或损害服务的方式；",
+  "terms_use_malware": "引入任何病毒、木马、蠕虫、逻辑炸弹或其他恶意或技术有害的材料。",
+
+  "terms_privacy_title": "5. 隐私和数据",
+  "terms_privacy_1": "Piyuo Counter 应用程序在设计时考虑了隐私。该应用程序在您的设备上本地处理视频数据，用于目标检测和计数目的。",
+  "terms_privacy_2": "我们不会收集、存储、访问或传输应用程序中的任何个人信息、视频数据、计数数据或使用数据。所有处理都在您的设备上本地进行。",
+  "terms_privacy_3": "有关我们隐私做法的更多详细信息，请查看我们在 {privacy_link} 的隐私政策。",
+
+  "terms_disclaimer_title": "6. 免责声明",
+  "terms_disclaimer_1": "服务按\"现状\"和\"可用\"提供，不提供任何形式的保证。在适用法律允许的最大范围内，PIYUO 明确否认关于服务的所有保证，无论是明示、暗示、法定或其他保证。",
+  "terms_disclaimer_2": "在不限制上述内容的情况下，PIYUO 不提供任何保证或承诺，也不作出任何陈述，表明服务将满足您的要求、实现任何预期结果或与任何其他软件兼容或工作。",
+  "terms_disclaimer_3": "我们不保证通过使用应用程序获得的任何数据或结果的准确性、完整性或可靠性。该应用程序是一个工具，其输出可能会受到各种因素的影响，包括相机质量、照明条件、障碍物和算法限制。",
+
+  "terms_liability_title": "7. 责任限制",
+  "terms_liability_intro": "在适用法律允许的最大范围内，PIYUO、其关联公司、管理人员、董事、员工、代理人、供应商或许可方在任何情况下均不对任何间接、偶然、特殊、后果性或惩罚性损害承担责任，包括但不限于利润、数据、使用、商誉或其他无形损失的损失，由以下原因引起：",
+  "terms_liability_access": "您访问或使用或无法访问或使用服务；",
+  "terms_liability_third_party": "服务上任何第三方的任何行为或内容；",
+  "terms_liability_content": "从服务获得的任何内容；和",
+  "terms_liability_unauthorized": "未经授权访问、使用或更改您的传输或内容。",
+  "terms_liability_basis": "无论所谓的责任是基于合同、侵权、过失、严格责任还是任何其他基础，此责任限制都适用。",
+  "terms_liability_risk": "您承认并同意服务是作为工具免费提供的。您完全自担风险使用服务。",
+
+  "terms_support_title": "8. 无支持或维护",
+  "terms_support": "Piyuo Counter 免费提供。我们没有义务为服务提供维护、技术支持、更新或升级。我们保留随时修改、暂停或终止服务或其连接的任何服务的权利，无论是否通知您。",
+
+  "terms_changes_title": "9. 条款变更",
+  "terms_changes": "我们保留在我们的完全酌情权下随时修改或替换这些条款的权利。如果修订是重大的，我们将在新条款生效之前尽合理努力提供通知。",
+
+  "terms_governing_title": "10. 适用法律",
+  "terms_governing": "这些条款应受美国加利福尼亚州法律管辖和解释，不考虑其法律冲突原则。（注：请咨询律师确认这是否是适合您的司法管辖区）。",
+
+  "terms_severability_title": "11. 可分割性和弃权",
+  "terms_severability": "如果这些条款的任何条款被认为不可执行或无效，则该条款将被更改和解释，以在适用法律下最大程度地实现该条款的目标，其余条款将继续完全有效。",
+
+  "terms_entire_title": "12. 完整协议",
+  "terms_entire": "这些条款连同我们的隐私政策（可在 {privacy_link} 获取）构成您与 Piyuo 就服务达成的完整协议。",
+
+  "terms_contact_title": "13. 联系信息",
+  "terms_contact_intro": "如果您对这些条款有任何疑问，请联系我们：",
+  "terms_contact_email": "电子邮件：{email}",
+  "terms_contact_website": "访问我们网站上的此页面：{website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

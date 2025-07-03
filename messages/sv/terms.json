@@ -1,0 +1,69 @@
+{
+  "terms_title": "Användarvillkor för Piyuo Counter",
+  "terms_effective_date": "Ikraftträdandedatum: 12 april 2025",
+
+  "terms_acceptance_title": "1. Acceptans av villkor",
+  "terms_acceptance": "Genom att ladda ner, installera eller använda Piyuo Counter-appen (\"Tjänsten\") accepterar du att vara bunden av dessa Användarvillkor (\"Villkor\"). Om du inte håller med om någon del av dessa villkor får du inte komma åt Tjänsten.",
+
+  "terms_description_title": "2. Beskrivning av tjänsten",
+  "terms_description_1": "Piyuo Counter är en programvaruapplikation som använder din enhets kamera och datorsynsteknik för att automatiskt räkna och spåra objekt som fotgängare, fordon eller andra föremål i realtid.",
+  "terms_description_2": "Tjänsten fungerar helt på din lokala enhet. Vi samlar inte in, lagrar eller överför någon data från din användning av appen.",
+
+  "terms_license_title": "3. Licens",
+  "terms_license_1": "Med förbehåll för din efterlevnad av dessa Villkor beviljar Piyuo dig en begränsad, icke-exklusiv, icke-överförbar, icke-sublicensierbar licens att ladda ner, installera och använda Tjänsten uteslutande för din personliga, icke-kommersiella användning.",
+  "terms_license_2": "Denna licens ger dig inga rättigheter att:",
+  "terms_license_reverse": "Bakåtkompilera, dekompilera eller demontera Tjänsten;",
+  "terms_license_distribute": "Distribuera, sälja, leasa, hyra ut, låna ut eller på annat sätt överföra Tjänsten till någon tredje part;",
+  "terms_license_modify": "Modifiera, anpassa, ändra, översätta eller skapa härledda verk av Tjänsten;",
+  "terms_license_remove": "Ta bort, ändra eller dölja eventuella äganderättsmeddelanden på Tjänsten.",
+
+  "terms_use_title": "4. Acceptabel användning",
+  "terms_use_intro": "Du samtycker till att använda Tjänsten endast för lagliga syften och i enlighet med dessa Villkor. Du samtycker till att inte använda Tjänsten:",
+  "terms_use_illegal": "På något sätt som bryter mot tillämpliga federala, statliga, lokala eller internationella lagar eller förordningar;",
+  "terms_use_privacy": "För att kränka andras integritetsskydd eller delta i någon form av övervakning som är förbjuden enligt lag;",
+  "terms_use_harm": "På något sätt som skulle kunna inaktivera, överbelasta, skada eller försämra Tjänsten;",
+  "terms_use_malware": "För att introducera virus, trojanska hästar, maskar, logiska bomber eller annat material som är skadligt eller tekniskt skadligt.",
+
+  "terms_privacy_title": "5. Integritet och data",
+  "terms_privacy_1": "Piyuo Counter-appen är designad med integritet i åtanke. Appen bearbetar videodata lokalt på din enhet för objektdetektering och räkningsändamål.",
+  "terms_privacy_2": "Vi samlar inte in, lagrar, får tillgång till eller överför någon personlig information, videodata, räkningsdata eller användningsdata från appen. All bearbetning sker lokalt på din enhet.",
+  "terms_privacy_3": "För mer information om våra integritetspraxis, vänligen granska vår Integritetspolicy på {privacy_link}.",
+
+  "terms_disclaimer_title": "6. Friskrivning av garantier",
+  "terms_disclaimer_1": "TJÄNSTEN TILLHANDAHÅLLS \"SOM DEN ÄR\" OCH \"SOM TILLGÄNGLIG\" UTAN GARANTIER AV NÅGOT SLAG. I DEN STÖRSTA UTSTRÄCKNING SOM TILLÅTS AV TILLÄMPLIG LAG FRISKRIVER SIG PIYUO UTTRYCKLIGEN FRÅN ALLA GARANTIER, VARE SIG DE ÄR UTTRYCKLIGA, UNDERFÖRSTÅDDA, LAGSTADGADE ELLER ANDRA, BETRÄFFANDE TJÄNSTEN, INKLUSIVE ALLA UNDERFÖRSTÅDDA GARANTIER FÖR SÄLJBARHET, LÄMPLIGHET FÖR ETT VISST ÄNDAMÅL, ÄGANDERÄTT OCH ICKE-INTRÅNG, OCH GARANTIER SOM KAN UPPSTÅ FRÅN AFFÄRSFÖRLOPP, PRESTATIONSFÖRLOPP, ANVÄNDNING ELLER HANDELSPRAXIS.",
+  "terms_disclaimer_2": "UTAN BEGRÄNSNING AV DET FÖREGÅENDE GER PIYUO INGEN GARANTI ELLER ÅTAGANDE OCH GÖR INGA UTTALANDEN OM ATT TJÄNSTEN KOMMER ATT UPPFYLLA DINA KRAV, UPPNÅ NÅGRA AVSEDDA RESULTAT, VARA KOMPATIBEL ELLER FUNGERA MED NÅGON ANNAN PROGRAMVARA, APPLIKATIONER, SYSTEM ELLER TJÄNSTER, FUNGERA UTAN AVBROTT, UPPFYLLA PRESTANDA- ELLER TILLFÖRLITLIGHETSSTANDARDER, ELLER VARA FELFRI, ELLER ATT EVENTUELLA FEL ELLER BRISTER KAN ELLER KOMMER ATT RÄTTAS.",
+  "terms_disclaimer_3": "VI GARANTERAR INTE NOGGRANNHETEN, FULLSTÄNDIGHETEN ELLER TILLFÖRLITLIGHETEN AV NÅGON DATA ELLER RESULTAT SOM ERHÅLLS GENOM ANVÄNDNING AV APPEN (SÅSOM FOTGÄNGARRÄKNING). APPEN ÄR ETT VERKTYG OCH DESS UTDATA KAN PÅVERKAS AV OLIKA FAKTORER INKLUSIVE KAMERAKVALITET, LJUSFÖRHÅLLANDEN, HINDER OCH ALGORITMENS BEGRÄNSNINGAR.",
+
+  "terms_liability_title": "7. Ansvarsbegränsning",
+  "terms_liability_intro": "I DEN FULLASTE UTSTRÄCKNING SOM TILLÅTS AV TILLÄMPLIG LAG SKA PIYUO, DESS DOTTERBOLAG, TJÄNSTEMÄN, DIREKTÖRER, ANSTÄLLDA, AGENTER, LEVERANTÖRER ELLER LICENSGIVARE UNDER INGA OMSTÄNDIGHETER VARA ANSVARIGA FÖR NÅGRA INDIREKTA, TILLFÄLLIGA, SPECIELLA, FÖLJDSKADOR ELLER STRAFFSKADOR, INKLUSIVE UTAN BEGRÄNSNING FÖRLUST AV VINST, DATA, ANVÄNDNING, GOODWILL ELLER ANDRA IMMATERIELLA FÖRLUSTER, SOM FÖLJER AV:",
+  "terms_liability_access": "Din åtkomst till eller användning av eller oförmåga att komma åt eller använda Tjänsten;",
+  "terms_liability_third_party": "Något beteende eller innehåll från någon tredje part på Tjänsten;",
+  "terms_liability_content": "Något innehåll erhållet från Tjänsten; och",
+  "terms_liability_unauthorized": "Obehörig åtkomst, användning eller ändring av dina överföringar eller innehåll (även om vi noterar att Appen inte överför dina räkningsdata).",
+  "terms_liability_basis": "DENNA ANSVARSBEGRÄNSNING GÄLLER OAVSETT OM DEN PÅSTÅDDA ANSVARIGHETEN BASERAS PÅ KONTRAKT, SKADESTÅND, VÅRDSLÖSHET, STRIKT ANSVAR ELLER NÅGON ANNAN GRUND, ÄVEN OM PIYUO HAR BLIVIT INFORMERAT OM MÖJLIGHETEN AV SÅDAN SKADA.",
+  "terms_liability_risk": "DU ERKÄNNER OCH SAMTYCKER TILL ATT TJÄNSTEN TILLHANDAHÅLLS GRATIS SOM ETT VERKTYG. DU ANVÄNDER TJÄNSTEN HELT PÅ DIN EGEN RISK. PIYUO TAR INGET ANSVAR ELLER ANSVARIGHET FÖR NÅGON SKADA PÅ DIN(A) ENHET(ER) ELLER ANNAN PROGRAMVARA, ELLER NÅGRA KONSEKVENSER SOM UPPSTÅR FRÅN DIN ANVÄNDNING AV TJÄNSTEN.",
+
+  "terms_support_title": "8. Inget stöd eller underhåll",
+  "terms_support": "Piyuo Counter tillhandahålls gratis. Vi har ingen skyldighet att tillhandahålla underhåll, teknisk support, uppdateringar eller uppgraderingar för Tjänsten. Vi förbehåller oss rätten att modifiera, avbryta eller upphöra, tillfälligt eller permanent, Tjänsten eller någon tjänst den ansluter till, med eller utan meddelande och utan ansvar gentemot dig.",
+
+  "terms_changes_title": "9. Ändringar av dessa villkor",
+  "terms_changes": "Vi förbehåller oss rätten, efter eget gottfinnande, att modifiera eller ersätta dessa Villkor när som helst. Om en revision är väsentlig kommer vi att göra rimliga ansträngningar för att tillhandahålla meddelande (t.ex. genom Appen eller på Webbplatsen) innan några nya villkor träder i kraft. Vad som utgör en väsentlig förändring kommer att bestämmas efter vårt eget gottfinnande. Genom att fortsätta att komma åt eller använda vår Tjänst efter att dessa revisioner träder i kraft samtycker du till att vara bunden av de reviderade villkoren.",
+
+  "terms_governing_title": "10. Tillämplig lag",
+  "terms_governing": "Dessa Villkor ska styras av och tolkas i enlighet med lagarna i delstaten Kalifornien, USA, utan hänsyn till dess konfliktlagsprinciper. (Obs: Konsultera en advokat för att bekräfta om detta är lämplig jurisdiktion för dig).",
+
+  "terms_severability_title": "11. Avskiljbarhet och avstående",
+  "terms_severability": "Om någon bestämmelse i dessa Villkor anses vara icke verkställbar eller ogiltig, kommer sådan bestämmelse att ändras och tolkas för att uppnå målen med en sådan bestämmelse i största möjliga utsträckning under tillämplig lag, och de återstående bestämmelserna kommer att fortsätta i full kraft och verkan. Inget avstående från någon term i dessa Villkor ska anses vara ett ytterligare eller fortsatt avstående från sådan term eller någon annan term.",
+
+  "terms_entire_title": "12. Hela avtalet",
+  "terms_entire": "Dessa Villkor, tillsammans med vår Integritetspolicy (tillgänglig på {privacy_link}), utgör hela avtalet mellan dig och Piyuo angående Tjänsten och ersätter alla tidigare och samtida förståelser, avtal, representationer och garantier, både skriftliga och muntliga, angående Tjänsten.",
+
+  "terms_contact_title": "13. Kontaktinformation",
+  "terms_contact_intro": "Om du har några frågor om dessa Villkor, vänligen kontakta oss:",
+  "terms_contact_email": "Via e-post: {email}",
+  "terms_contact_website": "Genom att besöka denna sida på vår webbplats: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

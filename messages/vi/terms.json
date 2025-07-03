@@ -1,0 +1,69 @@
+{
+  "terms_title": "Điều Khoản Dịch Vụ cho Piyuo Counter",
+  "terms_effective_date": "Ngày Có Hiệu Lực: 12 tháng 4, 2025",
+
+  "terms_acceptance_title": "1. Chấp Nhận Điều Khoản",
+  "terms_acceptance": "Bằng việc tải xuống, cài đặt hoặc sử dụng ứng dụng Piyuo Counter (\"Dịch Vụ\"), bạn đồng ý bị ràng buộc bởi các Điều Khoản Dịch Vụ này (\"Điều Khoản\"). Nếu bạn không đồng ý với bất kỳ phần nào của các điều khoản này, thì bạn không được phép truy cập Dịch Vụ.",
+
+  "terms_description_title": "2. Mô Tả Dịch Vụ",
+  "terms_description_1": "Piyuo Counter là một ứng dụng phần mềm sử dụng camera thiết bị của bạn và công nghệ thị giác máy tính để tự động đếm và theo dõi các đối tượng như người đi bộ, phương tiện hoặc các mục khác trong thời gian thực.",
+  "terms_description_2": "Dịch Vụ hoạt động hoàn toàn trên thiết bị cục bộ của bạn. Chúng tôi không thu thập, lưu trữ hoặc truyền tải bất kỳ dữ liệu nào từ việc sử dụng ứng dụng của bạn.",
+
+  "terms_license_title": "3. Giấy Phép",
+  "terms_license_1": "Tùy thuộc vào việc tuân thủ các Điều Khoản này của bạn, Piyuo cấp cho bạn giấy phép hạn chế, không độc quyền, không thể chuyển nhượng, không thể cấp phép lại để tải xuống, cài đặt và sử dụng Dịch Vụ chỉ cho mục đích sử dụng cá nhân, phi thương mại của bạn.",
+  "terms_license_2": "Giấy phép này không cấp cho bạn bất kỳ quyền nào để:",
+  "terms_license_reverse": "Kỹ thuật đảo ngược, dịch ngược hoặc tháo rời Dịch Vụ;",
+  "terms_license_distribute": "Phân phối, bán, cho thuê, cho mượn hoặc chuyển nhượng Dịch Vụ cho bất kỳ bên thứ ba nào;",
+  "terms_license_modify": "Sửa đổi, điều chỉnh, thay đổi, dịch thuật hoặc tạo ra các tác phẩm phái sinh của Dịch Vụ;",
+  "terms_license_remove": "Loại bỏ, thay đổi hoặc che khuất bất kỳ thông báo quyền sở hữu nào trên Dịch Vụ.",
+
+  "terms_use_title": "4. Sử Dụng Chấp Nhận Được",
+  "terms_use_intro": "Bạn đồng ý chỉ sử dụng Dịch Vụ cho các mục đích hợp pháp và theo các Điều Khoản này. Bạn đồng ý không sử dụng Dịch Vụ:",
+  "terms_use_illegal": "Theo bất kỳ cách nào vi phạm bất kỳ luật pháp hoặc quy định liên bang, tiểu bang, địa phương hoặc quốc tế hiện hành;",
+  "terms_use_privacy": "Để vi phạm quyền riêng tư của người khác hoặc tham gia vào bất kỳ hình thức giám sát nào bị cấm bởi pháp luật;",
+  "terms_use_harm": "Theo bất kỳ cách nào có thể vô hiệu hóa, quá tải, làm hỏng hoặc làm suy giảm Dịch Vụ;",
+  "terms_use_malware": "Để đưa vào bất kỳ virus, trojan, sâu, bom logic hoặc vật liệu độc hại hoặc có hại về mặt kỹ thuật khác.",
+
+  "terms_privacy_title": "5. Quyền Riêng Tư và Dữ Liệu",
+  "terms_privacy_1": "Ứng dụng Piyuo Counter được thiết kế với quyền riêng tư trong tâm trí. Ứng dụng xử lý dữ liệu video cục bộ trên thiết bị của bạn cho mục đích phát hiện và đếm đối tượng.",
+  "terms_privacy_2": "Chúng tôi không thu thập, lưu trữ, truy cập hoặc truyền tải bất kỳ thông tin cá nhân, dữ liệu video, dữ liệu đếm hoặc dữ liệu sử dụng nào từ ứng dụng. Tất cả xử lý diễn ra cục bộ trên thiết bị của bạn.",
+  "terms_privacy_3": "Để biết thêm chi tiết về các thực hành quyền riêng tư của chúng tôi, vui lòng xem Chính Sách Quyền Riêng Tư của chúng tôi tại {privacy_link}.",
+
+  "terms_disclaimer_title": "6. Từ Chối Bảo Hành",
+  "terms_disclaimer_1": "DỊCH VỤ ĐƯỢC CUNG CẤP \"NHƯ HIỆN TẠI\" VÀ \"NHƯ CÓ SẴN\" MÀ KHÔNG CÓ BẢO HÀNH DƯỚI BẤT KỲ HÌNH THỨC NÀO. TRONG PHẠM VI TỐI ĐA ĐƯỢC PHÁP LUẬT CHO PHÉP, PIYUO RÕ RÀNG TỪ CHỐI TẤT CẢ BẢO HÀNH, DÙ LÀ RÕ RÀNG, NGỤ Ý, THEO LUẬT ĐỊNH HAY KHÁC, LIÊN QUAN ĐẾN DỊCH VỤ, BAO GỒM TẤT CẢ BẢO HÀNH NGỤ Ý VỀ KHẢ NĂNG BÁN ĐƯỢC, PHÙ HỢP CHO MỤC ĐÍCH CỤ THỂ, QUYỀN SỞ HỮU VÀ KHÔNG VI PHẠM.",
+  "terms_disclaimer_2": "KHÔNG GIỚI HẠN NHỮNG ĐIỀU NÓI TRÊN, PIYUO KHÔNG CUNG CẤP BẢO HÀNH HOẶC CAM KẾT VÀ KHÔNG ĐƯA RA BẤT KỲ TUYÊN BỐ NÀO RẰNG DỊCH VỤ SẼ ĐÁP ỨNG YÊU CẦU CỦA BẠN, ĐẠT ĐƯỢC KẾT QUẢ DỰ ĐỊNH, TƯƠNG THÍCH HOẶC HOẠT ĐỘNG VỚI BẤT KỲ PHẦN MỀM, ỨNG DỤNG, HỆ THỐNG HOẶC DỊCH VỤ KHÁC.",
+  "terms_disclaimer_3": "CHÚNG TÔI KHÔNG BẢO HÀNH ĐỘ CHÍNH XÁC, TÍNH ĐẦY ĐỦ HOẶC ĐỘ TIN CẬY CỦA BẤT KỲ DỮ LIỆU HOẶC KẾT QUẢ NÀO THU ĐƯỢC THÔNG QUA VIỆC SỬ DỤNG ỨNG DỤNG. ỨNG DỤNG LÀ MỘT CÔNG CỤ VÀ ĐẦU RA CỦA NÓ CÓ THỂ BỊ ẢNH HƯỞNG BỞI NHIỀU YẾU TỐ KHÁC NHAU BAO GỒM CHẤT LƯỢNG CAMERA, ĐIỀU KIỆN Ánh SÁNG VÀ GIỚI HẠN CỦA THUẬT TOÁN.",
+
+  "terms_liability_title": "7. Giới Hạn Trách Nhiệm",
+  "terms_liability_intro": "TRONG PHẠM VI TỐI ĐA ĐƯỢC PHÁP LUẬT CHO PHÉP, TRONG MỌI TRƯỜNG HỢP PIYUO, CÁC CÔNG TY LIÊN KẾT, CÁN BỘ, GIÁM ĐỐC, NHÂN VIÊN, ĐẠI LÝ, NHÀ CUNG CẤP HOẶC BÊN CẤP PHÉP SẼ KHÔNG CHỊU TRÁCH NHIỆM CHO NHỮNG THIỆT HẠI GIÁN TIẾP, NGẪU NHIÊN, ĐẶC BIỆT, HẬU QUẢ HOẶC TRỪNG PHẠT, BAO GỒM KHÔNG GIỚI HẠN, MẤT LỢI NHUẬN, DỮ LIỆU, SỬ DỤNG, UY TÍN HOẶC CÁC TỔN THẤT VÔ HÌNH KHÁC, PHÁT SINH TỪ:",
+  "terms_liability_access": "Việc truy cập hoặc sử dụng Dịch Vụ của bạn hoặc không thể truy cập hoặc sử dụng Dịch Vụ;",
+  "terms_liability_third_party": "Bất kỳ hành vi hoặc nội dung nào của bên thứ ba trên Dịch Vụ;",
+  "terms_liability_content": "Bất kỳ nội dung nào thu được từ Dịch Vụ; và",
+  "terms_liability_unauthorized": "Truy cập, sử dụng hoặc thay đổi trái phép các truyền tải hoặc nội dung của bạn.",
+  "terms_liability_basis": "GIỚI HẠN TRÁCH NHIỆM NÀY ÁP DỤNG CHO DÙ TRÁCH NHIỆM BỊ CÁO BUỘC DỰA TRÊN HỢP ĐỒNG, THIỆT HẠI, CẨU THẢ, TRÁCH NHIỆM NGHIÊM NGẶT HAY BẤT KỲ CƠ SỞ NÀO KHÁC, NGAY CẢ KHI PIYUO ĐÃ ĐƯỢC THÔNG BÁO VỀ KHẢ NĂNG CỦA NHỮNG THIỆT HẠI NHƯ VẬY.",
+  "terms_liability_risk": "BẠN THỪA NHẬN VÀ ĐỒNG Ý RẰNG DỊCH VỤ ĐƯỢC CUNG CẤP MIỄN PHÍ NHƯ MỘT CÔNG CỤ. BẠN SỬ DỤNG DỊCH VỤ HOÀN TOÀN CHỊU RỦI RO. PIYUO KHÔNG CHỊU TRÁCH NHIỆM CHO BẤT KỲ THIỆT HẠI NÀO CHO THIẾT BỊ CỦA BẠN HOẶC PHẦN MỀM KHÁC, HOẶC BẤT KỲ HẬU QUẢ NÀO PHÁT SINH TỪ VIỆC SỬ DỤNG DỊCH VỤ CỦA BẠN.",
+
+  "terms_support_title": "8. Không Có Hỗ Trợ hoặc Bảo Trì",
+  "terms_support": "Piyuo Counter được cung cấp miễn phí. Chúng tôi không có nghĩa vụ cung cấp bảo trì, hỗ trợ kỹ thuật, cập nhật hoặc nâng cấp cho Dịch Vụ. Chúng tôi bảo lưu quyền sửa đổi, tạm ngưng hoặc ngừng, tạm thời hoặc vĩnh viễn, Dịch Vụ hoặc bất kỳ dịch vụ nào mà nó kết nối, có hoặc không có thông báo và không có trách nhiệm đối với bạn.",
+
+  "terms_changes_title": "9. Thay Đổi Các Điều Khoản Này",
+  "terms_changes": "Chúng tôi bảo lưu quyền, theo quyết định riêng của chúng tôi, để sửa đổi hoặc thay thế các Điều Khoản này bất cứ lúc nào. Nếu một bản sửa đổi là quan trọng, chúng tôi sẽ nỗ lực hợp lý để cung cấp thông báo trước khi bất kỳ điều khoản mới nào có hiệu lực. Những gì cấu thành thay đổi quan trọng sẽ được xác định theo quyết định riêng của chúng tôi. Bằng việc tiếp tục truy cập hoặc sử dụng Dịch Vụ của chúng tôi sau khi những sửa đổi đó có hiệu lực, bạn đồng ý bị ràng buộc bởi các điều khoản đã được sửa đổi.",
+
+  "terms_governing_title": "10. Luật Điều Chỉnh",
+  "terms_governing": "Các Điều Khoản này sẽ được điều chỉnh và giải thích theo luật pháp của Bang California, Hoa Kỳ, không tính đến các nguyên tắc xung đột pháp luật của nó.",
+
+  "terms_severability_title": "11. Tính Tách Rời và Từ Bỏ",
+  "terms_severability": "Nếu bất kỳ điều khoản nào của các Điều Khoản này được coi là không thể thực thi hoặc không hợp lệ, điều khoản đó sẽ được thay đổi và giải thích để hoàn thành các mục tiêu của điều khoản đó trong phạm vi tối đa có thể theo luật pháp hiện hành, và các điều khoản còn lại sẽ tiếp tục có hiệu lực đầy đủ.",
+
+  "terms_entire_title": "12. Thỏa Thuận Toàn Bộ",
+  "terms_entire": "Các Điều Khoản này, cùng với Chính Sách Quyền Riêng Tư của chúng tôi, cấu thành thỏa thuận toàn bộ giữa bạn và Piyuo liên quan đến Dịch Vụ và thay thế tất cả các hiểu biết, thỏa thuận, tuyên bố và bảo hành trước đó và đồng thời, cả bằng văn bản và bằng lời nói, liên quan đến Dịch Vụ.",
+
+  "terms_contact_title": "13. Thông Tin Liên Hệ",
+  "terms_contact_intro": "Nếu bạn có bất kỳ câu hỏi nào về các Điều Khoản này, vui lòng liên hệ với chúng tôi:",
+  "terms_contact_email": "Qua email: {email}",
+  "terms_contact_website": "Bằng cách truy cập trang này trên trang web của chúng tôi: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

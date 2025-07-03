@@ -1,0 +1,45 @@
+{
+  "privacy_title": "Piyuo Counter uchun Maxfiylik Siyosati",
+  "privacy_effective_date": "Amal qilish sanasi: 12 aprel, 2025",
+
+  "privacy_introduction_title": "Kirish",
+  "privacy_introduction_1": "Piyuo Counter ga xush kelibsiz! Ushbu Maxfiylik Siyosati bizning dasturiy ta'minot ilovamizdan (\"Ilova\") foydalanganda ma'lumotlarni qanday boshqarishimizni tushuntiradi. Bizning majburiyatimiz sizning maxfiyligingizdir. Ushbu Ilova sizning shaxsiy ma'lumotlaringizni to'plamasdan yoki qayta ishlamasdan ishlash uchun mo'ljallangan.",
+  "privacy_introduction_2": "Ushbu Maxfiylik Siyosati mobil qurilmalar va kompyuterlar uchun Piyuo Counter dasturiy ta'minot ilovasi (\"Ilova\") ga tegishli bo'lib, turli platformalar va ilova do'konlarida mavjud.",
+
+  "privacy_who_we_are_title": "Biz kimamiz",
+  "privacy_who_we_are": "Piyuo Counter ilovasini Piyuo (\"biz,\" \"bizga,\" yoki \"bizning\") taqdim etadi. Bizning veb-saytimiz {website}. Agar ushbu siyosat haqida savollaringiz bo'lsa, {email} orqali biz bilan bog'lanishingiz mumkin.",
+
+  "privacy_no_collect_title": "Biz to'plamaydigan ma'lumotlar",
+  "privacy_no_collect_intro": "Biz Piyuo Counter ilovasi orqali sizdan hech qanday shaxsiy ma'lumot yoki foydalanish ma'lumotlarini to'plamaymiz, saqlamaymiz, uzatmaymiz yoki qayta ishlamaymiz.",
+  "privacy_no_collect_personal": "Shaxsiy ma'lumotlar yo'q: Biz sizni tanib olishga yordam beradigan hech qanday ma'lumotni so'ramaymiz, kirmaymiz yoki kuzatmaymiz, masalan, ismingiz, elektron pochta manzilingiz, joylashuvingiz, qurilma identifikatorlari yoki kontaktlaringiz.",
+  "privacy_no_collect_usage": "Foydalanish ma'lumotlari yo'q: Ilova uni qanday ishlatishingizni qayd etmaydi. Siz yaratgan barcha hisoblagich ma'lumotlari faqat qurilmangizda mahalliy saqlanadi va bizga kirish imkoni yo'q.",
+  "privacy_no_collect_third_party": "Uchinchi tomon xizmatlari yo'q: Biz tahlil (Firebase Analytics kabi), reklama (AdMob kabi), bulutli saqlash yoki tashqi tomonlar bilan ma'lumot almashishni o'z ichiga olgan boshqa maqsadlar uchun uchinchi tomon xizmatlarini birlashtirmaymiz. Ilova ma'lumotlarni boshqarish nuqtai nazaridan butunlay oflayn ishlaydi.",
+
+  "privacy_use_title": "Ma'lumotlarni qanday ishlatamiz",
+  "privacy_use": "Biz hech qanday ma'lumot to'plamaganimiz sababli, sizning ma'lumotlaringizni hech qanday maqsad uchun ishlatmaymiz.",
+
+  "privacy_sharing_title": "Ma'lumotlarni almashish va oshkor qilish",
+  "privacy_sharing": "Biz hech qanday shaxsiy ma'lumotni almashmayimiz yoki oshkor qilmayimiz, chunki biz hech narsani to'plamaymiz. Sizning ma'lumotlaringiz (kuzatayotgan hisoblaringiz) qurilmangizda qoladi.",
+
+  "privacy_security_title": "Ma'lumotlar xavfsizligi",
+  "privacy_security": "Piyuo Counter ilovasidan foydalanish natijasida yaratilgan har qanday ma'lumot (hisoblaringiz kabi) faqat qurilmangizda mahalliy saqlanadi. Bizda ushbu ma'lumotlarga kirish huquqi yo'q. Biz ilovamizni standart xavfsizlik amaliyotlari bilan quramiz, ammo qurilmangizda saqlangan ma'lumotlarning xavfsizligi qurilmangiz uchun qabul qilgan xavfsizlik choralaringizga bog'liq.",
+
+  "privacy_children_title": "Bolalar maxfiyligi",
+  "privacy_children": "Bizning Ilovamiz bolalar qo'shni hech kimdan shaxsiy ma'lumot to'plamaydi. Biz AQShda Bolalarning onlayn maxfiylik himoyasi qonuni (COPPA) va bolalar ma'lumotlari haqidagi GDPR kabi shunga o'xshash qoidalarga amal qilamiz. Biz hech qanday ma'lumot to'plamaganimiz sababli, 13 yoshdan kichik bolalardan (yoki ba'zi Yevropa Ittifoqi mamlakatlarida 16) ma'lumot to'plamaymiz.",
+
+  "privacy_rights_title": "Sizning huquqlaringiz (GDPR va boshqa qonunlar)",
+  "privacy_rights_1": "Yevropadagi Umumiy ma'lumotlarni himoya qilish qoidasi (GDPR) va turli AQSh shtatlari qonunlari kabi maxfiylik qonunlari shaxslarga o'zlarining shaxsiy ma'lumotlari ustidan huquqlar (kirish, tuzatish, o'chirish kabi) beradi.",
+  "privacy_rights_2": "Piyuo Counter ilovasi sizning shaxsiy ma'lumotlaringizni to'plamaydi, saqlamaydi yoki qayta ishlamaydi, shuning uchun bu huquqlar odatda bizning Ilovamiz kontekstida qo'llanilmaydi, chunki sizda kirish, tuzatish yoki o'chirish uchun bizda hech qanday ma'lumot yo'q. Ilova bilan bog'liq har qanday ma'lumot faqat qurilmangizda, sizning nazorat ostida joylashgan.",
+
+  "privacy_changes_title": "Ushbu Maxfiylik Siyosatidagi o'zgarishlar",
+  "privacy_changes_1": "Biz vaqti-vaqti bilan ushbu Maxfiylik Siyosatini yangilab turishimiz mumkin. Yangi Maxfiylik Siyosatini Ilova ichida yoki veb-saytimizda ({website}) joylash orqali har qanday o'zgarishlar haqida sizni xabardor qilamiz. Har qanday o'zgarishlar uchun ushbu Maxfiylik Siyosatini vaqti-vaqti bilan ko'rib chiqishingiz tavsiya etiladi.",
+  "privacy_changes_2": "Ushbu Maxfiylik Siyosatidagi o'zgarishlar ushbu sahifada joylashtirilinganda kuchga kiradi.",
+
+  "privacy_contact_title": "Biz bilan bog'laning",
+  "privacy_contact_intro": "Agar ushbu Maxfiylik Siyosati haqida savollaringiz bo'lsa, iltimos biz bilan bog'laning:",
+  "privacy_contact_email": "Elektron pochta orqali: {email}",
+  "privacy_contact_website": "Veb-saytimizda ushbu sahifaga tashrif buyurish orqali: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com"
+}

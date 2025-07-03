@@ -1,0 +1,45 @@
+{
+  "privacy_title": "Pravidlá ochrany súkromia pre Piyuo Counter",
+  "privacy_effective_date": "Dátum účinnosti: 12. apríl 2025",
+
+  "privacy_introduction_title": "Úvod",
+  "privacy_introduction_1": "Vitajte v Piyuo Counter! Tieto Pravidlá ochrany súkromia vysvetľujú, ako spracúvame informácie pri používaní našej softvérovej aplikácie (\"Aplikácia\"). Naším záväzkom je vaše súkromie. Táto Aplikácia je navrhnutá tak, aby fungovala bez zbierania alebo spracovania vašich osobných údajov.",
+  "privacy_introduction_2": "Tieto Pravidlá ochrany súkromia sa vzťahujú na softvérovú aplikáciu Piyuo Counter (\"Aplikácia\") pre mobilné zariadenia a počítače, dostupnú na rôznych platformách a v obchodoch s aplikáciami.",
+
+  "privacy_who_we_are_title": "Kto sme",
+  "privacy_who_we_are": "Aplikáciu Piyuo Counter poskytuje Piyuo (\"my,\" \"nás,\" alebo \"náš\"). Naša webová stránka je {website}. Ak máte otázky o týchto pravidlách, môžete nás kontaktovať na {email}.",
+
+  "privacy_no_collect_title": "Informácie, ktoré nezbierame",
+  "privacy_no_collect_intro": "Nezbierame, neukladáme, neprenášame ani nespracúvame žiadne osobné informácie alebo údaje o používaní od vás prostredníctvom aplikácie Piyuo Counter.",
+  "privacy_no_collect_personal": "Žiadne osobné údaje: Nepýtame si, nepristupujeme k žiadnym informáciám, ktoré by vás mohli identifikovať, ako je vaše meno, e-mailová adresa, poloha, identifikátory zariadenia alebo kontakty.",
+  "privacy_no_collect_usage": "Žiadne údaje o používaní: Aplikácia nezaznamenáva, ako ju používate. Všetky údaje počítadla, ktoré vytvoríte, sa ukladajú lokálne iba na vašom zariadení a nie sú nám dostupné.",
+  "privacy_no_collect_third_party": "Žiadne služby tretích strán: Neintegrujeme žiadne služby tretích strán pre analýzu (ako Firebase Analytics), reklamu (ako AdMob), cloudové úložisko alebo akýkoľvek iný účel, ktorý by zahŕňal zdieľanie údajov s externými stranami. Aplikácia funguje úplne offline z hľadiska spracovania údajov.",
+
+  "privacy_use_title": "Ako používame informácie",
+  "privacy_use": "Keďže nezbierame žiadne informácie, nepoužívame vaše informácie na žiadny účel.",
+
+  "privacy_sharing_title": "Zdieľanie a poskytovanie informácií",
+  "privacy_sharing": "Nezdieľame ani nezverejňujeme žiadne osobné informácie, pretože žiadne nezbierame. Vaše údaje (počty, ktoré sledujete) zostávajú na vašom zariadení.",
+
+  "privacy_security_title": "Bezpečnosť údajov",
+  "privacy_security": "Akékoľvek údaje generované používaním aplikácie Piyuo Counter (ako sú vaše počty) sa ukladajú lokálne iba na vašom zariadení. Nemáme prístup k týmto údajom. Hoci vyvíjame našu aplikáciu so štandardnými bezpečnostnými postupmi, bezpečnosť údajov uložených na vašom zariadení závisí od bezpečnostných opatrení, ktoré prijmete pre samotné zariadenie.",
+
+  "privacy_children_title": "Súkromie detí",
+  "privacy_children": "Naša Aplikácia nezbiera osobné informácie od nikoho, vrátane detí. Dodržiavame zákon o ochrane súkromia detí online (COPPA) v USA a podobné nariadenia ako GDPR týkajúce sa údajov detí. Keďže nezbierame žiadne údaje, prirodzene nezbierame údaje od detí mladších ako 13 rokov (alebo 16 v niektorých krajinách EÚ).",
+
+  "privacy_rights_title": "Vaše práva (GDPR a iné zákony)",
+  "privacy_rights_1": "Zákony o ochrane súkromia ako všeobecné nariadenie o ochrane údajov (GDPR) v Európe a rôzne štátne zákony USA udeľujú jednotlivcom práva nad ich osobnými údajmi (ako prístup, opravu, vymazanie).",
+  "privacy_rights_2": "Keďže aplikácia Piyuo Counter nezbiera, neukladá ani nespracúva žiadne z vašich osobných údajov, tieto práva všeobecne nie sú aplikovateľné v kontexte našej Aplikácie, pretože neexistujú žiadne údaje držané nami, ku ktorým by ste mohli pristupovať, opravovať alebo vymazávať. Akékoľvek údaje súvisiace s aplikáciou sa nachádzajú výlučne na vašom zariadení, pod vašou kontrolou.",
+
+  "privacy_changes_title": "Zmeny týchto Pravidiel ochrany súkromia",
+  "privacy_changes_1": "Môžeme čas od času aktualizovať tieto Pravidlá ochrany súkromia. O akýchkoľvek zmenách vás budeme informovať zverejnením nových Pravidiel ochrany súkromia v Aplikácii alebo na našej webovej stránke ({website}). Odporúčame vám pravidelne kontrolovať tieto Pravidlá ochrany súkromia pre akékoľvek zmeny.",
+  "privacy_changes_2": "Zmeny týchto Pravidiel ochrany súkromia nadobúdajú účinnosť po ich zverejnení na tejto stránke.",
+
+  "privacy_contact_title": "Kontaktujte nás",
+  "privacy_contact_intro": "Ak máte akékoľvek otázky o týchto Pravidlách ochrany súkromia, kontaktujte nás:",
+  "privacy_contact_email": "E-mailom: {email}",
+  "privacy_contact_website": "Navštívením tejto stránky na našej webovej stránke: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com"
+}

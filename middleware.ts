@@ -26,9 +26,18 @@ export function middleware(request: NextRequest) {
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
-  // If pathname already has a locale, continue
+  // If pathname already has a locale, pass it as a header and continue
   if (pathnameHasLocale) {
-    return NextResponse.next();
+    // Extract locale from pathname
+    const locale = supportedLocales.find(
+      (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+    );
+
+    const response = NextResponse.next();
+    if (locale) {
+      response.headers.set('x-locale', locale);
+    }
+    return response;
   }
 
   // For root path, detect locale and redirect
@@ -40,13 +49,17 @@ export function middleware(request: NextRequest) {
     const url = request.nextUrl.clone();
     url.pathname = `/${bestLocale}`;
 
-    return NextResponse.redirect(url);
+    const response = NextResponse.redirect(url);
+    response.headers.set('x-locale', bestLocale);
+    return response;
   }
 
   // For other paths without locale, redirect to English version
   const url = request.nextUrl.clone();
   url.pathname = `/en${pathname}`;
-  return NextResponse.redirect(url);
+  const response = NextResponse.redirect(url);
+  response.headers.set('x-locale', 'en');
+  return response;
 }
 
 export const config = {

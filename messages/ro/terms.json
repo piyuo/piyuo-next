@@ -1,0 +1,69 @@
+{
+  "terms_title": "Termeni și Condiții pentru Piyuo Counter",
+  "terms_effective_date": "Data intrării în vigoare: 12 aprilie 2025",
+
+  "terms_acceptance_title": "1. Acceptarea Termenilor",
+  "terms_acceptance": "Prin descărcarea, instalarea sau utilizarea aplicației Piyuo Counter (\"Serviciul\"), sunteți de acord să fiți obligat de acești Termeni și Condiții (\"Termenii\"). Dacă nu sunteți de acord cu orice parte a acestor termeni, atunci nu puteți accesa Serviciul.",
+
+  "terms_description_title": "2. Descrierea Serviciului",
+  "terms_description_1": "Piyuo Counter este o aplicație software care utilizează camera dispozitivului dvs. și tehnologia de viziune computerizată pentru a număra și urmări automat obiecte precum pietoni, vehicule sau alte elemente în timp real.",
+  "terms_description_2": "Serviciul funcționează în întregime pe dispozitivul dvs. local. Nu colectăm, nu stocăm și nu transmitem niciun fel de date din utilizarea aplicației.",
+
+  "terms_license_title": "3. Licența",
+  "terms_license_1": "Sub rezerva respectării acestor Termeni, Piyuo vă acordă o licență limitată, neexclusivă, netransferabilă, nesublicențiabilă pentru a descărca, instala și utiliza Serviciul exclusiv pentru utilizarea dvs. personală, necomercială.",
+  "terms_license_2": "Această licență nu vă acordă niciun drept de a:",
+  "terms_license_reverse": "Ingineria inversă, decompila sau dezasambla Serviciul;",
+  "terms_license_distribute": "Distribui, vinde, închiria, arenда sau a transfera în alt mod Serviciul către orice terță parte;",
+  "terms_license_modify": "Modifica, adapta, altera, traduce sau crea lucrări derivate ale Serviciului;",
+  "terms_license_remove": "Elimina, altera sau ascunde orice notificări proprietare din Serviciu.",
+
+  "terms_use_title": "4. Utilizare Acceptabilă",
+  "terms_use_intro": "Sunteți de acord să utilizați Serviciul doar în scopuri legale și în conformitate cu acești Termeni. Sunteți de acord să nu utilizați Serviciul:",
+  "terms_use_illegal": "În orice mod care încalcă orice lege sau reglementare federală, de stat, locală sau internațională aplicabilă;",
+  "terms_use_privacy": "Pentru a viola drepturile de confidențialitate ale altora sau pentru a vă angaja în orice formă de supraveghere care este interzisă de lege;",
+  "terms_use_harm": "În orice mod care ar putea dezactiva, supraîncărca, deteriora sau afecta Serviciul;",
+  "terms_use_malware": "Pentru a introduce orice viruși, cai troieni, viermi, bombe logice sau alt material care este malicios sau dăunător din punct de vedere tehnologic.",
+
+  "terms_privacy_title": "5. Confidențialitate și Date",
+  "terms_privacy_1": "Aplicația Piyuo Counter este concepută cu confidențialitatea în minte. Aplicația procesează datele video local pe dispozitivul dvs. în scopuri de detectare și numărare a obiectelor.",
+  "terms_privacy_2": "Nu colectăm, nu stocăm, nu accesăm și nu transmitem nicio informație personală, date video, date de numărare sau date de utilizare din aplicație. Toată procesarea se întâmplă local pe dispozitivul dvs.",
+  "terms_privacy_3": "Pentru mai multe detalii despre practicile noastre de confidențialitate, vă rugăm să consultați Politica noastră de Confidențialitate la {privacy_link}.",
+
+  "terms_disclaimer_title": "6. Renunțarea la Garanții",
+  "terms_disclaimer_1": "SERVICIUL ESTE FURNIZAT \"AȘAZĂ CUM ESTE\" ȘI \"AȘAZĂ CUM ESTE DISPONIBIL\" FĂRĂ GARANȚIE DE ORICE FEL. ÎN MĂSURA MAXIMĂ PERMISĂ DE LEGEA APLICABILĂ, PIYUO RENUNȚĂ EXPRES LA TOATE GARANȚIILE, INDIFERENT DACĂ SUNT EXPRESE, IMPLICITE, LEGALE SAU ALTFEL, CU PRIVIRE LA SERVICIU, INCLUZÂND TOATE GARANȚIILE IMPLICITE DE COMERCIALIZARE, ADECVARE PENTRU UN SCOP ANUME, TITLU ȘI NEÎNCĂLCARE, ȘI GARANȚIILE CARE POT REZULTA DIN CURSUL AFACERII, CURSUL PERFORMANȚEI, UTILIZĂRII SAU PRACTICII COMERCIALE.",
+  "terms_disclaimer_2": "FĂRĂ LIMITARE LA CELE DE MAI SUS, PIYUO NU OFERĂ NICIO GARANȚIE SAU ANGAJAMENT ȘI NU FACE NICIO REPREZENTARE CĂ SERVICIUL VA ÎNDEPLINI CERINȚELE DVS., VA ATINGE ORICE REZULTATE INTENȚIONATE, VA FI COMPATIBIL SAU VA FUNCȚIONA CU ORICE ALT SOFTWARE, APLICAȚII, SISTEME SAU SERVICII, VA FUNCȚIONA FĂRĂ ÎNTRERUPERE, VA ÎNDEPLINI ORICE STANDARDE DE PERFORMANȚĂ SAU FIABILITATE, SAU VA FI FĂRĂ ERORI, SAU CĂ ORICE ERORI SAU DEFECTE POT SAU VOR FI CORECTATE.",
+  "terms_disclaimer_3": "NU GARANTĂM ACURATEȚEA, COMPLETITUDINEA SAU FIABILITATEA ORICĂROR DATE SAU REZULTATE OBȚINUTE PRIN UTILIZAREA APLICAȚIEI (CUM AR FI NUMĂRAREA PIETONILOR). APLICAȚIA ESTE UN INSTRUMENT, IAR REZULTATELE SALE POT FI AFECTATE DE DIVERȘI FACTORI INCLUZÂND CALITATEA CAMEREI, CONDIȚIILE DE ILUMINARE, OBSTACOLELE ȘI LIMITĂRILE ALGORITMULUI.",
+
+  "terms_liability_title": "7. Limitarea Răspunderii",
+  "terms_liability_intro": "ÎN MĂSURA MAXIMĂ PERMISĂ DE LEGEA APLICABILĂ, ÎN NICIUN CAZ PIYUO, AFILIAȚII SĂI, OFIȚERII, DIRECTORII, ANGAJAȚII, AGENȚII, FURNIZORII SAU LICENȚIATORII NU VOR FI RĂSPUNZĂTORI PENTRU ORICE DAUNE INDIRECTE, INCIDENTALE, SPECIALE, CONSECVENTE SAU PUNITIVE, INCLUZÂND FĂRĂ LIMITARE, PIERDEREA DE PROFITURI, DATE, UTILIZARE, BUNĂVOINȚĂ SAU ALTE PIERDERI INTANGIBILE, REZULTÂND DIN:",
+  "terms_liability_access": "Accesul dvs. la sau utilizarea sau incapacitatea de a accesa sau utiliza Serviciul;",
+  "terms_liability_third_party": "Orice conduită sau conținut al oricărei terțe părți pe Serviciu;",
+  "terms_liability_content": "Orice conținut obținut din Serviciu; și",
+  "terms_liability_unauthorized": "Accesul neautorizat, utilizarea sau alterarea transmisiilor sau conținutului dvs. (deși observăm că Aplicația nu transmite datele dvs. de numărare).",
+  "terms_liability_basis": "ACEASTĂ LIMITARE A RĂSPUNDERII SE APLICĂ INDIFERENT DACĂ RĂSPUNDEREA PRETINSĂ SE BAZEAZĂ PE CONTRACT, DELICT, NEGLIJENȚĂ, RĂSPUNDERE STRICTĂ SAU ORICE ALTĂ BAZĂ, CHIAR DACĂ PIYUO A FOST AVERTIZAT DE POSIBILITATEA UNEI ASTFEL DE DAUNE.",
+  "terms_liability_risk": "RECUNOAȘTEȚI ȘI SUNTEȚI DE ACORD CĂ SERVICIUL ESTE FURNIZAT GRATUIT CA UN INSTRUMENT. UTILIZAȚI SERVICIUL ÎN ÎNTREGIME PE PROPRIUL RISC. PIYUO NU ÎȘI ASUMĂ NICIO RESPONSABILITATE SAU RĂSPUNDERE PENTRU ORICE DAUNE LA DISPOZITIVUL (DISPOZITIVELE) DVS. SAU ALTE SOFTWARE, SAU ORICE CONSECINȚE REZULTÂND DIN UTILIZAREA SERVICIULUI.",
+
+  "terms_support_title": "8. Fără Suport sau Întreținere",
+  "terms_support": "Piyuo Counter este furnizat gratuit. Nu avem nicio obligație de a furniza întreținere, suport tehnic, actualizări sau îmbunătățiri pentru Serviciu. Ne rezervăm dreptul de a modifica, suspenda sau întrerupe, temporar sau permanent, Serviciul sau orice serviciu la care se conectează, cu sau fără notificare și fără răspundere față de dvs.",
+
+  "terms_changes_title": "9. Modificări ale Acestor Termeni",
+  "terms_changes": "Ne rezervăm dreptul, la discreția noastră exclusivă, de a modifica sau înlocui acești Termeni în orice moment. Dacă o revizie este materială, vom face eforturi rezonabile pentru a furniza notificare (de exemplu, prin Aplicație sau pe Site) înainte ca orice termeni noi să intre în vigoare. Ce constituie o schimbare materială va fi determinat la discreția noastră exclusivă. Prin continuarea accesării sau utilizării Serviciului nostru după ce aceste revizii devin efective, sunteți de acord să fiți obligat de termenii revizuiți.",
+
+  "terms_governing_title": "10. Legea Aplicabilă",
+  "terms_governing": "Acești Termeni vor fi guvernați și interpretați în conformitate cu legile Statului California, Statele Unite, fără a se avea în vedere principiile sale de conflict de legi. (Notă: Consultați un avocat pentru a confirma dacă aceasta este jurisdicția corespunzătoare pentru dvs.).",
+
+  "terms_severability_title": "11. Separabilitate și Renunțare",
+  "terms_severability": "Dacă orice prevedere a acestor Termeni este considerată inaplicabilă sau invalidă, o astfel de prevedere va fi modificată și interpretată pentru a îndeplini obiectivele unei astfel de prevederi în măsura cea mai mare posibilă sub legea aplicabilă, iar prevederile rămase vor continua în vigoare deplină. Nicio renunțare la orice termen al acestor Termeni nu va fi considerată o renunțare ulterioară sau continuă la un astfel de termen sau orice alt termen.",
+
+  "terms_entire_title": "12. Acordul Integral",
+  "terms_entire": "Acești Termeni, împreună cu Politica noastră de Confidențialitate (disponibilă la {privacy_link}), constituie acordul integral între dvs. și Piyuo cu privire la Serviciu și înlocuiește toate înțelegerile, acordurile, reprezentările și garanțiile anterioare și contemporane, atât scrise, cât și orale, cu privire la Serviciu.",
+
+  "terms_contact_title": "13. Informații de Contact",
+  "terms_contact_intro": "Dacă aveți întrebări despre acești Termeni, vă rugăm să ne contactați:",
+  "terms_contact_email": "Prin e-mail: {email}",
+  "terms_contact_website": "Vizitând această pagină pe site-ul nostru: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

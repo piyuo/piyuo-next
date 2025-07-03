@@ -1,0 +1,69 @@
+{
+  "terms_title": "Servicevoorwaarden voor Piyuo Counter (België)",
+  "terms_effective_date": "Ingangsdatum: 12 april 2025",
+
+  "terms_acceptance_title": "1. Aanvaarding van Voorwaarden",
+  "terms_acceptance": "Door het downloaden, installeren of gebruiken van de Piyuo Counter app (de \"Service\"), gaat u ermee akkoord gebonden te zijn aan deze Servicevoorwaarden (de \"Voorwaarden\"). Als u het niet eens bent met enig deel van deze voorwaarden, dan mag u geen toegang krijgen tot de Service.",
+
+  "terms_description_title": "2. Beschrijving van de Service",
+  "terms_description_1": "Piyuo Counter is een softwaretoepassing die de camera van uw apparaat en computer vision technologie gebruikt om automatisch objecten zoals voetgangers, voertuigen of andere items in real-time te tellen en te volgen.",
+  "terms_description_2": "De Service werkt volledig op uw lokale apparaat. Wij verzamelen, bewaren of verzenden geen gegevens van uw gebruik van de app.",
+
+  "terms_license_title": "3. Licentie",
+  "terms_license_1": "Onder voorbehoud van uw naleving van deze Voorwaarden, verleent Piyuo u een beperkte, niet-exclusieve, niet-overdraagbare, niet-sublicentieerbare licentie om de Service uitsluitend voor uw persoonlijk, niet-commercieel gebruik te downloaden, installeren en gebruiken.",
+  "terms_license_2": "Deze licentie verleent u geen rechten om:",
+  "terms_license_reverse": "De Service te reverse engineeren, decompileren of demonteren;",
+  "terms_license_distribute": "De Service te distribueren, verkopen, verhuren, uitlenen of anderszins over te dragen aan derden;",
+  "terms_license_modify": "De Service te wijzigen, aanpassen, veranderen, vertalen of afgeleide werken te creëren;",
+  "terms_license_remove": "Eigendomsmededelingen op de Service te verwijderen, wijzigen of verdoezelen.",
+
+  "terms_use_title": "4. Acceptabel Gebruik",
+  "terms_use_intro": "U stemt ermee in de Service alleen te gebruiken voor wettige doeleinden en in overeenstemming met deze Voorwaarden. U stemt ermee in de Service niet te gebruiken:",
+  "terms_use_illegal": "Op enige wijze die inbreuk maakt op toepasselijke federale, staatsrechtelijke, lokale of internationale wetten of regelgeving;",
+  "terms_use_privacy": "Om de privacyrechten van anderen te schenden of deel te nemen aan enige vorm van surveillance die door de wet verboden is;",
+  "terms_use_harm": "Op enige wijze die de Service zou kunnen uitschakelen, overbelasten, beschadigen of benadelen;",
+  "terms_use_malware": "Om virussen, trojaanse paarden, wormen, logische bommen of ander materiaal te introduceren dat kwaadaardig of technologisch schadelijk is.",
+
+  "terms_privacy_title": "5. Privacy en Gegevens",
+  "terms_privacy_1": "De Piyuo Counter app is ontworpen met privacy in gedachten. De app verwerkt videogegevens lokaal op uw apparaat voor objectdetectie en teldoeleinden.",
+  "terms_privacy_2": "Wij verzamelen, bewaren, benaderen of verzenden geen persoonlijke informatie, videogegevens, telgegevens of gebruiksgegevens van de app. Alle verwerking gebeurt lokaal op uw apparaat.",
+  "terms_privacy_3": "Voor meer details over onze privacypraktijken, bekijk ons Privacybeleid op {privacy_link}.",
+
+  "terms_disclaimer_title": "6. Disclaimer van Garanties",
+  "terms_disclaimer_1": "DE SERVICE WORDT GELEVERD \"ZOALS ZE IS\" EN \"ZOALS BESCHIKBAAR\" ZONDER GARANTIES VAN WELKE AARD DAN OOK. TOT DE MAXIMALE MATE TOEGESTAAN DOOR TOEPASSELIJK RECHT, WIJST PIYUO UITDRUKKELIJK ALLE GARANTIES AF, OF ZE NU UITDRUKKELIJK, IMPLICIET, WETTELIJK OF ANDERSZINS ZIJN, MET BETREKKING TOT DE SERVICE, INCLUSIEF ALLE IMPLICIETE GARANTIES VAN VERKOOPBAARHEID, GESCHIKTHEID VOOR EEN BEPAALD DOEL, TITEL EN NIET-INBREUK, EN GARANTIES DIE KUNNEN VOORTVLOEIEN UIT DE LOOP VAN ZAKEN, PRESTATIES, GEBRUIK OF HANDELSPRAKTIJK.",
+  "terms_disclaimer_2": "ZONDER BEPERKING VAN HET VOORGAANDE, BIEDT PIYUO GEEN GARANTIE OF TOEZEGGING, EN DOET GEEN UITSPRAKEN DAT DE SERVICE AAN UW VEREISTEN ZAL VOLDOEN, BEOOGDE RESULTATEN ZAL BEREIKEN, COMPATIBEL ZAL ZIJN OF ZAL WERKEN MET ANDERE SOFTWARE, APPLICATIES, SYSTEMEN OF SERVICES, ZONDER ONDERBREKING ZAL FUNCTIONEREN, AAN PRESTATIE- OF BETROUWBAARHEIDSSTANDAARDEN ZAL VOLDOEN, OF FOUTLOOS ZAL ZIJN, OF DAT FOUTEN OF GEBREKEN KUNNEN OF ZULLEN WORDEN GECORRIGEERD.",
+  "terms_disclaimer_3": "WIJ GARANDEREN NIET DE NAUWKEURIGHEID, VOLLEDIGHEID OF BETROUWBAARHEID VAN GEGEVENS OF RESULTATEN VERKREGEN DOOR GEBRUIK VAN DE APP (ZOALS VOETGANGERSTELLINGEN). DE APP IS EEN HULPMIDDEL EN DE OUTPUT KAN WORDEN BEÏNVLOED DOOR VERSCHILLENDE FACTOREN WAARONDER CAMERAKWALITEIT, LICHTOMSTANDIGHEDEN, OBSTAKELS EN ALGORITME BEPERKINGEN.",
+
+  "terms_liability_title": "7. Beperking van Aansprakelijkheid",
+  "terms_liability_intro": "TOT DE VOLSTE MATE TOEGESTAAN DOOR TOEPASSELIJK RECHT, ZULLEN PIYUO, HAAR GELIEERDE ONDERNEMINGEN, FUNCTIONARISSEN, DIRECTEUREN, WERKNEMERS, AGENTEN, LEVERANCIERS OF LICENTIEGEVERS ONDER GEEN ENKELE OMSTANDIGHEID AANSPRAKELIJK ZIJN VOOR INDIRECTE, INCIDENTELE, SPECIALE, GEVOLGSCHADE OF PUNITIEVE SCHADE, INCLUSIEF ZONDER BEPERKING, VERLIES VAN WINST, GEGEVENS, GEBRUIK, GOODWILL OF ANDERE IMMATERIËLE VERLIEZEN, VOORTVLOEIEND UIT:",
+  "terms_liability_access": "Uw toegang tot of gebruik van of onvermogen om toegang te krijgen tot of gebruik te maken van de Service;",
+  "terms_liability_third_party": "Enig gedrag of inhoud van derden op de Service;",
+  "terms_liability_content": "Enige inhoud verkregen van de Service; en",
+  "terms_liability_unauthorized": "Ongeautoriseerde toegang, gebruik of wijziging van uw transmissies of inhoud (hoewel we opmerken dat de App uw telgegevens niet verzendt).",
+  "terms_liability_basis": "DEZE BEPERKING VAN AANSPRAKELIJKHEID IS VAN TOEPASSING ONGEACHT OF DE BEWEERDE AANSPRAKELIJKHEID GEBASEERD IS OP CONTRACT, ONRECHTMATIGE DAAD, NALATIGHEID, STRIKTE AANSPRAKELIJKHEID OF ENIGE ANDERE BASIS, ZELFS ALS PIYUO IS GEADVISEERD OVER DE MOGELIJKHEID VAN DERGELIJKE SCHADE.",
+  "terms_liability_risk": "U ERKENT EN STEMT ERMEE IN DAT DE SERVICE GRATIS WORDT GELEVERD ALS EEN HULPMIDDEL. U GEBRUIKT DE SERVICE VOLLEDIG OP EIGEN RISICO. PIYUO NEEMT GEEN VERANTWOORDELIJKHEID OF AANSPRAKELIJKHEID VOOR SCHADE AAN UW APPARAAT(EN) OF ANDERE SOFTWARE, OF GEVOLGEN VOORTVLOEIEND UIT UW GEBRUIK VAN DE SERVICE.",
+
+  "terms_support_title": "8. Geen Ondersteuning of Onderhoud",
+  "terms_support": "Piyuo Counter wordt gratis geleverd. Wij zijn niet verplicht om onderhoud, technische ondersteuning, updates of upgrades voor de Service te bieden. Wij behouden ons het recht voor om de Service of elke service waarmee deze verbonden is, tijdelijk of permanent te wijzigen, op te schorten of te beëindigen, met of zonder kennisgeving en zonder aansprakelijkheid jegens u.",
+
+  "terms_changes_title": "9. Wijzigingen in deze Voorwaarden",
+  "terms_changes": "Wij behouden ons het recht voor, naar eigen goeddunken, om deze Voorwaarden op elk moment te wijzigen of vervangen. Als een herziening materieel is, zullen wij redelijke inspanningen leveren om kennisgeving te geven (bijv. via de App of op de Website) voordat nieuwe voorwaarden van kracht worden. Wat een materiële wijziging vormt, wordt naar eigen goeddunken bepaald. Door onze Service te blijven bezoeken of gebruiken nadat deze herzieningen van kracht worden, stemt u ermee in gebonden te zijn door de herziene voorwaarden.",
+
+  "terms_governing_title": "10. Toepasselijk Recht",
+  "terms_governing": "Deze Voorwaarden worden beheerst door en geïnterpreteerd in overeenstemming met de wetten van de staat Californië, Verenigde Staten, zonder rekening te houden met haar conflicterende rechtsprincipes. (Opmerking: Raadpleeg een advocaat om te bevestigen of dit de juiste jurisdictie voor u is).",
+
+  "terms_severability_title": "11. Deelbaarheid en Afstand",
+  "terms_severability": "Als enige bepaling van deze Voorwaarden niet-afdwingbaar of ongeldig wordt geacht, zal die bepaling worden gewijzigd en geïnterpreteerd om de doelstellingen van die bepaling in de grootst mogelijke mate onder toepasselijk recht te bereiken, en de resterende bepalingen zullen van kracht blijven. Geen afstand van enige termijn van deze Voorwaarden zal worden beschouwd als een verdere of voortdurende afstand van die termijn of enige andere termijn.",
+
+  "terms_entire_title": "12. Volledige Overeenkomst",
+  "terms_entire": "Deze Voorwaarden, samen met ons Privacybeleid (beschikbaar op {privacy_link}), vormen de volledige overeenkomst tussen u en Piyuo betreffende de Service en vervangen alle eerdere en gelijktijdige begrippen, overeenkomsten, verklaringen en garanties, zowel schriftelijk als mondeling, betreffende de Service.",
+
+  "terms_contact_title": "13. Contactinformatie",
+  "terms_contact_intro": "Als u vragen heeft over deze Voorwaarden, neem dan contact met ons op:",
+  "terms_contact_email": "Via e-mail: {email}",
+  "terms_contact_website": "Door deze pagina op onze website te bezoeken: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

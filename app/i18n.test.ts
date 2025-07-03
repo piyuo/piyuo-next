@@ -1,9 +1,9 @@
 import {
-    getBestMatchingLocale,
-    getMessages,
-    getTranslator,
-    isSupportedLocale,
-    supportedLocales
+  getBestMatchingLocale,
+  getMessages,
+  getTranslator,
+  isSupportedLocale,
+  supportedLocales
 } from './i18n';
 
 describe('i18n functionality', () => {
@@ -31,29 +31,29 @@ describe('i18n functionality', () => {
   });
 
   it('should load messages for supported locales', async () => {
-    const enMessages = await getMessages('en');
+    const enMessages = await getMessages('en', 'page');
     expect(enMessages).toHaveProperty('index_download');
     expect(enMessages.index_download).toBe('Download');
 
-    const frMessages = await getMessages('fr');
+    const frMessages = await getMessages('fr', 'page');
     expect(frMessages).toHaveProperty('index_download');
     expect(frMessages.index_download).toBe('Télécharger');
 
-    const zhMessages = await getMessages('zh');
+    const zhMessages = await getMessages('zh', 'page');
     expect(zhMessages).toHaveProperty('index_download');
     expect(zhMessages.index_download).toBe('下載');
   });
 
   it('should create translator with correct messages', async () => {
-    const enTranslator = await getTranslator('en');
+    const enTranslator = await getTranslator('en', 'page');
     expect(typeof enTranslator).toBe('function');
 
-    const frTranslator = await getTranslator('fr');
+    const frTranslator = await getTranslator('fr', 'page');
     expect(typeof frTranslator).toBe('function');
   });
 
   it('should handle all translation keys from CSV', async () => {
-    const enMessages = await getMessages('en');
+    const enMessages = await getMessages('en','page');
 
     // Check that all expected keys from CSV are present
     const expectedKeys = [
@@ -71,9 +71,9 @@ describe('i18n functionality', () => {
   });
 
   it('should have consistent keys across locales', async () => {
-    const enMessages = await getMessages('en');
-    const frMessages = await getMessages('fr');
-    const zhMessages = await getMessages('zh');
+    const enMessages = await getMessages('en','page');
+    const frMessages = await getMessages('fr','page');
+    const zhMessages = await getMessages('zh','page');
 
     const enKeys = Object.keys(enMessages);
     const frKeys = Object.keys(frMessages);

@@ -1,0 +1,69 @@
+{
+  "terms_title": "Condicions del Servei per al Comptador Piyuo",
+  "terms_effective_date": "Data d'Entrada en Vigor: 12 d'abril de 2025",
+
+  "terms_acceptance_title": "1. Acceptació de les Condicions",
+  "terms_acceptance": "En descarregar, instal·lar o utilitzar l'aplicació Comptador Piyuo (\"Servei\"), accepteu estar vinculats per aquestes Condicions del Servei (\"Condicions\"). Si no esteu d'acord amb qualsevol part d'aquestes condicions, no podreu accedir al Servei.",
+
+  "terms_description_title": "2. Descripció del Servei",
+  "terms_description_1": "El Comptador Piyuo és una aplicació de programari que utilitza la càmera del vostre dispositiu i la tecnologia de visió per ordinador per comptar i rastrejar automàticament objectes com vianants, vehicles o altres elements en temps real.",
+  "terms_description_2": "El Servei funciona completament al vostre dispositiu local. No recopilem, emmagatzemem ni transmetem cap dada del vostre ús de l'aplicació.",
+
+  "terms_license_title": "3. Llicència",
+  "terms_license_1": "Subjecte al vostre compliment d'aquestes Condicions, Piyuo us concedeix una llicència limitada, no exclusiva, no transferible, no sublicenciable per descarregar, instal·lar i utilitzar el Servei únicament per al vostre ús personal i no comercial.",
+  "terms_license_2": "Aquesta llicència no us concedeix cap dret a:",
+  "terms_license_reverse": "Fer enginyeria inversa, descompilar o desmuntar el Servei;",
+  "terms_license_distribute": "Distribuir, vendre, llogar, prestar o transferir d'altra manera el Servei a tercers;",
+  "terms_license_modify": "Modificar, adaptar, alterar, traduir o crear obres derivades del Servei;",
+  "terms_license_remove": "Eliminar, alterar o obscurir qualsevol avís de propietat al Servei.",
+
+  "terms_use_title": "4. Ús Acceptable",
+  "terms_use_intro": "Accepteu utilitzar el Servei només per a finalitats legals i d'acord amb aquestes Condicions. Accepteu no utilitzar el Servei:",
+  "terms_use_illegal": "De cap manera que violi qualsevol llei o reglament federal, estatal, local o internacional aplicable;",
+  "terms_use_privacy": "Per violar els drets de privacitat d'altres o participar en qualsevol forma de vigilància prohibida per la llei;",
+  "terms_use_harm": "De cap manera que pugui desactivar, sobrecarregar, danyar o perjudicar el Servei;",
+  "terms_use_malware": "Per introduir virus, cavalls de Troia, cucs, bombes lògiques o altres materials maliciosos o tecnològicament perjudicials.",
+
+  "terms_privacy_title": "5. Privacitat i Dades",
+  "terms_privacy_1": "L'aplicació Comptador Piyuo està dissenyada tenint en compte la privacitat. L'aplicació processa dades de vídeo localment al vostre dispositiu per a finalitats de detecció i recompte d'objectes.",
+  "terms_privacy_2": "No recopilem, emmagatzemem, accedim ni transmetem cap informació personal, dades de vídeo, dades de recompte o dades d'ús de l'aplicació. Tot el processament es fa localment al vostre dispositiu.",
+  "terms_privacy_3": "Per a més detalls sobre les nostres pràctiques de privacitat, reviseu la nostra Política de Privacitat a {privacy_link}.",
+
+  "terms_disclaimer_title": "6. Renúncia de Garanties",
+  "terms_disclaimer_1": "EL SERVEI ES PROPORCIONA \"TAL COM ÉS\" I \"TAL COM ESTÀ DISPONIBLE\" SENSE GARANTIA DE CAP TIPUS. FINS AL MÀXIM PERMÈS PER LA LLEI APLICABLE, PIYUO RENUNCIA EXPRESSAMENT A TOTES LES GARANTIES, JA SIGUIN EXPRESSES, IMPLÍCITES, ESTATUTÀRIES O D'ALTRA MANERA, RESPECTE AL SERVEI, INCLOENT TOTES LES GARANTIES IMPLÍCITES DE COMERCIALITZACIÓ, ADEQUACIÓ PER A UN PROPÒSIT PARTICULAR, TÍTOL I NO INFRACCIÓ.",
+  "terms_disclaimer_2": "SENSE LIMITACIÓ AL QUE S'HA DIT ANTERIORMENT, PIYUO NO PROPORCIONA CAP GARANTIA O COMPROMÍS, I NO FA CAP REPRESENTACIÓ DE CAP TIPUS QUE EL SERVEI COMPLIRÀ ELS VOSTRES REQUISITS, ACONSEGUIRÀ QUALSEVOL RESULTAT PREVIST, SERÀ COMPATIBLE O FUNCIONARÀ AMB QUALSEVOL ALTRE PROGRAMARI, APLICACIONS, SISTEMES O SERVEIS.",
+  "terms_disclaimer_3": "NO GARANTIM L'EXACTITUD, COMPLETESA O FIABILITAT DE QUALSEVOL DADA O RESULTAT OBTINGUT MITJANÇANT L'ÚS DE L'APLICACIÓ (COM ELS RECOMPTES DE VIANANTS). L'APLICACIÓ ÉS UNA EINA, I EL SEU RESULTAT POT ESTAR AFECTAT PER DIVERSOS FACTORS INCLOENT LA QUALITAT DE LA CÀMERA, LES CONDICIONS D'IL·LUMINACIÓ, LES OBSTRUCCIONS I LES LIMITACIONS DE L'ALGORITME.",
+
+  "terms_liability_title": "7. Limitació de Responsabilitat",
+  "terms_liability_intro": "FINS AL MÀXIM PERMÈS PER LA LLEI APLICABLE, EN CAP CAS PIYUO, LES SEVES AFILIADES, DIRECTIUS, DIRECTORS, EMPLEATS, AGENTS, PROVEÏDORS O LLICENCIANTS SERAN RESPONSABLES DE QUALSEVOL DANY INDIRECTE, INCIDENTAL, ESPECIAL, CONSEQÜENT O PUNITIU, INCLOENT SENSE LIMITACIÓ, PÈRDUA DE BENEFICIS, DADES, ÚS, FONS DE COMERÇ O ALTRES PÈRDUES INTANGIBLES, RESULTANTS DE:",
+  "terms_liability_access": "El vostre accés o ús del Servei o la incapacitat d'accedir-hi o utilitzar-lo;",
+  "terms_liability_third_party": "Qualsevol conducta o contingut de tercers al Servei;",
+  "terms_liability_content": "Qualsevol contingut obtingut del Servei; i",
+  "terms_liability_unauthorized": "L'accés, ús o alteració no autoritzats de les vostres transmissions o contingut (tot i que observem que l'Aplicació no transmet les vostres dades de recompte).",
+  "terms_liability_basis": "AQUESTA LIMITACIÓ DE RESPONSABILITAT S'APLICA JA SIGUI QUE LA RESPONSABILITAT AL·LEGADA ES BASI EN CONTRACTE, RESPONSABILITAT CIVIL, NEGLIGÈNCIA, RESPONSABILITAT ESTRICTA O QUALSEVOL ALTRA BASE, FINS I TOT SI PIYUO HA ESTAT ADVERTIT DE LA POSSIBILITAT D'AQUEST DANY.",
+  "terms_liability_risk": "RECONEIXEU I ACCEPTEU QUE EL SERVEI ES PROPORCIONA GRATUÏTAMENT COM UNA EINA. UTILITZEU EL SERVEI COMPLETAMENT AL VOSTRE PROPI RISC. PIYUO NO ASSUMEIX CAP RESPONSABILITAT PER QUALSEVOL DANY AL(S) VOSTRE(S) DISPOSITIU(S) O ALTRE PROGRAMARI, O QUALSEVOL CONSEQÜÈNCIA DERIVADA DEL VOSTRE ÚS DEL SERVEI.",
+
+  "terms_support_title": "8. Sense Suport o Manteniment",
+  "terms_support": "El Comptador Piyuo es proporciona gratuïtament. No tenim cap obligació de proporcionar manteniment, suport tècnic, actualitzacions o millores per al Servei. Ens reservem el dret de modificar, suspendre o discontinuar, temporalment o permanent, el Servei o qualsevol servei al qual es connecti, amb o sense avís i sense responsabilitat envers vosaltres.",
+
+  "terms_changes_title": "9. Canvis en aquestes Condicions",
+  "terms_changes": "Ens reservem el dret, a la nostra sola discreció, de modificar o reemplaçar aquestes Condicions en qualsevol moment. Si una revisió és material, farem esforços raonables per proporcionar avís (per exemple, a través de l'Aplicació o al Lloc Web) abans que qualsevol condició nova entri en vigor. El que constitueix un canvi material es determinarà a la nostra sola discreció.",
+
+  "terms_governing_title": "10. Llei Aplicable",
+  "terms_governing": "Aquestes Condicions es regiran i interpretaran d'acord amb les lleis de l'Estat de Califòrnia, Estats Units, sense tenir en compte els seus principis de conflicte de lleis. (Nota: Consulteu un advocat per confirmar si aquesta és la jurisdicció adequada per a vosaltres).",
+
+  "terms_severability_title": "11. Divisibilitat i Renúncia",
+  "terms_severability": "Si qualsevol disposició d'aquestes Condicions es considera inexecutable o invàlida, aquesta disposició es canviarà i interpretarà per aconseguir els objectius d'aquesta disposició en la major mesura possible sota la llei aplicable, i les disposicions restants continuaran en plena força i efecte.",
+
+  "terms_entire_title": "12. Acord Complet",
+  "terms_entire": "Aquestes Condicions, juntament amb la nostra Política de Privacitat (disponible a {privacy_link}), constitueixen l'acord complet entre vosaltres i Piyuo pel que fa al Servei i substitueixen tots els entesos, acords, representacions i garanties anteriors i contemporanis, tant escrits com orals, pel que fa al Servei.",
+
+  "terms_contact_title": "13. Informació de Contacte",
+  "terms_contact_intro": "Si teniu preguntes sobre aquestes Condicions, poseu-vos en contacte amb nosaltres:",
+  "terms_contact_email": "Per correu electrònic: {email}",
+  "terms_contact_website": "Visitant aquesta pàgina del nostre lloc web: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

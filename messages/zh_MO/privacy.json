@@ -1,0 +1,45 @@
+{
+  "privacy_title": "Piyuo計數器私隱政策",
+  "privacy_effective_date": "生效日期：2025年4月12日",
+
+  "privacy_introduction_title": "簡介",
+  "privacy_introduction_1": "歡迎使用Piyuo計數器！本私隱政策說明當您使用我們的軟件應用程式（\"應用程式\"）時，我們如何處理資訊。我們承諾保護您的私隱。此應用程式設計為在不收集或處理您的個人資料的情況下運作。",
+  "privacy_introduction_2": "本私隱政策適用於適用於流動裝置和電腦的Piyuo計數器軟件應用程式（\"應用程式\"），可在各種平台和應用程式商店中獲得。",
+
+  "privacy_who_we_are_title": "我們是誰",
+  "privacy_who_we_are": "Piyuo計數器應用程式由Piyuo（\"我們\"、\"我們的\"或\"我們的\"）提供。我們的網站是{website}。如果您對此政策有疑問，可以透過{email}聯絡我們。",
+
+  "privacy_no_collect_title": "我們不收集的資訊",
+  "privacy_no_collect_intro": "我們不透過Piyuo計數器應用程式收集、儲存、傳輸或處理您的任何個人資訊或使用資料。",
+  "privacy_no_collect_personal": "無個人資料：我們不要求、存取或追蹤任何可能識別您身份的資訊，例如您的姓名、電子郵件地址、位置、裝置識別符或聯絡人。",
+  "privacy_no_collect_usage": "無使用資料：應用程式不記錄您如何使用它。您建立的所有計數器資料僅本機儲存在您的裝置上，我們無法存取。",
+  "privacy_no_collect_third_party": "無第三方服務：我們不整合任何用於分析（如Firebase Analytics）、廣告（如AdMob）、雲端儲存或任何其他涉及與外部方共享資料的目的的第三方服務。應用程式在資料處理方面完全離線運作。",
+
+  "privacy_use_title": "我們如何使用資訊",
+  "privacy_use": "由於我們不收集任何資訊，我們不會為任何目的使用您的資訊。",
+
+  "privacy_sharing_title": "資訊共享和披露",
+  "privacy_sharing": "我們不共享或披露任何個人資訊，因為我們不收集任何資訊。您的資料（您追蹤的計數）保留在您的裝置上。",
+
+  "privacy_security_title": "資料安全",
+  "privacy_security": "使用Piyuo計數器應用程式產生的任何資料（如您的計數）僅本機儲存在您的裝置上。我們無法存取這些資料。雖然我們使用標準安全實務構建我們的應用程式，但儲存在您裝置上的資料安全性取決於您為裝置本身採取的安全措施。",
+
+  "privacy_children_title": "兒童私隱",
+  "privacy_children": "我們的應用程式不收集任何人（包括兒童）的個人資訊。我們遵守美國《兒童網上私隱保護法》（COPPA）和有關兒童資料的類似法規，如GDPR。由於我們不收集任何資料，我們本質上不收集13歲以下兒童的資料（在某些歐盟國家為16歲）。",
+
+  "privacy_rights_title": "您的權利（GDPR和其他法律）",
+  "privacy_rights_1": "歐洲的《一般資料保護規例》（GDPR）和各種美國州法律等私隱法律賦予個人對其個人資料的權利（如存取、更正、刪除）。",
+  "privacy_rights_2": "由於Piyuo計數器應用程式不收集、儲存或處理您的任何個人資料，這些權利通常不適用於我們應用程式的上下文，因為我們沒有持有您可以存取、更正或刪除的資料。與應用程式相關的任何資料僅存在於您的裝置上，在您的控制之下。",
+
+  "privacy_changes_title": "本私隱政策的變更",
+  "privacy_changes_1": "我們可能會不時更新本私隱政策。我們將透過在應用程式內或我們的網站（{website}）上發佈新的私隱政策來通知您任何變更。建議您定期查看本私隱政策以了解任何變更。",
+  "privacy_changes_2": "本私隱政策的變更在發佈到此頁面時生效。",
+
+  "privacy_contact_title": "聯絡我們",
+  "privacy_contact_intro": "如果您對本私隱政策有任何疑問，請聯絡我們：",
+  "privacy_contact_email": "透過電子郵件：{email}",
+  "privacy_contact_website": "透過瀏覽我們網站上的此頁面：{website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com"
+}

@@ -1,0 +1,69 @@
+{
+  "terms_title": "Piyuo Counter İçin Hizmet Şartları",
+  "terms_effective_date": "Yürürlük Tarihi: 12 Nisan 2025",
+
+  "terms_acceptance_title": "1. Şartların Kabulü",
+  "terms_acceptance": "Piyuo Counter uygulamasını (\"Hizmet\") indirerek, yükleyerek veya kullanarak, bu Hizmet Şartları'nı (\"Şartlar\") kabul etmeyi kabul edersiniz. Bu şartların herhangi bir kısmına katılmıyorsanız, Hizmete erişemezsiniz.",
+
+  "terms_description_title": "2. Hizmet Açıklaması",
+  "terms_description_1": "Piyuo Counter, cihazınızın kamerası ve bilgisayarlı görü teknolojisini kullanarak yayalar, araçlar veya diğer öğeler gibi nesneleri gerçek zamanlı olarak otomatik olarak sayma ve takip etme amacıyla kullanılan bir yazılım uygulamasıdır.",
+  "terms_description_2": "Hizmet tamamen yerel cihazınızda çalışır. Uygulamanın kullanımınızdan herhangi bir veri toplamaz, saklamaz veya iletmeyiz.",
+
+  "terms_license_title": "3. Lisans",
+  "terms_license_1": "Bu Şartlara uymanız koşuluyla, Piyuo size yalnızca kişisel, ticari olmayan kullanımınız için Hizmeti indirme, yükleme ve kullanma konusunda sınırlı, münhasır olmayan, devredilemez, alt lisanslanamaz bir lisans verir.",
+  "terms_license_2": "Bu lisans size aşağıdaki hakları vermez:",
+  "terms_license_reverse": "Hizmeti tersine mühendislik yapma, derleme kodu çözme veya parçalarına ayırma;",
+  "terms_license_distribute": "Hizmeti herhangi bir üçüncü tarafa dağıtma, satma, kiralama, ödünç verme veya başka şekilde devretme;",
+  "terms_license_modify": "Hizmeti değiştirme, uyarlama, değiştirme, çevirme veya türev eserler oluşturma;",
+  "terms_license_remove": "Hizmet üzerindeki herhangi bir mülkiyet bildirimini kaldırma, değiştirme veya gizleme.",
+
+  "terms_use_title": "4. Kabul Edilebilir Kullanım",
+  "terms_use_intro": "Hizmeti yalnızca yasal amaçlar için ve bu Şartlara uygun olarak kullanmayı kabul edersiniz. Hizmeti aşağıdaki şekillerde kullanmamayı kabul edersiniz:",
+  "terms_use_illegal": "Geçerli federal, eyalet, yerel veya uluslararası yasa veya düzenlemeleri ihlal eden herhangi bir şekilde;",
+  "terms_use_privacy": "Başkalarının mahremiyet haklarını ihlal etmek veya yasalarla yasaklanmış herhangi bir gözetim türüne katılmak için;",
+  "terms_use_harm": "Hizmeti devre dışı bırakabilecek, aşırı yükleyebilecek, zarar verebilecek veya bozabilecek herhangi bir şekilde;",
+  "terms_use_malware": "Herhangi bir virüs, truva atı, solucan, mantık bombası veya diğer kötü amaçlı veya teknik olarak zararlı materyali tanıtmak için.",
+
+  "terms_privacy_title": "5. Mahremiyet ve Veri",
+  "terms_privacy_1": "Piyuo Counter uygulaması mahremiyet gözetilerek tasarlanmıştır. Uygulama, nesne tespiti ve sayma amaçları için cihazınızda yerel olarak video verilerini işler.",
+  "terms_privacy_2": "Uygulamadan herhangi bir kişisel bilgi, video verisi, sayma verisi veya kullanım verisi toplamaz, saklamaz, erişmez veya iletiriz. Tüm işlemler cihazınızda yerel olarak gerçekleşir.",
+  "terms_privacy_3": "Mahremiyet uygulamalarımız hakkında daha fazla ayrıntı için lütfen {privacy_link} adresindeki Gizlilik Politikamızı inceleyin.",
+
+  "terms_disclaimer_title": "6. Garanti Reddi",
+  "terms_disclaimer_1": "HİZMET \"OLDUĞU GİBİ\" VE \"MEVCUT OLDUĞU ŞEKLİYLE\" HERHANGİ BİR TÜR GARANTİ OLMAKSIZIN SAĞLANIR. UYGULANACAK HUKUK TARAFINDAN İZİN VERİLEN AZAMİ ÖLÇÜDE, PIYUO HİZMETLE İLGİLİ AÇIK, ZIMNİ, YASAL VEYA DİĞER TÜM GARANTİLERİ, SATILABİLİRLİK, BELİRLİ BİR AMACA UYGUNLUK, BAŞLIK VE İHLAL ETMEME İLE İLGİLİ TÜM ZIMNİ GARANTİLER DAHİL OLMAK ÜZERE AÇIKÇA REDDEDİR.",
+  "terms_disclaimer_2": "ÖNCEKİLERLE SINIRLI OLMAKSIZIN, PIYUO HİZMETİN GEREKSİNİMLERİNİZİ KARŞILAYACAĞI, AMAÇLANAN SONUÇLARI ELDE EDECEĞİ, DİĞER YAZILIM, UYGULAMA, SİSTEM VEYA HİZMETLERLE UYUMLU OLACAĞI VEYA ÇALIŞACAĞI KONUSUNDa HERHANGİ BİR GARANTİ VEYA TAAHHÜT VERMEZ VE HERHANGİ BİR BEYANDA BULUNMAZ.",
+  "terms_disclaimer_3": "UYGULAMA KULLANIMI YOLUYLa ELDE EDİLEN HERHANGİ BİR VERİ VEYA SONUCUN DOĞRULUĞU, EKSİKSİZLİĞİ VEYA GÜVENİLİRLİĞİNİ GARANTİ ETMİYORUZ. UYGULAMA BİR ARAÇTIR VE ÇIKTISI KAMERA KALİTESİ, AYDINLATMA KOŞULLARI VE ALGORİTMA SINIRLILIKLARI DAHİL ÇEŞİTLİ FAKTÖRLERDEN ETKİLENEBİLİR.",
+
+  "terms_liability_title": "7. Sorumluluk Sınırlaması",
+  "terms_liability_intro": "UYGULANACAK HUKUK TARAFINDAN İZİN VERİLEN AZAMİ ÖLÇÜDE, HİÇBİR DURUMDA PIYUO, BAĞLI ŞİRKETLERİ, YETKİLİLERİ, YÖNETİCİLERİ, ÇALIŞANLARI, TEMSİLCİLERİ, TEDARİKÇİLERİ VEYA LİSANS VERENLERİ DOLAYLI, RASTLANTSAL, ÖZEL, SONUÇ OLARAK ORTAYA ÇIKAN VEYA CEZAİ ZARARLARDAN, SINIRLI OLMAMAK ÜZERE KAR, VERİ, KULLANIM, İYİ NİYET VEYA DİĞER SOMUT OLMAYAN KAYIPLAR DAHİL OLMAK ÜZERE SORUMLU OLMAYACAKTIR:",
+  "terms_liability_access": "Hizmete erişiminiz veya kullanımınız veya erişememe veya kullanamama durumunuz;",
+  "terms_liability_third_party": "Hizmetteki herhangi bir üçüncü tarafın davranışı veya içeriği;",
+  "terms_liability_content": "Hizmetten elde edilen herhangi bir içerik; ve",
+  "terms_liability_unauthorized": "İletimlerinize veya içeriğinize yetkisiz erişim, kullanım veya değişiklik.",
+  "terms_liability_basis": "BU SORUMLULUK SINIRLAMASI, İDDİA EDİLEN SORUMLULUĞUN SÖZLEŞME, HAKSIZ FİİL, İHMAL, KUSURSUZ SORUMLULUK VEYA DİĞER HERHANGİ BİR TEMELE DAYALI OLUP OLMADIĞINA BAKMAAKSIZIN GEÇERLİDİR, PIYUO BU TÜR ZARARLARIN OLASILIĞI KONUSUNDA BİLGİLENDİRİLMİŞ OLSA BİLE.",
+  "terms_liability_risk": "HİZMETİN BİR ARAÇ OLARAK ÜCRETSİZ SAĞLANDIĞINI KABUL EDİYOR VE KABUL EDİYORSUNUZ. HİZMETİ TAMAMEN KENDİ RİSKİNİZLE KULLANIYORSUNUZ. PIYUO CİHAZINIZ(LAR) VEYA DİĞER YAZILIMLARA VEYA HİZMET KULLANIMINIZDAN KAYNAKLANAN HERHANGİ BİR SONUCA YÖNELİK HERHANGİ BİR SORMLULUK ÜSTLENMEz.",
+
+  "terms_support_title": "8. Destek veya Bakım Yok",
+  "terms_support": "Piyuo Counter ücretsiz olarak sağlanır. Hizmet için bakım, teknik destek, güncellemeler veya yükseltmeler sağlama yükümlülüğümüz yoktur. Hizmeti veya bağlandığı herhangi bir hizmeti geçici veya kalıcı olarak, bildirimli veya bildirimsiz ve size karşı sorumluluk olmaksızın değiştirme, askıya alma veya durdurma hakkını saklı tutarız.",
+
+  "terms_changes_title": "9. Bu Şartlarda Değişiklikler",
+  "terms_changes": "Bu Şartları istediğimiz zaman değiştirme veya değiştirme hakkını saklı tutarız. Bir revizyon önemliyse, yeni şartların yürürlüğe girmesinden önce makul çabalar göstererek bildirim sağlarız. Önemli değişikliği neyin oluşturduğu kendi takdirimizle belirlenir. Bu revizyonlar yürürlüğe girdikten sonra Hizmetimize erişmeye veya kullanmaya devam ederek, revize edilmiş şartlarla bağlı olmayı kabul edersiniz.",
+
+  "terms_governing_title": "10. Geçerli Hukuk",
+  "terms_governing": "Bu Şartlar, hukuk çatışması ilkelerini dikkate almaksızın Kaliforniya Eyaleti, Amerika Birleşik Devletleri yasalarına göre yönetilir ve yorumlanır.",
+
+  "terms_severability_title": "11. Ayrılabilirlik ve Feragat",
+  "terms_severability": "Bu Şartların herhangi bir hükmü uygulanamaz veya geçersiz olarak kabul edilirse, bu hüküm geçerli hukuk altında mümkün olan azami ölçüde bu hükmün amaçlarını gerçekleştirmek için değiştirilecek ve yorumlanacak ve kalan hükümler tam güç ve etkili olmaya devam edecektir.",
+
+  "terms_entire_title": "12. Tam Anlaşma",
+  "terms_entire": "Bu Şartlar, Gizlilik Politikamızla birlikte, Hizmetle ilgili sizinle Piyuo arasındaki tam anlaşmayı oluşturur ve Hizmetle ilgili önceki ve eşzamanlı anlayış, anlaşma, beyan ve garantilerin tümünü, yazılı ve sözlü olanları da dahil olmak üzere yerine geçer.",
+
+  "terms_contact_title": "13. İletişim Bilgileri",
+  "terms_contact_intro": "Bu Şartlar hakkında sorularınız varsa, lütfen bizimle iletişime geçin:",
+  "terms_contact_email": "E-posta ile: {email}",
+  "terms_contact_website": "Web sitemizde bu sayfayı ziyaret ederek: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

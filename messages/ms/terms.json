@@ -1,0 +1,69 @@
+{
+  "terms_title": "Syarat Perkhidmatan untuk Piyuo Counter",
+  "terms_effective_date": "Tarikh Berkuat Kuasa: 12 April 2025",
+
+  "terms_acceptance_title": "1. Penerimaan Syarat",
+  "terms_acceptance": "Dengan memuat turun, memasang atau menggunakan aplikasi Piyuo Counter (\"Perkhidmatan\"), anda bersetuju untuk terikat dengan Syarat Perkhidmatan ini (\"Syarat\"). Jika anda tidak bersetuju dengan mana-mana bahagian syarat ini, maka anda tidak boleh mengakses Perkhidmatan.",
+
+  "terms_description_title": "2. Penerangan Perkhidmatan",
+  "terms_description_1": "Piyuo Counter ialah aplikasi perisian yang menggunakan kamera peranti anda dan teknologi penglihatan komputer untuk mengira dan menjejak objek seperti pejalan kaki, kenderaan atau item lain secara automatik dalam masa nyata.",
+  "terms_description_2": "Perkhidmatan beroperasi sepenuhnya pada peranti tempatan anda. Kami tidak mengumpul, menyimpan atau menghantar sebarang data daripada penggunaan aplikasi anda.",
+
+  "terms_license_title": "3. Lesen",
+  "terms_license_1": "Tertakluk kepada pematuhan anda terhadap Syarat ini, Piyuo memberikan anda lesen terhad, bukan eksklusif, tidak boleh dipindah milik, tidak boleh sublesens untuk memuat turun, memasang dan menggunakan Perkhidmatan semata-mata untuk kegunaan peribadi dan bukan komersial anda.",
+  "terms_license_2": "Lesen ini tidak memberikan anda sebarang hak untuk:",
+  "terms_license_reverse": "Kejuruteraan songsang, menyahkompil atau membongkar Perkhidmatan;",
+  "terms_license_distribute": "Mengedarkan, menjual, memajak, menyewa, meminjamkan atau memindahkan Perkhidmatan kepada mana-mana pihak ketiga;",
+  "terms_license_modify": "Mengubah suai, menyesuaikan, mengubah, menterjemah atau mencipta karya derivatif Perkhidmatan;",
+  "terms_license_remove": "Membuang, mengubah atau mengaburkan sebarang notis proprietari pada Perkhidmatan.",
+
+  "terms_use_title": "4. Penggunaan yang Boleh Diterima",
+  "terms_use_intro": "Anda bersetuju untuk menggunakan Perkhidmatan hanya untuk tujuan yang sah dan mengikut Syarat ini. Anda bersetuju untuk tidak menggunakan Perkhidmatan:",
+  "terms_use_illegal": "Dalam apa jua cara yang melanggar mana-mana undang-undang atau peraturan persekutuan, negeri, tempatan atau antarabangsa yang berkenaan;",
+  "terms_use_privacy": "Untuk melanggar hak privasi orang lain atau terlibat dalam apa jua bentuk pengawasan yang dilarang oleh undang-undang;",
+  "terms_use_harm": "Dalam apa jua cara yang boleh melumpuhkan, membebankan, merosakkan atau menjejaskan Perkhidmatan;",
+  "terms_use_malware": "Untuk memperkenalkan sebarang virus, trojan horse, cacing, bom logik atau bahan lain yang berniat jahat atau berbahaya dari segi teknologi.",
+
+  "terms_privacy_title": "5. Privasi dan Data",
+  "terms_privacy_1": "Aplikasi Piyuo Counter direka bentuk dengan mengambil kira privasi. Aplikasi memproses data video secara tempatan pada peranti anda untuk tujuan pengesanan dan pengiraan objek.",
+  "terms_privacy_2": "Kami tidak mengumpul, menyimpan, mengakses atau menghantar sebarang maklumat peribadi, data video, data kiraan atau data penggunaan daripada aplikasi. Semua pemprosesan berlaku secara tempatan pada peranti anda.",
+  "terms_privacy_3": "Untuk butiran lanjut tentang amalan privasi kami, sila semak Dasar Privasi kami di {privacy_link}.",
+
+  "terms_disclaimer_title": "6. Penafian Waranti",
+  "terms_disclaimer_1": "PERKHIDMATAN DISEDIAKAN \"SEBAGAIMANA ADANYA\" DAN \"SEBAGAIMANA TERSEDIA\" TANPA WARANTI APA PUN. PADA TAHAP MAKSIMUM YANG DIBENARKAN OLEH UNDANG-UNDANG YANG BERKENAAN, PIYUO SECARA NYATA MENAFIKAN SEMUA WARANTI, SAMA ADA NYATA, TERSIRAT, BERKANUN ATAU SEBALIKNYA, BERKENAAN DENGAN PERKHIDMATAN, TERMASUK SEMUA WARANTI TERSIRAT KEBOLEHPASARAN, KESESUAIAN UNTUK TUJUAN TERTENTU, HAK MILIK DAN BUKAN PELANGGARAN, DAN WARANTI YANG MUNGKIN TIMBUL DARIPADA PERJALANAN PERNIAGAAN, PERJALANAN PRESTASI, PENGGUNAAN ATAU AMALAN PERDAGANGAN.",
+  "terms_disclaimer_2": "TANPA MENGEHADKAN YANG DISEBUTKAN DI ATAS, PIYUO TIDAK MEMBERIKAN SEBARANG WARANTI ATAU JAMINAN, DAN TIDAK MEMBUAT SEBARANG REPRESENTASI BAHAWA PERKHIDMATAN AKAN MEMENUHI KEPERLUAN ANDA, MENCAPAI SEBARANG HASIL YANG DIMAKSUDKAN, SERASI ATAU BERFUNGSI DENGAN APA-APA PERISIAN, APLIKASI, SISTEM ATAU PERKHIDMATAN LAIN, BEROPERASI TANPA GANGGUAN, MEMENUHI SEBARANG STANDARD PRESTASI ATAU KEBOLEHPERCAYAAN, ATAU BEBAS RALAT, ATAU BAHAWA SEBARANG RALAT ATAU KECACATAN BOLEH ATAU AKAN DIBETULKAN.",
+  "terms_disclaimer_3": "KAMI TIDAK MENJAMIN KETEPATAN, KELENGKAPAN ATAU KEBOLEHPERCAYAAN SEBARANG DATA ATAU HASIL YANG DIPEROLEH MELALUI PENGGUNAAN APLIKASI (SEPERTI KIRAAN PEJALAN KAKI). APLIKASI INI ADALAH ALAT, DAN OUTPUTNYA MUNGKIN DIPENGARUHI OLEH PELBAGAI FAKTOR TERMASUK KUALITI KAMERA, KEADAAN PENCAHAYAAN, HALANGAN DAN BATASAN ALGORITMA.",
+
+  "terms_liability_title": "7. Had Liabiliti",
+  "terms_liability_intro": "PADA TAHAP PENUH YANG DIBENARKAN OLEH UNDANG-UNDANG YANG BERKENAAN, DALAM KEADAAN APA PUN PIYUO, AHLI GABUNGANNYA, PEGAWAI, PENGARAH, PEKERJA, EJEN, PEMBEKAL ATAU PEMBERI LESEN TIDAK AKAN BERTANGGUNGJAWAB UNTUK SEBARANG KEROSAKAN TIDAK LANGSUNG, SAMPINGAN, KHAS, BERBANGKIT ATAU PUNITIF, TERMASUK TANPA HAD, KEHILANGAN KEUNTUNGAN, DATA, PENGGUNAAN, MUHIBAH ATAU KERUGIAN TIDAK KETARA LAIN, YANG TERHASIL DARIPADA:",
+  "terms_liability_access": "Akses atau penggunaan anda atau ketidakupayaan untuk mengakses atau menggunakan Perkhidmatan;",
+  "terms_liability_third_party": "Sebarang kelakuan atau kandungan mana-mana pihak ketiga pada Perkhidmatan;",
+  "terms_liability_content": "Sebarang kandungan yang diperoleh daripada Perkhidmatan; dan",
+  "terms_liability_unauthorized": "Akses, penggunaan atau pengubahan tanpa kebenaran bagi penghantaran atau kandungan anda (walaupun kami ambil perhatian bahawa Aplikasi tidak menghantar data kiraan anda).",
+  "terms_liability_basis": "HAD LIABILITI INI TERPAKAI TIDAK KIRA SAMA ADA LIABILITI YANG DIDAKWA BERDASARKAN KONTRAK, TORT, KECUAIAN, LIABILITI KETAT ATAU APA-APA ASAS LAIN, WALAUPUN PIYUO TELAH DINASIHATKAN TENTANG KEMUNGKINAN KEROSAKAN TERSEBUT.",
+  "terms_liability_risk": "ANDA MENGAKUI DAN BERSETUJU BAHAWA PERKHIDMATAN DISEDIAKAN SECARA PERCUMA SEBAGAI ALAT. ANDA MENGGUNAKAN PERKHIDMATAN SEPENUHNYA ATAS RISIKO ANDA SENDIRI. PIYUO TIDAK MENANGGUNG SEBARANG TANGGUNGJAWAB ATAU LIABILITI UNTUK SEBARANG KEROSAKAN KEPADA PERANTI ANDA ATAU PERISIAN LAIN, ATAU APA-APA AKIBAT YANG TIMBUL DARIPADA PENGGUNAAN PERKHIDMATAN ANDA.",
+
+  "terms_support_title": "8. Tiada Sokongan atau Penyelenggaraan",
+  "terms_support": "Piyuo Counter disediakan secara percuma. Kami tidak di bawah sebarang kewajipan untuk menyediakan penyelenggaraan, sokongan teknikal, kemas kini atau naik taraf untuk Perkhidmatan. Kami berhak untuk mengubah suai, menggantung atau menghentikan, sementara atau kekal, Perkhidmatan atau apa-apa perkhidmatan yang disambungkannya, dengan atau tanpa notis dan tanpa liabiliti kepada anda.",
+
+  "terms_changes_title": "9. Perubahan kepada Syarat Ini",
+  "terms_changes": "Kami berhak, atas budi bicara kami semata-mata, untuk mengubah suai atau menggantikan Syarat ini pada bila-bila masa. Jika semakan adalah material, kami akan berusaha secara munasabah untuk memberikan notis (cth., melalui Aplikasi atau di Laman Web) sebelum sebarang syarat baharu berkuat kuasa. Apa yang merupakan perubahan material akan ditentukan atas budi bicara kami semata-mata. Dengan terus mengakses atau menggunakan Perkhidmatan kami selepas semakan tersebut menjadi berkesan, anda bersetuju untuk terikat dengan syarat yang disemak.",
+
+  "terms_governing_title": "10. Undang-undang Mentadbir",
+  "terms_governing": "Syarat ini akan ditadbir dan ditafsirkan mengikut undang-undang Negeri California, Amerika Syarikat, tanpa mengira prinsip konflik undang-undangnya. (Nota: Berunding dengan peguam untuk mengesahkan sama ada ini adalah bidang kuasa yang sesuai untuk anda).",
+
+  "terms_severability_title": "11. Kebolehpisahan dan Penepian",
+  "terms_severability": "Jika mana-mana peruntukan Syarat ini dianggap tidak boleh dikuatkuasakan atau tidak sah, peruntukan tersebut akan diubah dan ditafsirkan untuk mencapai objektif peruntukan tersebut pada tahap yang paling besar di bawah undang-undang yang berkenaan, dan peruntukan yang tinggal akan terus berkuat kuasa penuh dan berkesan. Tiada penepian mana-mana terma Syarat ini akan dianggap sebagai penepian selanjutnya atau berterusan bagi terma tersebut atau mana-mana terma lain.",
+
+  "terms_entire_title": "12. Keseluruhan Perjanjian",
+  "terms_entire": "Syarat ini, bersama-sama dengan Dasar Privasi kami (tersedia di {privacy_link}), membentuk keseluruhan perjanjian antara anda dan Piyuo berkenaan dengan Perkhidmatan dan menggantikan semua persefahaman, perjanjian, representasi dan waranti terdahulu dan kontemporari, baik bertulis mahupun lisan, berkenaan dengan Perkhidmatan.",
+
+  "terms_contact_title": "13. Maklumat Hubungan",
+  "terms_contact_intro": "Jika anda mempunyai sebarang soalan tentang Syarat ini, sila hubungi kami:",
+  "terms_contact_email": "Melalui e-mel: {email}",
+  "terms_contact_website": "Dengan melawat halaman ini di laman web kami: {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}

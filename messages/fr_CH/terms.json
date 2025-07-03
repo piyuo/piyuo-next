@@ -1,0 +1,69 @@
+{
+  "terms_title": "Conditions d'utilisation pour Piyuo Counter",
+  "terms_effective_date": "Date d'entrée en vigueur : 12 avril 2025",
+
+  "terms_acceptance_title": "1. Acceptation des Conditions",
+  "terms_acceptance": "En téléchargeant, installant ou utilisant l'application Piyuo Counter (le \"Service\"), vous acceptez d'être lié par ces Conditions d'utilisation (les \"Conditions\"). Si vous n'êtes pas d'accord avec une partie de ces conditions, vous ne pouvez pas accéder au Service.",
+
+  "terms_description_title": "2. Description du Service",
+  "terms_description_1": "Piyuo Counter est une application logicielle qui utilise la caméra de votre appareil et la technologie de vision par ordinateur pour compter et suivre automatiquement des objets tels que les piétons, les véhicules ou d'autres éléments en temps réel.",
+  "terms_description_2": "Le Service fonctionne entièrement sur votre appareil local. Nous ne collectons, ne stockons ni ne transmettons aucune donnée de votre utilisation de l'application.",
+
+  "terms_license_title": "3. Licence",
+  "terms_license_1": "Sous réserve de votre conformité à ces Conditions, Piyuo vous accorde une licence limitée, non exclusive, non transférable et non sous-licenciable pour télécharger, installer et utiliser le Service uniquement pour votre usage personnel et non commercial.",
+  "terms_license_2": "Cette licence ne vous accorde aucun droit de :",
+  "terms_license_reverse": "Faire de l'ingénierie inverse, décompiler ou désassembler le Service ;",
+  "terms_license_distribute": "Distribuer, vendre, louer, prêter ou transférer de quelque manière que ce soit le Service à un tiers ;",
+  "terms_license_modify": "Modifier, adapter, altérer, traduire ou créer des œuvres dérivées du Service ;",
+  "terms_license_remove": "Supprimer, altérer ou masquer tout avis de propriété sur le Service.",
+
+  "terms_use_title": "4. Utilisation Acceptable",
+  "terms_use_intro": "Vous acceptez d'utiliser le Service uniquement à des fins légales et conformément à ces Conditions. Vous acceptez de ne pas utiliser le Service :",
+  "terms_use_illegal": "D'une manière qui viole toute loi ou réglementation fédérale, cantonale, locale ou internationale applicable ;",
+  "terms_use_privacy": "Pour violer les droits à la vie privée d'autrui ou s'engager dans toute forme de surveillance interdite par la loi ;",
+  "terms_use_harm": "D'une manière qui pourrait désactiver, surcharger, endommager ou altérer le Service ;",
+  "terms_use_malware": "Pour introduire des virus, chevaux de Troie, vers, bombes logiques ou tout autre matériel malveillant ou technologiquement nuisible.",
+
+  "terms_privacy_title": "5. Confidentialité et Données",
+  "terms_privacy_1": "L'application Piyuo Counter est conçue dans un souci de confidentialité. L'application traite les données vidéo localement sur votre appareil à des fins de détection et de comptage d'objets.",
+  "terms_privacy_2": "Nous ne collectons, ne stockons, n'accédons ni ne transmettons aucune information personnelle, donnée vidéo, donnée de comptage ou donnée d'utilisation de l'application. Tout le traitement se fait localement sur votre appareil.",
+  "terms_privacy_3": "Pour plus de détails sur nos pratiques de confidentialité, veuillez consulter notre Politique de confidentialité à l'adresse {privacy_link}.",
+
+  "terms_disclaimer_title": "6. Avis de non-responsabilité concernant les Garanties",
+  "terms_disclaimer_1": "LE SERVICE EST FOURNI \"EN L'ÉTAT\" ET \"TEL QUE DISPONIBLE\" SANS GARANTIE D'AUCUNE SORTE. DANS LA MESURE MAXIMALE AUTORISÉE PAR LA LOI APPLICABLE, PIYUO DÉCLINE EXPRESSÉMENT TOUTES LES GARANTIES, QU'ELLES SOIENT EXPRESSES, IMPLICITES, LÉGALES OU AUTRES.",
+  "terms_disclaimer_2": "SANS LIMITATION DE CE QUI PRÉCÈDE, PIYUO NE FOURNIT AUCUNE GARANTIE OU ENGAGEMENT ET NE FAIT AUCUNE DÉCLARATION QUE LE SERVICE RÉPONDRA À VOS EXIGENCES.",
+  "terms_disclaimer_3": "NOUS NE GARANTISSONS PAS L'EXACTITUDE, L'EXHAUSTIVITÉ OU LA FIABILITÉ DE TOUTE DONNÉE OU RÉSULTAT OBTENU PAR L'UTILISATION DE L'APPLICATION (COMME LE COMPTAGE DES PIÉTONS).",
+
+  "terms_liability_title": "7. Limitation de Responsabilité",
+  "terms_liability_intro": "DANS LA MESURE MAXIMALE AUTORISÉE PAR LA LOI APPLICABLE, EN AUCUN CAS PIYUO, SES AFFILIÉS, DIRIGEANTS, DIRECTEURS, EMPLOYÉS, AGENTS, FOURNISSEURS OU CONCÉDANTS DE LICENCE NE SERONT RESPONSABLES DE TOUT DOMMAGE INDIRECT, ACCESSOIRE, SPÉCIAL, CONSÉCUTIF OU PUNITIF.",
+  "terms_liability_access": "Votre accès ou utilisation ou incapacité d'accéder ou d'utiliser le Service ;",
+  "terms_liability_third_party": "Toute conduite ou contenu de tout tiers sur le Service ;",
+  "terms_liability_content": "Tout contenu obtenu du Service ; et",
+  "terms_liability_unauthorized": "L'accès, l'utilisation ou l'altération non autorisés de vos transmissions ou contenus.",
+  "terms_liability_basis": "CETTE LIMITATION DE RESPONSABILITÉ S'APPLIQUE QUELLE QUE SOIT LA BASE DE LA RESPONSABILITÉ ALLÉGUÉE.",
+  "terms_liability_risk": "VOUS RECONNAISSEZ ET ACCEPTEZ QUE LE SERVICE EST FOURNI GRATUITEMENT COMME OUTIL. VOUS UTILISEZ LE SERVICE ENTIÈREMENT À VOS RISQUES ET PÉRILS.",
+
+  "terms_support_title": "8. Absence de Support ou de Maintenance",
+  "terms_support": "Piyuo Counter est fourni gratuitement. Nous n'avons aucune obligation de fournir une maintenance, un support technique, des mises à jour ou des améliorations pour le Service.",
+
+  "terms_changes_title": "9. Modifications de ces Conditions",
+  "terms_changes": "Nous nous réservons le droit, à notre seule discrétion, de modifier ou remplacer ces Conditions à tout moment.",
+
+  "terms_governing_title": "10. Loi Applicable",
+  "terms_governing": "Ces Conditions sont régies et interprétées conformément aux lois de l'État de Californie, États-Unis.",
+
+  "terms_severability_title": "11. Divisibilité et Renonciation",
+  "terms_severability": "Si une disposition de ces Conditions est jugée inapplicable ou invalide, cette disposition sera modifiée et interprétée pour accomplir les objectifs de cette disposition.",
+
+  "terms_entire_title": "12. Accord Complet",
+  "terms_entire": "Ces Conditions, ainsi que notre Politique de confidentialité (disponible à l'adresse {privacy_link}), constituent l'accord complet entre vous et Piyuo.",
+
+  "terms_contact_title": "13. Informations de Contact",
+  "terms_contact_intro": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter :",
+  "terms_contact_email": "Par e-mail : {email}",
+  "terms_contact_website": "En visitant cette page sur notre site Web : {website}",
+
+  "website_url": "https://piyuo.com",
+  "contact_email": "service@piyuo.com",
+  "privacy_link": "https://piyuo.com/privacy-policy.html"
+}
