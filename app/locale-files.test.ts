@@ -37,8 +37,6 @@ describe('CSV to locale conversion verification', () => {
     // Test that we have expected number of supported locales
     expect(supportedLocales.length).toBeGreaterThan(80); // Should have 83 locales
 
-    // Mock message structure to test key consistency
-    const mockKeys = ['index_download', 'index_language', 'index_video_title'];
 
     // Test locales should have consistent structure
     const testLocales = ['en', 'fr', 'es', 'de', 'zh', 'ja'];
