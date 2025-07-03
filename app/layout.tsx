@@ -1,11 +1,11 @@
 // ===============================================
 // Root Layout: layout.tsx
-// Description: Root layout that passes through to locale-specific layouts
+// Description: Root layout that provides HTML structure fallback
 //
 // Purpose:
-//   - Provides base structure for Next.js App Router
-//   - Delegates HTML structure to locale-specific layouts
-//   - All metadata and fonts are handled in locale layouts
+//   - Provides base HTML structure for Next.js App Router
+//   - Delegates to locale-specific layouts when possible
+//   - Handles fallback cases (404, errors) with proper HTML structure
 // ===============================================
 
 import "./globals.css";
@@ -15,5 +15,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return children;
+  return (
+    <html lang="en">
+      <body className="antialiased">
+        {children}
+      </body>
+    </html>
+  );
 }
