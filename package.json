@@ -59,7 +59,7 @@
   "engineStrict": true,
   "x-notes": {
     "deploy": "merge release-please branch into main to trigger deployment.",
-    "pages:build": "must not changed to `build` as it is required for Cloudflare Pages deployment.",
+    "workers:build": "must not changed to `build` as it is required for Cloudflare workers deployment.",
     "typescript": "pin to 5.8.3 to avoid minor version surprises across environments.",
     "jest": "pin to 30.0.3 to avoid minor version surprises across environments.",
     "node": "Pinned to v22 for long-term LTS support. Consider upgrading to v24 in Oct 2025 when it becomes LTS.",

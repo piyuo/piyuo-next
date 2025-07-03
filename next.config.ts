@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Enable ISR and Cloudflare Pages compatibility
   trailingSlash: true,
   images: {
     unoptimized: true, // Required for Cloudflare Workers

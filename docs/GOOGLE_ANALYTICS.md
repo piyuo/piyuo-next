@@ -40,7 +40,7 @@ Replace `G-XXXXXXXXXX` with your actual Google Analytics Measurement ID.
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-YOUR-DEV-ID
 ```
 
-2. **Production** (Cloudflare Pages Environment Variables):
+2. **Production** (Cloudflare Workers Environment Variables):
 
 Set `NEXT_PUBLIC_GA_MEASUREMENT_ID` in the Cloudflare Dashboard under Pages > Settings > Environment variables.
 
