@@ -12,6 +12,10 @@ export function middleware(request: NextRequest) {
     pathname.startsWith('/icons/') ||
     pathname.startsWith('/videos/') ||
     pathname.startsWith('/public/') ||
+    pathname.startsWith('/_vercel/') || // Vercel internals
+    pathname === '/favicon.ico' ||
+    pathname === '/robots.txt' ||
+    pathname === '/sitemap.xml' ||
     pathname.includes('.') // Skip files with extensions
   ) {
     return NextResponse.next();
@@ -55,7 +59,9 @@ export const config = {
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
      * - public folder files
+     * - _vercel (Vercel internals)
+     * - sitemap.xml, robots.txt (SEO files)
      */
-    '/((?!api|_next/static|_next/image|favicon.ico|images|icons|videos|public|.*\\.).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|images|icons|videos|public|_vercel|sitemap.xml|robots.txt|.*\\.).*)',
   ],
 };

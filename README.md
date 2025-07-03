@@ -29,7 +29,7 @@ npm install -g pnpm
 
 ---
 
-piyuo-next is the official website for piyuo counter. This project uses Next.js/React with Incremental Static Regeneration (ISR) to build a small, fast, and most importantly, Search Engine Optimized (SEO) website with dynamic content capabilities.
+piyuo-next is the official website for piyuo counter. This project uses Next.js/React with Incremental Static Regeneration (ISR) deployed on Cloudflare Workers to build a small, fast, and most importantly, Search Engine Optimized (SEO) website with dynamic content capabilities and full Node.js compatibility.
 
 ## Table of Contents
 
@@ -50,12 +50,9 @@ piyuo-next is the official website for piyuo counter. This project uses Next.js/
     - [ISR Configuration](#isr-configuration)
   - [Release](#release)
     - [Milestone Completion](#milestone-completion)
-  - [Deploy to Cloudflare Pages](#deploy-to-cloudflare-pages)
+  - [Deploy to Cloudflare Workers](#deploy-to-cloudflare-workers)
     - [Automated Deployment](#automated-deployment)
-    - [Manual Deployment](#manual-deployment)
-    - [Local Development with Cloudflare](#local-development-with-cloudflare)
     - [Environment Configuration](#environment-configuration)
-    - [Performance Benefits](#performance-benefits)
   - [Reference Documents](#reference-documents)
 
 ## 🛠️ Development Tools
@@ -119,7 +116,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 ├── package.json        # Project metadata and scripts
 ├── postcss.config.mjs  # PostCSS (for Tailwind CSS)
 ├── tsconfig.json       # TypeScript configuration
-├── wrangler.toml       # Cloudflare configuration
+├── wrangler.toml       # Cloudflare Workers configuration
 ├── README.md           # Project documentation (this file)
 ├── AGENTS.md           # AI Agent instructions and best practices
 └── CONTRIBUTING.md     # Contribution guidelines and workflow
@@ -140,7 +137,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - **postcss.config.mjs**: PostCSS config for Tailwind CSS.
 - **tsconfig.json**: TypeScript project configuration.
 - **package.json**: Project dependencies, scripts, and metadata.
-- **wrangler.toml**: Cloudflare Pages and Functions configuration.
+- **wrangler.toml**: Cloudflare Workers configuration for deployment.
 - **AGENTS.md**: Guidance for AI Agents and developers on project conventions, best practices, and what to avoid. Essential for automated and human contributors.
 - **CONTRIBUTING.md**: Step-by-step guide for contributing, including workflow, commit standards, and review process. Read this before making a PR.
 - **scripts/**: Useful scripts for development and maintenance (e.g., cleanup, automation).
@@ -161,13 +158,13 @@ CLOUDFLARE_ACCOUNT_ID=your_account_id
 REVALIDATE_TOKEN=your_secure_token
 ```
 
-For production deployment on Cloudflare Pages, set environment variables in the Cloudflare Dashboard under Pages > Settings > Environment variables.
 
 ## 🧰 Tech Stack
 
 - **TypeScript**: For static type safety across the codebase.
 - **React**: Core UI framework.
 - **Next.js (App Router)**: Handles routing, Incremental Static Regeneration (ISR), and optimizations like `next/image`, `next/font`.
+- **@opennextjs/cloudflare**: Enables Next.js deployment on Cloudflare Workers with full Node.js compatibility.
 - **TurboPack**: For fast local development (enabled by Next.js).
 - **next-intl**: For internationalization and multilingual support.
 - **Tailwind CSS + clsx**: Utility-first CSS styling with conditional class management.
@@ -178,7 +175,7 @@ For production deployment on Cloudflare Pages, set environment variables in the 
 - **React Hook Form**: Form handling and integration with Zod.
 - **Jest + React Testing Library**: Unit and component testing.
 - **Playwright**: End-to-end testing.
-- **Cloudflare Pages + Functions**: Production hosting with serverless functions support.
+- **Cloudflare Workers**: Production hosting with serverless functions and full Node.js runtime support.
 
 ## ⚙️ Bundlers
 
@@ -202,6 +199,7 @@ For production deployment on Cloudflare Pages, set environment variables in the 
 - Use concise, readable TypeScript.
 - Write self-documenting code with clear naming and structure.
 - Optimize ISR revalidation intervals based on content update frequency.
+- Take advantage of Node.js compatibility for server-side operations when needed.
 
 ## 🚫 What to Avoid
 
@@ -225,16 +223,18 @@ For production deployment on Cloudflare Pages, set environment variables in the 
 - Writing and maintaining test files (Jest + RTL + Playwright)
 - Optimizing performance and SEO (using Next.js ISR features)
 - ISR configuration and revalidation strategies
-- Cloudflare Pages and Functions integration
+- Cloudflare Workers integration and deployment
+- Node.js compatibility features and server-side operations
 - Keeping the codebase clean and modular
 
 ## 🔧 Rendering Strategy
 
-- The current deployment uses **Incremental Static Regeneration (ISR)** for optimal performance and SEO.
+- The current deployment uses **Incremental Static Regeneration (ISR)** running on Cloudflare Workers for optimal performance and SEO.
 - Pages are statically generated at build time and can be regenerated on-demand or at specified intervals.
 - **Server-Side Rendering (SSR)** is available for dynamic content when needed.
 - Static pages are served from Cloudflare's global CDN for maximum performance.
-- Dynamic functionality is handled by Cloudflare Functions (serverless edge computing).
+- Dynamic functionality is handled by Cloudflare Workers with full Node.js runtime compatibility.
+- The **@opennextjs/cloudflare** adapter enables seamless Next.js features on Cloudflare Workers.
 
 ### ISR Configuration
 
@@ -263,6 +263,7 @@ export const revalidate = 0;
 3. **Generating changelog** from commit messages and linked issues
 4. **Creating release PR** with version bump and changelog
 5. **Creating Git tags** when release PR is merged
+6. **Triggering automated deployment** to Cloudflare Workers
 
 ### Milestone Completion
 
@@ -272,69 +273,33 @@ When all issues in a milestone are completed:
 2. **Maintainer reviews and merges** release PR to main
 3. **Automatic version bump and changelog** generation
 4. **Git tag created** with version number
-5. **CI/CD deployment triggered** automatically
+5. **GitHub Actions deploys to Cloudflare Workers** automatically
+6. **Website at <https://piyuo.com> updates immediately**
 
-## Deploy to Cloudflare Pages
+## Deploy to Cloudflare Workers
 
-This project is automatically deployed to Cloudflare Pages using GitHub Actions. The deployment workflow is triggered on every push to the main branch.
+This project is automatically deployed to Cloudflare Workers using GitHub Actions and the **@opennextjs/cloudflare** adapter. The deployment workflow is triggered automatically when release-please PRs are merged to the main branch.
 
 ### Automated Deployment
 
-The site is built and deployed using Cloudflare Pages' GitHub integration:
+The site is built and deployed using GitHub Actions:
 
-1. Builds the Next.js application with ISR support
-2. Deploys static assets to Cloudflare's global CDN
-3. Deploys serverless functions to Cloudflare Functions
-4. Provides instant global distribution with edge caching
+1. Builds the Next.js application using @opennextjs/cloudflare
+2. Deploys to Cloudflare Workers project named "piyuo-next"
+3. Provides instant global distribution with edge computing
+4. Full Node.js runtime compatibility for server-side operations
+5. Website at <https://piyuo.com> updates immediately after deployment
 
-### Manual Deployment
 
-For manual deployment using Wrangler CLI:
-
-```bash
-# Install Wrangler CLI globally
-npm install -g wrangler
-
-# Login to Cloudflare
-wrangler login
-
-# Build the project
-pnpm run build
-
-# Deploy to Cloudflare Pages
-wrangler pages deploy .next --project-name=piyuo-next
-```
-
-### Local Development with Cloudflare
-
-To test Cloudflare Functions locally:
-
-```bash
-# Install Wrangler CLI
-npm install -g wrangler
-
-# Run local development server with Functions
-wrangler pages dev .next --compatibility-date=2024-01-15
-```
 
 ### Environment Configuration
 
 Configure environment variables in:
 
 - **Development**: `.env.local` file
-- **Production**: Cloudflare Dashboard > Pages > Settings > Environment variables
+- **Production**: define in deploy.yml
 
-### Performance Benefits
 
-The migration to Cloudflare Pages + ISR provides:
-
-- **Faster Time to First Byte**: ISR serves cached content instantly
-- **Better SEO**: Server-generated content with dynamic updates
-- **Global Performance**: Cloudflare's 200+ edge locations
-- **Automatic Scaling**: Serverless functions scale automatically
-- **Cost Efficiency**: Pay-per-use model with generous free tier
-
-Check out the [Next.js ISR documentation](https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration) and [Cloudflare Pages documentation](https://developers.cloudflare.com/pages/) for more details.
 
 ## Reference Documents
 
