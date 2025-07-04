@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.2.0](https://github.com/piyuo/piyuo-next/compare/v1.1.0...v1.2.0) (2025-07-04)
+
+
+### Features
+
+* add favicon and test media file from old piyuo.com project [#93](https://github.com/piyuo/piyuo-next/issues/93) ([ec3e8ff](https://github.com/piyuo/piyuo-next/commit/ec3e8ffd79fde864a17f64d497fd380b525caa83))
+* add favicon.png and manifest.json to project [#87](https://github.com/piyuo/piyuo-next/issues/87) ([0c49809](https://github.com/piyuo/piyuo-next/commit/0c4980901ee7314b5e3f724d47159e87eccfa276))
+* **locale:** implement middleware for locale detection and routing with ISR support [#84](https://github.com/piyuo/piyuo-next/issues/84) ([6bd04c4](https://github.com/piyuo/piyuo-next/commit/6bd04c41043eee92fd2d9b6a531117e186988153))
+* rewrite static html legal documents to next.js/react with multi-language support [#97](https://github.com/piyuo/piyuo-next/issues/97) ([c713b27](https://github.com/piyuo/piyuo-next/commit/c713b276a16771c2dccb2555b8a50d6a74b94c44))
+* update deploy.yml for opennextjs/cloudflare in github workflow [#91](https://github.com/piyuo/piyuo-next/issues/91) ([7c848cc](https://github.com/piyuo/piyuo-next/commit/7c848cc15ac1dcbe398eddd2a0c4d88274d52bf4))
+
+
+### Bug Fixes
+
+* **build:** add .wrangler to .gitignore and update preview script for compatibility [#84](https://github.com/piyuo/piyuo-next/issues/84) ([eb53413](https://github.com/piyuo/piyuo-next/commit/eb53413cd7548af897bd20762b236f9ef144aedb))
+* compile issue when run pnpm review [#95](https://github.com/piyuo/piyuo-next/issues/95) ([6b5db01](https://github.com/piyuo/piyuo-next/commit/6b5db01225f5e42d7b0d103488255fb8c9415521))
+* **deploy:** add environment variable for Google Analytics ID in build step [#84](https://github.com/piyuo/piyuo-next/issues/84) ([816741e](https://github.com/piyuo/piyuo-next/commit/816741ee1f962c98e7718594d800d5241647a397))
+* **deploy:** comment out conditional deployment trigger [#84](https://github.com/piyuo/piyuo-next/issues/84) ([55985e8](https://github.com/piyuo/piyuo-next/commit/55985e87105a3240c213ad9518720d02d3af290e))
+* **deploy:** uncomment conditional for release commit deployment [#84](https://github.com/piyuo/piyuo-next/issues/84) ([814fa26](https://github.com/piyuo/piyuo-next/commit/814fa26ef196f327116679ecd52807ee9bf65ced))
+* **deploy:** update deployment workflow to use Corepack [#84](https://github.com/piyuo/piyuo-next/issues/84) ([12bcc90](https://github.com/piyuo/piyuo-next/commit/12bcc9022771814b3d4a88aa50325c4e1605a30a))
+* enhance RootPage with comprehensive error handling for Cloudflare Pages [#89](https://github.com/piyuo/piyuo-next/issues/89) ([4e26b98](https://github.com/piyuo/piyuo-next/commit/4e26b98a625c7c0b5b82702bbc833e0e22b740da))
+* **locale:** update priority locales to include Traditional and Simplified Chinese [#84](https://github.com/piyuo/piyuo-next/issues/84) ([1491468](https://github.com/piyuo/piyuo-next/commit/149146832a79625d8c7943cd8ab9546792c1a275))
+* uncomment deployment condition in workflow [#91](https://github.com/piyuo/piyuo-next/issues/91) ([37fb3af](https://github.com/piyuo/piyuo-next/commit/37fb3afd2966ab08d3f53f8d1118ad9a4d73a3e8))
+
 ## [1.1.0](https://github.com/piyuo/piyuo-next/compare/v1.0.0...v1.1.0) (2025-06-30)
 
 
