@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.1](https://github.com/piyuo/piyuo-next/compare/v1.2.0...v1.2.1) (2025-07-05)
+
+
+### Bug Fixes
+
+* update wrangler action version to v3 and set wranglerVersion to 4 [#99](https://github.com/piyuo/piyuo-next/issues/99) ([409c49c](https://github.com/piyuo/piyuo-next/commit/409c49c3d599d5a66657878debd17e924201b8fa))
+* update wrangler to version 4.23.0 and adjust deployment condition in workflow [#99](https://github.com/piyuo/piyuo-next/issues/99) ([9d03739](https://github.com/piyuo/piyuo-next/commit/9d03739349ea2226e53d6f5b46d81ab5ec5832ca))
+
 ## [1.2.0](https://github.com/piyuo/piyuo-next/compare/v1.1.0...v1.2.0) (2025-07-04)
 
 
