@@ -54,7 +54,7 @@ describe('CSV to locale conversion verification', () => {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const path = require('path');
 
-    const enPath = path.join(__dirname, '../messages/en/page.json');
+    const enPath = path.join(__dirname, '../public/messages/en/page.json');
     const enContent = fs.readFileSync(enPath, 'utf-8');
     const enMessages = JSON.parse(enContent);
 

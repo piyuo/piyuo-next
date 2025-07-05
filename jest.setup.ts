@@ -94,3 +94,6 @@ if (isNodeEnvironment) {
     Headers: mockHeaders,
   });
 }
+
+// Mock fetch globally for both environments
+global.fetch = jest.fn();

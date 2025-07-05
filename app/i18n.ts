@@ -1,4 +1,6 @@
+import { appVersion, getBaseUrl } from '@/lib/runtime-config';
 import { createTranslator } from 'next-intl';
+
 
 // Supported locales - dynamically loaded
 export const supportedLocales = [
@@ -14,21 +16,21 @@ export const supportedLocales = [
 
 export type SupportedLocale = typeof supportedLocales[number];
 
-// Dynamic message loading
-export async function getMessages(locale: SupportedLocale, page:string) {
-  try {
-    const messages = await import(`../messages/${locale}/${page}.json`);
-    return messages.default;
-  } catch {
-    console.warn(`Failed to load messages for locale "${locale}" and page "${page}", falling back to English`);
-    const fallback = await import(`../messages/en/${page}.json`);
-    return fallback.default;
-  }
-}
-
+// Client-side message loading with translator creation
 export async function getTranslator(locale: SupportedLocale, page: string) {
-  const messages = await getMessages(locale, page);
-  return createTranslator({ locale, messages });
+  const baseUrl = getBaseUrl();
+  const version = appVersion;
+  try {
+    const res = await fetch(`${baseUrl}/messages/${locale}/${page}.json?v=${version}`);
+    if (!res.ok) throw new Error('Not found');
+    const messages = await res.json() as Record<string, string>;
+    return createTranslator({ locale, messages });
+  } catch {
+    console.warn(`Failed to load messages for ${locale}/${page}, falling back to English`);
+    const fallback = await fetch(`${baseUrl}/messages/en/${page}.json?v=${version}`);
+    const messages = await fallback.json() as Record<string, string>;
+    return createTranslator({ locale, messages });
+  }
 }
 
 // Helper function to check if a locale is supported

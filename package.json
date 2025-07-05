@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "workers:build": "opennextjs-cloudflare build",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview --port 8080",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
     "lint": "next lint",
     "test": "jest",
