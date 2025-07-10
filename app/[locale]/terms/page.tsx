@@ -12,6 +12,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslator, isSupportedLocale, type SupportedLocale } from "../../i18n";
+import { generateHreflangLinks, getCanonicalUrl } from "../../utils/hreflang-utils";
 
 // Enable ISR with 24-hour revalidation for legal documents
 export const revalidate = 86400; // 24 hours in seconds
@@ -39,10 +40,16 @@ export async function generateMetadata({ params }: TermsPageProps): Promise<Meta
     return {
       title: title,
       description: description,
+      alternates: {
+        ...generateHreflangLinks('/terms'),
+        canonical: getCanonicalUrl(locale as SupportedLocale, '/terms'),
+      },
       openGraph: {
         title: title,
         description: description,
         type: 'article',
+        locale: locale,
+        url: getCanonicalUrl(locale as SupportedLocale, '/terms'),
       },
     };
   } catch {

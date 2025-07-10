@@ -13,6 +13,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslator, isSupportedLocale, type SupportedLocale } from "../../i18n";
+import { generateHreflangLinks, getCanonicalUrl } from "../../utils/hreflang-utils";
 
 // Enable ISR with 24-hour revalidation for legal documents
 export const revalidate = 86400; // 24 hours in seconds
@@ -39,10 +40,16 @@ export async function generateMetadata({ params }: PrivacyPageProps): Promise<Me
     return {
       title: title,
       description: t('privacy_introduction_1'),
+      alternates: {
+        ...generateHreflangLinks('/privacy'),
+        canonical: getCanonicalUrl(locale as SupportedLocale, '/privacy'),
+      },
       openGraph: {
         title: title,
         description: t('privacy_introduction_1'),
         type: 'article',
+        locale: locale,
+        url: getCanonicalUrl(locale as SupportedLocale, '/privacy'),
       },
     };
   } catch {
