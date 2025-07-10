@@ -49,7 +49,7 @@ All work must begin with a GitHub Issue for proper tracking.
 **ALWAYS** use the provided script:
 
 ```bash
-./scripts/start-issue.sh <issue-number>
+./scripts/start_issue.sh <issue-number>
 ```
 
 This script:
@@ -110,7 +110,7 @@ create your first commit with the proper format:
 ```bash
 
 # Get the exact issue title for consistency
-./scripts/get-issue-title.sh <issue-number>
+./scripts/get_issue_title.sh <issue-number>
 
 # Example first commit - this will become your PR title
 git commit -m "<issue-title> #<issue-number>"
@@ -213,7 +213,7 @@ Always reference the issue number in the commit. Use one of the 5 approved commi
 
 #### File Structure for AI Efficiency
 
-**MANDATORY:** Every code file and test file must include a TOC or Overview at the top in comments. This helps AI assistants understand file structure within the first 50-100 lines.
+**MANDATORY:** Every code file and test file and documents like *.md must include a TOC or Overview at the top in comments. This helps AI assistants understand file structure within the first 50-100 lines.
 
 **JavaScript/TypeScript Example:**
 
@@ -284,10 +284,10 @@ Transform messy development commits into meaningful commits before creating PR.
 
 ### Interactive Rebase Process
 
-You can automate this using the scripts/squash-commits.sh script:
+You can automate this using the scripts/squash_commits.sh script:
 
 ```bash
-./scripts/squash-commits.sh
+./scripts/squash_commits.sh
 ```
 
 This script rebases your branch onto main, helps you squash commits interactively, edits the final message, and safely force-pushes the result.
@@ -308,7 +308,7 @@ This script rebases your branch onto main, helps you squash commits interactivel
 
 ```bash
 # Get the exact issue title for consistency
-./scripts/get-issue-title.sh <issue-number>
+./scripts/get_issue_title.sh <issue-number>
 
 # Create the PR using the body file, add --push to eliminates the interactive prompt.
 gh pr create \
@@ -353,7 +353,7 @@ rm .PR_BODY.md
 
 **Must match:** `<issue-title> #<issue-number>`
 
-Get the exact title: `./scripts/get-issue-title.sh <issue-number>`
+Get the exact title: `./scripts/get_issue_title.sh <issue-number>`
 
 ### PR Body Template
 
