@@ -5,7 +5,7 @@ import { createTranslator } from 'next-intl';
 // Supported locales - dynamically loaded
 export const supportedLocales = [
   'af', 'am', 'ar', 'ar_AE', 'ar_DZ', 'ar_EG', 'az', 'bg', 'bn', 'bn_IN',
-  'ca', 'cs', 'da', 'de', 'de_AT', 'de_CH', 'el', 'en', 'en_AU', 'en_CA',
+  'ca', 'cs', 'cy', 'da', 'de', 'de_AT', 'de_CH', 'el', 'en', 'en_AU', 'en_CA',
   'en_GB', 'en_IN', 'es', 'es_AR', 'es_CO', 'et', 'fa', 'fi', 'fr', 'fr_BE',
   'fr_CA', 'fr_CH', 'gl', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'it', 'ja',
   'kk', 'ko', 'lt', 'lv', 'ml', 'mn', 'mr', 'ms', 'ms_SG', 'my', 'nb',
