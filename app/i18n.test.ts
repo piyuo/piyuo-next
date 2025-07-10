@@ -1,8 +1,8 @@
 import {
-  getBestMatchingLocale,
-  getTranslator,
-  isSupportedLocale,
-  supportedLocales
+    getBestMatchingLocale,
+    getTranslator,
+    isSupportedLocale,
+    supportedLocales
 } from './i18n';
 
 // Mock fetch responses
@@ -66,7 +66,7 @@ describe('i18n functionality', () => {
     expect(supportedLocales).toContain('es');
     expect(supportedLocales).toContain('zh');
     expect(supportedLocales).toContain('ja');
-    expect(supportedLocales.length).toBe(83);
+    expect(supportedLocales.length).toBe(84);
   });
 
   it('should correctly identify supported locales', () => {
