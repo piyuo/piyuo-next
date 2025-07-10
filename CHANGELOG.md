@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.3.0](https://github.com/piyuo/piyuo-next/compare/v1.2.0...v1.3.0) (2025-07-10)
+
+
+### Features
+
+* add chore and refactor commit types to main branch [#111](https://github.com/piyuo/piyuo-next/issues/111) ([d881292](https://github.com/piyuo/piyuo-next/commit/d8812927ebbb00e0b4406a725ea9dca8fa3ab983))
+* add hreflang utilities for SEO optimization and update metadata generation [#115](https://github.com/piyuo/piyuo-next/issues/115) ([807a3ee](https://github.com/piyuo/piyuo-next/commit/807a3ee5b2abc031655a7667d2c601ab9617a427))
+* enable search engine indexing for all locale pages [#115](https://github.com/piyuo/piyuo-next/issues/115) ([fe2757f](https://github.com/piyuo/piyuo-next/commit/fe2757fadeef8fc12c64645ba82d3da5da08b62d))
+
+
+### Bug Fixes
+
+* missing permissions block in commitlint workflow [#104](https://github.com/piyuo/piyuo-next/issues/104) ([b1c1227](https://github.com/piyuo/piyuo-next/commit/b1c122717fef7af06dc97689bd6eb0e470f65ca4))
+* uncomment deployment condition in workflow [#99](https://github.com/piyuo/piyuo-next/issues/99) ([1b37254](https://github.com/piyuo/piyuo-next/commit/1b37254248fe0f8e2f564ce83158ff4a8e1ed452))
+* update wrangler action version to v3 and set wranglerVersion to 4 [#99](https://github.com/piyuo/piyuo-next/issues/99) ([409c49c](https://github.com/piyuo/piyuo-next/commit/409c49c3d599d5a66657878debd17e924201b8fa))
+* update wrangler to version 4.23.0 and adjust deployment condition in workflow [#99](https://github.com/piyuo/piyuo-next/issues/99) ([9d03739](https://github.com/piyuo/piyuo-next/commit/9d03739349ea2226e53d6f5b46d81ab5ec5832ca))
+
 ## [1.2.0](https://github.com/piyuo/piyuo-next/compare/v1.1.0...v1.2.0) (2025-07-04)
 
 
