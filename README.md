@@ -141,9 +141,9 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - **AGENTS.md**: Guidance for AI Agents and developers on project conventions, best practices, and what to avoid. Essential for automated and human contributors.
 - **CONTRIBUTING.md**: Step-by-step guide for contributing, including workflow, commit standards, and review process. Read this before making a PR.
 - **scripts/**: Useful scripts for development and maintenance (e.g., cleanup, automation).
-  - **cleanup-branches.sh**: Deletes all local git branches that have been removed from the remote. Useful for keeping your local repository clean.
-  - **start-issue.sh**: Automates starting work on a GitHub issue. It creates a new branch named after the issue number and title, assigns the issue to you, and checks out the branch.
-  - **get-issue-title.sh**: Fetches the title of a GitHub issue by its number.
+  - **cleanup_branches.sh**: Deletes all local git branches that have been removed from the remote. Useful for keeping your local repository clean.
+  - **start_issue.sh**: Automates starting work on a GitHub issue. It creates a new branch named after the issue number and title, assigns the issue to you, and checks out the branch.
+  - **get_issue_title.sh**: Fetches the title of a GitHub issue by its number.
 
 ## Environment Variables
 
