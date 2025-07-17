@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getBestMatchingLocale, supportedLocales } from './app/i18n';
+import { getBestMatchingLocale, normalizeLocale, supportedLocales } from './app/i18n';
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -38,6 +38,28 @@ export function middleware(request: NextRequest) {
       response.headers.set('x-locale', locale);
     }
     return response;
+  }
+
+  // Check for case-insensitive locale match or fallback to base locale
+  const pathSegments = pathname.split('/').filter(Boolean);
+  if (pathSegments.length > 0) {
+    const potentialLocale = pathSegments[0];
+    const normalizedLocale = normalizeLocale(potentialLocale);
+
+    if (normalizedLocale) {
+      // If the locale needs normalization (case fix or fallback), redirect
+      if (normalizedLocale !== potentialLocale) {
+        const remainingPath = pathSegments.slice(1).join('/');
+        const newPath = remainingPath ? `/${normalizedLocale}/${remainingPath}` : `/${normalizedLocale}`;
+
+        const url = request.nextUrl.clone();
+        url.pathname = newPath;
+
+        const response = NextResponse.redirect(url);
+        response.headers.set('x-locale', normalizedLocale);
+        return response;
+      }
+    }
   }
 
   // For root path, detect locale and redirect

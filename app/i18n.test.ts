@@ -2,6 +2,7 @@ import {
     getBestMatchingLocale,
     getTranslator,
     isSupportedLocale,
+    normalizeLocale,
     supportedLocales
 } from './i18n';
 
@@ -142,5 +143,40 @@ describe('i18n functionality', () => {
       expect(frTranslator(key).length).toBeGreaterThan(0);
       expect(zhTranslator(key).length).toBeGreaterThan(0);
     });
+  });
+});
+
+describe('normalizeLocale', () => {
+  it('should return exact match for supported locales', () => {
+    expect(normalizeLocale('en')).toBe('en');
+    expect(normalizeLocale('fr')).toBe('fr');
+    expect(normalizeLocale('zh-CN')).toBe('zh-CN');
+    expect(normalizeLocale('en-GB')).toBe('en-GB');
+  });
+
+  it('should handle case-insensitive regional locale matching', () => {
+    expect(normalizeLocale('en-gb')).toBe('en-GB');
+    expect(normalizeLocale('zh-cn')).toBe('zh-CN');
+    expect(normalizeLocale('fr-ca')).toBe('fr-CA');
+    expect(normalizeLocale('de-ch')).toBe('de-CH');
+  });
+
+  it('should fallback to base locale for unsupported regional codes', () => {
+    expect(normalizeLocale('en-notexist')).toBe('en');
+    expect(normalizeLocale('fr-unknown')).toBe('fr');
+    expect(normalizeLocale('zh-invalid')).toBe('zh');
+  });
+
+  it('should return null for completely invalid locale codes', () => {
+    expect(normalizeLocale('invalid')).toBeNull();
+    expect(normalizeLocale('xyz')).toBeNull();
+    expect(normalizeLocale('123')).toBeNull();
+    expect(normalizeLocale('')).toBeNull();
+  });
+
+  it('should handle edge cases', () => {
+    expect(normalizeLocale('EN')).toBeNull(); // uppercase base locale not supported
+    expect(normalizeLocale('en-')).toBeNull(); // malformed locale
+    expect(normalizeLocale('en-GB-extra')).toBeNull(); // too many segments
   });
 });

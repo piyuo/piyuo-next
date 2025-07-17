@@ -64,3 +64,45 @@ export function getBestMatchingLocale(requestedLocale: string): SupportedLocale 
   // Fallback to English
   return 'en';
 }
+
+// Helper function to normalize and match locale codes with fallback
+export function normalizeLocale(pathLocale: string): SupportedLocale | null {
+  // Basic validation
+  if (!pathLocale || typeof pathLocale !== 'string') {
+    return null;
+  }
+
+  // Direct match (exact case)
+  if (isSupportedLocale(pathLocale)) {
+    return pathLocale;
+  }
+
+  // Check for malformed locale codes
+  if (pathLocale.endsWith('-') || pathLocale.split('-').length > 2) {
+    return null;
+  }
+
+  // Case-insensitive match for regional locales (e.g., en-gb -> en-GB)
+  // Only apply this to regional locales (must contain hyphen)
+  if (pathLocale.includes('-')) {
+    const normalizedRequest = pathLocale.toLowerCase();
+    const exactMatch = supportedLocales.find(locale =>
+      locale.toLowerCase() === normalizedRequest
+    );
+
+    if (exactMatch) {
+      return exactMatch;
+    }
+  }
+
+  // Try base locale (e.g., 'en-notexist' -> 'en')
+  // Only if it's a regional locale pattern (contains hyphen)
+  if (pathLocale.includes('-')) {
+    const baseLocale = pathLocale.split('-')[0];
+    if (isSupportedLocale(baseLocale)) {
+      return baseLocale;
+    }
+  }
+
+  return null;
+}
