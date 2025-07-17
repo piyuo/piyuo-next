@@ -72,14 +72,14 @@ describe('i18n functionality', () => {
   it('should correctly identify supported locales', () => {
     expect(isSupportedLocale('en')).toBe(true);
     expect(isSupportedLocale('fr')).toBe(true);
-    expect(isSupportedLocale('zh_CN')).toBe(true);
+    expect(isSupportedLocale('zh-CN')).toBe(true);
     expect(isSupportedLocale('invalid')).toBe(false);
   });
 
   it('should find best matching locale', () => {
     expect(getBestMatchingLocale('en')).toBe('en');
     expect(getBestMatchingLocale('en-US')).toBe('en');
-    expect(getBestMatchingLocale('zh-CN')).toBe('zh_CN');
+    expect(getBestMatchingLocale('zh-CN')).toBe('zh-CN');
     expect(getBestMatchingLocale('invalid')).toBe('en');
   });
 

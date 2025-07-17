@@ -27,35 +27,35 @@ const languageDisplayNames: Record<string, string> = {
   'af': 'Afrikaans',
   'am': 'አማርኛ',
   'ar': 'العربية',
-  'ar_AE': 'العربية (الإمارات)',
-  'ar_DZ': 'العربية (الجزائر)',
-  'ar_EG': 'العربية (مصر)',
+  'ar-AE': 'العربية (الإمارات)',
+  'ar-DZ': 'العربية (الجزائر)',
+  'ar-EG': 'العربية (مصر)',
   'az': 'Azərbaycan',
   'bg': 'български',
   'bn': 'বাংলা',
-  'bn_IN': 'বাংলা (ভারত)',
+  'bn-IN': 'বাংলা (ভারত)',
   'ca': 'Català',
   'cs': 'Čeština',
   'da': 'Dansk',
   'de': 'Deutsch',
-  'de_AT': 'Deutsch (Österreich)',
-  'de_CH': 'Deutsch (Schweiz)',
+  'de-AT': 'Deutsch (Österreich)',
+  'de-CH': 'Deutsch (Schweiz)',
   'el': 'Ελληνικά',
   'en': 'English',
-  'en_AU': 'English (Australia)',
-  'en_CA': 'English (Canada)',
-  'en_GB': 'English (UK)',
-  'en_IN': 'English (India)',
+  'en-AU': 'English (Australia)',
+  'en-CA': 'English (Canada)',
+  'en-GB': 'English (UK)',
+  'en-IN': 'English (India)',
   'es': 'Español',
-  'es_AR': 'Español (Argentina)',
-  'es_CO': 'Español (Colombia)',
+  'es-AR': 'Español (Argentina)',
+  'es-CO': 'Español (Colombia)',
   'et': 'Eesti',
   'fa': 'فارسی',
   'fi': 'Suomi',
   'fr': 'Français',
-  'fr_BE': 'Français (Belgique)',
-  'fr_CA': 'Français (Canada)',
-  'fr_CH': 'Français (Suisse)',
+  'fr-BE': 'Français (Belgique)',
+  'fr-CA': 'Français (Canada)',
+  'fr-CH': 'Français (Suisse)',
   'gl': 'Galego',
   'gu': 'ગુજરાતી',
   'he': 'עברית',
@@ -73,19 +73,19 @@ const languageDisplayNames: Record<string, string> = {
   'mn': 'Монгол',
   'mr': 'मराठी',
   'ms': 'Bahasa Melayu',
-  'ms_SG': 'Bahasa Melayu (Singapura)',
+  'ms-SG': 'Bahasa Melayu (Singapura)',
   'my': 'မြန်မာ',
   'nb': 'Norsk bokmål',
   'ne': 'नेपाली',
   'nl': 'Nederlands',
-  'nl_BE': 'Nederlands (België)',
+  'nl-BE': 'Nederlands (België)',
   'pl': 'Polski',
   'pt': 'Português',
-  'pt_PT': 'Português (Portugal)',
+  'pt-PT': 'Português (Portugal)',
   'ro': 'Română',
   'ru': 'Русский',
-  'ru_KZ': 'Русский (Казахстан)',
-  'ru_UA': 'Русский (Украина)',
+  'ru-KZ': 'Русский (Казахстан)',
+  'ru-UA': 'Русский (Украина)',
   'si': 'සිංහල',
   'sk': 'Slovenčina',
   'sl': 'Slovenščina',
@@ -99,14 +99,14 @@ const languageDisplayNames: Record<string, string> = {
   'tr': 'Türkçe',
   'uk': 'Українська',
   'ur': 'اردو',
-  'ur_IN': 'اردو (بھارت)',
+  'ur-IN': 'اردو (بھارت)',
   'uz': 'O\'zbek',
   'vi': 'Tiếng Việt',
   'zh': '中文',
-  'zh_CN': '中文 (简体)',
-  'zh_HK': '中文 (香港)',
-  'zh_MO': '中文 (澳門)',
-  'zh_SG': '中文 (新加坡)'
+  'zh-CN': '中文 (简体)',
+  'zh-HK': '中文 (香港)',
+  'zh-MO': '中文 (澳門)',
+  'zh-SG': '中文 (新加坡)'
 };
 
 /**
@@ -120,9 +120,9 @@ export function getLanguageDisplayName(languageCode: string): string {
     return displayName;
   }
 
-  // For regional codes like 'en_US', try to construct a display name
-  if (languageCode.includes('_')) {
-    const [baseCode, region] = languageCode.split('_');
+  // For regional codes like 'en-US', try to construct a display name
+  if (languageCode.includes('-')) {
+    const [baseCode, region] = languageCode.split('-');
     const baseName = languageDisplayNames[baseCode];
     if (baseName) {
       return `${baseName} (${region})`;
@@ -141,7 +141,7 @@ export function isValidLanguageCode(code: string): boolean {
     return false;
   }
 
-  // Basic validation: should be 2-5 characters, possibly with underscore
-  const regex = /^[a-z]{2}(_[A-Z]{2})?$/;
+  // Basic validation: should be 2-5 characters, possibly with hyphen
+  const regex = /^[a-z]{2}(-[A-Z]{2})?$/;
   return regex.test(code);
 }

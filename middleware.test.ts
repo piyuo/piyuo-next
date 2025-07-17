@@ -15,7 +15,7 @@ import { middleware } from './middleware';
 // Mock the i18n module
 jest.mock('./app/i18n', () => ({
   getBestMatchingLocale: jest.fn(),
-  supportedLocales: ['en', 'fr', 'es', 'de', 'zh', 'zh_CN', 'ja'],
+  supportedLocales: ['en', 'fr', 'es', 'de', 'zh', 'zh-CN', 'ja'],
 }));
 
 const { getBestMatchingLocale } = require('./app/i18n');
@@ -56,9 +56,9 @@ describe('Middleware', () => {
       '/fr',
       '/fr/',
       '/fr/contact',
-      '/zh_CN',
-      '/zh_CN/',
-      '/zh_CN/products',
+      '/zh-CN',
+      '/zh-CN/',
+      '/zh-CN/products',
     ];
 
     localeRoutes.forEach((path) => {
@@ -108,17 +108,20 @@ describe('Middleware', () => {
       expect(response.headers.get('x-locale')).toBe('en');
     });
 
-    it('should handle complex accept-language headers', async () => {
-      getBestMatchingLocale.mockReturnValue('zh_CN');
+    it('should redirect root path to detected locale', async () => {
+      getBestMatchingLocale.mockReturnValue('zh-CN');
 
       const request = new NextRequest('https://example.com/', {
-        headers: { 'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8' },
+        headers: {
+          'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8',
+        },
       });
 
-      const response = middleware(request);
+      const response = await middleware(request);
 
-      expect(getBestMatchingLocale).toHaveBeenCalledWith('zh-CN,zh;q=0.9,en;q=0.8');
-      expect(response.headers.get('x-locale')).toBe('zh_CN');
+      expect(response.status).toBe(307);
+      expect(response.headers.get('location')).toBe('https://example.com/zh-CN');
+      expect(response.headers.get('x-locale')).toBe('zh-CN');
     });
   });
 

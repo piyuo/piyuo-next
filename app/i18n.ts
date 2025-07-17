@@ -4,14 +4,14 @@ import { createTranslator } from 'next-intl';
 
 // Supported locales - dynamically loaded
 export const supportedLocales = [
-  'af', 'am', 'ar', 'ar_AE', 'ar_DZ', 'ar_EG', 'az', 'bg', 'bn', 'bn_IN',
-  'ca', 'cs', 'cy', 'da', 'de', 'de_AT', 'de_CH', 'el', 'en', 'en_AU', 'en_CA',
-  'en_GB', 'en_IN', 'es', 'es_AR', 'es_CO', 'et', 'fa', 'fi', 'fr', 'fr_BE',
-  'fr_CA', 'fr_CH', 'gl', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'it', 'ja',
-  'kk', 'ko', 'lt', 'lv', 'ml', 'mn', 'mr', 'ms', 'ms_SG', 'my', 'nb',
-  'ne', 'nl', 'nl_BE', 'pl', 'pt', 'pt_PT', 'ro', 'ru', 'ru_KZ', 'ru_UA',
+  'af', 'am', 'ar', 'ar-AE', 'ar-DZ', 'ar-EG', 'az', 'bg', 'bn', 'bn-IN',
+  'ca', 'cs', 'cy', 'da', 'de', 'de-AT', 'de-CH', 'el', 'en', 'en-AU', 'en-CA',
+  'en-GB', 'en-IN', 'es', 'es-AR', 'es-CO', 'et', 'fa', 'fi', 'fr', 'fr-BE',
+  'fr-CA', 'fr-CH', 'gl', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'it', 'ja',
+  'kk', 'ko', 'lt', 'lv', 'ml', 'mn', 'mr', 'ms', 'ms-SG', 'my', 'nb',
+  'ne', 'nl', 'nl-BE', 'pl', 'pt', 'pt-PT', 'ro', 'ru', 'ru-KZ', 'ru-UA',
   'si', 'sk', 'sl', 'sr', 'sv', 'sw', 'ta', 'te', 'th', 'tl', 'tr', 'uk',
-  'ur', 'ur_IN', 'uz', 'vi', 'zh', 'zh_CN', 'zh_HK', 'zh_MO', 'zh_SG'
+  'ur', 'ur-IN', 'uz', 'vi', 'zh', 'zh-CN', 'zh-HK', 'zh-MO', 'zh-SG'
 ] as const;
 
 export type SupportedLocale = typeof supportedLocales[number];
@@ -29,7 +29,7 @@ export async function getTranslator(locale: SupportedLocale, page: string) {
     console.warn(`Failed to load messages for ${locale}/${page}, falling back to English`);
     const fallback = await fetch(`${baseUrl}/messages/en/${page}.json?v=${version}`);
     const messages = await fallback.json() as Record<string, string>;
-    return createTranslator({ locale, messages });
+    return createTranslator({ locale: 'en', messages });
   }
 }
 
@@ -44,6 +44,7 @@ export function getBestMatchingLocale(requestedLocale: string): SupportedLocale 
   const locales = requestedLocale
     .split(',')
     .map(lang => lang.split(';')[0].trim()) // Remove quality values
+    .map(lang => lang.replace(/_/g, '-')) // Convert underscores to hyphens (e.g., en_GB -> en-GB)
     .filter(Boolean);
 
   // Try each locale in order of preference
@@ -51,12 +52,6 @@ export function getBestMatchingLocale(requestedLocale: string): SupportedLocale 
     // Exact match
     if (isSupportedLocale(locale)) {
       return locale;
-    }
-
-    // Try with underscore (e.g., 'en_US' for 'en-US')
-    const underscoreLocale = locale.replace('-', '_');
-    if (isSupportedLocale(underscoreLocale)) {
-      return underscoreLocale;
     }
 
     // Try base locale (e.g., 'en' for 'en-US')

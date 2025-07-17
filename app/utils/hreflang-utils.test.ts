@@ -8,9 +8,9 @@ import { convertLocaleToHreflang, generateHreflangLinks, getCanonicalUrl } from 
 describe('hreflang utilities', () => {
   describe('convertLocaleToHreflang', () => {
     it('should convert underscore locales to hyphen format', () => {
-      expect(convertLocaleToHreflang('en_US')).toBe('en-US');
-      expect(convertLocaleToHreflang('zh_CN')).toBe('zh-CN');
-      expect(convertLocaleToHreflang('fr_CA')).toBe('fr-CA');
+      expect(convertLocaleToHreflang('en-US')).toBe('en-US');
+      expect(convertLocaleToHreflang('zh-CN')).toBe('zh-CN');
+      expect(convertLocaleToHreflang('fr-CA')).toBe('fr-CA');
     });
 
     it('should handle single locales without changes', () => {
@@ -29,8 +29,8 @@ describe('hreflang utilities', () => {
 
       // Should include some key locales
       expect(result.languages['en']).toBe('https://piyuo.com/en');
-      expect(result.languages['zh-CN']).toBe('https://piyuo.com/zh_CN');
-      expect(result.languages['fr-CA']).toBe('https://piyuo.com/fr_CA');
+      expect(result.languages['zh-CN']).toBe('https://piyuo.com/zh-CN');
+      expect(result.languages['fr-CA']).toBe('https://piyuo.com/fr-CA');
 
       // Should include x-default
       expect(result.languages['x-default']).toBe('https://piyuo.com/en');
@@ -41,7 +41,7 @@ describe('hreflang utilities', () => {
 
       // Should include privacy path
       expect(result.languages['en']).toBe('https://piyuo.com/en/privacy');
-      expect(result.languages['zh-CN']).toBe('https://piyuo.com/zh_CN/privacy');
+      expect(result.languages['zh-CN']).toBe('https://piyuo.com/zh-CN/privacy');
       expect(result.languages['x-default']).toBe('https://piyuo.com/en/privacy');
     });
 
@@ -65,7 +65,7 @@ describe('hreflang utilities', () => {
   describe('getCanonicalUrl', () => {
     it('should generate canonical URL for root path', () => {
       expect(getCanonicalUrl('en', '/')).toBe('https://piyuo.com/en');
-      expect(getCanonicalUrl('zh_CN', '/')).toBe('https://piyuo.com/zh_CN');
+      expect(getCanonicalUrl('zh-CN', '/')).toBe('https://piyuo.com/zh-CN');
     });
 
     it('should generate canonical URL for sub-paths', () => {
