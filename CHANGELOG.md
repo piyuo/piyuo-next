@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/piyuo/piyuo-next/compare/v1.3.0...v1.3.1) (2025-07-17)
+
+
+### Bug Fixes
+
+* google search console reports duplicate canonical url errors for multiple locales [#122](https://github.com/piyuo/piyuo-next/issues/122) ([05783ff](https://github.com/piyuo/piyuo-next/commit/05783ffdb1cef4350923892c951ec0ac57e1b769))
+
 ## [1.3.0](https://github.com/piyuo/piyuo-next/compare/v1.2.0...v1.3.0) (2025-07-10)
 
 
