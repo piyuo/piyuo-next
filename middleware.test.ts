@@ -13,16 +13,26 @@ import { NextRequest, NextResponse } from 'next/server';
 import { middleware } from './middleware';
 
 // Mock the i18n module
-jest.mock('./app/i18n', () => ({
-  getBestMatchingLocale: jest.fn(),
-  supportedLocales: ['en', 'fr', 'es', 'de', 'zh', 'zh-CN', 'ja'],
-}));
+jest.mock('./app/i18n', () => {
+  let mockSupportedLocales = ['en', 'fr', 'es', 'de', 'zh', 'zh-CN', 'ja'];
 
-const { getBestMatchingLocale } = require('./app/i18n');
+  return {
+    getBestMatchingLocale: jest.fn(),
+    get supportedLocales() {
+      return mockSupportedLocales;
+    },
+    normalizeLocale: jest.fn(),
+    __setSupportedLocales: (locales: string[]) => {
+      mockSupportedLocales = locales;
+    }
+  };
+});const { getBestMatchingLocale, normalizeLocale } = require('./app/i18n');
 
 describe('Middleware', () => {
   beforeEach(() => {
     jest.clearAllMocks();
+    // Default mock: return null for non-locale paths
+    normalizeLocale.mockReturnValue(null);
   });
 
   describe('static file handling', () => {
@@ -205,6 +215,71 @@ describe('Middleware', () => {
       const response = middleware(request);
 
       expect(response.headers.get('location')).toBe('http://localhost:3000/en');
+    });
+
+    // Issue #125: Test for case-sensitive locale handling
+    it('should handle case-sensitive locale codes by redirecting to correct case', async () => {
+      // Mock en-GB as a supported locale
+      const mockSupportedLocales = ['en', 'fr', 'es', 'de', 'zh', 'zh-CN', 'ja', 'en-GB'];
+      require('./app/i18n').__setSupportedLocales(mockSupportedLocales);
+
+      // Mock normalizeLocale to return 'en-GB' for 'en-gb'
+      normalizeLocale.mockReturnValue('en-GB');
+
+      const request = new NextRequest('https://example.com/en-gb/');
+      const response = middleware(request);
+
+      expect(normalizeLocale).toHaveBeenCalledWith('en-gb');
+      expect(response).toBeInstanceOf(NextResponse);
+      expect(response.status).toBe(307); // Temporary redirect
+      expect(response.headers.get('location')).toBe('https://example.com/en-GB/');
+      expect(response.headers.get('x-locale')).toBe('en-GB');
+    });
+
+    it('should handle case-sensitive locale codes with path by redirecting to correct case', async () => {
+      // Mock en-GB as a supported locale
+      const mockSupportedLocales = ['en', 'fr', 'es', 'de', 'zh', 'zh-CN', 'ja', 'en-GB'];
+      require('./app/i18n').__setSupportedLocales(mockSupportedLocales);
+
+      // Mock normalizeLocale to return 'en-GB' for 'en-gb'
+      normalizeLocale.mockReturnValue('en-GB');
+
+      const request = new NextRequest('https://example.com/en-gb/about');
+      const response = middleware(request);
+
+      expect(normalizeLocale).toHaveBeenCalledWith('en-gb');
+      expect(response).toBeInstanceOf(NextResponse);
+      expect(response.status).toBe(307); // Temporary redirect
+      expect(response.headers.get('location')).toBe('https://example.com/en-GB/about');
+      expect(response.headers.get('x-locale')).toBe('en-GB');
+    });
+
+    it('should handle invalid locale codes by redirecting to base locale', async () => {
+      // Mock normalizeLocale to return 'en' for 'en-notexist'
+      normalizeLocale.mockReturnValue('en');
+
+      const request = new NextRequest('https://example.com/en-notexist/');
+      const response = middleware(request);
+
+      expect(normalizeLocale).toHaveBeenCalledWith('en-notexist');
+      expect(response).toBeInstanceOf(NextResponse);
+      expect(response.status).toBe(307); // Temporary redirect
+      expect(response.headers.get('location')).toBe('https://example.com/en/');
+      expect(response.headers.get('x-locale')).toBe('en');
+    });
+
+    it('should handle invalid locale codes with path by redirecting to base locale', async () => {
+      // Mock normalizeLocale to return 'en' for 'en-notexist'
+      normalizeLocale.mockReturnValue('en');
+
+      const request = new NextRequest('https://example.com/en-notexist/about');
+      const response = middleware(request);
+
+      expect(normalizeLocale).toHaveBeenCalledWith('en-notexist');
+      expect(response).toBeInstanceOf(NextResponse);
+      expect(response.status).toBe(307); // Temporary redirect
+      expect(response.headers.get('location')).toBe('https://example.com/en/about');
+      expect(response.headers.get('x-locale')).toBe('en');
     });
   });
 });
