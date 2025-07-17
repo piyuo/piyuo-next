@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/piyuo/piyuo-next/compare/v1.3.1...v1.3.2) (2025-07-17)
+
+
+### Bug Fixes
+
+* incorrect url handling for invalid or case-sensitive language codes [#125](https://github.com/piyuo/piyuo-next/issues/125) ([3b5c25a](https://github.com/piyuo/piyuo-next/commit/3b5c25a10ebb211aed6190b773333a8059deaa45))
+
 ## [1.3.1](https://github.com/piyuo/piyuo-next/compare/v1.3.0...v1.3.1) (2025-07-17)
 
 
