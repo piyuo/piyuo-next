@@ -133,7 +133,7 @@ describe('Sitemap Generation', () => {
     // Verify that search engines can discover all locale variants
     const uniqueLocales = new Set(
       sitemapEntries.map(entry => {
-        const match = entry.url.match(/https:\/\/piyuo\.com\/([a-zA-Z_]+)\//);
+        const match = entry.url.match(/https:\/\/piyuo\.com\/([a-zA-Z-]+)\//);
         return match ? match[1] : null;
       }).filter(Boolean)
     );

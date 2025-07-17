@@ -72,4 +72,120 @@ describe('CSV to locale conversion verification', () => {
       expect(enMessages[key].length).toBeGreaterThan(0);
     });
   });
+
+  // Test for issue #122 - missing translation files for certain locales
+  describe('Issue #122 - Missing translation files', () => {
+    it('should have all required translation files for problematic locales', async () => {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const fs = require('fs').promises;
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const path = require('path');
+
+      const problematicLocales = ['en-GB', 'en-CA', 'cy', 'en-IN', 'zh-SG', 'en-AU'];
+      const requiredFiles = ['page.json', 'privacy.json', 'terms.json'];
+      const messagesDir = path.join(process.cwd(), 'public', 'messages');
+
+      const missingFiles: string[] = [];
+
+      for (const locale of problematicLocales) {
+        const localeDir = path.join(messagesDir, locale);
+
+        for (const file of requiredFiles) {
+          const filePath = path.join(localeDir, file);
+          try {
+            await fs.access(filePath);
+          } catch {
+            missingFiles.push(`${locale}/${file}`);
+          }
+        }
+      }
+
+      if (missingFiles.length > 0) {
+        throw new Error(`Missing translation files that cause canonical URL issues:\n${missingFiles.join('\n')}`);
+      }
+
+      expect(missingFiles).toHaveLength(0);
+    });
+
+    it('should have all required keys in page.json for problematic locales', async () => {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const fs = require('fs').promises;
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const path = require('path');
+
+      const problematicLocales = ['en-GB', 'en-CA', 'cy', 'en-IN', 'zh-SG', 'en-AU'];
+      const messagesDir = path.join(process.cwd(), 'public', 'messages');
+
+      // Get reference keys from English locale
+      const enPagePath = path.join(messagesDir, 'en', 'page.json');
+      const enContent = await fs.readFile(enPagePath, 'utf-8');
+      const enKeys = Object.keys(JSON.parse(enContent));
+
+      const localesWithMissingKeys: string[] = [];
+
+      for (const locale of problematicLocales) {
+        const localePagePath = path.join(messagesDir, locale, 'page.json');
+
+        try {
+          const localeContent = await fs.readFile(localePagePath, 'utf-8');
+          const localeKeys = Object.keys(JSON.parse(localeContent));
+
+          // Check if all English keys exist in this locale
+          const missingKeys = enKeys.filter(key => !localeKeys.includes(key));
+          if (missingKeys.length > 0) {
+            localesWithMissingKeys.push(`${locale}: missing keys [${missingKeys.join(', ')}]`);
+          }
+        } catch {
+          // File doesn't exist or is invalid JSON
+          localesWithMissingKeys.push(`${locale}: file missing or invalid JSON`);
+        }
+      }
+
+      if (localesWithMissingKeys.length > 0) {
+        throw new Error(`Locales with missing keys that cause canonical URL issues:\n${localesWithMissingKeys.join('\n')}`);
+      }
+
+      expect(localesWithMissingKeys).toHaveLength(0);
+    });
+    it('should have all required keys in terms.json for problematic locales', async () => {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const fs = require('fs').promises;
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const path = require('path');
+
+      const problematicLocales = ['en-GB', 'en-CA', 'cy', 'en-IN', 'zh-SG', 'en-AU'];
+      const messagesDir = path.join(process.cwd(), 'public', 'messages');
+
+      // Get reference keys from English locale
+      const enTermsPath = path.join(messagesDir, 'en', 'terms.json');
+      const enContent = await fs.readFile(enTermsPath, 'utf-8');
+      const enKeys = Object.keys(JSON.parse(enContent));
+
+      const localesWithMissingKeys: string[] = [];
+
+      for (const locale of problematicLocales) {
+        const localeTermsPath = path.join(messagesDir, locale, 'terms.json');
+
+        try {
+          const localeContent = await fs.readFile(localeTermsPath, 'utf-8');
+          const localeKeys = Object.keys(JSON.parse(localeContent));
+
+          // Check if all English keys exist in this locale
+          const missingKeys = enKeys.filter(key => !localeKeys.includes(key));
+          if (missingKeys.length > 0) {
+            localesWithMissingKeys.push(`${locale}: missing keys [${missingKeys.join(', ')}]`);
+          }
+        } catch {
+          // File doesn't exist or is invalid JSON
+          localesWithMissingKeys.push(`${locale}: file missing or invalid JSON`);
+        }
+      }
+
+      if (localesWithMissingKeys.length > 0) {
+        throw new Error(`Locales with missing keys in terms.json that cause canonical URL issues:\n${localesWithMissingKeys.join('\n')}`);
+      }
+
+      expect(localesWithMissingKeys).toHaveLength(0);
+    });
+  });
 });

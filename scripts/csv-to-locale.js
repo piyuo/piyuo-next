@@ -10,7 +10,7 @@ const { parse } = require('csv-parse/sync');
  */
 
 const CSV_FILE_PATH = path.join(__dirname, '../csv/translations.csv');
-const MESSAGES_DIR = path.join(__dirname, '../messages');
+const MESSAGES_DIR = path.join(__dirname, '../public/messages');
 const APP_PREFIX = 'app_';
 
 function main() {

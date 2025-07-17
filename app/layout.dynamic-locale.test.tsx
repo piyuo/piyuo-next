@@ -79,7 +79,7 @@ describe('Root Layout Dynamic Locale Logic', () => {
 
   it('should use supported locale correctly', async () => {
     const testCases = [
-      { locale: 'zh_CN', expected: 'zh_CN' },
+      { locale: 'zh-CN', expected: 'zh-CN' },
       { locale: 'es', expected: 'es' },
       { locale: 'de', expected: 'de' },
       { locale: 'ja', expected: 'ja' },

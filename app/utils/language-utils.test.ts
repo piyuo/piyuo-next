@@ -52,9 +52,9 @@ describe('Language Utils', () => {
     });
 
     it('should handle regional language codes', () => {
-      expect(getLanguageDisplayName('en_US')).toBe('English (US)');
-      expect(getLanguageDisplayName('zh_CN')).toBe('中文 (简体)');
-      expect(getLanguageDisplayName('fr_CA')).toBe('Français (Canada)');
+      expect(getLanguageDisplayName('en-US')).toBe('English (US)');
+      expect(getLanguageDisplayName('zh-CN')).toBe('中文 (简体)');
+      expect(getLanguageDisplayName('fr-CA')).toBe('Français (Canada)');
     });
   });
 
@@ -62,8 +62,8 @@ describe('Language Utils', () => {
     it('should validate correct language codes', () => {
       expect(isValidLanguageCode('en')).toBe(true);
       expect(isValidLanguageCode('zh')).toBe(true);
-      expect(isValidLanguageCode('fr_CA')).toBe(true);
-      expect(isValidLanguageCode('en_US')).toBe(true);
+      expect(isValidLanguageCode('fr-CA')).toBe(true);
+      expect(isValidLanguageCode('en-US')).toBe(true);
     });
 
     it('should reject invalid language codes', () => {
