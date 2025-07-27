@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Piyuo Counter privātuma politika",
-  "privacy_effective_date": "Spēkā stāšanās datums: 2025. gada 12. aprīlis",
-
-  "privacy_introduction_title": "Ievads",
-  "privacy_introduction_1": "Laipni lūdzam Piyuo Counter! Šī privātuma politika izskaidro, kā mēs apstrādājam informāciju, kad izmantojat mūsu programmatūras lietojumprogrammu (\"Lietotne\"). Mūsu apņemšanās ir jūsu privātuma aizsardzība. Šī lietotne ir izstrādāta, lai darbotos, nevācot vai neapstrādājot jūsu personas datus.",
-  "privacy_introduction_2": "Šī privātuma politika attiecas uz Piyuo Counter programmatūras lietojumprogrammu (\"Lietotne\") mobilajām ierīcēm un datoriem, kas pieejama dažādās platformās un lietojumprogrammu veikalos.",
-
-  "privacy_who_we_are_title": "Kas mēs esam",
-  "privacy_who_we_are": "Piyuo Counter lietotni nodrošina Piyuo (\"mēs\", \"mūsu\" vai \"mūsu\"). Mūsu vietne ir {website}. Ja jums ir jautājumi par šo politiku, varat sazināties ar mums {email}.",
-
-  "privacy_no_collect_title": "Informācija, ko mēs nevācam",
-  "privacy_no_collect_intro": "Mēs nevācam, neglabājam, nepārsūtām vai neapstrādājam nekādu personisku informāciju vai lietošanas datus no jums, izmantojot Piyuo Counter lietotni.",
-  "privacy_no_collect_personal": "Nav personas datu: Mēs nelūdzam, neiegūstam piekļuvi vai neizsekojam nekādu informāciju, kas varētu jūs identificēt, piemēram, jūsu vārdu, e-pasta adresi, atrašanās vietu, ierīces identifikatorus vai kontaktus.",
-  "privacy_no_collect_usage": "Nav lietošanas datu: Lietotne neieraksta, kā jūs to izmantojat. Visi jūsu izveidotie skaitītāja dati tiek glabāti lokāli tikai jūsu ierīcē un nav pieejami mums.",
-  "privacy_no_collect_third_party": "Nav trešo pušu pakalpojumu: Mēs neintegrējam nekādus trešo pušu pakalpojumus analītikai (piemēram, Firebase Analytics), reklāmai (piemēram, AdMob), mākoņkrātuvei vai jebkuram citam mērķim, kas ietvertu datu dalīšanos ar ārējām pusēm. Lietotne darbojas pilnībā bezsaistē attiecībā uz datu apstrādi.",
-
-  "privacy_use_title": "Kā mēs izmantojam informāciju",
-  "privacy_use": "Tā kā mēs nevācam nekādu informāciju, mēs neizmantojam jūsu informāciju nekādam mērķim.",
-
-  "privacy_sharing_title": "Informācijas dalīšanās un atklāšana",
-  "privacy_sharing": "Mēs nedalāmies vai neatklājam nekādu personisku informāciju, jo mēs to nevācam. Jūsu dati (skaitījumi, ko jūs izsekojat) paliek jūsu ierīcē.",
-
-  "privacy_security_title": "Datu drošība",
-  "privacy_security": "Jebkuri dati, kas ģenerēti, izmantojot Piyuo Counter lietotni (piemēram, jūsu skaitījumi), tiek glabāti lokāli tikai jūsu ierīcē. Mums nav piekļuves šiem datiem. Lai gan mēs veidojam savu lietotni ar standarta drošības praksēm, jūsu ierīcē glabāto datu drošība ir atkarīga no drošības pasākumiem, ko veicāt savai ierīcei.",
-
-  "privacy_children_title": "Bērnu privātums",
-  "privacy_children": "Mūsu lietotne nevāc personisku informāciju no neviena, ieskaitot bērnus. Mēs ievērojam ASV bērnu tiešsaistes privātuma aizsardzības likumu (COPPA) un līdzīgus noteikumus, piemēram, VDAR attiecībā uz bērnu datiem. Tā kā mēs nevācam nekādus datus, mēs pēc būtības nevācam datus no bērniem līdz 13 gadu vecumam (vai 16 gadu vecumam dažās ES valstīs).",
-
-  "privacy_rights_title": "Jūsu tiesības (VDAR un citi likumi)",
-  "privacy_rights_1": "Privātuma likumi, piemēram, Vispārīgā datu aizsardzības regula (VDAR) Eiropā un dažādi ASV štatu likumi, piešķir indivīdiem tiesības uz saviem personas datiem (piemēram, piekļuve, labošana, dzēšana).",
-  "privacy_rights_2": "Tā kā Piyuo Counter lietotne nevāc, neglabā vai neapstrādā jūsu personas datus, šīs tiesības parasti nav piemērojamas mūsu lietotnes kontekstā, jo nav datu, ko mēs glabājam un kuriem jūs varētu piekļūt, labot vai dzēst. Jebkuri ar lietotni saistīti dati atrodas tikai jūsu ierīcē, jūsu kontrolē.",
-
-  "privacy_changes_title": "Izmaiņas šajā privātuma politikā",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Mēs varam laiku pa laikam atjaunināt šo privātuma politiku. Mēs informēsim jūs par jebkādām izmaiņām, publicējot jauno privātuma politiku lietotnē vai mūsu vietnē ({website}). Jums ieteicams regulāri pārskatīt šo privātuma politiku, lai uzzinātu par izmaiņām.",
   "privacy_changes_2": "Izmaiņas šajā privātuma politikā stājas spēkā, kad tās tiek publicētas šajā lapā.",
-
-  "privacy_contact_title": "Sazinieties ar mums",
-  "privacy_contact_intro": "Ja jums ir jautājumi par šo privātuma politiku, lūdzu, sazinieties ar mums:",
+  "privacy_changes_title": "Izmaiņas šajā privātuma politikā",
+  "privacy_children": "Mūsu lietotne nevāc personisku informāciju no neviena, ieskaitot bērnus. Mēs ievērojam ASV bērnu tiešsaistes privātuma aizsardzības likumu (COPPA) un līdzīgus noteikumus, piemēram, VDAR attiecībā uz bērnu datiem. Tā kā mēs nevācam nekādus datus, mēs pēc būtības nevācam datus no bērniem līdz 13 gadu vecumam (vai 16 gadu vecumam dažās ES valstīs).",
+  "privacy_children_title": "Bērnu privātums",
   "privacy_contact_email": "Pa e-pastu: {email}",
+  "privacy_contact_intro": "Ja jums ir jautājumi par šo privātuma politiku, lūdzu, sazinieties ar mums:",
+  "privacy_contact_title": "Sazinieties ar mums",
   "privacy_contact_website": "Apmeklējot šo lapu mūsu vietnē: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Spēkā stāšanās datums: 2025. gada 12. aprīlis",
+  "privacy_introduction_1": "Laipni lūdzam Piyuo Counter! Šī privātuma politika izskaidro, kā mēs apstrādājam informāciju, kad izmantojat mūsu programmatūras lietojumprogrammu (\"Lietotne\"). Mūsu apņemšanās ir jūsu privātuma aizsardzība. Šī lietotne ir izstrādāta, lai darbotos, nevācot vai neapstrādājot jūsu personas datus.",
+  "privacy_introduction_2": "Šī privātuma politika attiecas uz Piyuo Counter programmatūras lietojumprogrammu (\"Lietotne\") mobilajām ierīcēm un datoriem, kas pieejama dažādās platformās un lietojumprogrammu veikalos.",
+  "privacy_introduction_title": "Ievads",
+  "privacy_no_collect_intro": "Mēs nevācam, neglabājam, nepārsūtām vai neapstrādājam nekādu personisku informāciju vai lietošanas datus no jums, izmantojot Piyuo Counter lietotni.",
+  "privacy_no_collect_personal": "Nav personas datu: Mēs nelūdzam, neiegūstam piekļuvi vai neizsekojam nekādu informāciju, kas varētu jūs identificēt, piemēram, jūsu vārdu, e-pasta adresi, atrašanās vietu, ierīces identifikatorus vai kontaktus.",
+  "privacy_no_collect_third_party": "Nav trešo pušu pakalpojumu: Mēs neintegrējam nekādus trešo pušu pakalpojumus analītikai (piemēram, Firebase Analytics), reklāmai (piemēram, AdMob), mākoņkrātuvei vai jebkuram citam mērķim, kas ietvertu datu dalīšanos ar ārējām pusēm. Lietotne darbojas pilnībā bezsaistē attiecībā uz datu apstrādi.",
+  "privacy_no_collect_title": "Informācija, ko mēs nevācam",
+  "privacy_no_collect_usage": "Nav lietošanas datu: Lietotne neieraksta, kā jūs to izmantojat. Visi jūsu izveidotie skaitītāja dati tiek glabāti lokāli tikai jūsu ierīcē un nav pieejami mums.",
+  "privacy_rights_1": "Privātuma likumi, piemēram, Vispārīgā datu aizsardzības regula (VDAR) Eiropā un dažādi ASV štatu likumi, piešķir indivīdiem tiesības uz saviem personas datiem (piemēram, piekļuve, labošana, dzēšana).",
+  "privacy_rights_2": "Tā kā Piyuo Counter lietotne nevāc, neglabā vai neapstrādā jūsu personas datus, šīs tiesības parasti nav piemērojamas mūsu lietotnes kontekstā, jo nav datu, ko mēs glabājam un kuriem jūs varētu piekļūt, labot vai dzēst. Jebkuri ar lietotni saistīti dati atrodas tikai jūsu ierīcē, jūsu kontrolē.",
+  "privacy_rights_title": "Jūsu tiesības (VDAR un citi likumi)",
+  "privacy_security": "Jebkuri dati, kas ģenerēti, izmantojot Piyuo Counter lietotni (piemēram, jūsu skaitījumi), tiek glabāti lokāli tikai jūsu ierīcē. Mums nav piekļuves šiem datiem. Lai gan mēs veidojam savu lietotni ar standarta drošības praksēm, jūsu ierīcē glabāto datu drošība ir atkarīga no drošības pasākumiem, ko veicāt savai ierīcei.",
+  "privacy_security_title": "Datu drošība",
+  "privacy_sharing": "Mēs nedalāmies vai neatklājam nekādu personisku informāciju, jo mēs to nevācam. Jūsu dati (skaitījumi, ko jūs izsekojat) paliek jūsu ierīcē.",
+  "privacy_sharing_title": "Informācijas dalīšanās un atklāšana",
+  "privacy_title": "Piyuo Counter privātuma politika",
+  "privacy_use": "Tā kā mēs nevācam nekādu informāciju, mēs neizmantojam jūsu informāciju nekādam mērķim.",
+  "privacy_use_title": "Kā mēs izmantojam informāciju",
+  "privacy_who_we_are": "Piyuo Counter lietotni nodrošina Piyuo (\"mēs\", \"mūsu\" vai \"mūsu\"). Mūsu vietne ir {website}. Ja jums ir jautājumi par šo politiku, varat sazināties ar mums {email}.",
+  "privacy_who_we_are_title": "Kas mēs esam",
+  "website_url": "https://piyuo.com"
 }

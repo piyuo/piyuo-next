@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Privacybeleid voor Piyuo Counter - België",
-  "privacy_effective_date": "Ingangsdatum: 12 april 2025",
-
-  "privacy_introduction_title": "Inleiding",
-  "privacy_introduction_1": "Welkom bij Piyuo Counter! Dit privacybeleid legt uit hoe we informatie hanteren wanneer u onze softwaretoepassing (\"App\") gebruikt. Onze toewijding is aan uw privacy. Deze app is ontworpen om te functioneren zonder het verzamelen of verwerken van uw persoonlijke gegevens.",
-  "privacy_introduction_2": "Dit privacybeleid is van toepassing op de Piyuo Counter softwaretoepassing (\"App\") voor mobiele apparaten en computers, beschikbaar via verschillende platforms en app-stores.",
-
-  "privacy_who_we_are_title": "Wie we zijn",
-  "privacy_who_we_are": "De Piyuo Counter app wordt geleverd door Piyuo (\"wij,\" \"ons,\" of \"onze\"). Onze website is {website}. Als u vragen heeft over dit beleid, kunt u contact met ons opnemen via {email}.",
-
-  "privacy_no_collect_title": "Informatie die we niet verzamelen",
-  "privacy_no_collect_intro": "We verzamelen, bewaren, verzenden of verwerken geen persoonlijke informatie of gebruiksgegevens van u via de Piyuo Counter app.",
-  "privacy_no_collect_personal": "Geen persoonlijke gegevens: We vragen niet om, hebben geen toegang tot of volgen geen informatie die u zou kunnen identificeren, zoals uw naam, e-mailadres, locatie, apparaat-identificaties of contacten.",
-  "privacy_no_collect_usage": "Geen gebruiksgegevens: De app registreert niet hoe u deze gebruikt. Alle tellergegevens die u aanmaakt worden alleen lokaal op uw apparaat opgeslagen en zijn niet toegankelijk voor ons.",
-  "privacy_no_collect_third_party": "Geen derdepartijenservices: We integreren geen derdepartijenservices voor analytics (zoals Firebase Analytics), reclame (zoals AdMob), cloudopslag, of enig ander doel dat het delen van gegevens met externe partijen zou inhouden. De app werkt volledig offline wat betreft gegevensverwerking.",
-
-  "privacy_use_title": "Hoe we informatie gebruiken",
-  "privacy_use": "Omdat we geen informatie verzamelen, gebruiken we uw informatie voor geen enkel doel.",
-
-  "privacy_sharing_title": "Informatie delen en openbaarmaking",
-  "privacy_sharing": "We delen of openbaren geen persoonlijke informatie omdat we deze niet verzamelen. Uw gegevens (de tellingen die u bijhoudt) blijven op uw apparaat.",
-
-  "privacy_security_title": "Gegevensbeveiliging",
-  "privacy_security": "Alle gegevens die worden gegenereerd door het gebruik van de Piyuo Counter app (zoals uw tellingen) worden alleen lokaal op uw apparaat opgeslagen. We hebben geen toegang tot deze gegevens. Hoewel we onze app bouwen met standaard beveiligingspraktijken, hangt de beveiliging van de gegevens die op uw apparaat zijn opgeslagen af van de beveiligingsmaatregelen die u voor uw apparaat zelf neemt.",
-
-  "privacy_children_title": "Privacy van kinderen",
-  "privacy_children": "Onze app verzamelt geen persoonlijke informatie van wie dan ook, inclusief kinderen. We houden ons aan de Algemene Verordening Gegevensbescherming (AVG) en soortgelijke regelgeving betreffende kinderdata. Omdat we geen gegevens verzamelen, verzamelen we inherent geen gegevens van kinderen onder de 13 jaar (of 16 in sommige EU-landen).",
-
-  "privacy_rights_title": "Uw rechten (AVG en andere wetten)",
-  "privacy_rights_1": "Privacywetten zoals de Algemene Verordening Gegevensbescherming (AVG) in Europa en verschillende Belgische wetten verlenen individuen rechten over hun persoonlijke gegevens (zoals toegang, correctie, verwijdering).",
-  "privacy_rights_2": "Omdat de Piyuo Counter app geen van uw persoonlijke gegevens verzamelt, opslaat of verwerkt, zijn deze rechten over het algemeen niet van toepassing in de context van onze app, omdat er geen gegevens door ons worden bewaard die u zou kunnen benaderen, corrigeren of verwijderen. Alle app-gerelateerde gegevens bevinden zich uitsluitend op uw apparaat, onder uw controle.",
-
-  "privacy_changes_title": "Wijzigingen in dit privacybeleid",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "We kunnen dit privacybeleid van tijd tot tijd bijwerken. We zullen u op de hoogte brengen van wijzigingen door het nieuwe privacybeleid binnen de app of op onze website ({website}) te plaatsen. U wordt geadviseerd dit privacybeleid periodiek te bekijken voor eventuele wijzigingen.",
   "privacy_changes_2": "Wijzigingen in dit privacybeleid worden van kracht wanneer ze op deze pagina worden geplaatst.",
-
-  "privacy_contact_title": "Contact opnemen",
-  "privacy_contact_intro": "Als u vragen heeft over dit privacybeleid, neem dan contact met ons op:",
+  "privacy_changes_title": "Wijzigingen in dit privacybeleid",
+  "privacy_children": "Onze app verzamelt geen persoonlijke informatie van wie dan ook, inclusief kinderen. We houden ons aan de Algemene Verordening Gegevensbescherming (AVG) en soortgelijke regelgeving betreffende kinderdata. Omdat we geen gegevens verzamelen, verzamelen we inherent geen gegevens van kinderen onder de 13 jaar (of 16 in sommige EU-landen).",
+  "privacy_children_title": "Privacy van kinderen",
   "privacy_contact_email": "Per e-mail: {email}",
+  "privacy_contact_intro": "Als u vragen heeft over dit privacybeleid, neem dan contact met ons op:",
+  "privacy_contact_title": "Contact opnemen",
   "privacy_contact_website": "Door deze pagina op onze website te bezoeken: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Ingangsdatum: 12 april 2025",
+  "privacy_introduction_1": "Welkom bij Piyuo Counter! Dit privacybeleid legt uit hoe we informatie hanteren wanneer u onze softwaretoepassing (\"App\") gebruikt. Onze toewijding is aan uw privacy. Deze app is ontworpen om te functioneren zonder het verzamelen of verwerken van uw persoonlijke gegevens.",
+  "privacy_introduction_2": "Dit privacybeleid is van toepassing op de Piyuo Counter softwaretoepassing (\"App\") voor mobiele apparaten en computers, beschikbaar via verschillende platforms en app-stores.",
+  "privacy_introduction_title": "Inleiding",
+  "privacy_no_collect_intro": "We verzamelen, bewaren, verzenden of verwerken geen persoonlijke informatie of gebruiksgegevens van u via de Piyuo Counter app.",
+  "privacy_no_collect_personal": "Geen persoonlijke gegevens: We vragen niet om, hebben geen toegang tot of volgen geen informatie die u zou kunnen identificeren, zoals uw naam, e-mailadres, locatie, apparaat-identificaties of contacten.",
+  "privacy_no_collect_third_party": "Geen derdepartijenservices: We integreren geen derdepartijenservices voor analytics (zoals Firebase Analytics), reclame (zoals AdMob), cloudopslag, of enig ander doel dat het delen van gegevens met externe partijen zou inhouden. De app werkt volledig offline wat betreft gegevensverwerking.",
+  "privacy_no_collect_title": "Informatie die we niet verzamelen",
+  "privacy_no_collect_usage": "Geen gebruiksgegevens: De app registreert niet hoe u deze gebruikt. Alle tellergegevens die u aanmaakt worden alleen lokaal op uw apparaat opgeslagen en zijn niet toegankelijk voor ons.",
+  "privacy_rights_1": "Privacywetten zoals de Algemene Verordening Gegevensbescherming (AVG) in Europa en verschillende Belgische wetten verlenen individuen rechten over hun persoonlijke gegevens (zoals toegang, correctie, verwijdering).",
+  "privacy_rights_2": "Omdat de Piyuo Counter app geen van uw persoonlijke gegevens verzamelt, opslaat of verwerkt, zijn deze rechten over het algemeen niet van toepassing in de context van onze app, omdat er geen gegevens door ons worden bewaard die u zou kunnen benaderen, corrigeren of verwijderen. Alle app-gerelateerde gegevens bevinden zich uitsluitend op uw apparaat, onder uw controle.",
+  "privacy_rights_title": "Uw rechten (AVG en andere wetten)",
+  "privacy_security": "Alle gegevens die worden gegenereerd door het gebruik van de Piyuo Counter app (zoals uw tellingen) worden alleen lokaal op uw apparaat opgeslagen. We hebben geen toegang tot deze gegevens. Hoewel we onze app bouwen met standaard beveiligingspraktijken, hangt de beveiliging van de gegevens die op uw apparaat zijn opgeslagen af van de beveiligingsmaatregelen die u voor uw apparaat zelf neemt.",
+  "privacy_security_title": "Gegevensbeveiliging",
+  "privacy_sharing": "We delen of openbaren geen persoonlijke informatie omdat we deze niet verzamelen. Uw gegevens (de tellingen die u bijhoudt) blijven op uw apparaat.",
+  "privacy_sharing_title": "Informatie delen en openbaarmaking",
+  "privacy_title": "Privacybeleid voor Piyuo Counter - België",
+  "privacy_use": "Omdat we geen informatie verzamelen, gebruiken we uw informatie voor geen enkel doel.",
+  "privacy_use_title": "Hoe we informatie gebruiken",
+  "privacy_who_we_are": "De Piyuo Counter app wordt geleverd door Piyuo (\"wij,\" \"ons,\" of \"onze\"). Onze website is {website}. Als u vragen heeft over dit beleid, kunt u contact met ons opnemen via {email}.",
+  "privacy_who_we_are_title": "Wie we zijn",
+  "website_url": "https://piyuo.com"
 }

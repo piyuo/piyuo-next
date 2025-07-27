@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Personvernerklæring for Piyuo Counter",
-  "privacy_effective_date": "Ikrafttredelsesdato: 12. april 2025",
-
-  "privacy_introduction_title": "Introduksjon",
-  "privacy_introduction_1": "Velkommen til Piyuo Counter! Denne personvernerklæringen forklarer hvordan vi håndterer informasjon når du bruker vår programvareapplikasjon (\"Appen\"). Vårt engasjement er ditt personvern. Denne appen er designet for å fungere uten å samle inn eller behandle dine personlige data.",
-  "privacy_introduction_2": "Denne personvernerklæringen gjelder for programvareapplikasjonen Piyuo Counter (\"Appen\") for mobile enheter og datamaskiner, tilgjengelig på forskjellige plattformer og appbutikker.",
-
-  "privacy_who_we_are_title": "Hvem vi er",
-  "privacy_who_we_are": "Piyuo Counter-appen leveres av Piyuo (\"vi\", \"vårt\" eller \"vår\"). Vårt nettsted er {website}. Hvis du har spørsmål om denne policyen, kan du kontakte oss på {email}.",
-
-  "privacy_no_collect_title": "Informasjon vi ikke samler inn",
-  "privacy_no_collect_intro": "Vi samler ikke inn, lagrer, overfører eller behandler personlig informasjon eller bruksdata fra deg gjennom Piyuo Counter-appen.",
-  "privacy_no_collect_personal": "Ingen persondata: Vi ber ikke om, får ikke tilgang til eller sporer informasjon som kan identifisere deg, som ditt navn, e-postadresse, plassering, enhetsidentifikatorer eller kontakter.",
-  "privacy_no_collect_usage": "Ingen bruksdata: Appen registrerer ikke hvordan du bruker den. All tellerdata du oppretter lagres lokalt bare på enheten din og er ikke tilgjengelig for oss.",
-  "privacy_no_collect_third_party": "Ingen tredjepartstjenester: Vi integrerer ikke tredjepartstjenester for analyse (som Firebase Analytics), annonsering (som AdMob), skylagring eller andre formål som ville innebære deling av data med eksterne parter. Appen opererer helt offline når det gjelder datahåndtering.",
-
-  "privacy_use_title": "Hvordan vi bruker informasjon",
-  "privacy_use": "Siden vi ikke samler inn noen informasjon, bruker vi ikke informasjonen din til noe formål.",
-
-  "privacy_sharing_title": "Informasjonsdeling og avsløring",
-  "privacy_sharing": "Vi deler eller avslører ikke personlig informasjon fordi vi ikke samler inn noen. Dataene dine (tellingene du sporer) forblir på enheten din.",
-
-  "privacy_security_title": "Datasikkerhet",
-  "privacy_security": "All data generert ved bruk av Piyuo Counter-appen (som tellingene dine) lagres lokalt bare på enheten din. Vi har ikke tilgang til disse dataene. Selv om vi bygger appen vår med standard sikkerhetspraksis, avhenger sikkerheten til data lagret på enheten din av sikkerhetstiltakene du tar for selve enheten.",
-
-  "privacy_children_title": "Barns personvern",
-  "privacy_children": "Vår app samler ikke inn personlig informasjon fra noen, inkludert barn. Vi overholder Children's Online Privacy Protection Act (COPPA) i USA og lignende forskrifter som GDPR angående barnedata. Siden vi ikke samler inn data, samler vi i seg selv ikke inn data fra barn under 13 år (eller 16 år i noen EU-land).",
-
-  "privacy_rights_title": "Dine rettigheter (GDPR og andre lover)",
-  "privacy_rights_1": "Personvernlover som den generelle databeskyttelsesforordningen (GDPR) i Europa og forskjellige amerikanske delstatslover gir enkeltpersoner rettigheter over sine persondata (som tilgang, korrigering, sletting).",
-  "privacy_rights_2": "Fordi Piyuo Counter-appen ikke samler inn, lagrer eller behandler noen av dine persondata, er disse rettighetene generelt ikke anvendelige i sammenheng med vår app, siden det ikke er data holdt av oss som du kan få tilgang til, korrigere eller slette. All data relatert til appen befinner seg bare på enheten din, under din kontroll.",
-
-  "privacy_changes_title": "Endringer i denne personvernerklæringen",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Vi kan oppdatere denne personvernerklæringen fra tid til annen. Vi vil varsle deg om eventuelle endringer ved å publisere den nye personvernerklæringen i appen eller på vårt nettsted ({website}). Du anbefales å gjennomgå denne personvernerklæringen jevnlig for eventuelle endringer.",
   "privacy_changes_2": "Endringer i denne personvernerklæringen trer i kraft når de publiseres på denne siden.",
-
-  "privacy_contact_title": "Kontakt oss",
-  "privacy_contact_intro": "Hvis du har spørsmål om denne personvernerklæringen, vennligst kontakt oss:",
+  "privacy_changes_title": "Endringer i denne personvernerklæringen",
+  "privacy_children": "Vår app samler ikke inn personlig informasjon fra noen, inkludert barn. Vi overholder Children's Online Privacy Protection Act (COPPA) i USA og lignende forskrifter som GDPR angående barnedata. Siden vi ikke samler inn data, samler vi i seg selv ikke inn data fra barn under 13 år (eller 16 år i noen EU-land).",
+  "privacy_children_title": "Barns personvern",
   "privacy_contact_email": "Via e-post: {email}",
+  "privacy_contact_intro": "Hvis du har spørsmål om denne personvernerklæringen, vennligst kontakt oss:",
+  "privacy_contact_title": "Kontakt oss",
   "privacy_contact_website": "Ved å besøke denne siden på vårt nettsted: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Ikrafttredelsesdato: 12. april 2025",
+  "privacy_introduction_1": "Velkommen til Piyuo Counter! Denne personvernerklæringen forklarer hvordan vi håndterer informasjon når du bruker vår programvareapplikasjon (\"Appen\"). Vårt engasjement er ditt personvern. Denne appen er designet for å fungere uten å samle inn eller behandle dine personlige data.",
+  "privacy_introduction_2": "Denne personvernerklæringen gjelder for programvareapplikasjonen Piyuo Counter (\"Appen\") for mobile enheter og datamaskiner, tilgjengelig på forskjellige plattformer og appbutikker.",
+  "privacy_introduction_title": "Introduksjon",
+  "privacy_no_collect_intro": "Vi samler ikke inn, lagrer, overfører eller behandler personlig informasjon eller bruksdata fra deg gjennom Piyuo Counter-appen.",
+  "privacy_no_collect_personal": "Ingen persondata: Vi ber ikke om, får ikke tilgang til eller sporer informasjon som kan identifisere deg, som ditt navn, e-postadresse, plassering, enhetsidentifikatorer eller kontakter.",
+  "privacy_no_collect_third_party": "Ingen tredjepartstjenester: Vi integrerer ikke tredjepartstjenester for analyse (som Firebase Analytics), annonsering (som AdMob), skylagring eller andre formål som ville innebære deling av data med eksterne parter. Appen opererer helt offline når det gjelder datahåndtering.",
+  "privacy_no_collect_title": "Informasjon vi ikke samler inn",
+  "privacy_no_collect_usage": "Ingen bruksdata: Appen registrerer ikke hvordan du bruker den. All tellerdata du oppretter lagres lokalt bare på enheten din og er ikke tilgjengelig for oss.",
+  "privacy_rights_1": "Personvernlover som den generelle databeskyttelsesforordningen (GDPR) i Europa og forskjellige amerikanske delstatslover gir enkeltpersoner rettigheter over sine persondata (som tilgang, korrigering, sletting).",
+  "privacy_rights_2": "Fordi Piyuo Counter-appen ikke samler inn, lagrer eller behandler noen av dine persondata, er disse rettighetene generelt ikke anvendelige i sammenheng med vår app, siden det ikke er data holdt av oss som du kan få tilgang til, korrigere eller slette. All data relatert til appen befinner seg bare på enheten din, under din kontroll.",
+  "privacy_rights_title": "Dine rettigheter (GDPR og andre lover)",
+  "privacy_security": "All data generert ved bruk av Piyuo Counter-appen (som tellingene dine) lagres lokalt bare på enheten din. Vi har ikke tilgang til disse dataene. Selv om vi bygger appen vår med standard sikkerhetspraksis, avhenger sikkerheten til data lagret på enheten din av sikkerhetstiltakene du tar for selve enheten.",
+  "privacy_security_title": "Datasikkerhet",
+  "privacy_sharing": "Vi deler eller avslører ikke personlig informasjon fordi vi ikke samler inn noen. Dataene dine (tellingene du sporer) forblir på enheten din.",
+  "privacy_sharing_title": "Informasjonsdeling og avsløring",
+  "privacy_title": "Personvernerklæring for Piyuo Counter",
+  "privacy_use": "Siden vi ikke samler inn noen informasjon, bruker vi ikke informasjonen din til noe formål.",
+  "privacy_use_title": "Hvordan vi bruker informasjon",
+  "privacy_who_we_are": "Piyuo Counter-appen leveres av Piyuo (\"vi\", \"vårt\" eller \"vår\"). Vårt nettsted er {website}. Hvis du har spørsmål om denne policyen, kan du kontakte oss på {email}.",
+  "privacy_who_we_are_title": "Hvem vi er",
+  "website_url": "https://piyuo.com"
 }

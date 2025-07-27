@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Piyuo Sayğacı üçün Məxfilik Siyasəti",
-  "privacy_effective_date": "Qüvvəyə minmə tarixi: 12 aprel 2025",
-
-  "privacy_introduction_title": "Giriş",
-  "privacy_introduction_1": "Piyuo Sayğacına xoş gəlmisiniz! Bu Məxfilik Siyasəti bizim proqram tətbiqimizi (\"Tətbiq\") istifadə etdiyiniz zaman məlumatları necə idarə etdiyimizi izah edir. Bizim öhdəliyimiz sizin məxfiliyinizdir. Bu Tətbiq heç bir şəxsi məlumatınızı toplamadan və ya emal etmədən işləmək üçün hazırlanmışdır.",
-  "privacy_introduction_2": "Bu Məxfilik Siyasəti müxtəlif platformalar və tətbiq mağazaları üzərində əlçatan olan mobil cihazlar və kompüterlər üçün Piyuo Sayğacı proqram tətbiqi (\"Tətbiq\") üçün tətbiq olunur.",
-
-  "privacy_who_we_are_title": "Biz kimik",
-  "privacy_who_we_are": "Piyuo Sayğacı tətbiqi Piyuo (\"biz,\" \"bizim\" və ya \"bizimkilər\") tərəfindən təqdim olunur. Bizim veb saytımız {website} dir. Bu siyasət haqqında suallarınız varsa, bizimlə {email} ünvanında əlaqə saxlaya bilərsiniz.",
-
-  "privacy_no_collect_title": "Toplamadığımız Məlumatlar",
-  "privacy_no_collect_intro": "Biz Piyuo Sayğacı tətbiqi vasitəsilə sizdən heç bir şəxsi məlumat və ya istifadə məlumatları toplamır, saxlamır, ötürmür və ya emal etmirik.",
-  "privacy_no_collect_personal": "Şəxsi Məlumat Yoxdur: Biz sizin adınız, e-poçt ünvanınız, məkanınız, cihaz identifikatorları və ya əlaqələr kimi sizi müəyyən edə bilən heç bir məlumat soruşmur, əldə etmir və ya izləmirik.",
-  "privacy_no_collect_usage": "İstifadə Məlumatları Yoxdur: Tətbiq onu necə istifadə etdiyinizi qeyd etmir. Yaratdığınız bütün sayğac məlumatları yalnız cihazınızda yerli olaraq saxlanılır və bizim üçün əlçatan deyil.",
-  "privacy_no_collect_third_party": "Üçüncü Tərəf Xidmətləri Yoxdur: Biz analitika (Firebase Analytics kimi), reklam (AdMob kimi), bulud saxlama və ya xarici tərəflərlə məlumat paylaşması ilə bağlı hər hansı başqa məqsəd üçün üçüncü tərəf xidmətlərini inteqrasiya etmirik. Tətbiq məlumat idarəetməsi baxımından tamamilə oflayn işləyir.",
-
-  "privacy_use_title": "Məlumatları Necə İstifadə Edirik",
-  "privacy_use": "Heç bir məlumat toplamadığımız üçün, məlumatlarınızı heç bir məqsəd üçün istifadə etmirik.",
-
-  "privacy_sharing_title": "Məlumat Paylaşımı və Açıqlanması",
-  "privacy_sharing": "Biz heç bir şəxsi məlumatı paylaşmır və ya açıqlamırıq, çünki heç bir məlumat toplamırıq. Məlumatlarınız (izlədiyiniz sayımlar) cihazınızda qalır.",
-
-  "privacy_security_title": "Məlumat Təhlükəsizliyi",
-  "privacy_security": "Piyuo Sayğacı tətbiqinin istifadəsi ilə yaradılan hər hansı məlumat (sayımlarınız kimi) yalnız cihazınızda yerli olaraq saxlanılır. Bu məlumatlara bizim giriş imkanımız yoxdur. Tətbiqimizi standart təhlükəsizlik təcrübələri ilə qursaq da, cihazınızda saxlanılan məlumatların təhlükəsizliyi cihazınız üçün götürdüyünüz təhlükəsizlik tədbirlərindən asılıdır.",
-
-  "privacy_children_title": "Uşaqların Məxfiliyi",
-  "privacy_children": "Bizim Tətbiqimiz uşaqlar da daxil olmaqla heç kimdən şəxsi məlumat toplamır. Biz ABŞ-da Uşaqların Onlayn Məxfilik Mühafizəsi Qanunu (COPPA) və uşaqların məlumatları ilə bağlı GDPR kimi oxşar qanunlara riayət edirik. Heç bir məlumat toplamadığımız üçün, təbii olaraq 13 yaşından kiçik uşaqlardan (və ya bəzi AB ölkələrində 16 yaşından kiçik) məlumat toplamırıq.",
-
-  "privacy_rights_title": "Hüquqlarınız (GDPR və Digər Qanunlar)",
-  "privacy_rights_1": "Avropada Ümumi Məlumat Mühafizəsi Qanunu (GDPR) və ABŞ-ın müxtəlif ştat qanunları kimi məxfilik qanunları fərdlərə şəxsi məlumatları üzərində hüquqlar (giriş, düzəliş, silmə kimi) verir.",
-  "privacy_rights_2": "Piyuo Sayğacı tətbiqi heç bir şəxsi məlumatınızı toplamır, saxlamır və ya emal etmir, buna görə də bu hüquqlar ümumiyyətlə bizim Tətbiqimiz kontekstində tətbiq olunmur, çünki sizin üçün giriş, düzəliş və ya silmə edə biləcəyiniz bizim tərəfimizdən saxlanılan məlumat yoxdur. Tətbiqlə bağlı hər hansı məlumat yalnız cihazınızda, sizin nəzarətiniz altında mövcuddur.",
-
-  "privacy_changes_title": "Bu Məxfilik Siyasətindəki Dəyişikliklər",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Biz bu Məxfilik Siyasətini vaxtaşırı yeniləyə bilərik. Yeni Məxfilik Siyasətini Tətbiq daxilində və ya veb saytımızda ({website}) yerləşdirməklə hər hansı dəyişikliklər barədə sizi məlumatlandıracağıq. Bu Məxfilik Siyasətini hər hansı dəyişikliklər üçün dövri olaraq nəzərdən keçirməyiniz məsləhət görülür.",
   "privacy_changes_2": "Bu Məxfilik Siyasətindəki dəyişikliklər bu səhifədə yerləşdirildikdə qüvvəyə minir.",
-
-  "privacy_contact_title": "Bizimlə Əlaqə",
-  "privacy_contact_intro": "Bu Məxfilik Siyasəti haqqında hər hansı sualınız varsa, bizimlə əlaqə saxlayın:",
+  "privacy_changes_title": "Bu Məxfilik Siyasətindəki Dəyişikliklər",
+  "privacy_children": "Bizim Tətbiqimiz uşaqlar da daxil olmaqla heç kimdən şəxsi məlumat toplamır. Biz ABŞ-da Uşaqların Onlayn Məxfilik Mühafizəsi Qanunu (COPPA) və uşaqların məlumatları ilə bağlı GDPR kimi oxşar qanunlara riayət edirik. Heç bir məlumat toplamadığımız üçün, təbii olaraq 13 yaşından kiçik uşaqlardan (və ya bəzi AB ölkələrində 16 yaşından kiçik) məlumat toplamırıq.",
+  "privacy_children_title": "Uşaqların Məxfiliyi",
   "privacy_contact_email": "E-poçt ilə: {email}",
+  "privacy_contact_intro": "Bu Məxfilik Siyasəti haqqında hər hansı sualınız varsa, bizimlə əlaqə saxlayın:",
+  "privacy_contact_title": "Bizimlə Əlaqə",
   "privacy_contact_website": "Veb saytımızda bu səhifəni ziyarət etməklə: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Qüvvəyə minmə tarixi: 12 aprel 2025",
+  "privacy_introduction_1": "Piyuo Sayğacına xoş gəlmisiniz! Bu Məxfilik Siyasəti bizim proqram tətbiqimizi (\"Tətbiq\") istifadə etdiyiniz zaman məlumatları necə idarə etdiyimizi izah edir. Bizim öhdəliyimiz sizin məxfiliyinizdir. Bu Tətbiq heç bir şəxsi məlumatınızı toplamadan və ya emal etmədən işləmək üçün hazırlanmışdır.",
+  "privacy_introduction_2": "Bu Məxfilik Siyasəti müxtəlif platformalar və tətbiq mağazaları üzərində əlçatan olan mobil cihazlar və kompüterlər üçün Piyuo Sayğacı proqram tətbiqi (\"Tətbiq\") üçün tətbiq olunur.",
+  "privacy_introduction_title": "Giriş",
+  "privacy_no_collect_intro": "Biz Piyuo Sayğacı tətbiqi vasitəsilə sizdən heç bir şəxsi məlumat və ya istifadə məlumatları toplamır, saxlamır, ötürmür və ya emal etmirik.",
+  "privacy_no_collect_personal": "Şəxsi Məlumat Yoxdur: Biz sizin adınız, e-poçt ünvanınız, məkanınız, cihaz identifikatorları və ya əlaqələr kimi sizi müəyyən edə bilən heç bir məlumat soruşmur, əldə etmir və ya izləmirik.",
+  "privacy_no_collect_third_party": "Üçüncü Tərəf Xidmətləri Yoxdur: Biz analitika (Firebase Analytics kimi), reklam (AdMob kimi), bulud saxlama və ya xarici tərəflərlə məlumat paylaşması ilə bağlı hər hansı başqa məqsəd üçün üçüncü tərəf xidmətlərini inteqrasiya etmirik. Tətbiq məlumat idarəetməsi baxımından tamamilə oflayn işləyir.",
+  "privacy_no_collect_title": "Toplamadığımız Məlumatlar",
+  "privacy_no_collect_usage": "İstifadə Məlumatları Yoxdur: Tətbiq onu necə istifadə etdiyinizi qeyd etmir. Yaratdığınız bütün sayğac məlumatları yalnız cihazınızda yerli olaraq saxlanılır və bizim üçün əlçatan deyil.",
+  "privacy_rights_1": "Avropada Ümumi Məlumat Mühafizəsi Qanunu (GDPR) və ABŞ-ın müxtəlif ştat qanunları kimi məxfilik qanunları fərdlərə şəxsi məlumatları üzərində hüquqlar (giriş, düzəliş, silmə kimi) verir.",
+  "privacy_rights_2": "Piyuo Sayğacı tətbiqi heç bir şəxsi məlumatınızı toplamır, saxlamır və ya emal etmir, buna görə də bu hüquqlar ümumiyyətlə bizim Tətbiqimiz kontekstində tətbiq olunmur, çünki sizin üçün giriş, düzəliş və ya silmə edə biləcəyiniz bizim tərəfimizdən saxlanılan məlumat yoxdur. Tətbiqlə bağlı hər hansı məlumat yalnız cihazınızda, sizin nəzarətiniz altında mövcuddur.",
+  "privacy_rights_title": "Hüquqlarınız (GDPR və Digər Qanunlar)",
+  "privacy_security": "Piyuo Sayğacı tətbiqinin istifadəsi ilə yaradılan hər hansı məlumat (sayımlarınız kimi) yalnız cihazınızda yerli olaraq saxlanılır. Bu məlumatlara bizim giriş imkanımız yoxdur. Tətbiqimizi standart təhlükəsizlik təcrübələri ilə qursaq da, cihazınızda saxlanılan məlumatların təhlükəsizliyi cihazınız üçün götürdüyünüz təhlükəsizlik tədbirlərindən asılıdır.",
+  "privacy_security_title": "Məlumat Təhlükəsizliyi",
+  "privacy_sharing": "Biz heç bir şəxsi məlumatı paylaşmır və ya açıqlamırıq, çünki heç bir məlumat toplamırıq. Məlumatlarınız (izlədiyiniz sayımlar) cihazınızda qalır.",
+  "privacy_sharing_title": "Məlumat Paylaşımı və Açıqlanması",
+  "privacy_title": "Piyuo Sayğacı üçün Məxfilik Siyasəti",
+  "privacy_use": "Heç bir məlumat toplamadığımız üçün, məlumatlarınızı heç bir məqsəd üçün istifadə etmirik.",
+  "privacy_use_title": "Məlumatları Necə İstifadə Edirik",
+  "privacy_who_we_are": "Piyuo Sayğacı tətbiqi Piyuo (\"biz,\" \"bizim\" və ya \"bizimkilər\") tərəfindən təqdim olunur. Bizim veb saytımız {website} dir. Bu siyasət haqqında suallarınız varsa, bizimlə {email} ünvanında əlaqə saxlaya bilərsiniz.",
+  "privacy_who_we_are_title": "Biz kimik",
+  "website_url": "https://piyuo.com"
 }

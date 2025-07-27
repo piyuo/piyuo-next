@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Piyuo计数器隐私政策",
-  "privacy_effective_date": "生效日期：2025年4月12日",
-
-  "privacy_introduction_title": "简介",
-  "privacy_introduction_1": "欢迎使用Piyuo计数器！本隐私政策说明当您使用我们的软件应用程序（\"应用\"）时，我们如何处理信息。我们致力于保护您的隐私。此应用程序设计为在不收集或处理您的个人数据的情况下运行。",
-  "privacy_introduction_2": "本隐私政策适用于适用于移动设备和计算机的Piyuo计数器软件应用程序（\"应用\"），可在各种平台和应用商店中获得。",
-
-  "privacy_who_we_are_title": "我们是谁",
-  "privacy_who_we_are": "Piyuo计数器应用由Piyuo（\"我们\"、\"我们的\"或\"我们的\"）提供。我们的网站是{website}。如果您对此政策有疑问，可以通过{email}联系我们。",
-
-  "privacy_no_collect_title": "我们不收集的信息",
-  "privacy_no_collect_intro": "我们不通过Piyuo计数器应用收集、存储、传输或处理您的任何个人信息或使用数据。",
-  "privacy_no_collect_personal": "无个人数据：我们不要求、访问或跟踪任何可能识别您身份的信息，例如您的姓名、电子邮件地址、位置、设备标识符或联系人。",
-  "privacy_no_collect_usage": "无使用数据：应用不记录您如何使用它。您创建的所有计数器数据仅本地存储在您的设备上，我们无法访问。",
-  "privacy_no_collect_third_party": "无第三方服务：我们不集成任何用于分析（如Firebase Analytics）、广告（如AdMob）、云存储或任何其他涉及与外部方共享数据的目的的第三方服务。应用在数据处理方面完全离线运行。",
-
-  "privacy_use_title": "我们如何使用信息",
-  "privacy_use": "由于我们不收集任何信息，我们不会为任何目的使用您的信息。",
-
-  "privacy_sharing_title": "信息共享和披露",
-  "privacy_sharing": "我们不共享或披露任何个人信息，因为我们不收集任何信息。您的数据（您跟踪的计数）保留在您的设备上。",
-
-  "privacy_security_title": "数据安全",
-  "privacy_security": "使用Piyuo计数器应用生成的任何数据（如您的计数）仅本地存储在您的设备上。我们无法访问这些数据。虽然我们使用标准安全实践构建我们的应用，但存储在您设备上的数据安全性取决于您为设备本身采取的安全措施。",
-
-  "privacy_children_title": "儿童隐私",
-  "privacy_children": "我们的应用不收集任何人（包括儿童）的个人信息。我们遵守美国《儿童在线隐私保护法》（COPPA）和有关儿童数据的类似法规，如GDPR以及新加坡的《个人数据保护法》（PDPA）。由于我们不收集任何数据，我们本质上不收集13岁以下儿童的数据（在某些司法管辖区为16岁或18岁）。",
-
-  "privacy_rights_title": "您的权利（GDPR和其他法律）",
-  "privacy_rights_1": "欧洲的《通用数据保护条例》（GDPR）、新加坡的《个人数据保护法》（PDPA）和各种其他隐私法律赋予个人对其个人数据的权利（如访问、更正、删除）。",
-  "privacy_rights_2": "由于Piyuo计数器应用不收集、存储或处理您的任何个人数据，这些权利通常不适用于我们应用的上下文，因为我们没有持有您可以访问、更正或删除的数据。与应用相关的任何数据仅存在于您的设备上，在您的控制之下。",
-
-  "privacy_changes_title": "本隐私政策的变更",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "我们可能会不时更新本隐私政策。我们将通过在应用内或我们的网站（{website}）上发布新的隐私政策来通知您任何变更。建议您定期查看本隐私政策以了解任何变更。",
   "privacy_changes_2": "本隐私政策的变更在发布到此页面时生效。",
-
-  "privacy_contact_title": "联系我们",
-  "privacy_contact_intro": "如果您对本隐私政策有任何疑问，请联系我们：",
+  "privacy_changes_title": "本隐私政策的变更",
+  "privacy_children": "我们的应用不收集任何人（包括儿童）的个人信息。我们遵守美国《儿童在线隐私保护法》（COPPA）和有关儿童数据的类似法规，如GDPR以及新加坡的《个人数据保护法》（PDPA）。由于我们不收集任何数据，我们本质上不收集13岁以下儿童的数据（在某些司法管辖区为16岁或18岁）。",
+  "privacy_children_title": "儿童隐私",
   "privacy_contact_email": "通过电子邮件：{email}",
+  "privacy_contact_intro": "如果您对本隐私政策有任何疑问，请联系我们：",
+  "privacy_contact_title": "联系我们",
   "privacy_contact_website": "通过访问我们网站上的此页面：{website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "生效日期：2025年4月12日",
+  "privacy_introduction_1": "欢迎使用Piyuo计数器！本隐私政策说明当您使用我们的软件应用程序（\"应用\"）时，我们如何处理信息。我们致力于保护您的隐私。此应用程序设计为在不收集或处理您的个人数据的情况下运行。",
+  "privacy_introduction_2": "本隐私政策适用于适用于移动设备和计算机的Piyuo计数器软件应用程序（\"应用\"），可在各种平台和应用商店中获得。",
+  "privacy_introduction_title": "简介",
+  "privacy_no_collect_intro": "我们不通过Piyuo计数器应用收集、存储、传输或处理您的任何个人信息或使用数据。",
+  "privacy_no_collect_personal": "无个人数据：我们不要求、访问或跟踪任何可能识别您身份的信息，例如您的姓名、电子邮件地址、位置、设备标识符或联系人。",
+  "privacy_no_collect_third_party": "无第三方服务：我们不集成任何用于分析（如Firebase Analytics）、广告（如AdMob）、云存储或任何其他涉及与外部方共享数据的目的的第三方服务。应用在数据处理方面完全离线运行。",
+  "privacy_no_collect_title": "我们不收集的信息",
+  "privacy_no_collect_usage": "无使用数据：应用不记录您如何使用它。您创建的所有计数器数据仅本地存储在您的设备上，我们无法访问。",
+  "privacy_rights_1": "隐私法律如《个人信息保护法》和新加坡《个人数据保护法》（PDPA）等法规赋予个人对其个人数据的权利（如访问、更正、删除）。",
+  "privacy_rights_2": "由于Piyuo计数器应用不收集、存储或处理您的任何个人数据，这些权利通常不适用于我们应用的上下文，因为我们没有持有您可以访问、更正或删除的数据。与应用相关的任何数据仅存在于您的设备上，在您的控制之下。",
+  "privacy_rights_title": "您的权利（GDPR和其他法律）",
+  "privacy_security": "使用Piyuo计数器应用生成的任何数据（如您的计数）仅本地存储在您的设备上。我们无法访问这些数据。虽然我们使用标准安全实践构建我们的应用，但存储在您设备上的数据安全性取决于您为设备本身采取的安全措施。",
+  "privacy_security_title": "数据安全",
+  "privacy_sharing": "我们不共享或披露任何个人信息，因为我们不收集任何信息。您的数据（您跟踪的计数）保留在您的设备上。",
+  "privacy_sharing_title": "信息共享和披露",
+  "privacy_title": "Piyuo计数器隐私政策",
+  "privacy_use": "由于我们不收集任何信息，我们不会为任何目的使用您的信息。",
+  "privacy_use_title": "我们如何使用信息",
+  "privacy_who_we_are": "Piyuo计数器应用由Piyuo（\"我们\"、\"我们的\"或\"我们的\"）提供。我们的网站是{website}。如果您对此政策有疑问，可以通过{email}联系我们。",
+  "privacy_who_we_are_title": "我们是谁",
+  "website_url": "https://piyuo.com"
 }

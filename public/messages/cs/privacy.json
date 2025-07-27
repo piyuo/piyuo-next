@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Zásady ochrany osobních údajů pro Piyuo Counter",
-  "privacy_effective_date": "Datum účinnosti: 12. dubna 2025",
-
-  "privacy_introduction_title": "Úvod",
-  "privacy_introduction_1": "Vítejte v Piyuo Counter! Tyto Zásady ochrany osobních údajů vysvětlují, jak nakládáme s informacemi při používání naší softwarové aplikace (\"Aplikace\"). Naším závazkem je vaše soukromí. Tato Aplikace je navržena tak, aby fungovala bez shromažďování nebo zpracování vašich osobních údajů.",
-  "privacy_introduction_2": "Tyto Zásady ochrany osobních údajů se vztahují na softwarovou aplikaci Piyuo Counter (\"Aplikace\") pro mobilní zařízení a počítače, dostupnou na různých platformách a v obchodech s aplikacemi.",
-
-  "privacy_who_we_are_title": "Kdo jsme",
-  "privacy_who_we_are": "Aplikaci Piyuo Counter poskytuje společnost Piyuo (\"my\", \"náš\" nebo \"naše\"). Naše webová stránka je {website}. Pokud máte otázky ohledně této politiky, můžete nás kontaktovat na {email}.",
-
-  "privacy_no_collect_title": "Informace, které neshromažďujeme",
-  "privacy_no_collect_intro": "Neshromažďujeme, neukládáme, nepřenášíme ani nezpracováváme žádné osobní informace nebo údaje o používání od vás prostřednictvím aplikace Piyuo Counter.",
-  "privacy_no_collect_personal": "Žádné osobní údaje: Nevyžadujeme, nepřistupujeme ani nesledujeme žádné informace, které by vás mohly identifikovat, jako je vaše jméno, e-mailová adresa, poloha, identifikátory zařízení nebo kontakty.",
-  "privacy_no_collect_usage": "Žádné údaje o používání: Aplikace nezaznamenává, jak ji používáte. Všechna data počítadel, která vytváříte, jsou uložena lokálně pouze ve vašem zařízení a nejsou nám přístupná.",
-  "privacy_no_collect_third_party": "Žádné služby třetích stran: Neintegrujeme žádné služby třetích stran pro analýzy (jako Firebase Analytics), reklamu (jako AdMob), cloudové úložiště nebo jakékoli jiné účely, které by zahrnovaly sdílení dat s externími stranami. Aplikace funguje zcela offline, pokud jde o zpracování dat.",
-
-  "privacy_use_title": "Jak používáme informace",
-  "privacy_use": "Jelikož neshromažďujeme žádné informace, nepoužíváme vaše informace k žádnému účelu.",
-
-  "privacy_sharing_title": "Sdílení a zveřejňování informací",
-  "privacy_sharing": "Nesdílíme ani nezveřejňujeme žádné osobní informace, protože žádné neshromažďujeme. Vaše data (počty, které sledujete) zůstávají ve vašem zařízení.",
-
-  "privacy_security_title": "Bezpečnost dat",
-  "privacy_security": "Všechna data generovaná používáním aplikace Piyuo Counter (jako jsou vaše počty) jsou uložena lokálně pouze ve vašem zařízení. K těmto datům nemáme přístup. Ačkoli vytváříme naši aplikaci se standardními bezpečnostními postupy, bezpečnost dat uložených ve vašem zařízení závisí na bezpečnostních opatřeních, která přijmete pro samotné zařízení.",
-
-  "privacy_children_title": "Soukromí dětí",
-  "privacy_children": "Naše Aplikace neshromažďuje osobní informace od nikoho, včetně dětí. Dodržujeme zákon o ochraně soukromí dětí online (COPPA) v USA a podobné předpisy jako GDPR týkající se dětských dat. Jelikož neshromažďujeme data, ze své podstaty neshromažďujeme data od dětí mladších 13 let (nebo 16 let v některých zemích EU).",
-
-  "privacy_rights_title": "Vaše práva (GDPR a jiné zákony)",
-  "privacy_rights_1": "Zákony o ochraně soukromí jako obecné nařízení o ochraně osobních údajů (GDPR) v Evropě a různé americké státní zákony udělují jednotlivcům práva nad jejich osobními údaji (jako přístup, oprava, vymazání).",
-  "privacy_rights_2": "Protože aplikace Piyuo Counter neshromažďuje, neukládá ani nezpracovává žádné z vašich osobních údajů, tato práva obecně nejsou použitelná v kontextu naší Aplikace, protože neexistují žádná data držená námi, ke kterým byste měli přístup, mohli je opravit nebo vymazat. Všechna data související s aplikací se nacházejí výhradně ve vašem zařízení pod vaší kontrolou.",
-
-  "privacy_changes_title": "Změny těchto Zásad ochrany osobních údajů",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Tyto Zásady ochrany osobních údajů můžeme čas od času aktualizovat. O všech změnách vás budeme informovat zveřejněním nových Zásad ochrany osobních údajů v Aplikaci nebo na našich webových stránkách ({website}). Doporučuje se tyto Zásady ochrany osobních údajů pravidelně kontrolovat kvůli případným změnám.",
   "privacy_changes_2": "Změny těchto Zásad ochrany osobních údajů nabývají účinnosti při jejich zveřejnění na této stránce.",
-
-  "privacy_contact_title": "Kontaktujte nás",
-  "privacy_contact_intro": "Pokud máte jakékoli otázky ohledně těchto Zásad ochrany osobních údajů, kontaktujte nás prosím:",
+  "privacy_changes_title": "Změny těchto Zásad ochrany osobních údajů",
+  "privacy_children": "Naše Aplikace neshromažďuje osobní informace od nikoho, včetně dětí. Dodržujeme Obecné nařízení o ochraně osobních údajů (GDPR) a podobné předpisy týkající se dětských dat. Jelikož neshromažďujeme data, ze své podstaty neshromažďujeme data od dětí mladších 16 let (podle GDPR Článku 8).",
+  "privacy_children_title": "Soukromí dětí",
   "privacy_contact_email": "E-mailem: {email}",
+  "privacy_contact_intro": "Pokud máte jakékoli otázky ohledně těchto Zásad ochrany osobních údajů, kontaktujte nás prosím:",
+  "privacy_contact_title": "Kontaktujte nás",
   "privacy_contact_website": "Návštěvou této stránky na našich webových stránkách: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Datum účinnosti: 12. dubna 2025",
+  "privacy_introduction_1": "Vítejte v Piyuo Counter! Tyto Zásady ochrany osobních údajů vysvětlují, jak nakládáme s informacemi při používání naší softwarové aplikace (\"Aplikace\"). Naším závazkem je vaše soukromí. Tato Aplikace je navržena tak, aby fungovala bez shromažďování nebo zpracování vašich osobních údajů.",
+  "privacy_introduction_2": "Tyto Zásady ochrany osobních údajů se vztahují na softwarovou aplikaci Piyuo Counter (\"Aplikace\") pro mobilní zařízení a počítače, dostupnou na různých platformách a v obchodech s aplikacemi.",
+  "privacy_introduction_title": "Úvod",
+  "privacy_no_collect_intro": "Neshromažďujeme, neukládáme, nepřenášíme ani nezpracováváme žádné osobní informace nebo údaje o používání od vás prostřednictvím aplikace Piyuo Counter.",
+  "privacy_no_collect_personal": "Žádné osobní údaje: Nevyžadujeme, nepřistupujeme ani nesledujeme žádné informace, které by vás mohly identifikovat, jako je vaše jméno, e-mailová adresa, poloha, identifikátory zařízení nebo kontakty.",
+  "privacy_no_collect_third_party": "Žádné služby třetích stran: Neintegrujeme žádné služby třetích stran pro analýzy (jako Firebase Analytics), reklamu (jako AdMob), cloudové úložiště nebo jakékoli jiné účely, které by zahrnovaly sdílení dat s externími stranami. Aplikace funguje zcela offline, pokud jde o zpracování dat.",
+  "privacy_no_collect_title": "Informace, které neshromažďujeme",
+  "privacy_no_collect_usage": "Žádné údaje o používání: Aplikace nezaznamenává, jak ji používáte. Všechna data počítadel, která vytváříte, jsou uložena lokálně pouze ve vašem zařízení a nejsou nám přístupná.",
+  "privacy_rights_1": "Zákony o ochraně soukromí jako obecné nařízení o ochraně osobních údajů (GDPR) v Evropě a různé americké státní zákony udělují jednotlivcům práva nad jejich osobními údaji (jako přístup, oprava, vymazání).",
+  "privacy_rights_2": "Protože aplikace Piyuo Counter neshromažďuje, neukládá ani nezpracovává žádné z vašich osobních údajů, tato práva obecně nejsou použitelná v kontextu naší Aplikace, protože neexistují žádná data držená námi, ke kterým byste měli přístup, mohli je opravit nebo vymazat. Všechna data související s aplikací se nacházejí výhradně ve vašem zařízení pod vaší kontrolou.",
+  "privacy_rights_title": "Vaše práva (GDPR a jiné zákony)",
+  "privacy_security": "Všechna data generovaná používáním aplikace Piyuo Counter (jako jsou vaše počty) jsou uložena lokálně pouze ve vašem zařízení. K těmto datům nemáme přístup. Ačkoli vytváříme naši aplikaci se standardními bezpečnostními postupy, bezpečnost dat uložených ve vašem zařízení závisí na bezpečnostních opatřeních, která přijmete pro samotné zařízení.",
+  "privacy_security_title": "Bezpečnost dat",
+  "privacy_sharing": "Nesdílíme ani nezveřejňujeme žádné osobní informace, protože žádné neshromažďujeme. Vaše data (počty, které sledujete) zůstávají ve vašem zařízení.",
+  "privacy_sharing_title": "Sdílení a zveřejňování informací",
+  "privacy_title": "Zásady ochrany osobních údajů pro Piyuo Counter",
+  "privacy_use": "Jelikož neshromažďujeme žádné informace, nepoužíváme vaše informace k žádnému účelu.",
+  "privacy_use_title": "Jak používáme informace",
+  "privacy_who_we_are": "Aplikaci Piyuo Counter poskytuje společnost Piyuo (\"my\", \"náš\" nebo \"naše\"). Naše webová stránka je {website}. Pokud máte otázky ohledně této politiky, můžete nás kontaktovat na {email}.",
+  "privacy_who_we_are_title": "Kdo jsme",
+  "website_url": "https://piyuo.com"
 }

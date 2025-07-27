@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Politique de confidentialité pour Piyuo Counter",
-  "privacy_effective_date": "Date d'entrée en vigueur : 12 avril 2025",
-
-  "privacy_introduction_title": "Introduction",
-  "privacy_introduction_1": "Bienvenue sur Piyuo Counter ! Cette Politique de confidentialité explique comment nous traitons les informations lorsque vous utilisez notre application logicielle (« Application »). Notre engagement est votre confidentialité. Cette Application est conçue pour fonctionner sans collecter ni traiter vos données personnelles.",
-  "privacy_introduction_2": "Cette Politique de confidentialité s'applique à l'application logicielle Piyuo Counter (« Application ») pour appareils mobiles et ordinateurs, disponible sur diverses plateformes et magasins d'applications.",
-
-  "privacy_who_we_are_title": "Qui nous sommes",
-  "privacy_who_we_are": "L'application Piyuo Counter est fournie par Piyuo (« nous », « notre » ou « nos »). Notre site web est {website}. Si vous avez des questions concernant cette politique, vous pouvez nous contacter à {email}.",
-
-  "privacy_no_collect_title": "Informations que nous ne collectons pas",
-  "privacy_no_collect_intro": "Nous ne collectons, ne stockons, ne transmettons ni ne traitons aucune information personnelle ou donnée d'utilisation de votre part via l'application Piyuo Counter.",
-  "privacy_no_collect_personal": "Aucune donnée personnelle : Nous ne demandons, n'accédons ni ne suivons aucune information qui pourrait vous identifier, comme votre nom, adresse e-mail, localisation, identifiants d'appareil ou contacts.",
-  "privacy_no_collect_usage": "Aucune donnée d'utilisation : L'application n'enregistre pas comment vous l'utilisez. Toutes les données de compteur que vous créez sont stockées localement sur votre appareil uniquement et ne nous sont pas accessibles.",
-  "privacy_no_collect_third_party": "Aucun service tiers : Nous n'intégrons aucun service tiers pour l'analyse (comme Firebase Analytics), la publicité (comme AdMob), le stockage en nuage ou tout autre objectif qui impliquerait le partage de données avec des parties externes. L'application fonctionne entièrement hors ligne en termes de traitement des données.",
-
-  "privacy_use_title": "Comment nous utilisons les informations",
-  "privacy_use": "Puisque nous ne collectons aucune information, nous n'utilisons vos informations à aucune fin.",
-
-  "privacy_sharing_title": "Partage et divulgation d'informations",
-  "privacy_sharing": "Nous ne partageons ni ne divulguons aucune information personnelle car nous n'en collectons aucune. Vos données (les comptages que vous suivez) restent sur votre appareil.",
-
-  "privacy_security_title": "Sécurité des données",
-  "privacy_security": "Toutes les données générées par l'utilisation de l'application Piyuo Counter (comme vos comptages) sont stockées localement sur votre appareil uniquement. Nous n'avons pas accès à ces données. Bien que nous construisions notre application avec des pratiques de sécurité standards, la sécurité des données stockées sur votre appareil dépend des mesures de sécurité que vous prenez pour votre appareil lui-même.",
-
-  "privacy_children_title": "Confidentialité des enfants",
-  "privacy_children": "Notre Application ne collecte pas d'informations personnelles de quiconque, y compris les enfants. Nous nous conformons à la Loi sur la protection de la vie privée en ligne des enfants (COPPA) aux États-Unis et aux réglementations similaires comme le RGPD concernant les données des enfants. Comme nous ne collectons aucune donnée, nous ne collectons intrinsèquement pas de données d'enfants de moins de 13 ans (ou 16 ans dans certains pays de l'UE).",
-
-  "privacy_rights_title": "Vos droits (RGPD et autres lois)",
-  "privacy_rights_1": "Les lois sur la confidentialité comme le Règlement général sur la protection des données (RGPD) en Europe et diverses lois d'États américains accordent aux individus des droits sur leurs données personnelles (comme l'accès, la correction, la suppression).",
-  "privacy_rights_2": "Parce que l'application Piyuo Counter ne collecte, ne stocke ni ne traite aucune de vos données personnelles, ces droits ne sont généralement pas applicables dans le contexte de notre Application, car il n'y a aucune donnée détenue par nous que vous pourriez accéder, corriger ou supprimer. Toute donnée liée à l'application réside uniquement sur votre appareil, sous votre contrôle.",
-
-  "privacy_changes_title": "Modifications de cette Politique de confidentialité",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Nous pouvons mettre à jour cette Politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle Politique de confidentialité dans l'Application ou sur notre site web ({website}). Il vous est conseillé de consulter périodiquement cette Politique de confidentialité pour tout changement.",
   "privacy_changes_2": "Les modifications de cette Politique de confidentialité sont effectives lorsqu'elles sont publiées sur cette page.",
-
-  "privacy_contact_title": "Nous contacter",
-  "privacy_contact_intro": "Si vous avez des questions concernant cette Politique de confidentialité, veuillez nous contacter :",
+  "privacy_changes_title": "Modifications de cette Politique de confidentialité",
+  "privacy_children": "Notre Application ne collecte pas d'informations personnelles de quiconque, y compris les enfants. Nous nous conformons à la Loi sur la protection de la vie privée en ligne des enfants (COPPA) aux États-Unis et aux réglementations similaires comme le RGPD concernant les données des enfants. Comme nous ne collectons aucune donnée, nous ne collectons intrinsèquement pas de données d'enfants de moins de 13 ans (ou 16 ans dans certains pays de l'UE).",
+  "privacy_children_title": "Confidentialité des enfants",
   "privacy_contact_email": "Par e-mail : {email}",
+  "privacy_contact_intro": "Si vous avez des questions concernant cette Politique de confidentialité, veuillez nous contacter :",
+  "privacy_contact_title": "Nous contacter",
   "privacy_contact_website": "En visitant cette page sur notre site web : {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Date d'entrée en vigueur : 12 avril 2025",
+  "privacy_introduction_1": "Bienvenue sur Piyuo Counter ! Cette Politique de confidentialité explique comment nous traitons les informations lorsque vous utilisez notre application logicielle (« Application »). Notre engagement est votre confidentialité. Cette Application est conçue pour fonctionner sans collecter ni traiter vos données personnelles.",
+  "privacy_introduction_2": "Cette Politique de confidentialité s'applique à l'application logicielle Piyuo Counter (« Application ») pour appareils mobiles et ordinateurs, disponible sur diverses plateformes et magasins d'applications.",
+  "privacy_introduction_title": "Introduction",
+  "privacy_no_collect_intro": "Nous ne collectons, ne stockons, ne transmettons ni ne traitons aucune information personnelle ou donnée d'utilisation de votre part via l'application Piyuo Counter.",
+  "privacy_no_collect_personal": "Aucune donnée personnelle : Nous ne demandons, n'accédons ni ne suivons aucune information qui pourrait vous identifier, comme votre nom, adresse e-mail, localisation, identifiants d'appareil ou contacts.",
+  "privacy_no_collect_third_party": "Aucun service tiers : Nous n'intégrons aucun service tiers pour l'analyse (comme Firebase Analytics), la publicité (comme AdMob), le stockage en nuage ou tout autre objectif qui impliquerait le partage de données avec des parties externes. L'application fonctionne entièrement hors ligne en termes de traitement des données.",
+  "privacy_no_collect_title": "Informations que nous ne collectons pas",
+  "privacy_no_collect_usage": "Aucune donnée d'utilisation : L'application n'enregistre pas comment vous l'utilisez. Toutes les données de compteur que vous créez sont stockées localement sur votre appareil uniquement et ne nous sont pas accessibles.",
+  "privacy_rights_1": "Les lois sur la confidentialité comme le Règlement général sur la protection des données (RGPD) en Europe et diverses lois d'États américains accordent aux individus des droits sur leurs données personnelles (comme l'accès, la correction, la suppression).",
+  "privacy_rights_2": "Parce que l'application Piyuo Counter ne collecte, ne stocke ni ne traite aucune de vos données personnelles, ces droits ne sont généralement pas applicables dans le contexte de notre Application, car il n'y a aucune donnée détenue par nous que vous pourriez accéder, corriger ou supprimer. Toute donnée liée à l'application réside uniquement sur votre appareil, sous votre contrôle.",
+  "privacy_rights_title": "Vos droits (RGPD et autres lois)",
+  "privacy_security": "Toutes les données générées par l'utilisation de l'application Piyuo Counter (comme vos comptages) sont stockées localement sur votre appareil uniquement. Nous n'avons pas accès à ces données. Bien que nous construisions notre application avec des pratiques de sécurité standards, la sécurité des données stockées sur votre appareil dépend des mesures de sécurité que vous prenez pour votre appareil lui-même.",
+  "privacy_security_title": "Sécurité des données",
+  "privacy_sharing": "Nous ne partageons ni ne divulguons aucune information personnelle car nous n'en collectons aucune. Vos données (les comptages que vous suivez) restent sur votre appareil.",
+  "privacy_sharing_title": "Partage et divulgation d'informations",
+  "privacy_title": "Politique de confidentialité pour Piyuo Counter",
+  "privacy_use": "Puisque nous ne collectons aucune information, nous n'utilisons vos informations à aucune fin.",
+  "privacy_use_title": "Comment nous utilisons les informations",
+  "privacy_who_we_are": "L'application Piyuo Counter est fournie par Piyuo (« nous », « notre » ou « nos »). Notre site web est {website}. Si vous avez des questions concernant cette politique, vous pouvez nous contacter à {email}.",
+  "privacy_who_we_are_title": "Qui nous sommes",
+  "website_url": "https://piyuo.com"
 }

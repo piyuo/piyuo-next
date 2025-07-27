@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Piyuo Counter privatumo politika",
-  "privacy_effective_date": "Įsigaliojimo data: 2025 m. balandžio 12 d.",
-
-  "privacy_introduction_title": "Įvadas",
-  "privacy_introduction_1": "Sveiki atvykę į Piyuo Counter! Šioje privatumo politikoje paaiškinama, kaip tvarkome informaciją, kai naudojate mūsų programinės įrangos aplikaciją (\"Aplikacija\"). Mūsų įsipareigojimas - jūsų privatumas. Ši aplikacija sukurta veikti be jūsų asmeninių duomenų rinkimo ar apdorojimo.",
-  "privacy_introduction_2": "Ši privatumo politika taikoma Piyuo Counter programinės įrangos aplikacijai (\"Aplikacija\") mobiliesiems įrenginiams ir kompiuteriams, prieinamai per įvairias platformas ir aplikacijų parduotuves.",
-
-  "privacy_who_we_are_title": "Kas mes esame",
-  "privacy_who_we_are": "Piyuo Counter aplikaciją teikia Piyuo (\"mes\", \"mūsų\" arba \"mūsų\"). Mūsų svetainė yra {website}. Jei turite klausimų apie šią politiką, galite susisiekti su mumis adresu {email}.",
-
-  "privacy_no_collect_title": "Informacija, kurios nerenkame",
-  "privacy_no_collect_intro": "Mes nerenkame, nesaugome, neperduodame ar neapdorojame jokios asmeninės informacijos ar naudojimo duomenų iš jūsų per Piyuo Counter aplikaciją.",
-  "privacy_no_collect_personal": "Jokių asmeninių duomenų: Mes neprašome, neturime prieigos ar nesekame jokios informacijos, kuri galėtų jus identifikuoti, tokios kaip jūsų vardas, el. pašto adresas, vieta, įrenginių identifikatoriai ar kontaktai.",
-  "privacy_no_collect_usage": "Jokių naudojimo duomenų: Aplikacija neregistruoja, kaip ją naudojate. Visi jūsų kuriami skaitiklių duomenys saugomi tik vietoje jūsų įrenginyje ir neprieinami mums.",
-  "privacy_no_collect_third_party": "Jokių trečiųjų šalių paslaugų: Mes neintegruojame jokių trečiųjų šalių paslaugų analitikai (pvz., Firebase Analytics), reklamai (pvz., AdMob), debesijos saugyklai ar bet kokiam kitam tikslui, kuris apimtų duomenų dalijimąsi su išorės šalimis. Aplikacija veikia visiškai neprisijungusi duomenų tvarkymo atžvilgiu.",
-
-  "privacy_use_title": "Kaip naudojame informaciją",
-  "privacy_use": "Kadangi nerenkame jokios informacijos, nenaudojame jūsų informacijos jokiais tikslais.",
-
-  "privacy_sharing_title": "Informacijos dalijimasis ir atskleidimas",
-  "privacy_sharing": "Mes nedalijamės ar neatskleidžiame jokios asmeninės informacijos, nes jos nerenkame. Jūsų duomenys (skaičiavimai, kuriuos sekate) lieka jūsų įrenginyje.",
-
-  "privacy_security_title": "Duomenų saugumas",
-  "privacy_security": "Bet kokie duomenys, sugeneruoti naudojant Piyuo Counter aplikaciją (pvz., jūsų skaičiavimai), saugomi tik vietoje jūsų įrenginyje. Mes neturime prieigos prie šių duomenų. Nors kuriame savo aplikaciją pagal standartines saugumo praktikas, jūsų įrenginyje saugomų duomenų saugumas priklauso nuo saugumo priemonių, kurias taikote savo įrenginiui.",
-
-  "privacy_children_title": "Vaikų privatumas",
-  "privacy_children": "Mūsų aplikacija nerenka asmeninės informacijos iš nė vieno asmens, įskaitant vaikus. Mes laikomės JAV vaikų internetinio privatumo apsaugos įstatymo (COPPA) ir panašių reglamentų, tokių kaip BDAR, susijusių su vaikų duomenimis. Kadangi nerenkame jokių duomenų, mes iš prigimties nerenkame duomenų iš vaikų iki 13 metų (arba 16 kai kuriose ES šalyse).",
-
-  "privacy_rights_title": "Jūsų teisės (BDAR ir kiti įstatymai)",
-  "privacy_rights_1": "Privatumo įstatymai, tokie kaip Bendras duomenų apsaugos reglamentas (BDAR) Europoje ir įvairūs JAV valstijų įstatymai, suteikia asmenims teises į savo asmeninius duomenis (pvz., prieiga, taisymas, trynimas).",
-  "privacy_rights_2": "Kadangi Piyuo Counter aplikacija nerenka, nesaugo ar neapdoroja jokių jūsų asmeninių duomenų, šios teisės paprastai netaikomos mūsų aplikacijos kontekste, nes nėra mūsų saugomų duomenų, prie kurių galėtumėte gauti prieigą, juos taisyti ar ištrinti. Bet kokie su aplikacija susiję duomenys yra tik jūsų įrenginyje, jūsų kontrolėje.",
-
-  "privacy_changes_title": "Šios privatumo politikos pakeitimai",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Mes galime kartas nuo karto atnaujinti šią privatumo politiką. Mes pranešime jums apie bet kokius pakeitimus paskelbdami naują privatumo politiką aplikacijoje ar mūsų svetainėje ({website}). Patariama reguliariai peržiūrėti šią privatumo politiką dėl bet kokių pakeitimų.",
   "privacy_changes_2": "Šios privatumo politikos pakeitimai įsigalioja, kai jie paskelbti šiame puslapyje.",
-
-  "privacy_contact_title": "Susisiekite su mumis",
-  "privacy_contact_intro": "Jei turite klausimų apie šią privatumo politiką, susisiekite su mumis:",
+  "privacy_changes_title": "Šios privatumo politikos pakeitimai",
+  "privacy_children": "Mūsų aplikacija nerenka asmeninės informacijos iš nė vieno asmens, įskaitant vaikus. Mes laikomės JAV vaikų internetinio privatumo apsaugos įstatymo (COPPA) ir panašių reglamentų, tokių kaip BDAR, susijusių su vaikų duomenimis. Kadangi nerenkame jokių duomenų, mes iš prigimties nerenkame duomenų iš vaikų iki 13 metų (arba 16 kai kuriose ES šalyse).",
+  "privacy_children_title": "Vaikų privatumas",
   "privacy_contact_email": "El. paštu: {email}",
+  "privacy_contact_intro": "Jei turite klausimų apie šią privatumo politiką, susisiekite su mumis:",
+  "privacy_contact_title": "Susisiekite su mumis",
   "privacy_contact_website": "Apsilankydami šiame puslapyje mūsų svetainėje: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Įsigaliojimo data: 2025 m. balandžio 12 d.",
+  "privacy_introduction_1": "Sveiki atvykę į Piyuo Counter! Šioje privatumo politikoje paaiškinama, kaip tvarkome informaciją, kai naudojate mūsų programinės įrangos aplikaciją (\"Aplikacija\"). Mūsų įsipareigojimas - jūsų privatumas. Ši aplikacija sukurta veikti be jūsų asmeninių duomenų rinkimo ar apdorojimo.",
+  "privacy_introduction_2": "Ši privatumo politika taikoma Piyuo Counter programinės įrangos aplikacijai (\"Aplikacija\") mobiliesiems įrenginiams ir kompiuteriams, prieinamai per įvairias platformas ir aplikacijų parduotuves.",
+  "privacy_introduction_title": "Įvadas",
+  "privacy_no_collect_intro": "Mes nerenkame, nesaugome, neperduodame ar neapdorojame jokios asmeninės informacijos ar naudojimo duomenų iš jūsų per Piyuo Counter aplikaciją.",
+  "privacy_no_collect_personal": "Jokių asmeninių duomenų: Mes neprašome, neturime prieigos ar nesekame jokios informacijos, kuri galėtų jus identifikuoti, tokios kaip jūsų vardas, el. pašto adresas, vieta, įrenginių identifikatoriai ar kontaktai.",
+  "privacy_no_collect_third_party": "Jokių trečiųjų šalių paslaugų: Mes neintegruojame jokių trečiųjų šalių paslaugų analitikai (pvz., Firebase Analytics), reklamai (pvz., AdMob), debesijos saugyklai ar bet kokiam kitam tikslui, kuris apimtų duomenų dalijimąsi su išorės šalimis. Aplikacija veikia visiškai neprisijungusi duomenų tvarkymo atžvilgiu.",
+  "privacy_no_collect_title": "Informacija, kurios nerenkame",
+  "privacy_no_collect_usage": "Jokių naudojimo duomenų: Aplikacija neregistruoja, kaip ją naudojate. Visi jūsų kuriami skaitiklių duomenys saugomi tik vietoje jūsų įrenginyje ir neprieinami mums.",
+  "privacy_rights_1": "Privatumo įstatymai, tokie kaip Bendras duomenų apsaugos reglamentas (BDAR) Europoje ir įvairūs JAV valstijų įstatymai, suteikia asmenims teises į savo asmeninius duomenis (pvz., prieiga, taisymas, trynimas).",
+  "privacy_rights_2": "Kadangi Piyuo Counter aplikacija nerenka, nesaugo ar neapdoroja jokių jūsų asmeninių duomenų, šios teisės paprastai netaikomos mūsų aplikacijos kontekste, nes nėra mūsų saugomų duomenų, prie kurių galėtumėte gauti prieigą, juos taisyti ar ištrinti. Bet kokie su aplikacija susiję duomenys yra tik jūsų įrenginyje, jūsų kontrolėje.",
+  "privacy_rights_title": "Jūsų teisės (BDAR ir kiti įstatymai)",
+  "privacy_security": "Bet kokie duomenys, sugeneruoti naudojant Piyuo Counter aplikaciją (pvz., jūsų skaičiavimai), saugomi tik vietoje jūsų įrenginyje. Mes neturime prieigos prie šių duomenų. Nors kuriame savo aplikaciją pagal standartines saugumo praktikas, jūsų įrenginyje saugomų duomenų saugumas priklauso nuo saugumo priemonių, kurias taikote savo įrenginiui.",
+  "privacy_security_title": "Duomenų saugumas",
+  "privacy_sharing": "Mes nedalijamės ar neatskleidžiame jokios asmeninės informacijos, nes jos nerenkame. Jūsų duomenys (skaičiavimai, kuriuos sekate) lieka jūsų įrenginyje.",
+  "privacy_sharing_title": "Informacijos dalijimasis ir atskleidimas",
+  "privacy_title": "Piyuo Counter privatumo politika",
+  "privacy_use": "Kadangi nerenkame jokios informacijos, nenaudojame jūsų informacijos jokiais tikslais.",
+  "privacy_use_title": "Kaip naudojame informaciją",
+  "privacy_who_we_are": "Piyuo Counter aplikaciją teikia Piyuo (\"mes\", \"mūsų\" arba \"mūsų\"). Mūsų svetainė yra {website}. Jei turite klausimų apie šią politiką, galite susisiekti su mumis adresu {email}.",
+  "privacy_who_we_are_title": "Kas mes esame",
+  "website_url": "https://piyuo.com"
 }

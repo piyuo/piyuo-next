@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Patakaran sa Privacy para sa Piyuo Counter",
-  "privacy_effective_date": "Petsa ng Pagkakapatupad: Abril 12, 2025",
-
-  "privacy_introduction_title": "Panimula",
-  "privacy_introduction_1": "Maligayang pagdating sa Piyuo Counter! Ang Patakaran sa Privacy na ito ay nagpapaliwanag kung paano namin hinahawakan ang impormasyon kapag ginagamit ninyo ang aming software application (\"App\"). Ang aming pangako ay sa inyong privacy. Ang App na ito ay dinisenyo na gumagana nang hindi kumukuha o nagpoproseso ng inyong personal na data.",
-  "privacy_introduction_2": "Ang Patakaran sa Privacy na ito ay naaangkop sa Piyuo Counter software application (\"App\") para sa mga mobile device at computer, na makikita sa iba't ibang platform at application store.",
-
-  "privacy_who_we_are_title": "Sino Kami",
-  "privacy_who_we_are": "Ang Piyuo Counter app ay inihahain ng Piyuo (\"kami,\" \"sa amin,\" o \"aming\"). Ang aming website ay {website}. Kung mayroon kayong mga tanong tungkol sa patakarang ito, maaari ninyong makipag-ugnayan sa amin sa {email}.",
-
-  "privacy_no_collect_title": "Impormasyon na Hindi Namin Kinokolekta",
-  "privacy_no_collect_intro": "Hindi namin kinokolekta, nag-iistor, naglilipat, o nagpoproseso ng anumang personal na impormasyon o usage data mula sa inyo sa pamamagitan ng Piyuo Counter app.",
-  "privacy_no_collect_personal": "Walang Personal na Data: Hindi namin hihingin, aaksesuhan, o susubaybayan ang anumang impormasyon na maaaring makilala kayo, tulad ng inyong pangalan, email address, lokasyon, device identifier, o mga contact.",
-  "privacy_no_collect_usage": "Walang Usage Data: Ang app ay hindi nagrerekord kung paano ninyo ito ginagamit. Lahat ng counter data na inyong ginagawa ay nakastore lang locally sa inyong device at hindi namin ma-access.",
-  "privacy_no_collect_third_party": "Walang Third-Party na Serbisyo: Hindi namin ini-integrate ang anumang third-party na serbisyo para sa analytics (tulad ng Firebase Analytics), advertising (tulad ng AdMob), cloud storage, o anumang ibang layunin na magsasangkot sa pagbabahagi ng data sa mga external na partido. Ang app ay gumagana nang ganap na offline sa mga bagay ng data handling.",
-
-  "privacy_use_title": "Paano Namin Ginagamit ang Impormasyon",
-  "privacy_use": "Dahil hindi namin kinokolekta ang anumang impormasyon, hindi namin ginagamit ang inyong impormasyon para sa anumang layunin.",
-
-  "privacy_sharing_title": "Pagbabahagi at Pagsisiwalat ng Impormasyon",
-  "privacy_sharing": "Hindi namin binabahagi o sinisiwalat ang anumang personal na impormasyon dahil hindi namin kinokolekta ang kahit ano. Ang inyong data (ang mga count na inyong sinusubaybayan) ay nananatili sa inyong device.",
-
-  "privacy_security_title": "Data Security",
-  "privacy_security": "Anumang data na nabubuo sa paggamit ng Piyuo Counter app (tulad ng inyong mga count) ay nakastore locally sa inyong device lang. Wala kaming access sa data na ito. Bagaman ginagawa namin ang aming app na may standard na security practice, ang security ng data na nakastore sa inyong device ay depende sa mga security measure na inyong ginagawa para sa inyong device mismo.",
-
-  "privacy_children_title": "Privacy ng mga Bata",
-  "privacy_children": "Ang aming App ay hindi kumukuha ng personal na impormasyon mula sa kahit sino, kasama na ang mga bata. Sumusunod kami sa Children's Online Privacy Protection Act (COPPA) sa US at katulad na regulasyon tulad ng GDPR tungkol sa data ng mga bata. Dahil hindi namin kinokolekta ang anumang data, likas na hindi namin kinokolekta ang data mula sa mga batang wala pang 13 taong gulang (o 16 sa ilang EU countries).",
-
-  "privacy_rights_title": "Inyong mga Karapatan (GDPR at Ibang Batas)",
-  "privacy_rights_1": "Ang mga privacy law tulad ng General Data Protection Regulation (GDPR) sa Europe at iba't ibang US state law ay nagbibigay sa mga indibidwal ng mga karapatan sa kanilang personal na data (tulad ng access, correction, deletion).",
-  "privacy_rights_2": "Dahil ang Piyuo Counter app ay hindi kumukuha, nag-iistor, o nagpoproseso ng anuman sa inyong personal na data, ang mga karapatang ito ay generally hindi naaangkop sa konteksto ng aming App, dahil walang data na hawak namin para sa inyo na ma-access, ma-correct, o ma-delete. Anumang data na nauugnay sa app ay nakatira lang sa inyong device, sa ilalim ng inyong kontrol.",
-
-  "privacy_changes_title": "Mga Pagbabago sa Patakaran sa Privacy na Ito",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Maaari naming i-update ang Patakaran sa Privacy na ito paminsan-minsan. Aabisuhan namin kayo ng anumang pagbabago sa pamamagitan ng pag-post ng bagong Patakaran sa Privacy sa loob ng App o sa aming website ({website}). Inaadvise kayo na suriin ang Patakaran sa Privacy na ito paminsan-minsan para sa anumang pagbabago.",
   "privacy_changes_2": "Ang mga pagbabago sa Patakaran sa Privacy na ito ay epektibo kapag na-post na sa page na ito.",
-
-  "privacy_contact_title": "Makipag-ugnayan sa Amin",
-  "privacy_contact_intro": "Kung mayroon kayong anumang mga tanong tungkol sa Patakaran sa Privacy na ito, pakimakipag-ugnayan sa amin:",
+  "privacy_changes_title": "Mga Pagbabago sa Patakaran sa Privacy na Ito",
+  "privacy_children": "Ang aming App ay hindi kumukuha ng personal na impormasyon mula sa kahit sino, kasama na ang mga bata. Sumusunod kami sa Children's Online Privacy Protection Act (COPPA) sa US at katulad na regulasyon tulad ng GDPR tungkol sa data ng mga bata. Dahil hindi namin kinokolekta ang anumang data, likas na hindi namin kinokolekta ang data mula sa mga batang wala pang 13 taong gulang (o 16 sa ilang EU countries).",
+  "privacy_children_title": "Privacy ng mga Bata",
   "privacy_contact_email": "Sa pamamagitan ng email: {email}",
+  "privacy_contact_intro": "Kung mayroon kayong anumang mga tanong tungkol sa Patakaran sa Privacy na ito, pakimakipag-ugnayan sa amin:",
+  "privacy_contact_title": "Makipag-ugnayan sa Amin",
   "privacy_contact_website": "Sa pamamagitan ng pagbisita sa page na ito sa aming website: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Petsa ng Pagkakapatupad: Abril 12, 2025",
+  "privacy_introduction_1": "Maligayang pagdating sa Piyuo Counter! Ang Patakaran sa Privacy na ito ay nagpapaliwanag kung paano namin hinahawakan ang impormasyon kapag ginagamit ninyo ang aming software application (\"App\"). Ang aming pangako ay sa inyong privacy. Ang App na ito ay dinisenyo na gumagana nang hindi kumukuha o nagpoproseso ng inyong personal na data.",
+  "privacy_introduction_2": "Ang Patakaran sa Privacy na ito ay naaangkop sa Piyuo Counter software application (\"App\") para sa mga mobile device at computer, na makikita sa iba't ibang platform at application store.",
+  "privacy_introduction_title": "Panimula",
+  "privacy_no_collect_intro": "Hindi namin kinokolekta, nag-iistor, naglilipat, o nagpoproseso ng anumang personal na impormasyon o usage data mula sa inyo sa pamamagitan ng Piyuo Counter app.",
+  "privacy_no_collect_personal": "Walang Personal na Data: Hindi namin hihingin, aaksesuhan, o susubaybayan ang anumang impormasyon na maaaring makilala kayo, tulad ng inyong pangalan, email address, lokasyon, device identifier, o mga contact.",
+  "privacy_no_collect_third_party": "Walang Third-Party na Serbisyo: Hindi namin ini-integrate ang anumang third-party na serbisyo para sa analytics (tulad ng Firebase Analytics), advertising (tulad ng AdMob), cloud storage, o anumang ibang layunin na magsasangkot sa pagbabahagi ng data sa mga external na partido. Ang app ay gumagana nang ganap na offline sa mga bagay ng data handling.",
+  "privacy_no_collect_title": "Impormasyon na Hindi Namin Kinokolekta",
+  "privacy_no_collect_usage": "Walang Usage Data: Ang app ay hindi nagrerekord kung paano ninyo ito ginagamit. Lahat ng counter data na inyong ginagawa ay nakastore lang locally sa inyong device at hindi namin ma-access.",
+  "privacy_rights_1": "Ang mga privacy law tulad ng General Data Protection Regulation (GDPR) sa Europe at iba't ibang US state law ay nagbibigay sa mga indibidwal ng mga karapatan sa kanilang personal na data (tulad ng access, correction, deletion).",
+  "privacy_rights_2": "Dahil ang Piyuo Counter app ay hindi kumukuha, nag-iistor, o nagpoproseso ng anuman sa inyong personal na data, ang mga karapatang ito ay generally hindi naaangkop sa konteksto ng aming App, dahil walang data na hawak namin para sa inyo na ma-access, ma-correct, o ma-delete. Anumang data na nauugnay sa app ay nakatira lang sa inyong device, sa ilalim ng inyong kontrol.",
+  "privacy_rights_title": "Inyong mga Karapatan (GDPR at Ibang Batas)",
+  "privacy_security": "Anumang data na nabubuo sa paggamit ng Piyuo Counter app (tulad ng inyong mga count) ay nakastore locally sa inyong device lang. Wala kaming access sa data na ito. Bagaman ginagawa namin ang aming app na may standard na security practice, ang security ng data na nakastore sa inyong device ay depende sa mga security measure na inyong ginagawa para sa inyong device mismo.",
+  "privacy_security_title": "Data Security",
+  "privacy_sharing": "Hindi namin binabahagi o sinisiwalat ang anumang personal na impormasyon dahil hindi namin kinokolekta ang kahit ano. Ang inyong data (ang mga count na inyong sinusubaybayan) ay nananatili sa inyong device.",
+  "privacy_sharing_title": "Pagbabahagi at Pagsisiwalat ng Impormasyon",
+  "privacy_title": "Patakaran sa Privacy para sa Piyuo Counter",
+  "privacy_use": "Dahil hindi namin kinokolekta ang anumang impormasyon, hindi namin ginagamit ang inyong impormasyon para sa anumang layunin.",
+  "privacy_use_title": "Paano Namin Ginagamit ang Impormasyon",
+  "privacy_who_we_are": "Ang Piyuo Counter app ay inihahain ng Piyuo (\"kami,\" \"sa amin,\" o \"aming\"). Ang aming website ay {website}. Kung mayroon kayong mga tanong tungkol sa patakarang ito, maaari ninyong makipag-ugnayan sa amin sa {email}.",
+  "privacy_who_we_are_title": "Sino Kami",
+  "website_url": "https://piyuo.com"
 }

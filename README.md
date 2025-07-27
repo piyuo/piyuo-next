@@ -2,42 +2,34 @@
 
 **GitHub Repository**: [https://github.com/piyuo/piyuo-next](https://github.com/piyuo/piyuo-next)
 
-## ⚠️ **CRITICAL: Package Manager Requirement**
-
-> **This project uses [`pnpm`](https://pnpm.io) as the ONLY supported package manager.**
-> **All commands MUST use `pnpm` - never `npm` or `yarn`.**
-> **Using `npm install` or `yarn install` WILL cause errors and corrupted installations.**
-
-```bash
-# ✅ CORRECT - Always use pnpm
-pnpm install
-pnpm dev
-pnpm build
-pnpm test
-
-# ❌ WRONG - These will break the project
-npm install    # DON'T USE
-yarn install   # DON'T USE
-npm run dev    # DON'T USE
-```
-
-**Don't have pnpm?** Install it first:
-
-```bash
-npm install -g pnpm
-```
-
 ---
 
 piyuo-next is the official website for piyuo counter. This project uses Next.js/React with Incremental Static Regeneration (ISR) deployed on Cloudflare Workers to build a small, fast, and most importantly, Search Engine Optimized (SEO) website with dynamic content capabilities and full Node.js compatibility.
 
 ## Table of Contents
 
+### 🚀 Quick Start for AI Agents
+
+- [🛠️ Development Tools](#️-development-tools) - Essential tools and package manager
+- [Getting Started](#getting-started) - Common commands
+- [🌐 Translation System](#-translation-system) - CSV-based i18n workflow
+- [✅ Best Practices to Follow](#-best-practices-to-follow) - Required coding standards
+- [🚫 What to Avoid](#-what-to-avoid) - Critical restrictions
+- [AI Agent Assistance Highlight](#ai-agent-assistance-highlight) - AI-specific guidance
+
+### 📋 Detailed Documentation
+
 - [piyuo-next](#piyuo-next)
-  - [⚠️ **CRITICAL: Package Manager Requirement**](#️-critical-package-manager-requirement)
   - [Table of Contents](#table-of-contents)
+    - [🚀 Quick Start for AI Agents](#-quick-start-for-ai-agents)
+    - [📋 Detailed Documentation](#-detailed-documentation)
   - [🛠️ Development Tools](#️-development-tools)
+  - [⚠️ **CRITICAL: Package Manager Requirement**](#️-critical-package-manager-requirement)
   - [Getting Started](#getting-started)
+  - [🌐 Translation System](#-translation-system)
+    - [Quick Translation Commands](#quick-translation-commands)
+    - [Translation Workflow](#translation-workflow)
+    - [Important Notes for Developers](#important-notes-for-developers)
   - [Project Structure](#project-structure)
     - [Key Files \& Directories](#key-files--directories)
   - [Environment Variables](#environment-variables)
@@ -69,6 +61,31 @@ These tools are used to support local development, collaboration, and testing:
 - ESLint + Prettier – Enforces consistent code quality and formatting (integrated via VS Code extensions).
 - Wrangler CLI – Cloudflare's CLI tool for local development and deployment.
 
+## ⚠️ **CRITICAL: Package Manager Requirement**
+
+> **This project uses [`pnpm`](https://pnpm.io) as the ONLY supported package manager.**
+> **All commands MUST use `pnpm` - never `npm` or `yarn`.**
+> **Using `npm install` or `yarn install` WILL cause errors and corrupted installations.**
+
+```bash
+# ✅ CORRECT - Always use pnpm
+pnpm install
+pnpm dev
+pnpm build
+pnpm test
+
+# ❌ WRONG - These will break the project
+npm install    # DON'T USE
+yarn install   # DON'T USE
+npm run dev    # DON'T USE
+```
+
+**Don't have pnpm?** Install it first:
+
+```bash
+npm install -g pnpm
+```
+
 ## Getting Started
 
 Here are the most commonly used commands for developing with this project:
@@ -90,6 +107,37 @@ pnpm test
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## 🌐 Translation System
+
+> **📖 For complete translation workflow documentation, see [TRANSLATION.md](/docs/TRANSLATION.md)**
+
+This project uses a **CSV-based translation system** to manage multilingual content across 70+ locales efficiently:
+
+### Quick Translation Commands
+
+```bash
+# Build all translation files from CSV sources
+./scripts/build_translation.sh
+
+# Build specific translation file
+./scripts/build_translation.sh page
+./scripts/build_translation.sh terms
+./scripts/build_translation.sh privacy
+```
+
+### Translation Workflow
+
+1. **Edit CSV files** in `/translation/` (source of truth)
+2. **Run build script** to generate JSON files
+3. **JSON files** are auto-generated in `/public/messages/[locale]/`
+
+### Important Notes for Developers
+
+- ✅ **Always edit CSV files** in `/translation/` directory
+- ✅ **Use `./scripts/build_translation.sh`** to generate JSON files
+- ❌ **Never manually edit** JSON files in `/public/messages/`
+- 📖 **See [TRANSLATION.md](/docs/TRANSLATION.md)** for complete documentation
+
 ## Project Structure
 
 ```bash
@@ -100,12 +148,20 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 │   ├── layout.tsx      # Root layout for all pages
 │   └── page.tsx        # Home page (with language switch)
 ├── assets/             # Files in assets/ are meant for static assets that are part of the build process or may be versioned.
-├── messages/           # i18n translation files
-│   ├── en/             # English translations
-│   └── zh/             # Chinese translations
+├── docs/               # Project documentation
+│   └── TRANSLATION.md  # Translation system documentation
+├── translation/        # 🌐 CSV translation source files (EDIT THESE)
+│   ├── page.csv        # Main page translations
+│   ├── terms.csv       # Terms of service translations
+│   ├── privacy.csv     # Privacy policy translations
+│   └── ...             # More translations
 ├── public/             # Use public/ for static assets that are unlikely to change, such as favicons or robots.txt. These files are served directly from the root URL.
-│   └── locales/        # (Optional) i18n locale files for Next.js
+│   └── messages/       # 🌐 Generated JSON translation files (DO NOT EDIT)
+│       ├── en/         # English translations (auto-generated)
+│       ├── zh-CN/      # Chinese translations (auto-generated)
+│       └── ...         # 70+ other locales (auto-generated)
 ├── scripts/            # Useful scripts for development and maintenance
+│   └── build_translation.sh  # 🌐 CSV to JSON translation builder
 ├── styles/             # Additional global styles
 ├── .github/            # GitHub workflows, issue templates, and labels
 ├── .vscode/            # VS Code workspace settings and launch configs
@@ -127,7 +183,10 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - **app/**: Main application code using Next.js App Router. Contains pages, layouts, and components.
 - **app/components/**: Reusable React components (e.g., `Greeting.tsx`).
 - **app/i18n.ts**: Internationalization setup using `next-intl`.
-- **messages/**: JSON translation files for each supported language.
+- **translation/**: 🌐 **CSV translation source files - EDIT THESE for translations**
+- **public/messages/**: 🌐 **Auto-generated JSON translation files - DO NOT EDIT MANUALLY**
+- **scripts/build_translation.sh**: 🌐 **Script to convert CSV files to JSON translations**
+- **docs/TRANSLATION.md**: 🌐 **Complete translation system documentation**
 - **public/**: Static files (SVGs, images) served at the root URL.
 - **assets/**: Prefer importing from `assets` for anything that might change. Only use `public/` for permanent, never-changing files.
 - **messages/**: Store all translatable messages in `messages/` and load them via imports or dynamic imports..
@@ -158,7 +217,6 @@ CLOUDFLARE_ACCOUNT_ID=your_account_id
 REVALIDATE_TOKEN=your_secure_token
 ```
 
-
 ## 🧰 Tech Stack
 
 - **TypeScript**: For static type safety across the codebase.
@@ -185,6 +243,7 @@ REVALIDATE_TOKEN=your_secure_token
 ## ✅ Best Practices to Follow
 
 - **Always use `pnpm` for all package management commands.**
+- **🌐 For translations: Edit CSV files in `/translation/`, run `./scripts/build_translation.sh`, never edit JSON files manually.**
 - Use TypeScript for all code.
 - Follow Next.js App Router architecture.
 - Use functional components and React hooks only.
@@ -204,6 +263,7 @@ REVALIDATE_TOKEN=your_secure_token
 ## 🚫 What to Avoid
 
 - **NEVER use `npm` or `yarn` commands - only `pnpm` is supported.**
+- **🌐 NEVER manually edit JSON files in `/public/messages/` - they are auto-generated.**
 - Do not use class-based React components.
 - Do not use Redux or other global state libraries; use Zustand only.
 - Do not use CSS Modules or styled-components.
@@ -214,6 +274,7 @@ REVALIDATE_TOKEN=your_secure_token
 ## AI Agent Assistance Highlight
 
 - **CRITICAL: Always use `pnpm` commands, never `npm` or `yarn`**
+- **🌐 Translation work: Edit CSV files in `/translation/`, run `./scripts/build_translation.sh` - see [TRANSLATION.md](/docs/TRANSLATION.md)**
 - Code generation (following conventions and typing)
 - Component creation (using Tailwind + ShadCN UI)
 - Internationalization (using the `next-intl` structure)
@@ -290,8 +351,6 @@ The site is built and deployed using GitHub Actions:
 4. Full Node.js runtime compatibility for server-side operations
 5. Website at <https://piyuo.com> updates immediately after deployment
 
-
-
 ### Environment Configuration
 
 Configure environment variables in:
@@ -299,10 +358,9 @@ Configure environment variables in:
 - **Development**: `.env.local` file
 - **Production**: define in deploy.yml
 
-
-
 ## Reference Documents
 
-- **/README.md**: provides a high-level overview of the project, including its purpose, tech stack .
+- **/README.md**: provides a high-level overview of the project, including its purpose, tech stack.
 - **/CONTRIBUTING.md**: outlines the complete development workflow for contributing to the project.
 - **/AGENTS.md**: provides instructions and goals for AI assistants involved in the project.
+- **📖 /docs/TRANSLATION.md**: comprehensive documentation for the CSV-based translation system and workflow.

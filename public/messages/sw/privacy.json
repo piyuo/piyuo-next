@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Sera ya Faragha kwa Piyuo Counter",
-  "privacy_effective_date": "Tarehe ya Kuanza: Aprili 12, 2025",
-
-  "privacy_introduction_title": "Utangulizi",
-  "privacy_introduction_1": "Karibu kwenye Piyuo Counter! Sera hii ya Faragha inaelezea jinsi tunavyoshughulikia maelezo wakati unatumia programu yetu ya software (\"App\"). Dhamana yetu ni faragha yako. Programu hii imeundwa ili ifanye kazi bila kukusanya au kuchakata data yako ya kibinafsi.",
-  "privacy_introduction_2": "Sera hii ya Faragha inatumika kwa programu ya software ya Piyuo Counter (\"App\") kwa vifaa vya mkononi na kompyuta, inayopatikana kwenye mifumo mbalimbali na maduka ya programu.",
-
-  "privacy_who_we_are_title": "Sisi ni Nani",
-  "privacy_who_we_are": "Programu ya Piyuo Counter inatolewa na Piyuo (\"sisi,\" \"sisi,\" au \"yetu\"). Tovuti yetu ni {website}. Ikiwa una maswali kuhusu sera hii, unaweza kutuwasiliana nasi kwa {email}.",
-
-  "privacy_no_collect_title": "Maelezo Ambayo Hatukusanyi",
-  "privacy_no_collect_intro": "Hatukusanyi, hatuhifadhi, hatuhamishi, au kuchakata maelezo yoyote ya kibinafsi au data ya matumizi kutoka kwako kupitia programu ya Piyuo Counter.",
-  "privacy_no_collect_personal": "Hakuna Data ya Kibinafsi: Hatuombi, kufikia, au kufuatilia maelezo yoyote ambayo yanaweza kukutambulisha, kama vile jina lako, anwani ya barua pepe, mahali, vitambulisho vya kifaa, au mawasiliano.",
-  "privacy_no_collect_usage": "Hakuna Data ya Matumizi: Programu hairekodi jinsi unavyoitumia. Data yote ya kihesabu unayounda inahifadhiwa kiukolea kwenye kifaa chako tu na haitufikiki.",
-  "privacy_no_collect_third_party": "Hakuna Huduma za Wahusika wa Tatu: Hatuunganishi huduma zozote za wahusika wa tatu kwa uchambuzi (kama Firebase Analytics), matangazo (kama AdMob), uhifadhi wa wingu, au kusudi lingine lolote ambalo lingehusisha kushiriki data na makundi ya nje. Programu inafanya kazi kabisa nje ya mtandao kwa upande wa kushughulikia data.",
-
-  "privacy_use_title": "Jinsi Tunavyotumia Maelezo",
-  "privacy_use": "Kwa kuwa hatukusanyi maelezo yoyote, hatutatumia maelezo yako kwa kusudi lolote.",
-
-  "privacy_sharing_title": "Kushiriki na Kufichua Maelezo",
-  "privacy_sharing": "Hatushiriki au kufichua maelezo yoyote ya kibinafsi kwa sababu hatukusanyi yoyote. Data yako (hesabu unazofuatilia) inabaki kwenye kifaa chako.",
-
-  "privacy_security_title": "Usalama wa Data",
-  "privacy_security": "Data yoyote inayozalishwa kwa kutumia programu ya Piyuo Counter (kama vile hesabu zako) inahifadhiwa kiukolea kwenye kifaa chako tu. Hatuna ufikiaji wa data hii. Ingawa tunajenga programu yetu kwa mbinu za kawaida za usalama, usalama wa data iliyohifadhiwa kwenye kifaa chako unategemea hatua za usalama unazochukua kwa kifaa chako mwenyewe.",
-
-  "privacy_children_title": "Faragha ya Watoto",
-  "privacy_children": "Programu yetu haikusanyi maelezo ya kibinafsi kutoka kwa mtu yeyote, ikijumuisha watoto. Tunafuata Sheria ya Kulinda Faragha ya Watoto Mtandaoni (COPPA) huko Marekani na kanuni za kufanana kama GDPR kuhusu data ya watoto. Kwa kuwa hatukusanyi data yoyote, kwa asili hatukusanyi data kutoka kwa watoto chini ya umri wa miaka 13 (au 16 katika baadhi ya nchi za EU).",
-
-  "privacy_rights_title": "Haki Zako (GDPR na Sheria Zingine)",
-  "privacy_rights_1": "Sheria za faragha kama Kanuni ya Jumla ya Kulinda Data (GDPR) huko Ulaya na sheria mbalimbali za jimbo la Marekani zinawapatia watu haki juu ya data yao ya kibinafsi (kama ufikiaji, marekebisho, kufuta).",
-  "privacy_rights_2": "Kwa kuwa programu ya Piyuo Counter haikusanyi, kuhifadhi, au kuchakata data yoyote ya kibinafsi yako, haki hizi kwa ujumla hazitumiki katika muktadha wa Programu yetu, kwa kuwa hakuna data tunayoshikilia ili uweze kuifikia, kurekebisha, au kufuta. Data yoyote inayohusiana na programu iko tu kwenye kifaa chako, chini ya udhibiti wako.",
-
-  "privacy_changes_title": "Mabadiliko ya Sera hii ya Faragha",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Tunaweza kusasisha Sera hii ya Faragha mara kwa mara. Tutakujulisha mabadiliko yoyote kwa kuchapisha Sera mpya ya Faragha ndani ya Programu au kwenye tovuti yetu ({website}). Unashauriwa kukagua Sera hii ya Faragha mara kwa mara kwa mabadiliko yoyote.",
   "privacy_changes_2": "Mabadiliko ya Sera hii ya Faragha yanafanya kazi yanapochapishwa kwenye ukurasa huu.",
-
-  "privacy_contact_title": "Wasiliana Nasi",
-  "privacy_contact_intro": "Ikiwa una maswali yoyote kuhusu Sera hii ya Faragha, tafadhali wasiliana nasi:",
+  "privacy_changes_title": "Mabadiliko ya Sera hii ya Faragha",
+  "privacy_children": "Programu yetu haikusanyi maelezo ya kibinafsi kutoka kwa mtu yeyote, ikijumuisha watoto. Tunafuata Sheria ya Kulinda Faragha ya Watoto Mtandaoni (COPPA) huko Marekani na kanuni za kufanana kama GDPR kuhusu data ya watoto. Kwa kuwa hatukusanyi data yoyote, kwa asili hatukusanyi data kutoka kwa watoto chini ya umri wa miaka 13 (au 16 katika baadhi ya nchi za EU).",
+  "privacy_children_title": "Faragha ya Watoto",
   "privacy_contact_email": "Kwa barua pepe: {email}",
+  "privacy_contact_intro": "Ikiwa una maswali yoyote kuhusu Sera hii ya Faragha, tafadhali wasiliana nasi:",
+  "privacy_contact_title": "Wasiliana Nasi",
   "privacy_contact_website": "Kwa kutembelea ukurasa huu kwenye tovuti yetu: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Tarehe ya Kuanza: Aprili 12, 2025",
+  "privacy_introduction_1": "Karibu kwenye Piyuo Counter! Sera hii ya Faragha inaelezea jinsi tunavyoshughulikia maelezo wakati unatumia programu yetu ya software (\"App\"). Dhamana yetu ni faragha yako. Programu hii imeundwa ili ifanye kazi bila kukusanya au kuchakata data yako ya kibinafsi.",
+  "privacy_introduction_2": "Sera hii ya Faragha inatumika kwa programu ya software ya Piyuo Counter (\"App\") kwa vifaa vya mkononi na kompyuta, inayopatikana kwenye mifumo mbalimbali na maduka ya programu.",
+  "privacy_introduction_title": "Utangulizi",
+  "privacy_no_collect_intro": "Hatukusanyi, hatuhifadhi, hatuhamishi, au kuchakata maelezo yoyote ya kibinafsi au data ya matumizi kutoka kwako kupitia programu ya Piyuo Counter.",
+  "privacy_no_collect_personal": "Hakuna Data ya Kibinafsi: Hatuombi, kufikia, au kufuatilia maelezo yoyote ambayo yanaweza kukutambulisha, kama vile jina lako, anwani ya barua pepe, mahali, vitambulisho vya kifaa, au mawasiliano.",
+  "privacy_no_collect_third_party": "Hakuna Huduma za Wahusika wa Tatu: Hatuunganishi huduma zozote za wahusika wa tatu kwa uchambuzi (kama Firebase Analytics), matangazo (kama AdMob), uhifadhi wa wingu, au kusudi lingine lolote ambalo lingehusisha kushiriki data na makundi ya nje. Programu inafanya kazi kabisa nje ya mtandao kwa upande wa kushughulikia data.",
+  "privacy_no_collect_title": "Maelezo Ambayo Hatukusanyi",
+  "privacy_no_collect_usage": "Hakuna Data ya Matumizi: Programu hairekodi jinsi unavyoitumia. Data yote ya kihesabu unayounda inahifadhiwa kiukolea kwenye kifaa chako tu na haitufikiki.",
+  "privacy_rights_1": "Sheria za faragha kama Kanuni ya Jumla ya Kulinda Data (GDPR) huko Ulaya na sheria mbalimbali za jimbo la Marekani zinawapatia watu haki juu ya data yao ya kibinafsi (kama ufikiaji, marekebisho, kufuta).",
+  "privacy_rights_2": "Kwa kuwa programu ya Piyuo Counter haikusanyi, kuhifadhi, au kuchakata data yoyote ya kibinafsi yako, haki hizi kwa ujumla hazitumiki katika muktadha wa Programu yetu, kwa kuwa hakuna data tunayoshikilia ili uweze kuifikia, kurekebisha, au kufuta. Data yoyote inayohusiana na programu iko tu kwenye kifaa chako, chini ya udhibiti wako.",
+  "privacy_rights_title": "Haki Zako (GDPR na Sheria Zingine)",
+  "privacy_security": "Data yoyote inayozalishwa kwa kutumia programu ya Piyuo Counter (kama vile hesabu zako) inahifadhiwa kiukolea kwenye kifaa chako tu. Hatuna ufikiaji wa data hii. Ingawa tunajenga programu yetu kwa mbinu za kawaida za usalama, usalama wa data iliyohifadhiwa kwenye kifaa chako unategemea hatua za usalama unazochukua kwa kifaa chako mwenyewe.",
+  "privacy_security_title": "Usalama wa Data",
+  "privacy_sharing": "Hatushiriki au kufichua maelezo yoyote ya kibinafsi kwa sababu hatukusanyi yoyote. Data yako (hesabu unazofuatilia) inabaki kwenye kifaa chako.",
+  "privacy_sharing_title": "Kushiriki na Kufichua Maelezo",
+  "privacy_title": "Sera ya Faragha kwa Piyuo Counter",
+  "privacy_use": "Kwa kuwa hatukusanyi maelezo yoyote, hatutatumia maelezo yako kwa kusudi lolote.",
+  "privacy_use_title": "Jinsi Tunavyotumia Maelezo",
+  "privacy_who_we_are": "Programu ya Piyuo Counter inatolewa na Piyuo (\"sisi,\" \"sisi,\" au \"yetu\"). Tovuti yetu ni {website}. Ikiwa una maswali kuhusu sera hii, unaweza kutuwasiliana nasi kwa {email}.",
+  "privacy_who_we_are_title": "Sisi ni Nani",
+  "website_url": "https://piyuo.com"
 }

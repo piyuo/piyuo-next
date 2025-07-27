@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Política de Privacidade para Piyuo Counter",
-  "privacy_effective_date": "Data de vigência: 12 de abril de 2025",
-
-  "privacy_introduction_title": "Introdução",
-  "privacy_introduction_1": "Bem-vindo ao Piyuo Counter! Esta Política de Privacidade explica como lidamos com informações quando você usa nossa aplicação de software (\"App\"). Nosso compromisso é com sua privacidade. Este App foi projetado para funcionar sem coletar ou processar quaisquer dados pessoais seus.",
-  "privacy_introduction_2": "Esta Política de Privacidade aplica-se à aplicação de software Piyuo Counter (\"App\") para dispositivos móveis e computadores, disponível em várias plataformas e lojas de aplicações.",
-
-  "privacy_who_we_are_title": "Quem somos",
-  "privacy_who_we_are": "O app Piyuo Counter é fornecido pela Piyuo (\"nós\", \"nosso\" ou \"nossa\"). Nosso website é {website}. Se você tem dúvidas sobre esta política, pode nos contactar em {email}.",
-
-  "privacy_no_collect_title": "Informações que não coletamos",
-  "privacy_no_collect_intro": "Não coletamos, armazenamos, transmitimos ou processamos quaisquer informações pessoais ou dados de uso de você através do app Piyuo Counter.",
-  "privacy_no_collect_personal": "Nenhum dado pessoal: Não pedimos, acessamos ou rastreamos qualquer informação que possa identificá-lo, como seu nome, endereço de email, localização, identificadores de dispositivo ou contatos.",
-  "privacy_no_collect_usage": "Nenhum dado de uso: O app não registra como você o usa. Todos os dados de contador que você cria são armazenados localmente apenas no seu dispositivo e não são acessíveis para nós.",
-  "privacy_no_collect_third_party": "Nenhum serviço de terceiros: Não integramos quaisquer serviços de terceiros para análises (como Firebase Analytics), publicidade (como AdMob), armazenamento em nuvem ou qualquer outro propósito que envolvesse partilhar dados com partes externas. O app opera inteiramente offline em termos de manuseamento de dados.",
-
-  "privacy_use_title": "Como usamos as informações",
-  "privacy_use": "Como não coletamos nenhuma informação, não usamos suas informações para qualquer propósito.",
-
-  "privacy_sharing_title": "Partilha e divulgação de informações",
-  "privacy_sharing": "Não partilhamos ou divulgamos quaisquer informações pessoais porque não coletamos nenhuma. Seus dados (as contagens que você acompanha) permanecem no seu dispositivo.",
-
-  "privacy_security_title": "Segurança de dados",
-  "privacy_security": "Quaisquer dados gerados pelo uso do app Piyuo Counter (como suas contagens) são armazenados localmente apenas no seu dispositivo. Não temos acesso a estes dados. Embora construamos nosso app com práticas de segurança padrão, a segurança dos dados armazenados no seu dispositivo depende das medidas de segurança que você toma para o próprio dispositivo.",
-
-  "privacy_children_title": "Privacidade de crianças",
-  "privacy_children": "Nosso App não coleta informações pessoais de ninguém, incluindo crianças. Cumprimos com o Children's Online Privacy Protection Act (COPPA) nos EUA e regulamentações similares como GDPR sobre dados de crianças. Como não coletamos dados, inerentemente não coletamos dados de crianças com menos de 13 anos (ou 16 em alguns países da UE).",
-
-  "privacy_rights_title": "Seus direitos (GDPR e outras leis)",
-  "privacy_rights_1": "Leis de privacidade como o Regulamento Geral de Proteção de Dados (GDPR) na Europa e várias leis estaduais dos EUA concedem aos indivíduos direitos sobre seus dados pessoais (como acesso, correção, exclusão).",
-  "privacy_rights_2": "Porque o app Piyuo Counter não coleta, armazena ou processa quaisquer dos seus dados pessoais, esses direitos geralmente não são aplicáveis no contexto do nosso App, pois não há dados mantidos por nós para você acessar, corrigir ou excluir. Quaisquer dados relacionados ao app residem apenas no seu dispositivo, sob seu controlo.",
-
-  "privacy_changes_title": "Alterações a esta Política de Privacidade",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Podemos atualizar esta Política de Privacidade de tempos em tempos. Notificaremos você sobre quaisquer alterações publicando a nova Política de Privacidade dentro do App ou no nosso website ({website}). É aconselhado que revise esta Política de Privacidade periodicamente para quaisquer alterações.",
   "privacy_changes_2": "Alterações a esta Política de Privacidade são efetivas quando publicadas nesta página.",
-
-  "privacy_contact_title": "Contacte-nos",
-  "privacy_contact_intro": "Se você tem quaisquer dúvidas sobre esta Política de Privacidade, por favor contacte-nos:",
+  "privacy_changes_title": "Alterações a esta Política de Privacidade",
+  "privacy_children": "Nosso App não coleta informações pessoais de ninguém, incluindo crianças. Cumprimos com o Children's Online Privacy Protection Act (COPPA) nos EUA e regulamentações similares como GDPR sobre dados de crianças. Como não coletamos dados, inerentemente não coletamos dados de crianças com menos de 13 anos (ou 16 em alguns países da UE).",
+  "privacy_children_title": "Privacidade de crianças",
   "privacy_contact_email": "Por email: {email}",
+  "privacy_contact_intro": "Se você tem quaisquer dúvidas sobre esta Política de Privacidade, por favor contacte-nos:",
+  "privacy_contact_title": "Contacte-nos",
   "privacy_contact_website": "Visitando esta página no nosso website: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Data de vigência: 12 de abril de 2025",
+  "privacy_introduction_1": "Bem-vindo ao Piyuo Counter! Esta Política de Privacidade explica como lidamos com informações quando você usa nossa aplicação de software (\"App\"). Nosso compromisso é com sua privacidade. Este App foi projetado para funcionar sem coletar ou processar quaisquer dados pessoais seus.",
+  "privacy_introduction_2": "Esta Política de Privacidade aplica-se à aplicação de software Piyuo Counter (\"App\") para dispositivos móveis e computadores, disponível em várias plataformas e lojas de aplicações.",
+  "privacy_introduction_title": "Introdução",
+  "privacy_no_collect_intro": "Não coletamos, armazenamos, transmitimos ou processamos quaisquer informações pessoais ou dados de uso de você através do app Piyuo Counter.",
+  "privacy_no_collect_personal": "Nenhum dado pessoal: Não pedimos, acessamos ou rastreamos qualquer informação que possa identificá-lo, como seu nome, endereço de email, localização, identificadores de dispositivo ou contatos.",
+  "privacy_no_collect_third_party": "Nenhum serviço de terceiros: Não integramos quaisquer serviços de terceiros para análises (como Firebase Analytics), publicidade (como AdMob), armazenamento em nuvem ou qualquer outro propósito que envolvesse partilhar dados com partes externas. O app opera inteiramente offline em termos de manuseamento de dados.",
+  "privacy_no_collect_title": "Informações que não coletamos",
+  "privacy_no_collect_usage": "Nenhum dado de uso: O app não registra como você o usa. Todos os dados de contador que você cria são armazenados localmente apenas no seu dispositivo e não são acessíveis para nós.",
+  "privacy_rights_1": "Leis de privacidade como a Lei Geral de Proteção de Dados (LGPD) no Brasil e várias leis estaduais dos EUA concedem aos indivíduos direitos sobre seus dados pessoais (como acesso, correção, exclusão).",
+  "privacy_rights_2": "Porque o app Piyuo Counter não coleta, armazena ou processa quaisquer dos seus dados pessoais, esses direitos geralmente não são aplicáveis no contexto do nosso App, pois não há dados mantidos por nós para você acessar, corrigir ou excluir. Quaisquer dados relacionados ao app residem apenas no seu dispositivo, sob seu controlo.",
+  "privacy_rights_title": "Seus direitos (GDPR e outras leis)",
+  "privacy_security": "Quaisquer dados gerados pelo uso do app Piyuo Counter (como suas contagens) são armazenados localmente apenas no seu dispositivo. Não temos acesso a estes dados. Embora construamos nosso app com práticas de segurança padrão, a segurança dos dados armazenados no seu dispositivo depende das medidas de segurança que você toma para o próprio dispositivo.",
+  "privacy_security_title": "Segurança de dados",
+  "privacy_sharing": "Não partilhamos ou divulgamos quaisquer informações pessoais porque não coletamos nenhuma. Seus dados (as contagens que você acompanha) permanecem no seu dispositivo.",
+  "privacy_sharing_title": "Partilha e divulgação de informações",
+  "privacy_title": "Política de Privacidade para Piyuo Counter",
+  "privacy_use": "Como não coletamos nenhuma informação, não usamos suas informações para qualquer propósito.",
+  "privacy_use_title": "Como usamos as informações",
+  "privacy_who_we_are": "O app Piyuo Counter é fornecido pela Piyuo (\"nós\", \"nosso\" ou \"nossa\"). Nosso website é {website}. Se você tem dúvidas sobre esta política, pode nos contactar em {email}.",
+  "privacy_who_we_are_title": "Quem somos",
+  "website_url": "https://piyuo.com"
 }
