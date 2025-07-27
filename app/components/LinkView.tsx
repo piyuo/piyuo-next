@@ -1,3 +1,14 @@
+// ===============================================
+// Component: LinkView.tsx
+// Description: Navigation links with locale-aware URLs for footer section
+//
+// Features:
+//   - Email contact button
+//   - Terms and Privacy links
+//   - Locale-aware URL generation
+//   - Responsive layout
+// ===============================================
+
 "use client";
 
 import Link from 'next/link';
@@ -8,11 +19,20 @@ interface LinkViewProps {
     terms: string;
     privacy: string;
   };
+  locale?: string;
 }
 
-export function LinkView({ translations }: LinkViewProps) {
+export function LinkView({ translations, locale }: LinkViewProps) {
   const handleEmailClick = () => {
     window.location.href = 'mailto:service@piyuo.com';
+  };
+
+  // Helper function to create locale-aware URLs
+  const createLocaleUrl = (path: string): string => {
+    if (!locale || locale.trim() === '') {
+      return path;
+    }
+    return `/${locale}${path}`;
   };
 
   return (
@@ -33,14 +53,14 @@ export function LinkView({ translations }: LinkViewProps) {
       {/* Links */}
       <div className="flex flex-col md:flex-row items-center gap-4">
         <Link
-          href="/terms"
+          href={createLocaleUrl("/terms")}
           className="text-white hover:text-gray-300 text-lg transition-colors"
         >
           {translations.terms}
         </Link>
 
         <Link
-          href="/privacy"
+          href={createLocaleUrl("/privacy")}
           className="text-white hover:text-gray-300 text-lg transition-colors"
         >
           {translations.privacy}

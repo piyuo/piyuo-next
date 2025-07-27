@@ -189,11 +189,13 @@ export default async function LocalePage({ params }: PageProps) {
               </div>
 
               {/* Links */}
-              <LinkView translations={{
-                index_email_us: translations.index_email_us,
-                terms: translations.terms,
-                privacy: translations.privacy,
-              }} />
+              <LinkView
+                locale={locale}
+                translations={{
+                  index_email_us: translations.index_email_us,
+                  terms: translations.terms,
+                  privacy: translations.privacy,
+                }} />
 
               {/* Footer */}
               <div className="text-center py-8">
