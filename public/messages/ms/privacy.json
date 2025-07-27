@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Dasar Privasi untuk Piyuo Counter",
-  "privacy_effective_date": "Tarikh Berkuatkuasa: 12 April 2025",
-
-  "privacy_introduction_title": "Pengenalan",
-  "privacy_introduction_1": "Selamat datang ke Piyuo Counter! Dasar Privasi ini menerangkan bagaimana kami mengendalikan maklumat apabila anda menggunakan aplikasi perisian kami (\"Aplikasi\"). Komitmen kami adalah terhadap privasi anda. Aplikasi ini direka bentuk untuk berfungsi tanpa mengumpul atau memproses sebarang data peribadi anda.",
-  "privacy_introduction_2": "Dasar Privasi ini terpakai kepada aplikasi perisian Piyuo Counter (\"Aplikasi\") untuk peranti mudah alih dan komputer, yang tersedia merentasi pelbagai platform dan kedai aplikasi.",
-
-  "privacy_who_we_are_title": "Siapa Kami",
-  "privacy_who_we_are": "Aplikasi Piyuo Counter disediakan oleh Piyuo (\"kami,\" \"kita,\" atau \"milik kami\"). Laman web kami ialah {website}. Jika anda mempunyai soalan mengenai dasar ini, anda boleh menghubungi kami di {email}.",
-
-  "privacy_no_collect_title": "Maklumat Yang Kami Tidak Kumpulkan",
-  "privacy_no_collect_intro": "Kami tidak mengumpul, menyimpan, menghantar, atau memproses sebarang maklumat peribadi atau data penggunaan daripada anda melalui aplikasi Piyuo Counter.",
-  "privacy_no_collect_personal": "Tiada Data Peribadi: Kami tidak meminta, mengakses, atau menjejaki sebarang maklumat yang boleh mengenal pasti anda, seperti nama anda, alamat e-mel, lokasi, pengenal peranti, atau kenalan.",
-  "privacy_no_collect_usage": "Tiada Data Penggunaan: Aplikasi tidak merekod bagaimana anda menggunakannya. Semua data kaunter yang anda cipta disimpan secara tempatan pada peranti anda sahaja dan tidak boleh diakses oleh kami.",
-  "privacy_no_collect_third_party": "Tiada Perkhidmatan Pihak Ketiga: Kami tidak mengintegrasikan sebarang perkhidmatan pihak ketiga untuk analitik (seperti Firebase Analytics), pengiklanan (seperti AdMob), penyimpanan awan, atau sebarang tujuan lain yang melibatkan perkongsian data dengan pihak luar. Aplikasi beroperasi sepenuhnya luar talian dari segi pengendalian data.",
-
-  "privacy_use_title": "Bagaimana Kami Menggunakan Maklumat",
-  "privacy_use": "Memandangkan kami tidak mengumpul sebarang maklumat, kami tidak menggunakan maklumat anda untuk sebarang tujuan.",
-
-  "privacy_sharing_title": "Perkongsian dan Pendedahan Maklumat",
-  "privacy_sharing": "Kami tidak berkongsi atau mendedahkan sebarang maklumat peribadi kerana kami tidak mengumpulnya. Data anda (kiraan yang anda jejaki) kekal pada peranti anda.",
-
-  "privacy_security_title": "Keselamatan Data",
-  "privacy_security": "Sebarang data yang dijana dengan menggunakan aplikasi Piyuo Counter (seperti kiraan anda) disimpan secara tempatan pada peranti anda sahaja. Kami tidak mempunyai akses kepada data ini. Walaupun kami membina aplikasi kami dengan amalan keselamatan standard, keselamatan data yang disimpan pada peranti anda bergantung pada langkah keselamatan yang anda ambil untuk peranti anda sendiri.",
-
-  "privacy_children_title": "Privasi Kanak-kanak",
-  "privacy_children": "Aplikasi kami tidak mengumpul maklumat peribadi daripada sesiapa, termasuk kanak-kanak. Kami mematuhi Akta Perlindungan Privasi Dalam Talian Kanak-kanak (COPPA) di AS dan peraturan serupa seperti GDPR berkenaan data kanak-kanak. Memandangkan kami tidak mengumpul data, kami secara semula jadi tidak mengumpul data daripada kanak-kanak di bawah umur 13 tahun (atau 16 di sesetengah negara EU).",
-
-  "privacy_rights_title": "Hak Anda (GDPR dan Undang-undang Lain)",
-  "privacy_rights_1": "Undang-undang privasi seperti Peraturan Perlindungan Data Am (GDPR) di Eropah dan pelbagai undang-undang negeri AS memberikan individu hak ke atas data peribadi mereka (seperti akses, pembetulan, pemadaman).",
-  "privacy_rights_2": "Oleh kerana aplikasi Piyuo Counter tidak mengumpul, menyimpan, atau memproses sebarang data peribadi anda, hak-hak ini secara amnya tidak terpakai dalam konteks Aplikasi kami, kerana tiada data yang disimpan oleh kami untuk anda akses, betulkan, atau padamkan. Sebarang data berkaitan aplikasi hanya wujud pada peranti anda, di bawah kawalan anda.",
-
-  "privacy_changes_title": "Perubahan kepada Dasar Privasi Ini",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Kami mungkin mengemas kini Dasar Privasi ini dari semasa ke semasa. Kami akan memberitahu anda tentang sebarang perubahan dengan menyiarkan Dasar Privasi baharu dalam Aplikasi atau di laman web kami ({website}). Anda dinasihatkan untuk menyemak Dasar Privasi ini secara berkala untuk sebarang perubahan.",
   "privacy_changes_2": "Perubahan kepada Dasar Privasi ini berkuat kuasa apabila ia disiarkan di halaman ini.",
-
-  "privacy_contact_title": "Hubungi Kami",
-  "privacy_contact_intro": "Jika anda mempunyai sebarang soalan mengenai Dasar Privasi ini, sila hubungi kami:",
+  "privacy_changes_title": "Perubahan kepada Dasar Privasi Ini",
+  "privacy_children": "Aplikasi kami tidak mengumpul maklumat peribadi daripada sesiapa, termasuk kanak-kanak. Kami mematuhi Akta Perlindungan Privasi Dalam Talian Kanak-kanak (COPPA) di AS dan peraturan serupa seperti GDPR berkenaan data kanak-kanak. Memandangkan kami tidak mengumpul data, kami secara semula jadi tidak mengumpul data daripada kanak-kanak di bawah umur 13 tahun (atau 16 di sesetengah negara EU).",
+  "privacy_children_title": "Privasi Kanak-kanak",
   "privacy_contact_email": "Melalui e-mel: {email}",
+  "privacy_contact_intro": "Jika anda mempunyai sebarang soalan mengenai Dasar Privasi ini, sila hubungi kami:",
+  "privacy_contact_title": "Hubungi Kami",
   "privacy_contact_website": "Dengan melawat halaman ini di laman web kami: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Tarikh Berkuatkuasa: 12 April 2025",
+  "privacy_introduction_1": "Selamat datang ke Piyuo Counter! Dasar Privasi ini menerangkan bagaimana kami mengendalikan maklumat apabila anda menggunakan aplikasi perisian kami (\"Aplikasi\"). Komitmen kami adalah terhadap privasi anda. Aplikasi ini direka bentuk untuk berfungsi tanpa mengumpul atau memproses sebarang data peribadi anda.",
+  "privacy_introduction_2": "Dasar Privasi ini terpakai kepada aplikasi perisian Piyuo Counter (\"Aplikasi\") untuk peranti mudah alih dan komputer, yang tersedia merentasi pelbagai platform dan kedai aplikasi.",
+  "privacy_introduction_title": "Pengenalan",
+  "privacy_no_collect_intro": "Kami tidak mengumpul, menyimpan, menghantar, atau memproses sebarang maklumat peribadi atau data penggunaan daripada anda melalui aplikasi Piyuo Counter.",
+  "privacy_no_collect_personal": "Tiada Data Peribadi: Kami tidak meminta, mengakses, atau menjejaki sebarang maklumat yang boleh mengenal pasti anda, seperti nama anda, alamat e-mel, lokasi, pengenal peranti, atau kenalan.",
+  "privacy_no_collect_third_party": "Tiada Perkhidmatan Pihak Ketiga: Kami tidak mengintegrasikan sebarang perkhidmatan pihak ketiga untuk analitik (seperti Firebase Analytics), pengiklanan (seperti AdMob), penyimpanan awan, atau sebarang tujuan lain yang melibatkan perkongsian data dengan pihak luar. Aplikasi beroperasi sepenuhnya luar talian dari segi pengendalian data.",
+  "privacy_no_collect_title": "Maklumat Yang Kami Tidak Kumpulkan",
+  "privacy_no_collect_usage": "Tiada Data Penggunaan: Aplikasi tidak merekod bagaimana anda menggunakannya. Semua data kaunter yang anda cipta disimpan secara tempatan pada peranti anda sahaja dan tidak boleh diakses oleh kami.",
+  "privacy_rights_1": "Undang-undang privasi seperti Peraturan Perlindungan Data Am (GDPR) di Eropah dan pelbagai undang-undang negeri AS memberikan individu hak ke atas data peribadi mereka (seperti akses, pembetulan, pemadaman).",
+  "privacy_rights_2": "Oleh kerana aplikasi Piyuo Counter tidak mengumpul, menyimpan, atau memproses sebarang data peribadi anda, hak-hak ini secara amnya tidak terpakai dalam konteks Aplikasi kami, kerana tiada data yang disimpan oleh kami untuk anda akses, betulkan, atau padamkan. Sebarang data berkaitan aplikasi hanya wujud pada peranti anda, di bawah kawalan anda.",
+  "privacy_rights_title": "Hak Anda (GDPR dan Undang-undang Lain)",
+  "privacy_security": "Sebarang data yang dijana dengan menggunakan aplikasi Piyuo Counter (seperti kiraan anda) disimpan secara tempatan pada peranti anda sahaja. Kami tidak mempunyai akses kepada data ini. Walaupun kami membina aplikasi kami dengan amalan keselamatan standard, keselamatan data yang disimpan pada peranti anda bergantung pada langkah keselamatan yang anda ambil untuk peranti anda sendiri.",
+  "privacy_security_title": "Keselamatan Data",
+  "privacy_sharing": "Kami tidak berkongsi atau mendedahkan sebarang maklumat peribadi kerana kami tidak mengumpulnya. Data anda (kiraan yang anda jejaki) kekal pada peranti anda.",
+  "privacy_sharing_title": "Perkongsian dan Pendedahan Maklumat",
+  "privacy_title": "Dasar Privasi untuk Piyuo Counter",
+  "privacy_use": "Memandangkan kami tidak mengumpul sebarang maklumat, kami tidak menggunakan maklumat anda untuk sebarang tujuan.",
+  "privacy_use_title": "Bagaimana Kami Menggunakan Maklumat",
+  "privacy_who_we_are": "Aplikasi Piyuo Counter disediakan oleh Piyuo (\"kami,\" \"kita,\" atau \"milik kami\"). Laman web kami ialah {website}. Jika anda mempunyai soalan mengenai dasar ini, anda boleh menghubungi kami di {email}.",
+  "privacy_who_we_are_title": "Siapa Kami",
+  "website_url": "https://piyuo.com"
 }

@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Pravilnik o zasebnosti za Piyuo Counter",
-  "privacy_effective_date": "Datum veljavnosti: 12. april 2025",
-
-  "privacy_introduction_title": "Uvod",
-  "privacy_introduction_1": "Dobrodošli v Piyuo Counter! Ta Pravilnik o zasebnosti pojasnjuje, kako ravnamo z informacijami, ko uporabljate našo programsko aplikacijo (\"Aplikacija\"). Naša zaveza je vaša zasebnost. Ta Aplikacija je zasnovana tako, da deluje brez zbiranja ali obdelave vaših osebnih podatkov.",
-  "privacy_introduction_2": "Ta Pravilnik o zasebnosti velja za programsko aplikacijo Piyuo Counter (\"Aplikacija\") za mobilne naprave in računalnike, dostopno na različnih platformah in trgovinah z aplikacijami.",
-
-  "privacy_who_we_are_title": "Kdo smo",
-  "privacy_who_we_are": "Aplikacijo Piyuo Counter zagotavlja Piyuo (\"mi\", \"naš\" ali \"naša\"). Naša spletna stran je {website}. Če imate vprašanja o tej politiki, nas lahko kontaktirate na {email}.",
-
-  "privacy_no_collect_title": "Informacije, ki jih ne zbiramo",
-  "privacy_no_collect_intro": "Ne zbiramo, shranjujemo, prenašamo ali obdelujemo osebnih informacij ali podatkov o uporabi od vas prek aplikacije Piyuo Counter.",
-  "privacy_no_collect_personal": "Ni osebnih podatkov: Ne zahtevamo, dostopamo ali sledimo informacijam, ki bi vas lahko identificirale, kot so vaše ime, e-naslov, lokacija, identifikatorji naprave ali stiki.",
-  "privacy_no_collect_usage": "Ni podatkov o uporabi: Aplikacija ne beleži, kako jo uporabljate. Vsi podatki števca, ki jih ustvarite, so shranjeni lokalno samo na vaši napravi in nam niso dostopni.",
-  "privacy_no_collect_third_party": "Ni storitev tretjih oseb: Ne vključujemo storitev tretjih oseb za analitiko (kot je Firebase Analytics), oglaševanje (kot je AdMob), shranjevanje v oblaku ali kateri koli drug namen, ki bi vključeval deljenje podatkov z zunanjimi strankami. Aplikacija deluje popolnoma brez povezave glede ravnanja s podatki.",
-
-  "privacy_use_title": "Kako uporabljamo informacije",
-  "privacy_use": "Ker ne zbiramo informacij, vaših informacij ne uporabljamo za noben namen.",
-
-  "privacy_sharing_title": "Deljenje in razkritje informacij",
-  "privacy_sharing": "Ne delimo ali razkrivamo osebnih informacij, ker jih ne zbiramo. Vaši podatki (števci, ki jih spremljate) ostanejo na vaši napravi.",
-
-  "privacy_security_title": "Varnost podatkov",
-  "privacy_security": "Vsi podatki, generirani z uporabo aplikacije Piyuo Counter (kot so vaši števci), so shranjeni lokalno samo na vaši napravi. Nimamo dostopa do teh podatkov. Čeprav gradimo našo aplikacijo s standardnimi varnostnimi praksami, varnost podatkov, shranjenih na vaši napravi, je odvisna od varnostnih ukrepov, ki jih sprejmete za napravo samo.",
-
-  "privacy_children_title": "Zasebnost otrok",
-  "privacy_children": "Naša Aplikacija ne zbira osebnih informacij od nikogar, vključno z otroki. Upoštevamo Zakon o zaščiti zasebnosti otrok na spletu (COPPA) v ZDA in podobne predpise, kot je GDPR, glede podatkov otrok. Ker ne zbiramo podatkov, po naravi ne zbiramo podatkov od otrok, mlajših od 13 let (ali 16 let v nekaterih državah EU).",
-
-  "privacy_rights_title": "Vaše pravice (GDPR in drugi zakoni)",
-  "privacy_rights_1": "Zakoni o zasebnosti, kot je Splošna uredba o varstvu podatkov (GDPR) v Evropi in različni ameriški državni zakoni, posameznikom dajejo pravice nad njihovimi osebnimi podatki (kot so dostop, popravek, brisanje).",
-  "privacy_rights_2": "Ker aplikacija Piyuo Counter ne zbira, shranjuje ali obdeluje vaših osebnih podatkov, te pravice na splošno niso uporabne v kontekstu naše Aplikacije, ker ni podatkov, ki bi jih mi imeli, da bi jim lahko dostopali, jih popravili ali izbrisali. Vsi podatki, povezani z aplikacijo, se nahajajo izključno na vaši napravi, pod vašim nadzorom.",
-
-  "privacy_changes_title": "Spremembe tega Pravilnika o zasebnosti",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Ta Pravilnik o zasebnosti lahko občasno posodobimo. O vseh spremembah vas bomo obvestili z objavo novega Pravilnika o zasebnosti v Aplikaciji ali na naši spletni strani ({website}). Svetujemo vam, da ta Pravilnik o zasebnosti redno pregledate za morebitne spremembe.",
   "privacy_changes_2": "Spremembe tega Pravilnika o zasebnosti začnejo veljati, ko so objavljene na tej strani.",
-
-  "privacy_contact_title": "Kontaktirajte nas",
-  "privacy_contact_intro": "Če imate vprašanja o tem Pravilniku o zasebnosti, nas prosimo kontaktirajte:",
+  "privacy_changes_title": "Spremembe tega Pravilnika o zasebnosti",
+  "privacy_children": "Naša Aplikacija ne zbira osebnih informacij od nikogar, vključno z otroki. Upoštevamo Zakon o zaščiti zasebnosti otrok na spletu (COPPA) v ZDA in podobne predpise, kot je GDPR, glede podatkov otrok. Ker ne zbiramo podatkov, po naravi ne zbiramo podatkov od otrok, mlajših od 13 let (ali 16 let v nekaterih državah EU).",
+  "privacy_children_title": "Zasebnost otrok",
   "privacy_contact_email": "Po e-pošti: {email}",
+  "privacy_contact_intro": "Če imate vprašanja o tem Pravilniku o zasebnosti, nas prosimo kontaktirajte:",
+  "privacy_contact_title": "Kontaktirajte nas",
   "privacy_contact_website": "Z obiskom te strani na naši spletni strani: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Datum veljavnosti: 12. april 2025",
+  "privacy_introduction_1": "Dobrodošli v Piyuo Counter! Ta Pravilnik o zasebnosti pojasnjuje, kako ravnamo z informacijami, ko uporabljate našo programsko aplikacijo (\"Aplikacija\"). Naša zaveza je vaša zasebnost. Ta Aplikacija je zasnovana tako, da deluje brez zbiranja ali obdelave vaših osebnih podatkov.",
+  "privacy_introduction_2": "Ta Pravilnik o zasebnosti velja za programsko aplikacijo Piyuo Counter (\"Aplikacija\") za mobilne naprave in računalnike, dostopno na različnih platformah in trgovinah z aplikacijami.",
+  "privacy_introduction_title": "Uvod",
+  "privacy_no_collect_intro": "Ne zbiramo, shranjujemo, prenašamo ali obdelujemo osebnih informacij ali podatkov o uporabi od vas prek aplikacije Piyuo Counter.",
+  "privacy_no_collect_personal": "Ni osebnih podatkov: Ne zahtevamo, dostopamo ali sledimo informacijam, ki bi vas lahko identificirale, kot so vaše ime, e-naslov, lokacija, identifikatorji naprave ali stiki.",
+  "privacy_no_collect_third_party": "Ni storitev tretjih oseb: Ne vključujemo storitev tretjih oseb za analitiko (kot je Firebase Analytics), oglaševanje (kot je AdMob), shranjevanje v oblaku ali kateri koli drug namen, ki bi vključeval deljenje podatkov z zunanjimi strankami. Aplikacija deluje popolnoma brez povezave glede ravnanja s podatki.",
+  "privacy_no_collect_title": "Informacije, ki jih ne zbiramo",
+  "privacy_no_collect_usage": "Ni podatkov o uporabi: Aplikacija ne beleži, kako jo uporabljate. Vsi podatki števca, ki jih ustvarite, so shranjeni lokalno samo na vaši napravi in nam niso dostopni.",
+  "privacy_rights_1": "Zakoni o zasebnosti, kot je Splošna uredba o varstvu podatkov (GDPR) v Evropi in različni ameriški državni zakoni, posameznikom dajejo pravice nad njihovimi osebnimi podatki (kot so dostop, popravek, brisanje).",
+  "privacy_rights_2": "Ker aplikacija Piyuo Counter ne zbira, shranjuje ali obdeluje vaših osebnih podatkov, te pravice na splošno niso uporabne v kontekstu naše Aplikacije, ker ni podatkov, ki bi jih mi imeli, da bi jim lahko dostopali, jih popravili ali izbrisali. Vsi podatki, povezani z aplikacijo, se nahajajo izključno na vaši napravi, pod vašim nadzorom.",
+  "privacy_rights_title": "Vaše pravice (GDPR in drugi zakoni)",
+  "privacy_security": "Vsi podatki, generirani z uporabo aplikacije Piyuo Counter (kot so vaši števci), so shranjeni lokalno samo na vaši napravi. Nimamo dostopa do teh podatkov. Čeprav gradimo našo aplikacijo s standardnimi varnostnimi praksami, varnost podatkov, shranjenih na vaši napravi, je odvisna od varnostnih ukrepov, ki jih sprejmete za napravo samo.",
+  "privacy_security_title": "Varnost podatkov",
+  "privacy_sharing": "Ne delimo ali razkrivamo osebnih informacij, ker jih ne zbiramo. Vaši podatki (števci, ki jih spremljate) ostanejo na vaši napravi.",
+  "privacy_sharing_title": "Deljenje in razkritje informacij",
+  "privacy_title": "Pravilnik o zasebnosti za Piyuo Counter",
+  "privacy_use": "Ker ne zbiramo informacij, vaših informacij ne uporabljamo za noben namen.",
+  "privacy_use_title": "Kako uporabljamo informacije",
+  "privacy_who_we_are": "Aplikacijo Piyuo Counter zagotavlja Piyuo (\"mi\", \"naš\" ali \"naša\"). Naša spletna stran je {website}. Če imate vprašanja o tej politiki, nas lahko kontaktirate na {email}.",
+  "privacy_who_we_are_title": "Kdo smo",
+  "website_url": "https://piyuo.com"
 }

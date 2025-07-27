@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Privaatheidsbeleid vir Piyuo Teller",
-  "privacy_effective_date": "Effektiewe Datum: 12 April 2025",
-
-  "privacy_introduction_title": "Inleiding",
-  "privacy_introduction_1": "Welkom by Piyuo Teller! Hierdie Privaatheidsbeleid verduidelik hoe ons inligting hanteer wanneer u ons sagteware-toepassing (\"App\") gebruik. Ons verbintenis is tot u privaatheid. Hierdie App is ontwerp om te funksioneer sonder om enige van u persoonlike data te versamel of te verwerk.",
-  "privacy_introduction_2": "Hierdie Privaatheidsbeleid geld vir die Piyuo Teller sagteware-toepassing (\"App\") vir mobiele toestelle en rekenaars, beskikbaar oor verskeie platforms en toepassingswinkels.",
-
-  "privacy_who_we_are_title": "Wie Ons Is",
-  "privacy_who_we_are": "Die Piyuo Teller app word verskaf deur Piyuo (\"ons,\" \"ons,\" of \"ons s'n\"). Ons webwerf is {website}. As u vrae het oor hierdie beleid, kan u ons kontak by {email}.",
-
-  "privacy_no_collect_title": "Inligting Wat Ons Nie Versamel Nie",
-  "privacy_no_collect_intro": "Ons versamel, stoor, versend, of verwerk nie enige persoonlike inligting of gebruiksdata van u deur die Piyuo Teller app nie.",
-  "privacy_no_collect_personal": "Geen Persoonlike Data: Ons vra nie vir, verkry nie toegang tot, of volg nie enige inligting wat u kan identifiseer nie, soos u naam, e-posadres, ligging, toestelidentifiseerders, of kontakte.",
-  "privacy_no_collect_usage": "Geen Gebruiksdata: Die app neem nie op hoe u dit gebruik nie. Alle tellerdata wat u skep word slegs plaaslik op u toestel gestoor en is nie vir ons toeganklik nie.",
-  "privacy_no_collect_third_party": "Geen Derdeparty-dienste: Ons integreer nie enige derdeparty-dienste vir analise (soos Firebase Analytics), advertensies (soos AdMob), wolkberging, of enige ander doel wat data met eksterne partye sou deel nie. Die app werk heeltemal vanlyn in terme van datahantering.",
-
-  "privacy_use_title": "Hoe Ons Inligting Gebruik",
-  "privacy_use": "Aangesien ons geen inligting versamel nie, gebruik ons nie u inligting vir enige doel nie.",
-
-  "privacy_sharing_title": "Inligtingsdeling en Openbaarmaking",
-  "privacy_sharing": "Ons deel of maak nie enige persoonlike inligting bekend nie omdat ons geen inligting versamel nie. U data (die tellings wat u volg) bly op u toestel.",
-
-  "privacy_security_title": "Data Sekuriteit",
-  "privacy_security": "Enige data wat gegenereer word deur die gebruik van die Piyuo Teller app (soos u tellings) word slegs plaaslik op u toestel gestoor. Ons het nie toegang tot hierdie data nie. Terwyl ons ons app met standaard sekuriteitspraktyke bou, hang die sekuriteit van die data wat op u toestel gestoor is af van die sekuriteitsmaatreëls wat u vir u toestel self neem.",
-
-  "privacy_children_title": "Kinders se Privaatheid",
-  "privacy_children": "Ons App versamel nie persoonlike inligting van enigiemand nie, insluitend kinders. Ons voldoen aan die Children's Online Privacy Protection Act (COPPA) in die VSA en soortgelyke regulasies soos GDPR rakende kinders se data. Aangesien ons geen data versamel nie, versamel ons inherent nie data van kinders onder die ouderdom van 13 (of 16 in sommige EU-lande) nie.",
-
-  "privacy_rights_title": "U Regte (GDPR en Ander Wette)",
-  "privacy_rights_1": "Privaatheidswette soos die Algemene Databeskerming Regulasie (GDPR) in Europa en verskeie Amerikaanse staatswette verleen individue regte oor hul persoonlike data (soos toegang, korreksie, verwydering).",
-  "privacy_rights_2": "Omdat die Piyuo Teller app nie enige van u persoonlike data versamel, stoor, of verwerk nie, is hierdie regte gewoonlik nie van toepassing in die konteks van ons App nie, aangesien daar geen data deur ons gehou word vir u om toegang te verkry, te korrigeer, of te verwyder nie. Enige data verwant aan die app bestaan slegs op u toestel, onder u beheer.",
-
-  "privacy_changes_title": "Veranderinge aan Hierdie Privaatheidsbeleid",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Ons kan hierdie Privaatheidsbeleid van tyd tot tyd opdateer. Ons sal u in kennis stel van enige veranderinge deur die nuwe Privaatheidsbeleid binne die App of op ons webwerf ({website}) te plaas. U word aangeraai om hierdie Privaatheidsbeleid gereeld te hersien vir enige veranderinge.",
   "privacy_changes_2": "Veranderinge aan hierdie Privaatheidsbeleid is effektief wanneer hulle op hierdie bladsy geplaas word.",
-
-  "privacy_contact_title": "Kontak Ons",
-  "privacy_contact_intro": "As u enige vrae het oor hierdie Privaatheidsbeleid, kontak ons asseblief:",
+  "privacy_changes_title": "Veranderinge aan Hierdie Privaatheidsbeleid",
+  "privacy_children": "Ons App versamel nie persoonlike inligting van enigiemand nie, insluitend kinders. Ons voldoen aan die Children's Online Privacy Protection Act (COPPA) in die VSA en soortgelyke regulasies soos GDPR rakende kinders se data. Aangesien ons geen data versamel nie, versamel ons inherent nie data van kinders onder die ouderdom van 13 (of 16 in sommige EU-lande) nie.",
+  "privacy_children_title": "Kinders se Privaatheid",
   "privacy_contact_email": "Per e-pos: {email}",
+  "privacy_contact_intro": "As u enige vrae het oor hierdie Privaatheidsbeleid, kontak ons asseblief:",
+  "privacy_contact_title": "Kontak Ons",
   "privacy_contact_website": "Deur hierdie bladsy op ons webwerf te besoek: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Effektiewe Datum: 12 April 2025",
+  "privacy_introduction_1": "Welkom by Piyuo Teller! Hierdie Privaatheidsbeleid verduidelik hoe ons inligting hanteer wanneer u ons sagteware-toepassing (\"App\") gebruik. Ons verbintenis is tot u privaatheid. Hierdie App is ontwerp om te funksioneer sonder om enige van u persoonlike data te versamel of te verwerk.",
+  "privacy_introduction_2": "Hierdie Privaatheidsbeleid geld vir die Piyuo Teller sagteware-toepassing (\"App\") vir mobiele toestelle en rekenaars, beskikbaar oor verskeie platforms en toepassingswinkels.",
+  "privacy_introduction_title": "Inleiding",
+  "privacy_no_collect_intro": "Ons versamel, stoor, versend, of verwerk nie enige persoonlike inligting of gebruiksdata van u deur die Piyuo Teller app nie.",
+  "privacy_no_collect_personal": "Geen Persoonlike Data: Ons vra nie vir, verkry nie toegang tot, of volg nie enige inligting wat u kan identifiseer nie, soos u naam, e-posadres, ligging, toestelidentifiseerders, of kontakte.",
+  "privacy_no_collect_third_party": "Geen Derdeparty-dienste: Ons integreer nie enige derdeparty-dienste vir analise (soos Firebase Analytics), advertensies (soos AdMob), wolkberging, of enige ander doel wat data met eksterne partye sou deel nie. Die app werk heeltemal vanlyn in terme van datahantering.",
+  "privacy_no_collect_title": "Inligting Wat Ons Nie Versamel Nie",
+  "privacy_no_collect_usage": "Geen Gebruiksdata: Die app neem nie op hoe u dit gebruik nie. Alle tellerdata wat u skep word slegs plaaslik op u toestel gestoor en is nie vir ons toeganklik nie.",
+  "privacy_rights_1": "Privaatheidswette soos die Algemene Databeskerming Regulasie (GDPR) in Europa en verskeie Amerikaanse staatswette verleen individue regte oor hul persoonlike data (soos toegang, korreksie, verwydering).",
+  "privacy_rights_2": "Omdat die Piyuo Teller app nie enige van u persoonlike data versamel, stoor, of verwerk nie, is hierdie regte gewoonlik nie van toepassing in die konteks van ons App nie, aangesien daar geen data deur ons gehou word vir u om toegang te verkry, te korrigeer, of te verwyder nie. Enige data verwant aan die app bestaan slegs op u toestel, onder u beheer.",
+  "privacy_rights_title": "U Regte (GDPR en Ander Wette)",
+  "privacy_security": "Enige data wat gegenereer word deur die gebruik van die Piyuo Teller app (soos u tellings) word slegs plaaslik op u toestel gestoor. Ons het nie toegang tot hierdie data nie. Terwyl ons ons app met standaard sekuriteitspraktyke bou, hang die sekuriteit van die data wat op u toestel gestoor is af van die sekuriteitsmaatreëls wat u vir u toestel self neem.",
+  "privacy_security_title": "Data Sekuriteit",
+  "privacy_sharing": "Ons deel of maak nie enige persoonlike inligting bekend nie omdat ons geen inligting versamel nie. U data (die tellings wat u volg) bly op u toestel.",
+  "privacy_sharing_title": "Inligtingsdeling en Openbaarmaking",
+  "privacy_title": "Privaatheidsbeleid vir Piyuo Teller",
+  "privacy_use": "Aangesien ons geen inligting versamel nie, gebruik ons nie u inligting vir enige doel nie.",
+  "privacy_use_title": "Hoe Ons Inligting Gebruik",
+  "privacy_who_we_are": "Die Piyuo Teller app word verskaf deur Piyuo (\"ons,\" \"ons,\" of \"ons s'n\"). Ons webwerf is {website}. As u vrae het oor hierdie beleid, kan u ons kontak by {email}.",
+  "privacy_who_we_are_title": "Wie Ons Is",
+  "website_url": "https://piyuo.com"
 }

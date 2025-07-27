@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Privaatsuspoliitika Piyuo Counter jaoks",
-  "privacy_effective_date": "Jõustumiskuupäev: 12. aprill 2025",
-
-  "privacy_introduction_title": "Sissejuhatus",
-  "privacy_introduction_1": "Tere tulemast Piyuo Counter rakendusesse! See privaatsuspoliitika selgitab, kuidas me teie teavet töötleme, kui kasutate meie tarkvararakendust (\"Rakendus\"). Meie kohustus on teie privaatsuse kaitsmine. See rakendus on loodud töötama ilma teie isikuandmeid kogumata või töötlemata.",
-  "privacy_introduction_2": "See privaatsuspoliitika kehtib Piyuo Counter tarkvararakenduse (\"Rakendus\") kohta mobiilseadmetele ja arvutitele, mis on saadaval erinevatel platvormidel ja rakenduste kauplustes.",
-
-  "privacy_who_we_are_title": "Kes me oleme",
-  "privacy_who_we_are": "Piyuo Counter rakenduse pakub Piyuo (\"meie\" või \"meie\"). Meie veebisait on {website}. Kui teil on küsimusi selle poliitika kohta, võite meiega ühendust võtta aadressil {email}.",
-
-  "privacy_no_collect_title": "Teave, mida me ei kogu",
-  "privacy_no_collect_intro": "Me ei kogu, salvesta, edasta ega töötle Piyuo Counter rakenduse kaudu teilt mingeid isikuandmeid või kasutusandmeid.",
-  "privacy_no_collect_personal": "Isikuandmed puuduvad: Me ei küsi, ei pääse juurde ega jälgi mingit teavet, mis võiks teid identifitseerida, nagu teie nimi, e-posti aadress, asukoht, seadme identifikaatorid või kontaktid.",
-  "privacy_no_collect_usage": "Kasutusandmed puuduvad: Rakendus ei registreeri, kuidas te seda kasutate. Kõik teie loodud loenduri andmed salvestatakse ainult teie seadmesse kohalikult ja ei ole meile kättesaadavad.",
-  "privacy_no_collect_third_party": "Kolmandate osapoolte teenused puuduvad: Me ei integreeri mingeid kolmandate osapoolte teenuseid analüütika (nagu Firebase Analytics), reklaam (nagu AdMob), pilvetalletuse või muu sellise eesmärgi jaoks, mis hõlmaks andmete jagamist väliste osapoolte vahel. Rakendus töötab andmete käitlemise osas täielikult võrguühenduseta.",
-
-  "privacy_use_title": "Kuidas me teavet kasutame",
-  "privacy_use": "Kuna me ei kogu mingit teavet, ei kasuta me teie teavet ühegi eesmärgi jaoks.",
-
-  "privacy_sharing_title": "Teabe jagamine ja avalikustamine",
-  "privacy_sharing": "Me ei jaga ega avalikusta mingeid isikuandmeid, sest me ei kogu neid. Teie andmed (loendused, mida te jälgite) jäävad teie seadmesse.",
-
-  "privacy_security_title": "Andmeturve",
-  "privacy_security": "Kõik Piyuo Counter rakenduse kasutamisel tekkinud andmed (nagu teie loendused) salvestatakse ainult teie seadmesse kohalikult. Meil ei ole juurdepääsu nendele andmetele. Kuigi me ehitame oma rakendust standardsete turvapraktikatega, sõltub teie seadmesse salvestatud andmete turvalisus turvameetmetest, mida te oma seadme jaoks võtate.",
-
-  "privacy_children_title": "Laste privaatsus",
-  "privacy_children": "Meie rakendus ei kogu isikuandmeid kelleltki, sealhulgas lastelt. Me järgime Eesti isikuandmete kaitse seadust ja sarnaseid määrusi laste andmete kohta. Kuna me ei kogu andmeid, ei kogu me loomulikult andmeid alla 13-aastastelt lastelt (või 16-aastastelt mõnedes EL riikides).",
-
-  "privacy_rights_title": "Teie õigused (GDPR ja teised seadused)",
-  "privacy_rights_1": "Privaatsusseadused nagu Üldine andmekaitse määrus (GDPR) Euroopas ja erinevad riikide seadused annavad isikutele õigused nende isikuandmete üle (nagu juurdepääs, parandamine, kustutamine).",
-  "privacy_rights_2": "Kuna Piyuo Counter rakendus ei kogu, salvesta ega töötle teie isikuandmeid, ei ole need õigused üldiselt meie rakenduse kontekstis rakendatavad, kuna meil ei ole andmeid, millele teil oleks juurdepääs, mida parandada või kustutada. Kõik rakendusega seotud andmed asuvad ainult teie seadmes, teie kontrolli all.",
-
-  "privacy_changes_title": "Selle privaatsuspoliitika muudatused",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Me võime seda privaatsuspoliitikat aeg-ajalt uuendada. Me teavitame teid muudatustest, postitades uue privaatsuspoliitika rakenduse sees või meie veebisaidil ({website}). Soovitame teil seda privaatsuspoliitikat regulaarselt üle vaadata.",
   "privacy_changes_2": "Selle privaatsuspoliitika muudatused jõustuvad siis, kui need on sellele lehele postitatud.",
-
-  "privacy_contact_title": "Võtke meiega ühendust",
-  "privacy_contact_intro": "Kui teil on küsimusi selle privaatsuspoliitika kohta, võtke meiega ühendust:",
+  "privacy_changes_title": "Selle privaatsuspoliitika muudatused",
+  "privacy_children": "Meie rakendus ei kogu isikuandmeid kelleltki, sealhulgas lastelt. Me järgime Eesti isikuandmete kaitse seadust ja sarnaseid määrusi laste andmete kohta. Kuna me ei kogu andmeid, ei kogu me loomulikult andmeid alla 13-aastastelt lastelt (või 16-aastastelt mõnedes EL riikides).",
+  "privacy_children_title": "Laste privaatsus",
   "privacy_contact_email": "E-posti teel: {email}",
+  "privacy_contact_intro": "Kui teil on küsimusi selle privaatsuspoliitika kohta, võtke meiega ühendust:",
+  "privacy_contact_title": "Võtke meiega ühendust",
   "privacy_contact_website": "Külastades seda lehte meie veebisaidil: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Jõustumiskuupäev: 12. aprill 2025",
+  "privacy_introduction_1": "Tere tulemast Piyuo Counter rakendusesse! See privaatsuspoliitika selgitab, kuidas me teie teavet töötleme, kui kasutate meie tarkvararakendust (\"Rakendus\"). Meie kohustus on teie privaatsuse kaitsmine. See rakendus on loodud töötama ilma teie isikuandmeid kogumata või töötlemata.",
+  "privacy_introduction_2": "See privaatsuspoliitika kehtib Piyuo Counter tarkvararakenduse (\"Rakendus\") kohta mobiilseadmetele ja arvutitele, mis on saadaval erinevatel platvormidel ja rakenduste kauplustes.",
+  "privacy_introduction_title": "Sissejuhatus",
+  "privacy_no_collect_intro": "Me ei kogu, salvesta, edasta ega töötle Piyuo Counter rakenduse kaudu teilt mingeid isikuandmeid või kasutusandmeid.",
+  "privacy_no_collect_personal": "Isikuandmed puuduvad: Me ei küsi, ei pääse juurde ega jälgi mingit teavet, mis võiks teid identifitseerida, nagu teie nimi, e-posti aadress, asukoht, seadme identifikaatorid või kontaktid.",
+  "privacy_no_collect_third_party": "Kolmandate osapoolte teenused puuduvad: Me ei integreeri mingeid kolmandate osapoolte teenuseid analüütika (nagu Firebase Analytics), reklaam (nagu AdMob), pilvetalletuse või muu sellise eesmärgi jaoks, mis hõlmaks andmete jagamist väliste osapoolte vahel. Rakendus töötab andmete käitlemise osas täielikult võrguühenduseta.",
+  "privacy_no_collect_title": "Teave, mida me ei kogu",
+  "privacy_no_collect_usage": "Kasutusandmed puuduvad: Rakendus ei registreeri, kuidas te seda kasutate. Kõik teie loodud loenduri andmed salvestatakse ainult teie seadmesse kohalikult ja ei ole meile kättesaadavad.",
+  "privacy_rights_1": "Privaatsusseadused nagu Üldine andmekaitse määrus (GDPR) Euroopas ja erinevad riikide seadused annavad isikutele õigused nende isikuandmete üle (nagu juurdepääs, parandamine, kustutamine).",
+  "privacy_rights_2": "Kuna Piyuo Counter rakendus ei kogu, salvesta ega töötle teie isikuandmeid, ei ole need õigused üldiselt meie rakenduse kontekstis rakendatavad, kuna meil ei ole andmeid, millele teil oleks juurdepääs, mida parandada või kustutada. Kõik rakendusega seotud andmed asuvad ainult teie seadmes, teie kontrolli all.",
+  "privacy_rights_title": "Teie õigused (GDPR ja teised seadused)",
+  "privacy_security": "Kõik Piyuo Counter rakenduse kasutamisel tekkinud andmed (nagu teie loendused) salvestatakse ainult teie seadmesse kohalikult. Meil ei ole juurdepääsu nendele andmetele. Kuigi me ehitame oma rakendust standardsete turvapraktikatega, sõltub teie seadmesse salvestatud andmete turvalisus turvameetmetest, mida te oma seadme jaoks võtate.",
+  "privacy_security_title": "Andmeturve",
+  "privacy_sharing": "Me ei jaga ega avalikusta mingeid isikuandmeid, sest me ei kogu neid. Teie andmed (loendused, mida te jälgite) jäävad teie seadmesse.",
+  "privacy_sharing_title": "Teabe jagamine ja avalikustamine",
+  "privacy_title": "Privaatsuspoliitika Piyuo Counter jaoks",
+  "privacy_use": "Kuna me ei kogu mingit teavet, ei kasuta me teie teavet ühegi eesmärgi jaoks.",
+  "privacy_use_title": "Kuidas me teavet kasutame",
+  "privacy_who_we_are": "Piyuo Counter rakenduse pakub Piyuo (\"meie\" või \"meie\"). Meie veebisait on {website}. Kui teil on küsimusi selle poliitika kohta, võite meiega ühendust võtta aadressil {email}.",
+  "privacy_who_we_are_title": "Kes me oleme",
+  "website_url": "https://piyuo.com"
 }

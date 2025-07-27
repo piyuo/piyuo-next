@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Politica de Confidențialitate pentru Piyuo Counter",
-  "privacy_effective_date": "Data intrării în vigoare: 12 aprilie 2025",
-
-  "privacy_introduction_title": "Introducere",
-  "privacy_introduction_1": "Bun venit la Piyuo Counter! Această Politică de Confidențialitate explică cum gestionăm informațiile atunci când utilizați aplicația noastră software (\"Aplicația\"). Angajamentul nostru este pentru confidențialitatea dumneavoastră. Această Aplicație este proiectată să funcționeze fără a colecta sau procesa datele dumneavoastră personale.",
-  "privacy_introduction_2": "Această Politică de Confidențialitate se aplică aplicației software Piyuo Counter (\"Aplicația\") pentru dispozitive mobile și computere, disponibilă pe diverse platforme și magazine de aplicații.",
-
-  "privacy_who_we_are_title": "Cine suntem noi",
-  "privacy_who_we_are": "Aplicația Piyuo Counter este furnizată de Piyuo (\"noi\", \"al nostru\" sau \"a noastră\"). Site-ul nostru web este {website}. Dacă aveți întrebări despre această politică, ne puteți contacta la {email}.",
-
-  "privacy_no_collect_title": "Informații pe care nu le colectăm",
-  "privacy_no_collect_intro": "Nu colectăm, stocăm, transmitem sau procesăm informații personale sau date de utilizare de la dumneavoastră prin aplicația Piyuo Counter.",
-  "privacy_no_collect_personal": "Nicio dată personală: Nu solicităm, nu accesăm sau urmărim informații care vă pot identifica, cum ar fi numele, adresa de email, locația, identificatorii dispozitivului sau contactele dumneavoastră.",
-  "privacy_no_collect_usage": "Nicio dată de utilizare: Aplicația nu înregistrează cum o utilizați. Toate datele contorului pe care le creați sunt stocate local doar pe dispozitivul dumneavoastră și nu sunt accesibile nouă.",
-  "privacy_no_collect_third_party": "Niciun serviciu terț: Nu integrăm servicii terțe pentru analiză (precum Firebase Analytics), publicitate (precum AdMob), stocare în cloud sau orice alt scop care ar implica partajarea datelor cu părți externe. Aplicația operează complet offline în ceea ce privește gestionarea datelor.",
-
-  "privacy_use_title": "Cum folosim informațiile",
-  "privacy_use": "Întrucât nu colectăm informații, nu folosim informațiile dumneavoastră în niciun scop.",
-
-  "privacy_sharing_title": "Partajarea și divulgarea informațiilor",
-  "privacy_sharing": "Nu partajăm sau divulgăm informații personale pentru că nu colectăm niciuna. Datele dumneavoastră (contoarele pe care le urmăriți) rămân pe dispozitivul dumneavoastră.",
-
-  "privacy_security_title": "Securitatea datelor",
-  "privacy_security": "Orice date generate prin utilizarea aplicației Piyuo Counter (cum ar fi contoarele dumneavoastră) sunt stocate local doar pe dispozitivul dumneavoastră. Nu avem acces la aceste date. Deși construim aplicația noastră cu practici de securitate standard, securitatea datelor stocate pe dispozitivul dumneavoastră depinde de măsurile de securitate pe care le luați pentru dispozitivul în sine.",
-
-  "privacy_children_title": "Confidențialitatea copiilor",
-  "privacy_children": "Aplicația noastră nu colectează informații personale de la nimeni, inclusiv copii. Respectăm Legea de Protecție a Confidențialității Online a Copiilor (COPPA) din SUA și reglementări similare precum GDPR privind datele copiilor. Întrucât nu colectăm date, în mod inerent nu colectăm date de la copii sub 13 ani (sau 16 ani în unele țări UE).",
-
-  "privacy_rights_title": "Drepturile dumneavoastră (GDPR și alte legi)",
-  "privacy_rights_1": "Legile de confidențialitate precum Regulamentul General privind Protecția Datelor (GDPR) în Europa și diverse legi de stat din SUA acordă persoanelor drepturi asupra datelor lor personale (cum ar fi accesul, corectarea, ștergerea).",
-  "privacy_rights_2": "Pentru că aplicația Piyuo Counter nu colectează, stochează sau procesează datele dumneavoastră personale, aceste drepturi în general nu sunt aplicabile în contextul Aplicației noastre, întrucât nu există date deținute de noi la care să puteți accesa, corecta sau șterge. Orice date legate de aplicație se află exclusiv pe dispozitivul dumneavoastră, sub controlul dumneavoastră.",
-
-  "privacy_changes_title": "Modificări la această Politică de Confidențialitate",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Putem actualiza această Politică de Confidențialitate din când în când. Vă vom notifica despre orice modificări prin publicarea noii Politici de Confidențialitate în Aplicație sau pe site-ul nostru web ({website}). Sunteți sfătuit să revizuiți periodic această Politică de Confidențialitate pentru orice modificări.",
   "privacy_changes_2": "Modificările la această Politică de Confidențialitate devin efective atunci când sunt publicate pe această pagină.",
-
-  "privacy_contact_title": "Contactați-ne",
-  "privacy_contact_intro": "Dacă aveți întrebări despre această Politică de Confidențialitate, vă rugăm să ne contactați:",
+  "privacy_changes_title": "Modificări la această Politică de Confidențialitate",
+  "privacy_children": "Aplicația noastră nu colectează informații personale de la nimeni, inclusiv copii. Respectăm Legea de Protecție a Confidențialității Online a Copiilor (COPPA) din SUA și reglementări similare precum GDPR privind datele copiilor. Întrucât nu colectăm date, în mod inerent nu colectăm date de la copii sub 13 ani (sau 16 ani în unele țări UE).",
+  "privacy_children_title": "Confidențialitatea copiilor",
   "privacy_contact_email": "Prin email: {email}",
+  "privacy_contact_intro": "Dacă aveți întrebări despre această Politică de Confidențialitate, vă rugăm să ne contactați:",
+  "privacy_contact_title": "Contactați-ne",
   "privacy_contact_website": "Prin vizitarea acestei pagini pe site-ul nostru web: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Data intrării în vigoare: 12 aprilie 2025",
+  "privacy_introduction_1": "Bun venit la Piyuo Counter! Această Politică de Confidențialitate explică cum gestionăm informațiile atunci când utilizați aplicația noastră software (\"Aplicația\"). Angajamentul nostru este pentru confidențialitatea dumneavoastră. Această Aplicație este proiectată să funcționeze fără a colecta sau procesa datele dumneavoastră personale.",
+  "privacy_introduction_2": "Această Politică de Confidențialitate se aplică aplicației software Piyuo Counter (\"Aplicația\") pentru dispozitive mobile și computere, disponibilă pe diverse platforme și magazine de aplicații.",
+  "privacy_introduction_title": "Introducere",
+  "privacy_no_collect_intro": "Nu colectăm, stocăm, transmitem sau procesăm informații personale sau date de utilizare de la dumneavoastră prin aplicația Piyuo Counter.",
+  "privacy_no_collect_personal": "Nicio dată personală: Nu solicităm, nu accesăm sau urmărim informații care vă pot identifica, cum ar fi numele, adresa de email, locația, identificatorii dispozitivului sau contactele dumneavoastră.",
+  "privacy_no_collect_third_party": "Niciun serviciu terț: Nu integrăm servicii terțe pentru analiză (precum Firebase Analytics), publicitate (precum AdMob), stocare în cloud sau orice alt scop care ar implica partajarea datelor cu părți externe. Aplicația operează complet offline în ceea ce privește gestionarea datelor.",
+  "privacy_no_collect_title": "Informații pe care nu le colectăm",
+  "privacy_no_collect_usage": "Nicio dată de utilizare: Aplicația nu înregistrează cum o utilizați. Toate datele contorului pe care le creați sunt stocate local doar pe dispozitivul dumneavoastră și nu sunt accesibile nouă.",
+  "privacy_rights_1": "Legile de confidențialitate precum Regulamentul General privind Protecția Datelor (GDPR) în Europa și diverse legi de stat din SUA acordă persoanelor drepturi asupra datelor lor personale (cum ar fi accesul, corectarea, ștergerea).",
+  "privacy_rights_2": "Pentru că aplicația Piyuo Counter nu colectează, stochează sau procesează datele dumneavoastră personale, aceste drepturi în general nu sunt aplicabile în contextul Aplicației noastre, întrucât nu există date deținute de noi la care să puteți accesa, corecta sau șterge. Orice date legate de aplicație se află exclusiv pe dispozitivul dumneavoastră, sub controlul dumneavoastră.",
+  "privacy_rights_title": "Drepturile dumneavoastră (GDPR și alte legi)",
+  "privacy_security": "Orice date generate prin utilizarea aplicației Piyuo Counter (cum ar fi contoarele dumneavoastră) sunt stocate local doar pe dispozitivul dumneavoastră. Nu avem acces la aceste date. Deși construim aplicația noastră cu practici de securitate standard, securitatea datelor stocate pe dispozitivul dumneavoastră depinde de măsurile de securitate pe care le luați pentru dispozitivul în sine.",
+  "privacy_security_title": "Securitatea datelor",
+  "privacy_sharing": "Nu partajăm sau divulgăm informații personale pentru că nu colectăm niciuna. Datele dumneavoastră (contoarele pe care le urmăriți) rămân pe dispozitivul dumneavoastră.",
+  "privacy_sharing_title": "Partajarea și divulgarea informațiilor",
+  "privacy_title": "Politica de Confidențialitate pentru Piyuo Counter",
+  "privacy_use": "Întrucât nu colectăm informații, nu folosim informațiile dumneavoastră în niciun scop.",
+  "privacy_use_title": "Cum folosim informațiile",
+  "privacy_who_we_are": "Aplicația Piyuo Counter este furnizată de Piyuo (\"noi\", \"al nostru\" sau \"a noastră\"). Site-ul nostru web este {website}. Dacă aveți întrebări despre această politică, ne puteți contacta la {email}.",
+  "privacy_who_we_are_title": "Cine suntem noi",
+  "website_url": "https://piyuo.com"
 }

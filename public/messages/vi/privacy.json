@@ -1,45 +1,34 @@
 {
-  "privacy_title": "Chính sách Bảo mật cho Piyuo Counter",
-  "privacy_effective_date": "Ngày có hiệu lực: 12 tháng 4, 2025",
-
-  "privacy_introduction_title": "Giới thiệu",
-  "privacy_introduction_1": "Chào mừng bạn đến với Piyuo Counter! Chính sách Bảo mật này giải thích cách chúng tôi xử lý thông tin khi bạn sử dụng ứng dụng phần mềm của chúng tôi (\"Ứng dụng\"). Cam kết của chúng tôi là bảo vệ quyền riêng tư của bạn. Ứng dụng này được thiết kế để hoạt động mà không thu thập hoặc xử lý bất kỳ dữ liệu cá nhân nào của bạn.",
-  "privacy_introduction_2": "Chính sách Bảo mật này áp dụng cho ứng dụng phần mềm Piyuo Counter (\"Ứng dụng\") dành cho thiết bị di động và máy tính, có sẵn trên nhiều nền tảng và cửa hàng ứng dụng khác nhau.",
-
-  "privacy_who_we_are_title": "Chúng tôi là ai",
-  "privacy_who_we_are": "Ứng dụng Piyuo Counter được cung cấp bởi Piyuo (\"chúng tôi\", \"của chúng tôi\" hoặc \"chúng ta\"). Website của chúng tôi là {website}. Nếu bạn có câu hỏi về chính sách này, bạn có thể liên hệ với chúng tôi tại {email}.",
-
-  "privacy_no_collect_title": "Thông tin chúng tôi không thu thập",
-  "privacy_no_collect_intro": "Chúng tôi không thu thập, lưu trữ, truyền tải hoặc xử lý bất kỳ thông tin cá nhân hoặc dữ liệu sử dụng nào của bạn thông qua ứng dụng Piyuo Counter.",
-  "privacy_no_collect_personal": "Không có dữ liệu cá nhân: Chúng tôi không yêu cầu, truy cập hoặc theo dõi bất kỳ thông tin nào có thể nhận dạng bạn, chẳng hạn như tên, địa chỉ email, vị trí, định danh thiết bị hoặc danh bạ của bạn.",
-  "privacy_no_collect_usage": "Không có dữ liệu sử dụng: Ứng dụng không ghi lại cách bạn sử dụng nó. Tất cả dữ liệu bộ đếm mà bạn tạo được lưu trữ cục bộ chỉ trên thiết bị của bạn và chúng tôi không thể truy cập.",
-  "privacy_no_collect_third_party": "Không có dịch vụ bên thứ ba: Chúng tôi không tích hợp bất kỳ dịch vụ bên thứ ba nào cho phân tích (như Firebase Analytics), quảng cáo (như AdMob), lưu trữ đám mây hoặc bất kỳ mục đích nào khác liên quan đến việc chia sẻ dữ liệu với các bên ngoài. Ứng dụng hoạt động hoàn toàn ngoại tuyến về mặt xử lý dữ liệu.",
-
-  "privacy_use_title": "Cách chúng tôi sử dụng thông tin",
-  "privacy_use": "Vì chúng tôi không thu thập bất kỳ thông tin nào, chúng tôi không sử dụng thông tin của bạn cho bất kỳ mục đích nào.",
-
-  "privacy_sharing_title": "Chia sẻ và tiết lộ thông tin",
-  "privacy_sharing": "Chúng tôi không chia sẻ hoặc tiết lộ bất kỳ thông tin cá nhân nào vì chúng tôi không thu thập bất kỳ thông tin nào. Dữ liệu của bạn (các số đếm mà bạn theo dõi) vẫn ở trên thiết bị của bạn.",
-
-  "privacy_security_title": "Bảo mật dữ liệu",
-  "privacy_security": "Bất kỳ dữ liệu nào được tạo ra khi sử dụng ứng dụng Piyuo Counter (như các số đếm của bạn) đều được lưu trữ cục bộ chỉ trên thiết bị của bạn. Chúng tôi không có quyền truy cập vào dữ liệu này. Mặc dù chúng tôi xây dựng ứng dụng với các phương pháp bảo mật tiêu chuẩn, tính bảo mật của dữ liệu được lưu trữ trên thiết bị của bạn phụ thuộc vào các biện pháp bảo mật mà bạn thực hiện cho chính thiết bị đó.",
-
-  "privacy_children_title": "Quyền riêng tư của trẻ em",
-  "privacy_children": "Ứng dụng của chúng tôi không thu thập thông tin cá nhân từ bất kỳ ai, bao gồm cả trẻ em. Chúng tôi tuân thủ Đạo luật Bảo vệ Quyền riêng tư Trực tuyến của Trẻ em (COPPA) tại Hoa Kỳ và các quy định tương tự như GDPR về dữ liệu trẻ em. Vì chúng tôi không thu thập dữ liệu, chúng tôi về bản chất không thu thập dữ liệu từ trẻ em dưới 13 tuổi (hoặc 16 tuổi ở một số quốc gia EU).",
-
-  "privacy_rights_title": "Quyền của bạn (GDPR và các luật khác)",
-  "privacy_rights_1": "Các luật về quyền riêng tư như Quy định Bảo vệ Dữ liệu Chung (GDPR) ở châu Âu và các luật bang khác nhau của Hoa Kỳ cấp cho cá nhân các quyền đối với dữ liệu cá nhân của họ (như truy cập, sửa chữa, xóa).",
-  "privacy_rights_2": "Vì ứng dụng Piyuo Counter không thu thập, lưu trữ hoặc xử lý bất kỳ dữ liệu cá nhân nào của bạn, những quyền này thường không áp dụng trong bối cảnh Ứng dụng của chúng tôi, vì không có dữ liệu nào do chúng tôi nắm giữ để bạn có thể truy cập, sửa chữa hoặc xóa. Bất kỳ dữ liệu nào liên quan đến ứng dụng chỉ tồn tại trên thiết bị của bạn, dưới sự kiểm soát của bạn.",
-
-  "privacy_changes_title": "Thay đổi Chính sách Bảo mật này",
+  "contact_email": "service@piyuo.com",
   "privacy_changes_1": "Chúng tôi có thể cập nhật Chính sách Bảo mật này theo thời gian. Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi nào bằng cách đăng Chính sách Bảo mật mới trong Ứng dụng hoặc trên website của chúng tôi ({website}). Bạn nên xem lại Chính sách Bảo mật này định kỳ để biết bất kỳ thay đổi nào.",
   "privacy_changes_2": "Các thay đổi đối với Chính sách Bảo mật này có hiệu lực khi được đăng trên trang này.",
-
-  "privacy_contact_title": "Liên hệ với chúng tôi",
-  "privacy_contact_intro": "Nếu bạn có bất kỳ câu hỏi nào về Chính sách Bảo mật này, vui lòng liên hệ với chúng tôi:",
+  "privacy_changes_title": "Thay đổi Chính sách Bảo mật này",
+  "privacy_children": "Ứng dụng của chúng tôi không thu thập thông tin cá nhân từ bất kỳ ai, bao gồm cả trẻ em. Chúng tôi tuân thủ Đạo luật Bảo vệ Quyền riêng tư Trực tuyến của Trẻ em (COPPA) tại Hoa Kỳ và các quy định tương tự như GDPR về dữ liệu trẻ em. Vì chúng tôi không thu thập dữ liệu, chúng tôi về bản chất không thu thập dữ liệu từ trẻ em dưới 13 tuổi (hoặc 16 tuổi ở một số quốc gia EU).",
+  "privacy_children_title": "Quyền riêng tư của trẻ em",
   "privacy_contact_email": "Qua email: {email}",
+  "privacy_contact_intro": "Nếu bạn có bất kỳ câu hỏi nào về Chính sách Bảo mật này, vui lòng liên hệ với chúng tôi:",
+  "privacy_contact_title": "Liên hệ với chúng tôi",
   "privacy_contact_website": "Bằng cách truy cập trang này trên website của chúng tôi: {website}",
-
-  "website_url": "https://piyuo.com",
-  "contact_email": "service@piyuo.com"
+  "privacy_effective_date": "Ngày có hiệu lực: 12 tháng 4, 2025",
+  "privacy_introduction_1": "Chào mừng bạn đến với Piyuo Counter! Chính sách Bảo mật này giải thích cách chúng tôi xử lý thông tin khi bạn sử dụng ứng dụng phần mềm của chúng tôi (\"Ứng dụng\"). Cam kết của chúng tôi là bảo vệ quyền riêng tư của bạn. Ứng dụng này được thiết kế để hoạt động mà không thu thập hoặc xử lý bất kỳ dữ liệu cá nhân nào của bạn.",
+  "privacy_introduction_2": "Chính sách Bảo mật này áp dụng cho ứng dụng phần mềm Piyuo Counter (\"Ứng dụng\") dành cho thiết bị di động và máy tính, có sẵn trên nhiều nền tảng và cửa hàng ứng dụng khác nhau.",
+  "privacy_introduction_title": "Giới thiệu",
+  "privacy_no_collect_intro": "Chúng tôi không thu thập, lưu trữ, truyền tải hoặc xử lý bất kỳ thông tin cá nhân hoặc dữ liệu sử dụng nào của bạn thông qua ứng dụng Piyuo Counter.",
+  "privacy_no_collect_personal": "Không có dữ liệu cá nhân: Chúng tôi không yêu cầu, truy cập hoặc theo dõi bất kỳ thông tin nào có thể nhận dạng bạn, chẳng hạn như tên, địa chỉ email, vị trí, định danh thiết bị hoặc danh bạ của bạn.",
+  "privacy_no_collect_third_party": "Không có dịch vụ bên thứ ba: Chúng tôi không tích hợp bất kỳ dịch vụ bên thứ ba nào cho phân tích (như Firebase Analytics), quảng cáo (như AdMob), lưu trữ đám mây hoặc bất kỳ mục đích nào khác liên quan đến việc chia sẻ dữ liệu với các bên ngoài. Ứng dụng hoạt động hoàn toàn ngoại tuyến về mặt xử lý dữ liệu.",
+  "privacy_no_collect_title": "Thông tin chúng tôi không thu thập",
+  "privacy_no_collect_usage": "Không có dữ liệu sử dụng: Ứng dụng không ghi lại cách bạn sử dụng nó. Tất cả dữ liệu bộ đếm mà bạn tạo được lưu trữ cục bộ chỉ trên thiết bị của bạn và chúng tôi không thể truy cập.",
+  "privacy_rights_1": "Các luật về quyền riêng tư như Quy định Bảo vệ Dữ liệu Chung (GDPR) ở châu Âu và các luật bang khác nhau của Hoa Kỳ cấp cho cá nhân các quyền đối với dữ liệu cá nhân của họ (như truy cập, sửa chữa, xóa).",
+  "privacy_rights_2": "Vì ứng dụng Piyuo Counter không thu thập, lưu trữ hoặc xử lý bất kỳ dữ liệu cá nhân nào của bạn, những quyền này thường không áp dụng trong bối cảnh Ứng dụng của chúng tôi, vì không có dữ liệu nào do chúng tôi nắm giữ để bạn có thể truy cập, sửa chữa hoặc xóa. Bất kỳ dữ liệu nào liên quan đến ứng dụng chỉ tồn tại trên thiết bị của bạn, dưới sự kiểm soát của bạn.",
+  "privacy_rights_title": "Quyền của bạn (GDPR và các luật khác)",
+  "privacy_security": "Bất kỳ dữ liệu nào được tạo ra khi sử dụng ứng dụng Piyuo Counter (như các số đếm của bạn) đều được lưu trữ cục bộ chỉ trên thiết bị của bạn. Chúng tôi không có quyền truy cập vào dữ liệu này. Mặc dù chúng tôi xây dựng ứng dụng với các phương pháp bảo mật tiêu chuẩn, tính bảo mật của dữ liệu được lưu trữ trên thiết bị của bạn phụ thuộc vào các biện pháp bảo mật mà bạn thực hiện cho chính thiết bị đó.",
+  "privacy_security_title": "Bảo mật dữ liệu",
+  "privacy_sharing": "Chúng tôi không chia sẻ hoặc tiết lộ bất kỳ thông tin cá nhân nào vì chúng tôi không thu thập bất kỳ thông tin nào. Dữ liệu của bạn (các số đếm mà bạn theo dõi) vẫn ở trên thiết bị của bạn.",
+  "privacy_sharing_title": "Chia sẻ và tiết lộ thông tin",
+  "privacy_title": "Chính sách Bảo mật cho Piyuo Counter",
+  "privacy_use": "Vì chúng tôi không thu thập bất kỳ thông tin nào, chúng tôi không sử dụng thông tin của bạn cho bất kỳ mục đích nào.",
+  "privacy_use_title": "Cách chúng tôi sử dụng thông tin",
+  "privacy_who_we_are": "Ứng dụng Piyuo Counter được cung cấp bởi Piyuo (\"chúng tôi\", \"của chúng tôi\" hoặc \"chúng ta\"). Website của chúng tôi là {website}. Nếu bạn có câu hỏi về chính sách này, bạn có thể liên hệ với chúng tôi tại {email}.",
+  "privacy_who_we_are_title": "Chúng tôi là ai",
+  "website_url": "https://piyuo.com"
 }
