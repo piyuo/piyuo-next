@@ -20,13 +20,13 @@ const mockTranslations = {
 };
 
 describe('LinkView', () => {
-  let mockLocation: any;
+  let mockLocation: { href: string };
 
   beforeEach(() => {
     // Mock window.location for email tests
     mockLocation = { href: 'http://localhost/' };
-    delete (window as any).location;
-    (window as any).location = mockLocation;
+    delete (window as unknown as { location?: unknown }).location;
+    (window as unknown as { location: { href: string } }).location = mockLocation;
   });
 
   describe('Component Rendering', () => {
