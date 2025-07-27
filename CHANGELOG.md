@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://github.com/piyuo/piyuo-next/compare/v1.3.2...v1.4.0) (2025-07-27)
+
+
+### Features
+
+* add locale prefix to urls in linkview.tsx [#138](https://github.com/piyuo/piyuo-next/issues/138) ([67dcaf3](https://github.com/piyuo/piyuo-next/commit/67dcaf390c122317ac91b546e39a295117710b0c))
+
+
+### Bug Fixes
+
+* **test:** resolve typescript eslint errors in linkview test [#138](https://github.com/piyuo/piyuo-next/issues/138) ([81fd7f9](https://github.com/piyuo/piyuo-next/commit/81fd7f9531fad47dc63b70fe22f3153658730867))
+* translation shows english instead of de-at on terms route [#133](https://github.com/piyuo/piyuo-next/issues/133) ([c302fa5](https://github.com/piyuo/piyuo-next/commit/c302fa52c758e643a41ab346b99e345fa69f7855))
+
 ## [1.3.2](https://github.com/piyuo/piyuo-next/compare/v1.3.1...v1.3.2) (2025-07-17)
 
 
