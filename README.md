@@ -105,6 +105,30 @@ pnpm build
 pnpm test
 ```
 
+### 🔄 Dependency Management
+
+Keep your project dependencies up to date with the automated upgrade script:
+
+```bash
+# Upgrade all dependencies safely
+./scripts/upgrade_deps.sh
+```
+
+This script will:
+
+- ✅ Check for outdated dependencies
+- ✅ Update `package.json` with latest versions
+- ✅ Install updated packages
+- ✅ Run build to ensure compatibility
+- ✅ Execute tests to verify functionality
+- ✅ Provide detailed error messages if issues occur
+
+**Prerequisites:** Ensure you have `npm-check-updates` installed globally:
+
+```bash
+npm install -g npm-check-updates
+```
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## 🌐 Translation System
@@ -203,6 +227,7 @@ This project uses a **CSV-based translation system** to manage multilingual cont
   - **cleanup_branches.sh**: Deletes all local git branches that have been removed from the remote. Useful for keeping your local repository clean.
   - **start_issue.sh**: Automates starting work on a GitHub issue. It creates a new branch named after the issue number and title, assigns the issue to you, and checks out the branch.
   - **get_issue_title.sh**: Fetches the title of a GitHub issue by its number.
+  - **upgrade_deps.sh**: Safely upgrades project dependencies with comprehensive error handling and validation. Checks for outdated packages, updates them, runs builds and tests to ensure compatibility.
 
 ## Environment Variables
 
