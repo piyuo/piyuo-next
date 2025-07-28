@@ -39,7 +39,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.3.4",
+    "eslint-config-next": "15.4.4",
     "jest": "30.0.5",
     "jest-environment-jsdom": "^30.0.5",
     "only-allow": "^1.2.1",
