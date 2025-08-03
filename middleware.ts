@@ -60,7 +60,7 @@ export function middleware(request: NextRequest) {
         // - case changes (EN -> en, FR -> fr)
         // Use 307 (temporary redirect) only for fallbacks to base locales
         const isUnderscoreConversion = potentialLocale.includes('_');
-        const isCaseChange = potentialLocale.toLowerCase() === normalizedLocale && potentialLocale !== normalizedLocale;
+        const isCaseChange = potentialLocale.toLowerCase() === normalizedLocale.toLowerCase() && potentialLocale !== normalizedLocale;
         const isPermanentNormalization = isUnderscoreConversion || isCaseChange;
         const response = NextResponse.redirect(url, isPermanentNormalization ? 301 : 307);
         response.headers.set('x-locale', normalizedLocale);
