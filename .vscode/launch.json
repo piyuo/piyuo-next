@@ -14,7 +14,7 @@
             "type": "node",
             "request": "launch",
             "name": "Debug Next.js Backend",
-            "runtimeExecutable": "npm",
+            "runtimeExecutable": "pnpm",
             "runtimeArgs": ["run", "dev"],
             "console": "integratedTerminal"
           }
