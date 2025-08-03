@@ -231,7 +231,7 @@ describe('Middleware', () => {
 
       expect(normalizeLocale).toHaveBeenCalledWith('en-gb');
       expect(response).toBeInstanceOf(NextResponse);
-      expect(response.status).toBe(307); // Temporary redirect
+      expect(response.status).toBe(301); // Permanent redirect for case normalization
       expect(response.headers.get('location')).toBe('https://example.com/en-GB/');
       expect(response.headers.get('x-locale')).toBe('en-GB');
     });
@@ -249,7 +249,7 @@ describe('Middleware', () => {
 
       expect(normalizeLocale).toHaveBeenCalledWith('en-gb');
       expect(response).toBeInstanceOf(NextResponse);
-      expect(response.status).toBe(307); // Temporary redirect
+      expect(response.status).toBe(301); // Permanent redirect for case normalization
       expect(response.headers.get('location')).toBe('https://example.com/en-GB/about');
       expect(response.headers.get('x-locale')).toBe('en-GB');
     });
