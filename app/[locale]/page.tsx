@@ -9,7 +9,7 @@ import { LinkView } from "../components/LinkView";
 import { ScreenshotPlayer } from "../components/ScreenshotPlayer";
 import { ScreenshotView } from "../components/ScreenshotView";
 import { getTranslator, isSupportedLocale, supportedLocales, type SupportedLocale } from "../i18n";
-import { generateHreflangLinks, getCanonicalUrl } from "../utils/hreflang-utils";
+import { generateHreflangLinksWithCanonical, getCanonicalUrl } from "../utils/hreflang-utils";
 
 // Enable ISR with 24-hour revalidation
 // Content is typically stable but allows for updates without full rebuilds
@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: `Piyuo - ${t('app_desc')}`,
     description: t('app_desc'),
     alternates: {
-      ...generateHreflangLinks('/'),
+      ...generateHreflangLinksWithCanonical(locale, '/'),
       canonical: getCanonicalUrl(locale, '/'),
     },
     openGraph: {
