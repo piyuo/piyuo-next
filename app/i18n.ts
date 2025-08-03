@@ -72,20 +72,23 @@ export function normalizeLocale(pathLocale: string): SupportedLocale | null {
     return null;
   }
 
+  // Convert underscores to hyphens (e.g., en_IN -> en-IN)
+  const normalizedPathLocale = pathLocale.replace(/_/g, '-');
+
   // Direct match (exact case)
-  if (isSupportedLocale(pathLocale)) {
-    return pathLocale;
+  if (isSupportedLocale(normalizedPathLocale)) {
+    return normalizedPathLocale;
   }
 
   // Check for malformed locale codes
-  if (pathLocale.endsWith('-') || pathLocale.split('-').length > 2) {
+  if (normalizedPathLocale.endsWith('-') || normalizedPathLocale.startsWith('-') || normalizedPathLocale.split('-').length > 2) {
     return null;
   }
 
   // Case-insensitive match for regional locales (e.g., en-gb -> en-GB)
   // Only apply this to regional locales (must contain hyphen)
-  if (pathLocale.includes('-')) {
-    const normalizedRequest = pathLocale.toLowerCase();
+  if (normalizedPathLocale.includes('-')) {
+    const normalizedRequest = normalizedPathLocale.toLowerCase();
     const exactMatch = supportedLocales.find(locale =>
       locale.toLowerCase() === normalizedRequest
     );
@@ -97,8 +100,8 @@ export function normalizeLocale(pathLocale: string): SupportedLocale | null {
 
   // Try base locale (e.g., 'en-notexist' -> 'en')
   // Only if it's a regional locale pattern (contains hyphen)
-  if (pathLocale.includes('-')) {
-    const baseLocale = pathLocale.split('-')[0];
+  if (normalizedPathLocale.includes('-')) {
+    const baseLocale = normalizedPathLocale.split('-')[0];
     if (isSupportedLocale(baseLocale)) {
       return baseLocale;
     }
