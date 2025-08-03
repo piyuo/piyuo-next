@@ -55,10 +55,14 @@ export function middleware(request: NextRequest) {
         const url = request.nextUrl.clone();
         url.pathname = newPath;
 
-        // Use 301 (permanent redirect) for underscore-to-hyphen conversion
-        // Use 307 (temporary redirect) for other normalizations (case changes, fallbacks)
+        // Use 301 (permanent redirect) for canonical normalizations:
+        // - underscore-to-hyphen conversion (zh_CN -> zh-CN)
+        // - case changes (EN -> en, FR -> fr)
+        // Use 307 (temporary redirect) only for fallbacks to base locales
         const isUnderscoreConversion = potentialLocale.includes('_');
-        const response = NextResponse.redirect(url, isUnderscoreConversion ? 301 : 307);
+        const isCaseChange = potentialLocale.toLowerCase() === normalizedLocale && potentialLocale !== normalizedLocale;
+        const isPermanentNormalization = isUnderscoreConversion || isCaseChange;
+        const response = NextResponse.redirect(url, isPermanentNormalization ? 301 : 307);
         response.headers.set('x-locale', normalizedLocale);
         return response;
       }
