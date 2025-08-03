@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/piyuo/piyuo-next/compare/v1.4.1...v1.4.2) (2025-08-03)
+
+
+### Bug Fixes
+
+* **middleware:** change redirect status from 307 to 301 for case normalization [#150](https://github.com/piyuo/piyuo-next/issues/150) ([539f4b4](https://github.com/piyuo/piyuo-next/commit/539f4b47595935f3ff8137719b0a5ad71e65014f))
+
 ## [1.4.1](https://github.com/piyuo/piyuo-next/compare/v1.4.0...v1.4.1) (2025-08-03)
 
 
