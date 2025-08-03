@@ -281,5 +281,74 @@ describe('Middleware', () => {
       expect(response.headers.get('location')).toBe('https://example.com/en/about');
       expect(response.headers.get('x-locale')).toBe('en');
     });
+
+    // Issue #145: Test for underscore to hyphen conversion
+    it('should redirect underscore locale format to hyphen format', async () => {
+      // Mock en-IN as a supported locale
+      const mockSupportedLocales = ['en', 'fr', 'es', 'de', 'zh', 'zh-CN', 'ja', 'en-IN'];
+      require('./app/i18n').__setSupportedLocales(mockSupportedLocales);
+
+      // Mock normalizeLocale to return 'en-IN' for 'en_IN'
+      normalizeLocale.mockReturnValue('en-IN');
+
+      const request = new NextRequest('https://example.com/en_IN/');
+      const response = middleware(request);
+
+      expect(normalizeLocale).toHaveBeenCalledWith('en_IN');
+      expect(response).toBeInstanceOf(NextResponse);
+      expect(response.status).toBe(301); // Permanent redirect for underscore conversion
+      expect(response.headers.get('location')).toBe('https://example.com/en-IN/');
+      expect(response.headers.get('x-locale')).toBe('en-IN');
+    });
+
+    it('should redirect underscore locale format with path to hyphen format', async () => {
+      // Mock en-IN as a supported locale
+      const mockSupportedLocales = ['en', 'fr', 'es', 'de', 'zh', 'zh-CN', 'ja', 'en-IN'];
+      require('./app/i18n').__setSupportedLocales(mockSupportedLocales);
+
+      // Mock normalizeLocale to return 'en-IN' for 'en_IN'
+      normalizeLocale.mockReturnValue('en-IN');
+
+      const request = new NextRequest('https://example.com/en_IN/about');
+      const response = middleware(request);
+
+      expect(normalizeLocale).toHaveBeenCalledWith('en_IN');
+      expect(response).toBeInstanceOf(NextResponse);
+      expect(response.status).toBe(301); // Permanent redirect for underscore conversion
+      expect(response.headers.get('location')).toBe('https://example.com/en-IN/about');
+      expect(response.headers.get('x-locale')).toBe('en-IN');
+    });
+
+    it('should redirect underscore locale format to base locale when regional not supported', async () => {
+      // Mock normalizeLocale to return 'en' for 'en_XX'
+      normalizeLocale.mockReturnValue('en');
+
+      const request = new NextRequest('https://example.com/en_XX/');
+      const response = middleware(request);
+
+      expect(normalizeLocale).toHaveBeenCalledWith('en_XX');
+      expect(response).toBeInstanceOf(NextResponse);
+      expect(response.status).toBe(301); // Permanent redirect for underscore conversion
+      expect(response.headers.get('location')).toBe('https://example.com/en/');
+      expect(response.headers.get('x-locale')).toBe('en');
+    });
+
+    it('should handle case-insensitive underscore locale codes', async () => {
+      // Mock zh-CN as a supported locale
+      const mockSupportedLocales = ['en', 'fr', 'es', 'de', 'zh', 'zh-CN', 'ja'];
+      require('./app/i18n').__setSupportedLocales(mockSupportedLocales);
+
+      // Mock normalizeLocale to return 'zh-CN' for 'zh_cn'
+      normalizeLocale.mockReturnValue('zh-CN');
+
+      const request = new NextRequest('https://example.com/zh_cn/products');
+      const response = middleware(request);
+
+      expect(normalizeLocale).toHaveBeenCalledWith('zh_cn');
+      expect(response).toBeInstanceOf(NextResponse);
+      expect(response.status).toBe(301); // Permanent redirect for underscore conversion
+      expect(response.headers.get('location')).toBe('https://example.com/zh-CN/products');
+      expect(response.headers.get('x-locale')).toBe('zh-CN');
+    });
   });
 });

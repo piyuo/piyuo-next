@@ -55,7 +55,10 @@ export function middleware(request: NextRequest) {
         const url = request.nextUrl.clone();
         url.pathname = newPath;
 
-        const response = NextResponse.redirect(url);
+        // Use 301 (permanent redirect) for underscore-to-hyphen conversion
+        // Use 307 (temporary redirect) for other normalizations (case changes, fallbacks)
+        const isUnderscoreConversion = potentialLocale.includes('_');
+        const response = NextResponse.redirect(url, isUnderscoreConversion ? 301 : 307);
         response.headers.set('x-locale', normalizedLocale);
         return response;
       }

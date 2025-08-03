@@ -1,9 +1,9 @@
 import {
-    getBestMatchingLocale,
-    getTranslator,
-    isSupportedLocale,
-    normalizeLocale,
-    supportedLocales
+  getBestMatchingLocale,
+  getTranslator,
+  isSupportedLocale,
+  normalizeLocale,
+  supportedLocales
 } from './i18n';
 
 // Mock fetch responses
@@ -178,5 +178,32 @@ describe('normalizeLocale', () => {
     expect(normalizeLocale('EN')).toBeNull(); // uppercase base locale not supported
     expect(normalizeLocale('en-')).toBeNull(); // malformed locale
     expect(normalizeLocale('en-GB-extra')).toBeNull(); // too many segments
+  });
+
+  it('should convert underscores to hyphens and normalize', () => {
+    // Test underscore to hyphen conversion for exact matches
+    expect(normalizeLocale('en_IN')).toBe('en-IN');
+    expect(normalizeLocale('zh_CN')).toBe('zh-CN');
+    expect(normalizeLocale('fr_CA')).toBe('fr-CA');
+    expect(normalizeLocale('de_CH')).toBe('de-CH');
+
+    // Test underscore to hyphen conversion with case normalization
+    expect(normalizeLocale('en_gb')).toBe('en-GB');
+    expect(normalizeLocale('zh_cn')).toBe('zh-CN');
+    expect(normalizeLocale('fr_ca')).toBe('fr-CA');
+
+    // Test fallback to base locale for unsupported regional codes with underscores
+    expect(normalizeLocale('en_XX')).toBe('en');
+    expect(normalizeLocale('fr_ZZ')).toBe('fr');
+
+    // Test invalid locale codes with underscores
+    expect(normalizeLocale('invalid_locale')).toBeNull();
+    expect(normalizeLocale('xyz_ABC')).toBeNull();
+    expect(normalizeLocale('123_456')).toBeNull();
+
+    // Test edge cases with underscores
+    expect(normalizeLocale('en_')).toBeNull(); // malformed locale
+    expect(normalizeLocale('_en')).toBeNull(); // malformed locale
+    expect(normalizeLocale('en_GB_extra')).toBeNull(); // too many segments
   });
 });
