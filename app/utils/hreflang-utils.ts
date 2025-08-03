@@ -46,6 +46,38 @@ export function generateHreflangLinks(basePath: string = '/', baseUrl: string = 
 }
 
 /**
+ * Generate hreflang alternate links with x-default matching the canonical URL
+ * This fixes the SEO issue where x-default conflicts with canonical URL
+ *
+ * @param currentLocale - The current page's locale (becomes the x-default)
+ * @param basePath - The base path for the page (e.g., '/', '/privacy', '/terms')
+ * @param baseUrl - The base URL of the website (defaults to https://piyuo.com)
+ * @returns Object with alternates for Next.js metadata API where x-default matches canonical
+ */
+export function generateHreflangLinksWithCanonical(
+  currentLocale: SupportedLocale,
+  basePath: string = '/',
+  baseUrl: string = 'https://piyuo.com'
+) {
+  const languages: Record<string, string> = {};
+
+  // Generate alternate links for all supported locales
+  supportedLocales.forEach((locale) => {
+    const hreflangCode = convertLocaleToHreflang(locale);
+    const url = `${baseUrl}/${locale}${basePath === '/' ? '' : basePath}`;
+    languages[hreflangCode] = url;
+  });
+
+  // Set x-default to match the current page's canonical URL
+  // This prevents Google Search Console warnings about canonical/x-default mismatch
+  languages['x-default'] = getCanonicalUrl(currentLocale, basePath, baseUrl);
+
+  return {
+    languages
+  };
+}
+
+/**
  * Get canonical URL for a specific locale and path
  * @param locale - The locale for the canonical URL
  * @param basePath - The base path for the page
