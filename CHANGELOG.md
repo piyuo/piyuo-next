@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.4.1](https://github.com/piyuo/piyuo-next/compare/v1.4.0...v1.4.1) (2025-08-03)
+
+
+### Bug Fixes
+
+* **middleware:** enhance locale case sensitivity handling in redirects [#148](https://github.com/piyuo/piyuo-next/issues/148) ([0d14ff9](https://github.com/piyuo/piyuo-next/commit/0d14ff98d71ddd392c6ed8d8e617bd0f0ade9bee))
+* **middleware:** improve redirect logic for canonical normalization [#148](https://github.com/piyuo/piyuo-next/issues/148) ([0af7535](https://github.com/piyuo/piyuo-next/commit/0af75352af8329d0e6cc28698907d396a0b6d13f))
+* redirect to correct locale format instead of 404 error [#145](https://github.com/piyuo/piyuo-next/issues/145) ([de8f2c4](https://github.com/piyuo/piyuo-next/commit/de8f2c4801b07f3c6905eb8e9233d94ca9914c70))
+* resolve duplicate canonical url issue in web pages [#148](https://github.com/piyuo/piyuo-next/issues/148) ([b94d40a](https://github.com/piyuo/piyuo-next/commit/b94d40a9adbbd14309dd07407114ab7d85537142))
+
 ## [1.4.0](https://github.com/piyuo/piyuo-next/compare/v1.3.2...v1.4.0) (2025-07-27)
 
 
