@@ -1,9 +1,12 @@
 /**
  * Table of Contents
  * - Hreflang utilities for SEO optimization
- * - generateHreflangLinks: Creates hreflang alternate links for all supported locales
+ * - generateHreflangLinks: Creates hreflang alternate links with x-default pointing to English
+ * - generateHreflangLinksWithCanonical: Creates hreflang links with x-default pointing to English (language-neutral default)
  * - convertLocaleToHreflang: Maps internal locale format to hreflang format
  * - Hreflang SEO utilities for multilingual websites
+ *
+ * Issue #153 Fix: x-default now always points to English (language-neutral default) instead of current page's locale
  */
 
 import { supportedLocales, type SupportedLocale } from '../i18n';
@@ -46,13 +49,14 @@ export function generateHreflangLinks(basePath: string = '/', baseUrl: string = 
 }
 
 /**
- * Generate hreflang alternate links with x-default matching the canonical URL
- * This fixes the SEO issue where x-default conflicts with canonical URL
+ * Generate hreflang alternate links with x-default pointing to language-neutral default
+ * This fixes the SEO issue where x-default should always point to a language-neutral default (English)
+ * instead of the current page's locale
  *
- * @param currentLocale - The current page's locale (becomes the x-default)
+ * @param currentLocale - The current page's locale (used only for generating the full URL list)
  * @param basePath - The base path for the page (e.g., '/', '/privacy', '/terms')
  * @param baseUrl - The base URL of the website (defaults to https://piyuo.com)
- * @returns Object with alternates for Next.js metadata API where x-default matches canonical
+ * @returns Object with alternates for Next.js metadata API where x-default points to English (language-neutral default)
  */
 export function generateHreflangLinksWithCanonical(
   currentLocale: SupportedLocale,
@@ -68,9 +72,10 @@ export function generateHreflangLinksWithCanonical(
     languages[hreflangCode] = url;
   });
 
-  // Set x-default to match the current page's canonical URL
-  // This prevents Google Search Console warnings about canonical/x-default mismatch
-  languages['x-default'] = getCanonicalUrl(currentLocale, basePath, baseUrl);
+  // Set x-default to always point to English (language-neutral default)
+  // This fixes Issue #153: x-default should not point to language-specific pages
+  // but to a language-neutral default (English)
+  languages['x-default'] = `${baseUrl}/en${basePath === '/' ? '' : basePath}`;
 
   return {
     languages
