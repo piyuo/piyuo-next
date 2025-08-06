@@ -98,14 +98,11 @@ describe('hreflang utilities', () => {
     describe('correct x-default behavior for Issue #153', () => {
       it('should set x-default to English (language-neutral) for all pages', () => {
         // For English pages, x-default should point to English
-        const enCanonical = getCanonicalUrl('en', '/');
-        const enHreflang = generateHreflangLinksWithCanonical('en', '/');
+        const hreflang = generateHreflangLinksWithCanonical('en', '/');
 
-        expect(enHreflang.languages['x-default']).toBe('https://piyuo.com/en');
-        expect(enHreflang.languages['en']).toBe('https://piyuo.com/en');
-      });
-
-      it('should set x-default to English for non-English pages (Issue #153 requirement)', () => {
+        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/en');
+        expect(hreflang.languages['en']).toBe('https://piyuo.com/en');
+      });      it('should set x-default to English for non-English pages (Issue #153 requirement)', () => {
         // For Chinese pages, x-default should point to English (language-neutral default)
         const zhCanonical = getCanonicalUrl('zh-CN', '/');
         const zhHreflang = generateHreflangLinksWithCanonical('zh-CN', '/');
