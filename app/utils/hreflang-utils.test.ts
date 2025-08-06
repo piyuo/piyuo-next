@@ -78,57 +78,63 @@ describe('hreflang utilities', () => {
     });
   });
 
-  describe('canonical URL and x-default consistency (Issue #148)', () => {
-    describe('original function shows the problem', () => {
-      it('should demonstrate x-default mismatch with canonical URL for non-English locales', () => {
-        // Test English locale - x-default should match canonical
-        const enCanonical = getCanonicalUrl('en', '/');
+  describe('x-default hreflang behavior (Issue #153)', () => {
+    describe('original function behavior', () => {
+      it('should always set x-default to English for language-neutral default', () => {
+        // Test English locale - x-default should point to English
         const enHreflang = generateHreflangLinks('/');
-        expect(enHreflang.languages['x-default']).toBe(enCanonical);
+        expect(enHreflang.languages['x-default']).toBe('https://piyuo.com/en');
 
-        // Test Chinese locale - shows the mismatch problem
-        const zhCanonical = getCanonicalUrl('zh-CN', '/');
+        // Test Chinese locale - x-default should still point to English (language-neutral)
         const zhHreflang = generateHreflangLinks('/');
-        expect(zhCanonical).toBe('https://piyuo.com/zh-CN');
         expect(zhHreflang.languages['x-default']).toBe('https://piyuo.com/en');
-        // These don't match, which causes the Google Search Console warning
-        expect(zhHreflang.languages['x-default']).not.toBe(zhCanonical);
+
+        // Test privacy pages - x-default should always point to English version
+        const privacyHreflang = generateHreflangLinks('/privacy');
+        expect(privacyHreflang.languages['x-default']).toBe('https://piyuo.com/en/privacy');
       });
     });
 
-    describe('new function fixes the problem', () => {
-      it('should ensure x-default matches canonical URL for English pages', () => {
-        const canonical = getCanonicalUrl('en', '/');
-        const hreflang = generateHreflangLinksWithCanonical('en', '/');
+    describe('correct x-default behavior for Issue #153', () => {
+      it('should set x-default to English (language-neutral) for all pages', () => {
+        // For English pages, x-default should point to English
+        const enCanonical = getCanonicalUrl('en', '/');
+        const enHreflang = generateHreflangLinksWithCanonical('en', '/');
 
-        expect(hreflang.languages['x-default']).toBe(canonical);
-        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/en');
+        expect(enHreflang.languages['x-default']).toBe('https://piyuo.com/en');
+        expect(enHreflang.languages['en']).toBe('https://piyuo.com/en');
       });
 
-      it('should ensure x-default matches canonical URL for non-English pages', () => {
-        const canonical = getCanonicalUrl('zh-CN', '/');
-        const hreflang = generateHreflangLinksWithCanonical('zh-CN', '/');
+      it('should set x-default to English for non-English pages (Issue #153 requirement)', () => {
+        // For Chinese pages, x-default should point to English (language-neutral default)
+        const zhCanonical = getCanonicalUrl('zh-CN', '/');
+        const zhHreflang = generateHreflangLinksWithCanonical('zh-CN', '/');
 
-        expect(hreflang.languages['x-default']).toBe(canonical);
-        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/zh-CN');
+        // Current canonical should be Chinese
+        expect(zhCanonical).toBe('https://piyuo.com/zh-CN');
+        expect(zhHreflang.languages['zh-CN']).toBe('https://piyuo.com/zh-CN');
+
+        // But x-default should point to English (language-neutral default)
+        // This is what Issue #153 requires to fix
+        expect(zhHreflang.languages['x-default']).toBe('https://piyuo.com/en');
       });
 
-      it('should handle privacy pages with proper x-default matching', () => {
-        const canonical = getCanonicalUrl('en-GB', '/privacy');
-        const hreflang = generateHreflangLinksWithCanonical('en-GB', '/privacy');
+      it('should handle privacy pages with x-default pointing to English', () => {
+        // For non-English privacy pages, x-default should point to English version
+        const hreflang = generateHreflangLinksWithCanonical('zh-MO', '/privacy');
 
-        expect(hreflang.languages['x-default']).toBe(canonical);
-        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/en-GB/privacy');
-        expect(hreflang.languages['en-GB']).toBe('https://piyuo.com/en-GB/privacy');
+        expect(hreflang.languages['zh-MO']).toBe('https://piyuo.com/zh-MO/privacy');
+        // x-default should point to English privacy page (language-neutral default)
+        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/en/privacy');
       });
 
-      it('should handle terms pages with proper x-default matching', () => {
-        const canonical = getCanonicalUrl('fr', '/terms');
+      it('should handle terms pages with x-default pointing to English', () => {
+        // For French terms pages, x-default should point to English version
         const hreflang = generateHreflangLinksWithCanonical('fr', '/terms');
 
-        expect(hreflang.languages['x-default']).toBe(canonical);
-        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/fr/terms');
         expect(hreflang.languages['fr']).toBe('https://piyuo.com/fr/terms');
+        // x-default should point to English terms page (language-neutral default)
+        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/en/terms');
       });
 
       it('should include all supported locales in hreflang links', () => {
@@ -142,17 +148,16 @@ describe('hreflang utilities', () => {
         expect(hreflang.languages['de']).toBe('https://piyuo.com/de');
         expect(hreflang.languages['zh-CN']).toBe('https://piyuo.com/zh-CN');
 
-        // x-default should match the current locale
-        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/de');
+        // x-default should always point to English (language-neutral default)
+        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/en');
       });
 
-      it('should handle custom base URLs', () => {
-        const canonical = getCanonicalUrl('ja', '/', 'https://example.com');
+      it('should handle custom base URLs with x-default pointing to English', () => {
         const hreflang = generateHreflangLinksWithCanonical('ja', '/', 'https://example.com');
 
-        expect(hreflang.languages['x-default']).toBe(canonical);
-        expect(hreflang.languages['x-default']).toBe('https://example.com/ja');
         expect(hreflang.languages['ja']).toBe('https://example.com/ja');
+        // x-default should point to English version even with custom base URL
+        expect(hreflang.languages['x-default']).toBe('https://example.com/en');
       });
     });
   });
