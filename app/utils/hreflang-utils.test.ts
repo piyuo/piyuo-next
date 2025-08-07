@@ -96,14 +96,14 @@ describe('hreflang utilities', () => {
     });
 
     describe('correct x-default behavior for Issue #153', () => {
-      it('should set x-default to English (language-neutral) for all pages', () => {
-        // For English pages, x-default should point to English
+      it('should set x-default to root path (language-neutral) for all pages', () => {
+        // For any page, x-default should point to root path that redirects based on user's locale
         const hreflang = generateHreflangLinksWithCanonical('en', '/');
 
-        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/en');
+        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/');
         expect(hreflang.languages['en']).toBe('https://piyuo.com/en');
-      });      it('should set x-default to English for non-English pages (Issue #153 requirement)', () => {
-        // For Chinese pages, x-default should point to English (language-neutral default)
+      });      it('should set x-default to root path for non-English pages (Issue #153 requirement)', () => {
+        // For Chinese pages, x-default should point to root path (truly language-neutral)
         const zhCanonical = getCanonicalUrl('zh-CN', '/');
         const zhHreflang = generateHreflangLinksWithCanonical('zh-CN', '/');
 
@@ -111,27 +111,27 @@ describe('hreflang utilities', () => {
         expect(zhCanonical).toBe('https://piyuo.com/zh-CN');
         expect(zhHreflang.languages['zh-CN']).toBe('https://piyuo.com/zh-CN');
 
-        // But x-default should point to English (language-neutral default)
-        // This is what Issue #153 requires to fix
-        expect(zhHreflang.languages['x-default']).toBe('https://piyuo.com/en');
+        // But x-default should point to root path (truly language-neutral)
+        // This allows dynamic language selection based on user's browser settings
+        expect(zhHreflang.languages['x-default']).toBe('https://piyuo.com/');
       });
 
-      it('should handle privacy pages with x-default pointing to English', () => {
-        // For non-English privacy pages, x-default should point to English version
+      it('should handle privacy pages with x-default pointing to root privacy path', () => {
+        // For non-English privacy pages, x-default should point to root privacy path
         const hreflang = generateHreflangLinksWithCanonical('zh-MO', '/privacy');
 
         expect(hreflang.languages['zh-MO']).toBe('https://piyuo.com/zh-MO/privacy');
-        // x-default should point to English privacy page (language-neutral default)
-        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/en/privacy');
+        // x-default should point to root privacy path (language-neutral)
+        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/privacy');
       });
 
-      it('should handle terms pages with x-default pointing to English', () => {
-        // For French terms pages, x-default should point to English version
+      it('should handle terms pages with x-default pointing to root terms path', () => {
+        // For French terms pages, x-default should point to root terms path
         const hreflang = generateHreflangLinksWithCanonical('fr', '/terms');
 
         expect(hreflang.languages['fr']).toBe('https://piyuo.com/fr/terms');
-        // x-default should point to English terms page (language-neutral default)
-        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/en/terms');
+        // x-default should point to root terms path (language-neutral)
+        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/terms');
       });
 
       it('should include all supported locales in hreflang links', () => {
@@ -145,16 +145,16 @@ describe('hreflang utilities', () => {
         expect(hreflang.languages['de']).toBe('https://piyuo.com/de');
         expect(hreflang.languages['zh-CN']).toBe('https://piyuo.com/zh-CN');
 
-        // x-default should always point to English (language-neutral default)
-        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/en');
+        // x-default should always point to root path (language-neutral)
+        expect(hreflang.languages['x-default']).toBe('https://piyuo.com/');
       });
 
-      it('should handle custom base URLs with x-default pointing to English', () => {
+      it('should handle custom base URLs with x-default pointing to root path', () => {
         const hreflang = generateHreflangLinksWithCanonical('ja', '/', 'https://example.com');
 
         expect(hreflang.languages['ja']).toBe('https://example.com/ja');
-        // x-default should point to English version even with custom base URL
-        expect(hreflang.languages['x-default']).toBe('https://example.com/en');
+        // x-default should point to root path even with custom base URL
+        expect(hreflang.languages['x-default']).toBe('https://example.com/');
       });
     });
   });

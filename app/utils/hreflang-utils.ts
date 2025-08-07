@@ -72,10 +72,10 @@ export function generateHreflangLinksWithCanonical(
     languages[hreflangCode] = url;
   });
 
-  // Set x-default to always point to English (language-neutral default)
-  // This fixes Issue #153: x-default should not point to language-specific pages
-  // but to a language-neutral default (English)
-  languages['x-default'] = `${baseUrl}/en${basePath === '/' ? '' : basePath}`;
+  // Set x-default to point to root path (language-neutral) that will redirect based on user's locale
+  // This fixes Issue #153: x-default should point to a truly language-neutral URL
+  // that dynamically serves the appropriate language based on user's browser settings
+  languages['x-default'] = `${baseUrl}${basePath}`;
 
   return {
     languages

@@ -83,11 +83,15 @@ export function middleware(request: NextRequest) {
     return response;
   }
 
-  // For other paths without locale, redirect to English version
+  // For other paths without locale, detect locale and redirect like root path
+  // This allows x-default to point to root paths that redirect based on user preference
+  const acceptLanguage = request.headers.get('accept-language') || 'en';
+  const bestLocale = getBestMatchingLocale(acceptLanguage);
+
   const url = request.nextUrl.clone();
-  url.pathname = `/en${pathname}`;
+  url.pathname = `/${bestLocale}${pathname}`;
   const response = NextResponse.redirect(url);
-  response.headers.set('x-locale', 'en');
+  response.headers.set('x-locale', bestLocale);
   return response;
 }
 
