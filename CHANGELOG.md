@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.5.0](https://github.com/piyuo/piyuo-next/compare/v1.4.2...v1.5.0) (2025-08-13)
+
+
+### Features
+
+* add version page [#156](https://github.com/piyuo/piyuo-next/issues/156) ([a9fc5b2](https://github.com/piyuo/piyuo-next/commit/a9fc5b257d8193ca87e66caf534d26d8388a74e6))
+
+
+### Bug Fixes
+
+* incorrect x-default hreflang tag on language-specific pages [#153](https://github.com/piyuo/piyuo-next/issues/153) ([ec020dd](https://github.com/piyuo/piyuo-next/commit/ec020dd779c68efae753171831217f2730faebe4))
+* update x-default hreflang behavior to point to root path for language neutrality [#153](https://github.com/piyuo/piyuo-next/issues/153) ([b904ece](https://github.com/piyuo/piyuo-next/commit/b904ece9b8a42a3b7bfe526818e7a3d159bfe285))
+
 ## [1.4.2](https://github.com/piyuo/piyuo-next/compare/v1.4.1...v1.4.2) (2025-08-03)
 
 
