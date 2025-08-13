@@ -145,6 +145,8 @@ describe('Middleware', () => {
 
     pathsWithoutLocale.forEach((path) => {
       it(`should redirect ${path} to English version`, async () => {
+        getBestMatchingLocale.mockReturnValue('en');
+
         const request = new NextRequest(`https://example.com${path}`);
         const response = middleware(request);
 
@@ -155,6 +157,8 @@ describe('Middleware', () => {
     });
 
     it('should redirect /about to English version', async () => {
+      getBestMatchingLocale.mockReturnValue('en');
+
       const request = new NextRequest('https://example.com/about');
       const response = middleware(request);
 
@@ -165,6 +169,8 @@ describe('Middleware', () => {
     });
 
     it('should redirect /contact to English version', async () => {
+      getBestMatchingLocale.mockReturnValue('en');
+
       const request = new NextRequest('https://example.com/contact');
       const response = middleware(request);
 
@@ -173,6 +179,8 @@ describe('Middleware', () => {
     });
 
     it('should redirect /products to English version', async () => {
+      getBestMatchingLocale.mockReturnValue('en');
+
       const request = new NextRequest('https://example.com/products');
       const response = middleware(request);
 
@@ -181,6 +189,8 @@ describe('Middleware', () => {
     });
 
     it('should redirect /blog/post-1 to English version', async () => {
+      getBestMatchingLocale.mockReturnValue('en');
+
       const request = new NextRequest('https://example.com/blog/post-1');
       const response = middleware(request);
 

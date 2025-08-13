@@ -20,15 +20,6 @@ const mockTranslations = {
 };
 
 describe('LinkView', () => {
-  let mockLocation: { href: string };
-
-  beforeEach(() => {
-    // Mock window.location for email tests
-    mockLocation = { href: 'http://localhost/' };
-    delete (window as unknown as { location?: unknown }).location;
-    (window as unknown as { location: { href: string } }).location = mockLocation;
-  });
-
   describe('Component Rendering', () => {
     it('renders all elements correctly without locale', () => {
       render(<LinkView translations={mockTranslations} />);
