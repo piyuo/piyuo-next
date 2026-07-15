@@ -1,0 +1,16 @@
+{
+  "dpa_intro_title": "数据处理协议（DPA）",
+  "dpa_intro_body": "本数据处理协议（\"DPA\"）是 Piyuo（\"处理方）与企业客户（\"\"控制方\"）之间服务条款的一部分。仅当您选择使用 Piyuo Cloud 时，本协议才适用于汇总的行人流量数据（\"\"Payloads\"\"）的处理。\"",
+  "dpa_scope_title": "1. 可选云服务与处理范围",
+  "dpa_scope_body": "Piyuo Cloud 完全是可选的。您可以将应用配置为直接把 Payloads 发送到您自己的企业私有服务器。如果您选择此方式，数据将不会经过 Piyuo Cloud，我们无法访问这些数据，本 DPA 也不适用。只有在您明确选择使用 Piyuo Cloud 时，我们才会接收和处理 Payloads。使用 Piyuo Cloud 时，我们仅作为数据处理方，严格按照您的书面指示处理数据，以提供分析仪表板。我们绝不会将您的数据用于广告、外部机器学习训练或任何未经授权的商业用途。",
+  "dpa_security_access_title": "2. 访问控制与安全责任",
+  "dpa_security_access_body": "对于使用 Piyuo Cloud 的客户，您的企业控制面板和 API 通过 API Key 进行安全保护。我们负责实施符合行业标准的技术安全措施，以保护我们的基础设施。作为数据控制方，您有责任妥善保管您的 API Key，并防止未经授权访问您的系统。",
+  "dpa_breach_title": "3. 个人数据泄露",
+  "dpa_breach_body": "如果我们发现已确认的安全事件，导致您的 Payloads 在我们的基础设施上被意外或非法销毁、丢失、篡改或未经授权披露，我们将及时通知您，不会无故拖延。我们将提供合理的信息和协助，帮助您减轻影响，并履行您自身的监管报告义务。",
+  "dpa_subprocessors_title": "4. 子处理方",
+  "dpa_subprocessors_body": "如果您选择使用 Piyuo Cloud，即表示您授权我们聘请第三方云基础设施提供商（子处理方）托管服务。我们将确保每一位子处理方均受书面义务约束，并提供与本 DPA 同等水平的数据保护。我们仍将对子处理方的合规性承担全部责任。",
+  "dpa_compliance_title": "5. 合规、权利与审计",
+  "dpa_compliance_body": "由于 Payloads 严格匿名且经过汇总处理，不包含生物识别数据或身份识别信息，因此标准的个人数据请求（例如访问或删除）通常不适用于路人。不过，我们将提供合理的协助和必要信息，以帮助证明您在使用 Piyuo Cloud 时符合数据保护法律要求。",
+  "dpa_retention_title": "6. 数据保留与删除",
+  "dpa_retention_body": "我们仅会在您有效的 Piyuo Cloud 订阅期间保留和处理您的 Payloads。订阅终止或到期后，除非适用法律要求继续保存，否则我们将在 30 天内从活动服务器中永久删除您的所有 Payloads。"
+}

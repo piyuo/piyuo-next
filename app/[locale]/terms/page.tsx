@@ -82,7 +82,7 @@ export default async function TermsPage({ params }: TermsPageProps) {
   const translationContext = {
     website: t('website_url'),
     email: t('contact_email'),
-    privacy_link: t('privacy_link')
+    privacy_link: 'https://piyuo.com/privacy',
   };
 
   return (

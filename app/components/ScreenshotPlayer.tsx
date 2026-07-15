@@ -54,7 +54,7 @@ export function ScreenshotPlayer() {
       ref={containerRef}
       className="w-full relative bg-cover bg-center rounded-2xl overflow-hidden shadow-2xl"
       style={{
-        backgroundImage: 'url(/images/screenshot.webp)',
+        backgroundImage: 'url(/images/pedestrian.webp)',
         aspectRatio: '16/9'
       }}
     >
@@ -67,8 +67,8 @@ export function ScreenshotPlayer() {
         playsInline
         preload="auto"
       >
-        <source src="/videos/screenshot.webm" type="video/webm" />
-        <source src="/videos/screenshot.mp4" type="video/mp4" />
+        <source src="/videos/pedestrian.webm" type="video/webm" />
+        <source src="/videos/pedestrian.mp4" type="video/mp4" />
       </video>
 
       {!isLoaded && (

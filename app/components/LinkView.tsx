@@ -18,6 +18,7 @@ interface LinkViewProps {
     index_email_us: string;
     terms: string;
     privacy: string;
+    dpa: string;
   };
   locale?: string;
 }
@@ -64,6 +65,13 @@ export function LinkView({ translations, locale }: LinkViewProps) {
           className="text-white hover:text-gray-300 text-lg transition-colors"
         >
           {translations.privacy}
+        </Link>
+
+        <Link
+          href={createLocaleUrl("/dpa")}
+          className="text-white hover:text-gray-300 text-lg transition-colors"
+        >
+          {translations.dpa}
         </Link>
       </div>
     </div>

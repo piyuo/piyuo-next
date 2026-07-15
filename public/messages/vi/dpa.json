@@ -1,0 +1,16 @@
+{
+  "dpa_intro_title": "Thỏa thuận xử lý dữ liệu (DPA)",
+  "dpa_intro_body": "Thỏa thuận Xử lý Dữ liệu (\"DPA\") này là một phần của Điều khoản Dịch vụ giữa Piyuo (\"Bên xử lý\") và khách hàng doanh nghiệp (\"Bên kiểm soát\"). Thỏa thuận này chỉ điều chỉnh việc xử lý dữ liệu lưu lượng người đi bộ được tổng hợp (\"Payloads\") khi bạn chọn sử dụng Piyuo Cloud.",
+  "dpa_scope_title": "1. Cloud tùy chọn và phạm vi xử lý",
+  "dpa_scope_body": "Piyuo Cloud hoàn toàn là tùy chọn. Bạn có thể cấu hình ứng dụng để gửi Payloads trực tiếp đến máy chủ riêng của doanh nghiệp mình. Nếu chọn cách này, dữ liệu sẽ không đi qua Piyuo Cloud, chúng tôi không thể truy cập dữ liệu đó và DPA này sẽ không áp dụng. Chúng tôi chỉ nhận và xử lý Payloads khi bạn chủ động chọn sử dụng Piyuo Cloud. Khi sử dụng Piyuo Cloud, chúng tôi chỉ đóng vai trò là Bên xử lý dữ liệu và chỉ xử lý dữ liệu theo đúng hướng dẫn đã được ghi nhận của bạn để cung cấp bảng điều khiển phân tích. Chúng tôi sẽ không bao giờ sử dụng dữ liệu của bạn cho quảng cáo, huấn luyện mô hình AI bên ngoài hoặc kiếm tiền trái phép.",
+  "dpa_security_access_title": "2. Kiểm soát truy cập và trách nhiệm bảo mật",
+  "dpa_security_access_body": "Đối với khách hàng sử dụng Piyuo Cloud, quyền truy cập vào bảng điều khiển Enterprise và API được bảo vệ bằng API Key. Chúng tôi chịu trách nhiệm triển khai các biện pháp bảo mật kỹ thuật theo tiêu chuẩn ngành để bảo vệ hạ tầng của mình. Bạn, với vai trò là Controller, hoàn toàn chịu trách nhiệm giữ bí mật API Key và ngăn chặn truy cập trái phép vào hệ thống của mình.",
+  "dpa_breach_title": "3. Vi phạm dữ liệu cá nhân",
+  "dpa_breach_body": "Nếu chúng tôi phát hiện một sự cố bảo mật đã được xác nhận dẫn đến việc Payloads của bạn bị hủy, mất, thay đổi hoặc tiết lộ trái phép trên hạ tầng của chúng tôi, chúng tôi sẽ thông báo cho bạn mà không chậm trễ không cần thiết. Chúng tôi sẽ cung cấp thông tin và hỗ trợ hợp lý để giúp bạn giảm thiểu tác động và đáp ứng các nghĩa vụ báo cáo theo quy định của mình.",
+  "dpa_subprocessors_title": "4. Bên xử lý phụ",
+  "dpa_subprocessors_body": "Nếu bạn chọn sử dụng Piyuo Cloud, bạn cho phép chúng tôi sử dụng các nhà cung cấp hạ tầng đám mây bên thứ ba (Bên xử lý phụ) để lưu trữ dịch vụ. Chúng tôi sẽ đảm bảo rằng mọi Bên xử lý phụ đều bị ràng buộc bởi các nghĩa vụ bằng văn bản, cung cấp mức độ bảo vệ dữ liệu tương đương với DPA này. Chúng tôi vẫn chịu hoàn toàn trách nhiệm về việc tuân thủ của các Bên xử lý phụ.",
+  "dpa_compliance_title": "5. Tuân thủ, quyền và kiểm tra",
+  "dpa_compliance_body": "Vì Payloads hoàn toàn ẩn danh và được tổng hợp, không chứa dữ liệu sinh trắc học hoặc dữ liệu nhận dạng, các yêu cầu dữ liệu cá nhân tiêu chuẩn (như quyền truy cập hoặc xóa dữ liệu) thường không áp dụng cho người qua đường. Tuy nhiên, chúng tôi sẽ cung cấp hỗ trợ và thông tin hợp lý cần thiết để chứng minh việc bạn tuân thủ luật bảo vệ dữ liệu liên quan đến việc sử dụng Piyuo Cloud.",
+  "dpa_retention_title": "6. Lưu trữ và xóa dữ liệu",
+  "dpa_retention_body": "Chúng tôi sẽ chỉ lưu trữ và xử lý Payloads của bạn trong thời gian đăng ký Piyuo Cloud đang hoạt động. Khi gói đăng ký của bạn chấm dứt hoặc hết hạn, chúng tôi sẽ xóa vĩnh viễn tất cả Payloads của bạn khỏi máy chủ đang hoạt động trong vòng 30 ngày, trừ khi pháp luật áp dụng yêu cầu tiếp tục lưu trữ."
+}

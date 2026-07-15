@@ -9,10 +9,10 @@ const createJestConfig = nextJest({
 const config: Config = {
   coverageProvider: 'v8',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'], // Path to your setup file
-  // If you use module aliases in tsconfig.json, you might need:
-  // moduleNameMapper: {
-  //   '^@/(.*)$': '<rootDir>/$1', // Example for @/ imports
-  // },
+  // Module name mapper for CSS and asset files
+  moduleNameMapper: {
+    '^.+\\.css$': '<rootDir>/__mocks__/styleMock.js',
+  },
   // To ignore certain files in Jest
   testPathIgnorePatterns: ['/node_modules/', '/.next/', '/e2e/'], // e2e if you add E2E tests later
   // Configure different environments for different test types

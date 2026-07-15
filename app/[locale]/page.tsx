@@ -36,6 +36,7 @@ interface Translations {
   index_email_us: string;
   terms: string;
   privacy: string;
+  dpa: string;
 }
 
 // Generate static params for all supported locales
@@ -113,6 +114,7 @@ export default async function LocalePage({ params }: PageProps) {
     index_email_us: t('index_email_us'),
     terms: t('terms'),
     privacy: t('privacy'),
+    dpa: t('dpa'),
   };
 
   // Header translations for ClientPageWrapper
@@ -169,7 +171,7 @@ export default async function LocalePage({ params }: PageProps) {
                 <DesktopView
                   title={translations.index_desktop_title}
                   description={translations.index_desktop_desc}
-                  imagePath="desktop-1.webp"
+                  videoPath="vehicle"
                 />
               </GlassContainer>
 
@@ -177,7 +179,7 @@ export default async function LocalePage({ params }: PageProps) {
                 <DesktopView
                   title={translations.index_desktop2_title}
                   description={translations.index_desktop2_desc}
-                  imagePath="desktop-2.webp"
+                  imagePath="desktop.webp"
                 />
               </GlassContainer>
 
@@ -195,6 +197,7 @@ export default async function LocalePage({ params }: PageProps) {
                   index_email_us: translations.index_email_us,
                   terms: translations.terms,
                   privacy: translations.privacy,
+                  dpa: translations.dpa,
                 }} />
 
               {/* Footer */}

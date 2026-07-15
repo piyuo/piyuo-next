@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom'; // Extends Jest with custom matchers
 
-// Check if we're in a Node environment (middleware tests)
+// Check if we're in a Node environment (proxy tests)
 const isNodeEnvironment = typeof window === 'undefined';
 
 // Global cleanup function to ensure tests don't leak resources
@@ -30,7 +30,7 @@ if (isNodeEnvironment) {
   // Import whatwg-fetch for Node environment to provide Web APIs
   require('whatwg-fetch');
 
-  // Mock additional Node.js globals that Next.js middleware needs
+  // Mock additional Node.js globals that Next.js proxy needs
   if (!global.crypto) {
     const crypto = require('crypto');
     global.crypto = {
