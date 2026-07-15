@@ -1,0 +1,16 @@
+{
+  "dpa_intro_title": "Ugovor o obradi podataka (DPA)",
+  "dpa_intro_body": "Ovaj Ugovor o obradi podataka (\"DPA\") predstavlja deo Uslova korišćenja između Piyuo (\"Obrađivač\") i poslovnog korisnika (\"Rukovalac\"). On uređuje obradu agregiranih podataka o kretanju pešaka (\"Payloads\") samo kada izaberete da koristite Piyuo Cloud.",
+  "dpa_scope_title": "1. Opcioni Cloud i obim obrade",
+  "dpa_scope_body": "Piyuo Cloud je potpuno opcionalan. Aplikaciju možete podesiti da šalje Payloads direktno na privatne serverske sisteme vaše kompanije. Ako izaberete ovu opciju, podaci nikada ne prolaze kroz Piyuo Cloud, nemamo pristup njima i ovaj DPA se ne primenjuje. Payloads primamo i obrađujemo samo ako izričito odaberete korišćenje Piyuo Cloud-a. Kada koristite Piyuo Cloud, delujemo isključivo kao obrađivač podataka i obrađujemo podatke samo prema vašim dokumentovanim uputstvima radi pružanja analitičke kontrolne table. Vaše podatke nikada nećemo koristiti za oglašavanje, obuku spoljašnjih AI modela ili neovlašćenu zaradu.",
+  "dpa_security_access_title": "2. Kontrola pristupa i bezbednosne odgovornosti",
+  "dpa_security_access_body": "Za korisnike koji koriste Piyuo Cloud, pristup Enterprise kontrolnoj tabli i API-ju zaštićen je pomoću API ključa. Mi smo odgovorni za primenu tehničkih mera bezbednosti u skladu sa industrijskim standardima radi zaštite naše infrastrukture. Vi, kao Rukovalac podacima, u potpunosti ste odgovorni za čuvanje poverljivosti svog API ključa i sprečavanje neovlašćenog pristupa svojim sistemima.",
+  "dpa_breach_title": "3. Povrede podataka o ličnosti",
+  "dpa_breach_body": "Ako saznamo za potvrđeni bezbednosni incident koji dovede do slučajnog ili nezakonitog uništenja, gubitka, izmene ili neovlašćenog otkrivanja vaših Payloads podataka na našoj infrastrukturi, obavestićemo vas bez nepotrebnog odlaganja. Pružićemo razumne informacije i pomoć kako bismo vam pomogli da ublažite posledice i ispunite svoje zakonske obaveze prijavljivanja.",
+  "dpa_subprocessors_title": "4. Podobrađivači",
+  "dpa_subprocessors_body": "Ako odaberete Piyuo Cloud, ovlašćujete nas da angažujemo nezavisne pružaoce cloud infrastrukture (podobrađivače) za hostovanje usluge. Obezbedićemo da svaki podobrađivač bude obavezan pisanim obavezama koje pružaju isti nivo zaštite podataka kao ovaj DPA. Ostajemo u potpunosti odgovorni za usklađenost naših podobrađivača.",
+  "dpa_compliance_title": "5. Usklađenost, prava i revizije",
+  "dpa_compliance_body": "Pošto su Payloads strogo anonimni i agregirani bez biometrijskih ili identifikacionih podataka, standardni pojedinačni zahtevi za podatke (kao što su pristup ili brisanje) uglavnom se ne primenjuju na prolaznike. Ipak, pružićemo razumnu pomoć i informacije potrebne da pokažete usklađenost sa zakonima o zaštiti podataka u vezi sa korišćenjem Piyuo Cloud-a.",
+  "dpa_retention_title": "6. Čuvanje i brisanje podataka",
+  "dpa_retention_body": "Čuvaćemo i obrađivati vaše Payloads podatke samo tokom trajanja vaše aktivne Piyuo Cloud pretplate. Po isteku ili raskidu pretplate, trajno ćemo obrisati sve vaše Payloads podatke sa naših aktivnih servera u roku od 30 dana, osim ako važeći zakon zahteva dalje čuvanje."
+}

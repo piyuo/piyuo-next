@@ -1,0 +1,16 @@
+{
+  "dpa_intro_title": "Veri İşleme Sözleşmesi (DPA)",
+  "dpa_intro_body": "Bu Veri İşleme Sözleşmesi (\"DPA\"), Piyuo (\"İşleyen\") ile kurumsal müşteri (\"Veri Sorumlusu\") arasındaki Hizmet Şartlarının bir parçasıdır. Yalnızca Piyuo Cloud kullanmayı seçtiğinizde toplulaştırılmış yaya trafiği verilerinin (\"Payloads\") işlenmesini düzenler.",
+  "dpa_scope_title": "1. İsteğe Bağlı Bulut ve İşleme Kapsamı",
+  "dpa_scope_body": "Piyuo Cloud tamamen isteğe bağlıdır. Uygulamayı, Payloads verilerini doğrudan kendi kurumsal sunucularınıza gönderecek şekilde yapılandırabilirsiniz. Bu seçeneği seçerseniz veriler Piyuo Cloud üzerinden geçmez, verilere erişemeyiz ve bu DPA geçerli olmaz. Payloads verilerini yalnızca Piyuo Cloud'u kullanmayı açıkça seçerseniz alır ve işleriz. Piyuo Cloud kullanıldığında yalnızca Veri İşleyen olarak hareket eder ve verileri yalnızca analiz panosunu sağlamak amacıyla belgelenmiş talimatlarınıza göre işleriz. Verilerinizi reklamcılık, harici makine öğrenimi eğitimi veya yetkisiz gelir elde etme amacıyla asla kullanmayız.",
+  "dpa_security_access_title": "2. Erişim Kontrolü ve Güvenlik Sorumlulukları",
+  "dpa_security_access_body": "Piyuo Cloud kullanan müşteriler için Enterprise kontrol panelinize ve API'nize erişim bir API Anahtarı ile korunur. Altyapımızı korumak için sektör standardına uygun teknik güvenlik önlemlerini uygulamak bizim sorumluluğumuzdur. Veri Sorumlusu olarak siz, API Anahtarınızın gizliliğini korumaktan ve sistemlerinize yetkisiz erişimi önlemekten tamamen sorumlusunuz.",
+  "dpa_breach_title": "3. Kişisel Veri İhlalleri",
+  "dpa_breach_body": "Altyapımızda Payloads verilerinizin yanlışlıkla veya hukuka aykırı şekilde yok edilmesine, kaybolmasına, değiştirilmesine ya da yetkisiz olarak ifşa edilmesine yol açan doğrulanmış bir güvenlik ihlalinden haberdar olmamız halinde sizi gereksiz gecikme olmadan bilgilendiririz. Etkiyi azaltmanıza ve yasal bildirim yükümlülüklerinizi yerine getirmenize yardımcı olmak için makul bilgi ve destek sağlarız.",
+  "dpa_subprocessors_title": "4. Alt İşleyenler",
+  "dpa_subprocessors_body": "Piyuo Cloud'u kullanmayı seçerseniz, hizmeti barındırmak için üçüncü taraf bulut altyapı sağlayıcılarını (Alt İşleyenler) görevlendirmemize izin vermiş olursunuz. Her Alt İşleyenin, bu DPA ile eşdeğer düzeyde veri koruması sağlayan yazılı yükümlülüklere bağlı olmasını sağlayacağız. Alt İşleyenlerimizin uyumluluğundan tamamen sorumlu olmaya devam ederiz.",
+  "dpa_compliance_title": "5. Uyumluluk, Haklar ve Denetimler",
+  "dpa_compliance_body": "Payloads verileri biyometrik veya tanımlayıcı bilgiler içermeden tamamen anonim ve toplulaştırılmış olduğundan, standart bireysel veri talepleri (erişim veya silme gibi) genellikle geçen kişiler için geçerli değildir. Bununla birlikte, Piyuo Cloud kullanımınızla ilgili veri koruma yasalarına uyumluluğunuzu göstermeniz için makul destek ve gerekli bilgileri sağlayacağız.",
+  "dpa_retention_title": "6. Veri Saklama ve Silme",
+  "dpa_retention_body": "Payloads verilerinizi yalnızca aktif Piyuo Cloud aboneliğiniz süresince saklayacak ve işleyeceğiz. Aboneliğiniz sona erdiğinde veya iptal edildiğinde, yürürlükteki yasalar daha uzun süre saklamayı gerektirmediği sürece, tüm Payloads verilerinizi aktif sunucularımızdan 30 gün içinde kalıcı olarak sileceğiz."
+}

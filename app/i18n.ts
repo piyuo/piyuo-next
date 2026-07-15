@@ -4,16 +4,10 @@ import { createTranslator } from 'next-intl';
 
 // Supported locales - dynamically loaded
 export const supportedLocales = [
-  'af', 'am', 'ar', 'ar-AE', 'ar-DZ', 'ar-EG', 'az', 'bg', 'bn', 'bn-IN',
-  'ca', 'cs', 'cy', 'da', 'de', 'de-AT', 'de-CH', 'el', 'en', 'en-AU', 'en-CA',
-  'en-GB', 'en-IN', 'es', 'es-AR', 'es-CO', 'et', 'fa', 'fi', 'fr', 'fr-BE',
-  'fr-CA', 'fr-CH', 'gl', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'it', 'ja',
-  'kk', 'ko', 'lt', 'lv', 'ml', 'mn', 'mr', 'ms', 'ms-SG', 'my', 'nb',
-  'ne', 'nl', 'nl-BE', 'pl', 'pt', 'pt-PT', 'ro', 'ru', 'ru-KZ', 'ru-UA',
-  'si', 'sk', 'sl', 'sr', 'sv', 'sw', 'ta', 'te', 'th', 'tl', 'tr', 'uk',
-  'ur', 'ur-IN', 'uz', 'vi', 'zh', 'zh-CN', 'zh-HK', 'zh-MO', 'zh-SG'
+  'ar', 'bn', 'de', 'el', 'en', 'es', 'fa', 'fr', 'he', 'hi',
+  'hu', 'id', 'it', 'ja', 'ko', 'ms', 'my', 'nl', 'pl', 'pt',
+  'ro', 'ru', 'sr', 'th', 'tr', 'uk', 'vi', 'zh', 'zh-CN'
 ] as const;
-
 export type SupportedLocale = typeof supportedLocales[number];
 
 // Client-side message loading with translator creation

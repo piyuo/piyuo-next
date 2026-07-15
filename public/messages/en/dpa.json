@@ -1,0 +1,16 @@
+{
+  "dpa_intro_title": "Data Processing Agreement (DPA)",
+  "dpa_intro_body": "This Data Processing Agreement ('DPA') forms part of the Terms of Service between Piyuo ('Processor') and the enterprise customer ('Controller'). It governs the processing of aggregated foot traffic data ('Payloads') only when you choose to utilize Piyuo Cloud.",
+  "dpa_scope_title": "1. Optional Cloud & Scope of Processing",
+  "dpa_scope_body": "Piyuo Cloud is entirely optional. You may configure the App to transmit Payloads directly to your own private enterprise servers. If you choose this option, the data never passes through Piyuo Cloud, we have no access to it, and this DPA does not apply. We only receive and process Payloads if you explicitly opt to use Piyuo Cloud. When using Piyuo Cloud, we act solely as a Data Processor, processing data strictly on your documented instructions to provide the analytics dashboard. We will never use your data for advertising, external machine learning training, or unauthorized monetization.",
+  "dpa_security_access_title": "2. Access Control & Security Responsibilities",
+  "dpa_security_access_body": "For customers utilizing Piyuo Cloud, access to your Enterprise dashboard and API is secured via a API Key. We are responsible for implementing industry-standard technical measures to secure our infrastructure. You, the Controller, are strictly responsible for maintaining the confidentiality of your API Key and preventing unauthorized access on your systems.",
+  "dpa_breach_title": "3. Personal Data Breaches",
+  "dpa_breach_body": "If we become aware of a confirmed security breach leading to the accidental or unlawful destruction, loss, alteration, or unauthorized disclosure of your Payloads on our infrastructure, we will notify you without undue delay. We will provide reasonable information and assistance to help you mitigate the impact and meet your own regulatory reporting obligations.",
+  "dpa_subprocessors_title": "4. Sub-processors",
+  "dpa_subprocessors_body": "If you opt into Piyuo Cloud, you authorize us to engage third-party cloud infrastructure providers (Sub-processors) to host the service. We will ensure that any Sub-processor is bound by written obligations that provide an equivalent level of data protection as this DPA. We remain fully liable for our Sub-processors' compliance.",
+  "dpa_compliance_title": "5. Compliance, Rights, and Audits",
+  "dpa_compliance_body": "Because the Payloads are strictly anonymous and aggregated without biometric or identifying data, standard individual data requests (such as access or deletion) generally do not apply to Passersby. However, we will provide reasonable assistance and information necessary to demonstrate your compliance with data protection laws regarding your use of Piyuo Cloud.",
+  "dpa_retention_title": "6. Data Retention and Deletion",
+  "dpa_retention_body": "We will retain and process your Payloads only for the duration of your active Piyuo Cloud subscription. Upon termination or expiration of your subscription, we will permanently delete all of your Payloads from our active servers within 30 days, unless applicable law requires continued storage."
+}
