@@ -1,6 +1,6 @@
 // ===============================================
-// Test Suite: proxy.test.ts
-// Description: Tests for Next.js proxy locale detection and redirection
+// Test Suite: middleware.test.ts
+// Description: Tests for Next.js middleware locale detection and redirection
 //
 // Test Groups:
 //   - Locale Detection Tests
@@ -10,7 +10,7 @@
 // ===============================================
 
 import { NextRequest, NextResponse } from 'next/server';
-import { proxy } from './proxy';
+import { middleware } from './middleware';
 
 // Mock the i18n module
 jest.mock('./app/i18n', () => {
@@ -28,7 +28,7 @@ jest.mock('./app/i18n', () => {
   };
 });const { getBestMatchingLocale, normalizeLocale } = require('./app/i18n');
 
-describe('Proxy', () => {
+describe('Middleware', () => {
   beforeEach(() => {
     jest.clearAllMocks();
     // Default mock: return null for non-locale paths
@@ -48,9 +48,9 @@ describe('Proxy', () => {
     ];
 
     staticPaths.forEach((path) => {
-      it(`should skip proxy for ${path}`, async () => {
+      it(`should skip middleware for ${path}`, async () => {
         const request = new NextRequest(`https://example.com${path}`);
-        const response = proxy(request);
+        const response = middleware(request);
 
         // Should return NextResponse.next() which passes through
         expect(response).toBeInstanceOf(NextResponse);
@@ -74,7 +74,7 @@ describe('Proxy', () => {
     localeRoutes.forEach((path) => {
       it(`should pass through for existing locale route ${path}`, async () => {
         const request = new NextRequest(`https://example.com${path}`);
-        const response = proxy(request);
+        const response = middleware(request);
 
         // Should return NextResponse.next() which passes through
         expect(response).toBeInstanceOf(NextResponse);
@@ -96,7 +96,7 @@ describe('Proxy', () => {
         headers: { 'accept-language': 'fr-FR,fr;q=0.9,en;q=0.8' },
       });
 
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(getBestMatchingLocale).toHaveBeenCalledWith('fr-FR,fr;q=0.9,en;q=0.8');
       expect(response).toBeInstanceOf(NextResponse);
@@ -109,7 +109,7 @@ describe('Proxy', () => {
       getBestMatchingLocale.mockReturnValue('en');
 
       const request = new NextRequest('https://example.com/');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(getBestMatchingLocale).toHaveBeenCalledWith('en');
       expect(response).toBeInstanceOf(NextResponse);
@@ -127,7 +127,7 @@ describe('Proxy', () => {
         },
       });
 
-      const response = await proxy(request);
+      const response = await middleware(request);
 
       expect(response.status).toBe(307);
       expect(response.headers.get('location')).toBe('https://example.com/zh-CN');
@@ -148,7 +148,7 @@ describe('Proxy', () => {
         getBestMatchingLocale.mockReturnValue('en');
 
         const request = new NextRequest(`https://example.com${path}`);
-        const response = proxy(request);
+        const response = middleware(request);
 
         expect(response).toBeInstanceOf(NextResponse);
         expect(response.status).toBe(307); // Temporary redirect
@@ -160,7 +160,7 @@ describe('Proxy', () => {
       getBestMatchingLocale.mockReturnValue('en');
 
       const request = new NextRequest('https://example.com/about');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(response).toBeInstanceOf(NextResponse);
       expect(response.status).toBe(307);
@@ -172,7 +172,7 @@ describe('Proxy', () => {
       getBestMatchingLocale.mockReturnValue('en');
 
       const request = new NextRequest('https://example.com/contact');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(response).toBeInstanceOf(NextResponse);
       expect(response.headers.get('x-locale')).toBe('en');
@@ -182,7 +182,7 @@ describe('Proxy', () => {
       getBestMatchingLocale.mockReturnValue('en');
 
       const request = new NextRequest('https://example.com/products');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(response).toBeInstanceOf(NextResponse);
       expect(response.headers.get('x-locale')).toBe('en');
@@ -192,7 +192,7 @@ describe('Proxy', () => {
       getBestMatchingLocale.mockReturnValue('en');
 
       const request = new NextRequest('https://example.com/blog/post-1');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(response).toBeInstanceOf(NextResponse);
       expect(response.headers.get('x-locale')).toBe('en');
@@ -204,7 +204,7 @@ describe('Proxy', () => {
       getBestMatchingLocale.mockReturnValue('en');
 
       const request = new NextRequest('https://example.com/?utm_source=test');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(response.headers.get('location')).toBe('https://example.com/en?utm_source=test');
     });
@@ -213,7 +213,7 @@ describe('Proxy', () => {
       getBestMatchingLocale.mockReturnValue('en');
 
       const request = new NextRequest('https://example.com/#section');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(response.headers.get('location')).toBe('https://example.com/en#section');
     });
@@ -222,7 +222,7 @@ describe('Proxy', () => {
       getBestMatchingLocale.mockReturnValue('en');
 
       const request = new NextRequest('http://localhost:3000/');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(response.headers.get('location')).toBe('http://localhost:3000/en');
     });
@@ -237,7 +237,7 @@ describe('Proxy', () => {
       normalizeLocale.mockReturnValue('en-GB');
 
       const request = new NextRequest('https://example.com/en-gb/');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(normalizeLocale).toHaveBeenCalledWith('en-gb');
       expect(response).toBeInstanceOf(NextResponse);
@@ -255,7 +255,7 @@ describe('Proxy', () => {
       normalizeLocale.mockReturnValue('en-GB');
 
       const request = new NextRequest('https://example.com/en-gb/about');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(normalizeLocale).toHaveBeenCalledWith('en-gb');
       expect(response).toBeInstanceOf(NextResponse);
@@ -269,7 +269,7 @@ describe('Proxy', () => {
       normalizeLocale.mockReturnValue('en');
 
       const request = new NextRequest('https://example.com/en-notexist/');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(normalizeLocale).toHaveBeenCalledWith('en-notexist');
       expect(response).toBeInstanceOf(NextResponse);
@@ -283,7 +283,7 @@ describe('Proxy', () => {
       normalizeLocale.mockReturnValue('en');
 
       const request = new NextRequest('https://example.com/en-notexist/about');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(normalizeLocale).toHaveBeenCalledWith('en-notexist');
       expect(response).toBeInstanceOf(NextResponse);
@@ -302,7 +302,7 @@ describe('Proxy', () => {
       normalizeLocale.mockReturnValue('en-IN');
 
       const request = new NextRequest('https://example.com/en_IN/');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(normalizeLocale).toHaveBeenCalledWith('en_IN');
       expect(response).toBeInstanceOf(NextResponse);
@@ -320,7 +320,7 @@ describe('Proxy', () => {
       normalizeLocale.mockReturnValue('en-IN');
 
       const request = new NextRequest('https://example.com/en_IN/about');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(normalizeLocale).toHaveBeenCalledWith('en_IN');
       expect(response).toBeInstanceOf(NextResponse);
@@ -334,7 +334,7 @@ describe('Proxy', () => {
       normalizeLocale.mockReturnValue('en');
 
       const request = new NextRequest('https://example.com/en_XX/');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(normalizeLocale).toHaveBeenCalledWith('en_XX');
       expect(response).toBeInstanceOf(NextResponse);
@@ -352,7 +352,7 @@ describe('Proxy', () => {
       normalizeLocale.mockReturnValue('zh-CN');
 
       const request = new NextRequest('https://example.com/zh_cn/products');
-      const response = proxy(request);
+      const response = middleware(request);
 
       expect(normalizeLocale).toHaveBeenCalledWith('zh_cn');
       expect(response).toBeInstanceOf(NextResponse);

@@ -56,6 +56,19 @@ const languageDisplayNames: Record<string, string> = {
 };
 
 /**
+ * Regional code display names
+ * Maps region codes to their full names for compound locales
+ */
+const regionDisplayNames: Record<string, string> = {
+  'US': 'US',
+  'CA': 'Canada',
+  'GB': 'GB',
+  'AU': 'Australia',
+  'CN': '简体',
+  'TW': '繁體'
+};
+
+/**
  * Get the display name for a language code
  * Returns the native name of the language, or the code if unknown
  */
@@ -71,7 +84,9 @@ export function getLanguageDisplayName(languageCode: string): string {
     const [baseCode, region] = languageCode.split('-');
     const baseName = languageDisplayNames[baseCode];
     if (baseName) {
-      return `${baseName} (${region})`;
+      // Use regional display name if available, otherwise use region code
+      const regionDisplay = regionDisplayNames[region] || region;
+      return `${baseName} (${regionDisplay})`;
     }
   }
 

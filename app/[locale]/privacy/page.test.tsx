@@ -15,10 +15,21 @@ import PrivacyPage from './page';
 // Mock the translation function for testing
 jest.mock('../../i18n', () => {
   const mockTranslations: Record<string, string> = {
-    'privacy_title': 'Privacy Policy for Piyuo Counter',
-    'privacy_effective_date': 'Effective Date: April 12, 2025',
-    'privacy_introduction_title': 'Introduction',
-    'privacy_who_we_are_title': 'Who We Are',
+    'privacy': 'Privacy Policy',
+    'privacy_title': 'Privacy Policy - Piyuo Counter',
+    'privacy_desc': 'Privacy Policy for Piyuo Counter application',
+    'privacy_intro_title': 'Introduction',
+    'privacy_intro_body': 'Welcome to Piyuo Counter. Effective Date: July 16, 2026.',
+    'privacy_how_it_works_title': 'How the App Works',
+    'privacy_how_it_works_body': 'The App detects and tracks objects in real time.',
+    'privacy_data_title': 'Aggregated Foot Traffic Data',
+    'privacy_data_body': 'Instead of tracking individuals in real time, the App summarizes results.',
+    'privacy_storage_title': 'Uploading and Storage',
+    'privacy_storage_body': 'Unless Local Device Only mode is on, the App uploads data.',
+    'privacy_rights_title': 'Children\'s Privacy & Your Rights',
+    'privacy_rights_body': 'Because the App never identifies anyone, it does not knowingly collect personal data.',
+    'privacy_contact_title': 'Contact Us',
+    'privacy_contact_body': 'Questions can be sent to service@piyuo.com or via https://piyuo.com.',
     'privacy_contact_email': 'by email: service@piyuo.com',
     'privacy_contact_website': 'by visiting this page on our website: https://piyuo.com',
     'website_url': 'https://piyuo.com',
@@ -48,8 +59,8 @@ describe('Privacy Policy Page', () => {
 
       render(component);
 
-      expect(screen.getByText('Privacy Policy for Piyuo Counter')).toBeInTheDocument();
-      expect(screen.getByText('Effective Date: April 12, 2025')).toBeInTheDocument();
+      expect(screen.getByText('Privacy Policy')).toBeInTheDocument();
+      expect(screen.getByText(/effective date/i)).toBeInTheDocument();
     });
 
     it('should render all main sections', async () => {
@@ -59,17 +70,16 @@ describe('Privacy Policy Page', () => {
       render(component);
 
       expect(screen.getByText('Introduction')).toBeInTheDocument();
-      expect(screen.getByText('Who We Are')).toBeInTheDocument();
+      expect(screen.getByText('How the App Works')).toBeInTheDocument();
     });    it('should contain proper contact information', async () => {
       const params = { locale: 'en' };
       const component = await PrivacyPage({ params: Promise.resolve(params) });
 
       render(component);
 
-      // Check for email link in contact section
-      expect(screen.getByRole('link', { name: /by email: service@piyuo\.com/i })).toBeInTheDocument();
-      // Check for website link in contact section
-      expect(screen.getByRole('link', { name: /by visiting this page on our website: https:\/\/piyuo\.com/i })).toBeInTheDocument();
+      // Check for contact section
+      expect(screen.getByText('Contact Us')).toBeInTheDocument();
+      expect(screen.getByText(/service@piyuo\.com/i)).toBeInTheDocument();
     });
   });
 
@@ -81,7 +91,7 @@ describe('Privacy Policy Page', () => {
       render(component);
 
       // Verify English content is loaded
-      expect(screen.getByText('Privacy Policy for Piyuo Counter')).toBeInTheDocument();
+      expect(screen.getByText('Privacy Policy')).toBeInTheDocument();
       expect(screen.getByText('Introduction')).toBeInTheDocument();
     });
 
@@ -96,7 +106,7 @@ describe('Privacy Policy Page', () => {
       render(component);
 
       // Should still render with English fallback content
-      expect(screen.getByText('Privacy Policy for Piyuo Counter')).toBeInTheDocument();
+      expect(screen.getByText('Privacy Policy')).toBeInTheDocument();
     });
   });
 
@@ -122,8 +132,8 @@ describe('Privacy Policy Page', () => {
 
       render(component);
 
-      // Check that effective date is displayed
-      expect(screen.getByText(/effective date/i)).toBeInTheDocument();
+      // Check that sections are properly structured
+      expect(screen.getByText('Introduction')).toBeInTheDocument();
     });
   });
 

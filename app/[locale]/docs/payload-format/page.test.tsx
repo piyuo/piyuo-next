@@ -11,6 +11,7 @@
 
 import { render } from "@testing-library/react";
 import fs from "fs/promises";
+import { notFound } from "next/navigation";
 import PayloadFormatDocsPage, { generateMetadata } from "./page";
 
 // Mock next/navigation
@@ -110,7 +111,6 @@ This is a test markdown file.`;
 
   describe("Error Handling", () => {
     it("should call notFound when locale is not supported", async () => {
-      const { notFound } = require("next/navigation");
       const params = Promise.resolve({ locale: "invalid" });
 
       await PayloadFormatDocsPage({ params });
@@ -119,14 +119,19 @@ This is a test markdown file.`;
     });
 
     it("should call notFound when markdown file cannot be read", async () => {
-      const { notFound } = require("next/navigation");
       (fs.readFile as jest.Mock).mockRejectedValue(new Error("File not found"));
+
+      // Suppress console.error for this expected error case
+      const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation();
 
       const params = Promise.resolve({ locale: "en" });
 
       await PayloadFormatDocsPage({ params });
 
       expect(notFound).toHaveBeenCalled();
+
+      // Restore console.error
+      consoleErrorSpy.mockRestore();
     });
   });
 

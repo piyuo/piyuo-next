@@ -20,11 +20,11 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
-    "@next/third-parties": "^16.2.10",
+    "@next/third-parties": "^15.5.21",
     "@tailwindcss/typography": "^0.5.20",
     "csv-parse": "^6.1.0",
     "highlight.js": "^11.11.1",
-    "next": "^16.2.10",
+    "next": "15.5.21",
     "next-intl": "^4.13.2",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
@@ -44,7 +44,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.10",
+    "eslint-config-next": "15.5.21",
     "jest": "30.0.5",
     "jest-environment-jsdom": "^30.0.5",
     "jest-environment-node": "^30.0.5",
@@ -69,6 +69,6 @@
     "typescript": "pin to 5.8.3 to avoid minor version surprises across environments.",
     "jest": "pin to 30.0.3 to avoid minor version surprises across environments.",
     "node": "Pinned to v22 for long-term LTS support. Consider upgrading to v24 in Oct 2025 when it becomes LTS.",
-    "pnpm": "Using Corepack + pnpm@10.12.4 for consistent builds across dev and CI. run corepack enable | corepack prepare pnpm@10.12.4 --activate to set up."
+    "pnpm": "Using Corepack + pnpm@11.13.0 for consistent builds across dev and CI. run corepack enable | corepack prepare pnpm@11.13.0 --activate to set up."
   }
 }

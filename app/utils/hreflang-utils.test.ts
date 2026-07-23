@@ -8,9 +8,9 @@ import { convertLocaleToHreflang, generateHreflangLinks, generateHreflangLinksWi
 describe('hreflang utilities', () => {
   describe('convertLocaleToHreflang', () => {
     it('should convert underscore locales to hyphen format', () => {
-      expect(convertLocaleToHreflang('en-US')).toBe('en-US');
+      expect(convertLocaleToHreflang('en')).toBe('en');
       expect(convertLocaleToHreflang('zh-CN')).toBe('zh-CN');
-      expect(convertLocaleToHreflang('fr-CA')).toBe('fr-CA');
+      expect(convertLocaleToHreflang('fr')).toBe('fr');
     });
 
     it('should handle single locales without changes', () => {
@@ -25,12 +25,12 @@ describe('hreflang utilities', () => {
       const result = generateHreflangLinks('/');
 
       // Should include all supported locales
-      expect(Object.keys(result.languages).length).toBe(85); // 84 locales + x-default
+      expect(Object.keys(result.languages).length).toBe(30); // 29 locales + x-default
 
       // Should include some key locales
       expect(result.languages['en']).toBe('https://piyuo.com/en');
       expect(result.languages['zh-CN']).toBe('https://piyuo.com/zh-CN');
-      expect(result.languages['fr-CA']).toBe('https://piyuo.com/fr-CA');
+      expect(result.languages['fr']).toBe('https://piyuo.com/fr');
 
       // Should include x-default
       expect(result.languages['x-default']).toBe('https://piyuo.com/en');
@@ -118,9 +118,9 @@ describe('hreflang utilities', () => {
 
       it('should handle privacy pages with x-default pointing to root privacy path', () => {
         // For non-English privacy pages, x-default should point to root privacy path
-        const hreflang = generateHreflangLinksWithCanonical('zh-MO', '/privacy');
+        const hreflang = generateHreflangLinksWithCanonical('es', '/privacy');
 
-        expect(hreflang.languages['zh-MO']).toBe('https://piyuo.com/zh-MO/privacy');
+        expect(hreflang.languages['es']).toBe('https://piyuo.com/es/privacy');
         // x-default should point to root privacy path (language-neutral)
         expect(hreflang.languages['x-default']).toBe('https://piyuo.com/privacy');
       });
@@ -137,8 +137,8 @@ describe('hreflang utilities', () => {
       it('should include all supported locales in hreflang links', () => {
         const hreflang = generateHreflangLinksWithCanonical('de', '/');
 
-        // Should still include all 84 locales + x-default
-        expect(Object.keys(hreflang.languages).length).toBe(85);
+        // Should still include all 29 locales + x-default
+        expect(Object.keys(hreflang.languages).length).toBe(30);
 
         // Should include key locales
         expect(hreflang.languages['en']).toBe('https://piyuo.com/en');
