@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.0](https://github.com/piyuo/piyuo-next/compare/v1.5.0...v1.6.0) (2026-07-23)
+
+
+### Features
+
+* simplify pull request and ai assist issue templates [#158](https://github.com/piyuo/piyuo-next/issues/158) ([5492acd](https://github.com/piyuo/piyuo-next/commit/5492acdbd96c1d0b541106d5c47d248f40432f15))
+* update screenshots and desc for piyuo counter [#161](https://github.com/piyuo/piyuo-next/issues/161) ([e74802c](https://github.com/piyuo/piyuo-next/commit/e74802c97f429f01bff29266d6399b711066c489))
+
 ## [1.5.0](https://github.com/piyuo/piyuo-next/compare/v1.4.2...v1.5.0) (2025-08-13)
 
 
