@@ -3,7 +3,7 @@
 // Description: Tests for sitemap generation functionality
 //
 // Purpose:
-//   - Verify sitemap generates entries for all 84 locales
+//   - Verify sitemap generates entries for all 29 locales
 //   - Ensure all pages are included (home, privacy, terms)
 //   - Validate URL structure and metadata
 //   - Test search engine indexing support
@@ -21,7 +21,7 @@ describe('Sitemap Generation', () => {
   });
 
   test('should generate sitemap entries for all supported locales', () => {
-    // Expected: 84 locales × 3 pages = 252 entries
+    // Expected: 29 locales × 3 pages = 87 entries
     const expectedEntries = supportedLocales.length * 3;
     expect(sitemapEntries).toHaveLength(expectedEntries);
   });

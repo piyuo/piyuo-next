@@ -1,10 +1,11 @@
+
 import { NextRequest, NextResponse } from 'next/server';
 import { getBestMatchingLocale, normalizeLocale, supportedLocales } from './app/i18n';
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Skip proxy for static files, API routes, and internal Next.js routes
+  // Skip middleware for static files, API routes, and internal Next.js routes
   if (
     pathname.startsWith('/_next/') ||
     pathname.startsWith('/api/') ||

@@ -10,26 +10,27 @@
 // ===============================================
 
 import { render, screen } from '@testing-library/react';
+import { notFound } from 'next/navigation';
+import { isSupportedLocale } from '../../i18n';
 import DpaPage from './page';
 
 // Mock the translation function for testing
 jest.mock('../../i18n', () => {
   const mockTranslations: Record<string, string> = {
-    'dpa': 'Data Processing Agreement',
-    'dpa_intro_title': 'Introduction',
+    'dpa_intro_title': 'Data Processing Agreement (DPA)',
     'dpa_intro_body': 'This Data Processing Agreement outlines how we handle and protect your data.',
-    'dpa_scope_title': 'Scope',
-    'dpa_scope_body': 'This agreement applies to all personal data processing activities.',
-    'dpa_security_access_title': 'Security and Access',
-    'dpa_security_access_body': 'We implement industry-standard security measures to protect your data.',
-    'dpa_breach_title': 'Data Breach Notification',
-    'dpa_breach_body': 'We will notify you of any data breaches within 72 hours.',
-    'dpa_subprocessors_title': 'Sub-processors',
-    'dpa_subprocessors_body': 'We may engage sub-processors to help us provide services.',
-    'dpa_compliance_title': 'Compliance',
-    'dpa_compliance_body': 'We comply with all applicable data protection regulations.',
-    'dpa_retention_title': 'Data Retention',
-    'dpa_retention_body': 'We retain data only as long as necessary for the stated purposes.',
+    'dpa_scope_title': '1. Optional Cloud & Scope of Processing',
+    'dpa_scope_body': 'Piyuo Cloud is entirely optional.',
+    'dpa_security_access_title': '2. Access Control & Security Responsibilities',
+    'dpa_security_access_body': 'For customers utilizing Piyuo Cloud, access to your Enterprise dashboard is secured.',
+    'dpa_breach_title': '3. Personal Data Breaches',
+    'dpa_breach_body': 'If we become aware of a confirmed security breach, we will notify you.',
+    'dpa_subprocessors_title': '4. Sub-processors',
+    'dpa_subprocessors_body': 'If you opt into Piyuo Cloud, you authorize us to engage third-party cloud providers.',
+    'dpa_compliance_title': '5. Compliance, Rights, and Audits',
+    'dpa_compliance_body': 'Because the Payloads are strictly anonymous and aggregated, standard individual data requests do not apply.',
+    'dpa_retention_title': '6. Data Retention and Deletion',
+    'dpa_retention_body': 'We will retain and process your Payloads only for the duration of your active subscription.',
   };
 
   const mockTranslator = (key: string) => mockTranslations[key] || key;
@@ -61,7 +62,7 @@ describe('Data Processing Agreement Page', () => {
 
       render(component);
 
-      expect(screen.getByText('Data Processing Agreement')).toBeInTheDocument();
+      expect(screen.getByRole('heading', { level: 1, name: 'Data Processing Agreement (DPA)' })).toBeInTheDocument();
     });
 
     it('should render all main DPA sections', async () => {
@@ -70,13 +71,12 @@ describe('Data Processing Agreement Page', () => {
 
       render(component);
 
-      expect(screen.getByText('Introduction')).toBeInTheDocument();
-      expect(screen.getByText('Scope')).toBeInTheDocument();
-      expect(screen.getByText('Security and Access')).toBeInTheDocument();
-      expect(screen.getByText('Data Breach Notification')).toBeInTheDocument();
-      expect(screen.getByText('Sub-processors')).toBeInTheDocument();
-      expect(screen.getByText('Compliance')).toBeInTheDocument();
-      expect(screen.getByText('Data Retention')).toBeInTheDocument();
+      expect(screen.getByText('1. Optional Cloud & Scope of Processing')).toBeInTheDocument();
+      expect(screen.getByText('2. Access Control & Security Responsibilities')).toBeInTheDocument();
+      expect(screen.getByText('3. Personal Data Breaches')).toBeInTheDocument();
+      expect(screen.getByText('4. Sub-processors')).toBeInTheDocument();
+      expect(screen.getByText('5. Compliance, Rights, and Audits')).toBeInTheDocument();
+      expect(screen.getByText('6. Data Retention and Deletion')).toBeInTheDocument();
     });
 
     it('should render section content correctly', async () => {
@@ -86,7 +86,7 @@ describe('Data Processing Agreement Page', () => {
       render(component);
 
       expect(screen.getByText('This Data Processing Agreement outlines how we handle and protect your data.')).toBeInTheDocument();
-      expect(screen.getByText('We implement industry-standard security measures to protect your data.')).toBeInTheDocument();
+      expect(screen.getByText(/Piyuo Cloud is entirely optional/i)).toBeInTheDocument();
     });
   });
 
@@ -98,17 +98,15 @@ describe('Data Processing Agreement Page', () => {
       render(component);
 
       // Verify English content is loaded
-      expect(screen.getByText('Data Processing Agreement')).toBeInTheDocument();
-      expect(screen.getByText('Introduction')).toBeInTheDocument();
+      expect(screen.getByRole('heading', { level: 1, name: 'Data Processing Agreement (DPA)' })).toBeInTheDocument();
+      expect(screen.getByText('1. Optional Cloud & Scope of Processing')).toBeInTheDocument();
     });
 
     it('should handle unsupported locales by calling notFound', async () => {
-      const { notFound } = require('next/navigation');
       const params = { locale: 'unsupported' };
 
       // Mock isSupportedLocale to return false for this test
-      const { isSupportedLocale } = require('../../i18n');
-      isSupportedLocale.mockReturnValueOnce(false);
+      (isSupportedLocale as jest.Mock).mockReturnValueOnce(false);
 
       try {
         await DpaPage({ params: Promise.resolve(params) });

@@ -55,14 +55,24 @@ if (isNodeEnvironment) {
   // JSDOM environment setup for React component tests
   // These mocks are only needed in JSDOM environment
   const mockRequest = class {
-    constructor(input: any, init?: any) {
-      this.url = typeof input === 'string' ? input : input.url;
-      this.method = init?.method || 'GET';
-      this.headers = new Map(Object.entries(init?.headers || {}));
-    }
-    url: string;
+    private _url: string;
     method: string;
     headers: Map<string, string>;
+
+    constructor(input: any, init?: any) {
+      this._url = typeof input === 'string' ? input : input.url;
+      this.method = init?.method || 'GET';
+      this.headers = new Map(Object.entries(init?.headers || {}));
+
+      // Define url as a getter to match NextRequest behavior
+      Object.defineProperty(this, 'url', {
+        get() {
+          return this._url;
+        },
+        enumerable: true,
+        configurable: true
+      });
+    }
   };
 
   const mockResponse = class {
@@ -84,6 +94,23 @@ if (isNodeEnvironment) {
           Object.entries(init).forEach(([key, value]) => this.set(key, value as string));
         }
       }
+    }
+
+    // Override to handle case-insensitive header names
+    set(key: string, value: string): this {
+      return super.set(key.toLowerCase(), value);
+    }
+
+    get(key: string): string | undefined {
+      return super.get(key.toLowerCase());
+    }
+
+    has(key: string): boolean {
+      return super.has(key.toLowerCase());
+    }
+
+    delete(key: string): boolean {
+      return super.delete(key.toLowerCase());
     }
   };
 

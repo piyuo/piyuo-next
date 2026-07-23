@@ -1,9 +1,9 @@
 import {
-  getBestMatchingLocale,
-  getTranslator,
-  isSupportedLocale,
-  normalizeLocale,
-  supportedLocales
+    getBestMatchingLocale,
+    getTranslator,
+    isSupportedLocale,
+    normalizeLocale,
+    supportedLocales
 } from './i18n';
 
 // Mock fetch responses
@@ -67,7 +67,7 @@ describe('i18n functionality', () => {
     expect(supportedLocales).toContain('es');
     expect(supportedLocales).toContain('zh');
     expect(supportedLocales).toContain('ja');
-    expect(supportedLocales.length).toBe(84);
+    expect(supportedLocales.length).toBe(29);
   });
 
   it('should correctly identify supported locales', () => {
@@ -151,14 +151,10 @@ describe('normalizeLocale', () => {
     expect(normalizeLocale('en')).toBe('en');
     expect(normalizeLocale('fr')).toBe('fr');
     expect(normalizeLocale('zh-CN')).toBe('zh-CN');
-    expect(normalizeLocale('en-GB')).toBe('en-GB');
   });
 
   it('should handle case-insensitive regional locale matching', () => {
-    expect(normalizeLocale('en-gb')).toBe('en-GB');
     expect(normalizeLocale('zh-cn')).toBe('zh-CN');
-    expect(normalizeLocale('fr-ca')).toBe('fr-CA');
-    expect(normalizeLocale('de-ch')).toBe('de-CH');
   });
 
   it('should fallback to base locale for unsupported regional codes', () => {
@@ -182,15 +178,10 @@ describe('normalizeLocale', () => {
 
   it('should convert underscores to hyphens and normalize', () => {
     // Test underscore to hyphen conversion for exact matches
-    expect(normalizeLocale('en_IN')).toBe('en-IN');
     expect(normalizeLocale('zh_CN')).toBe('zh-CN');
-    expect(normalizeLocale('fr_CA')).toBe('fr-CA');
-    expect(normalizeLocale('de_CH')).toBe('de-CH');
 
     // Test underscore to hyphen conversion with case normalization
-    expect(normalizeLocale('en_gb')).toBe('en-GB');
     expect(normalizeLocale('zh_cn')).toBe('zh-CN');
-    expect(normalizeLocale('fr_ca')).toBe('fr-CA');
 
     // Test fallback to base locale for unsupported regional codes with underscores
     expect(normalizeLocale('en_XX')).toBe('en');
