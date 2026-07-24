@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/piyuo/piyuo-next/compare/v1.6.0...v1.7.0) (2026-07-24)
+
+
+### Features
+
+* support direct /privacy route [#102](https://github.com/piyuo/piyuo-next/issues/102) ([a74ef79](https://github.com/piyuo/piyuo-next/commit/a74ef795e4b09789f702bb49a5d52373f086f295))
+
 ## [1.6.0](https://github.com/piyuo/piyuo-next/compare/v1.5.0...v1.6.0) (2026-07-23)
 
 
