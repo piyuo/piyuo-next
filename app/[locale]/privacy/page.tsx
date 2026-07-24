@@ -84,8 +84,8 @@ export default async function PrivacyPage({ params }: PrivacyPageProps) {
     'privacy_data',
     'privacy_storage',
     'privacy_rights',
-    'privacy_contact',
-    'privacy_account'
+    'privacy_account',
+    'privacy_contact'
   ] as const;
 
   return (
