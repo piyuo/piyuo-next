@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/piyuo/piyuo-next/compare/v1.7.0...v1.7.1) (2026-07-24)
+
+
+### Bug Fixes
+
+* update privacy document for current design [#167](https://github.com/piyuo/piyuo-next/issues/167) ([0f27197](https://github.com/piyuo/piyuo-next/commit/0f27197d6d57feb6cd5e482a8c5aa20b9eb1b0a2))
+
 ## [1.7.0](https://github.com/piyuo/piyuo-next/compare/v1.6.0...v1.7.0) (2026-07-24)
 
 
