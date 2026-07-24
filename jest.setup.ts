@@ -76,12 +76,26 @@ if (isNodeEnvironment) {
   };
 
   const mockResponse = class {
+    body: any;
+    status: number;
+    headers: Map<string, string>;
+
     constructor(body?: any, init?: any) {
+      this.body = body;
       this.status = init?.status || 200;
       this.headers = new Map(Object.entries(init?.headers || {}));
     }
-    status: number;
-    headers: Map<string, string>;
+
+    async json() {
+      if (typeof this.body === 'string') {
+        return JSON.parse(this.body);
+      }
+      return this.body;
+    }
+
+    static json(data: any, init?: ResponseInit) {
+      return new mockResponse(data, init);
+    }
   };
 
   const mockHeaders = class extends Map {
