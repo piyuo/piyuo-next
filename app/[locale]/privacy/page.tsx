@@ -88,7 +88,7 @@ export default async function PrivacyPage({ params }: PrivacyPageProps) {
   ] as const;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-linear-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         <article className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
           {/* Header */}
