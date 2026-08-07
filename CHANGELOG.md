@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/piyuo/piyuo-next/compare/v1.7.1...v1.8.0) (2026-08-07)
+
+
+### Features
+
+* update privacy policy for error logs [#172](https://github.com/piyuo/piyuo-next/issues/172) ([c6c7b37](https://github.com/piyuo/piyuo-next/commit/c6c7b3781e776efc25108ae5d422346b83a678f5))
+
 ## [1.7.1](https://github.com/piyuo/piyuo-next/compare/v1.7.0...v1.7.1) (2026-07-24)
 
 
