@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.1](https://github.com/piyuo/piyuo-next/compare/v1.8.0...v1.8.1) (2026-08-27)
+
+
+### Bug Fixes
+
+* payload-format page returns 404 [#175](https://github.com/piyuo/piyuo-next/issues/175) ([0a04458](https://github.com/piyuo/piyuo-next/commit/0a04458e6310b8a9792c27b01de66ad18001b32e))
+
 ## [1.8.0](https://github.com/piyuo/piyuo-next/compare/v1.7.1...v1.8.0) (2026-08-07)
 
 
