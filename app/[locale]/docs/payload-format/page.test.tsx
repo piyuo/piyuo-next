@@ -10,7 +10,6 @@
 // ===============================================
 
 import { render } from "@testing-library/react";
-import fs from "fs/promises";
 import { notFound } from "next/navigation";
 import PayloadFormatDocsPage, { generateMetadata } from "./page";
 
@@ -18,9 +17,6 @@ import PayloadFormatDocsPage, { generateMetadata } from "./page";
 jest.mock("next/navigation", () => ({
   notFound: jest.fn(),
 }));
-
-// Mock fs/promises
-jest.mock("fs/promises");
 
 // Mock the MarkdownRenderer component
 jest.mock("./MarkdownRenderer", () => ({
@@ -35,7 +31,10 @@ This is a test markdown file.`;
 
   beforeEach(() => {
     jest.clearAllMocks();
-    (fs.readFile as jest.Mock).mockResolvedValue(mockMarkdownContent);
+    (global.fetch as jest.Mock).mockResolvedValue({
+      ok: true,
+      text: () => Promise.resolve(mockMarkdownContent),
+    });
   });
 
   describe("generateMetadata", () => {
@@ -66,7 +65,7 @@ This is a test markdown file.`;
       const { container } = render(page);
 
       expect(container).toBeInTheDocument();
-      expect(fs.readFile).toHaveBeenCalled();
+      expect(global.fetch).toHaveBeenCalled();
     });
 
     it("should render header with back to home link", async () => {
@@ -119,7 +118,7 @@ This is a test markdown file.`;
     });
 
     it("should call notFound when markdown file cannot be read", async () => {
-      (fs.readFile as jest.Mock).mockRejectedValue(new Error("File not found"));
+      (global.fetch as jest.Mock).mockRejectedValue(new Error("File not found"));
 
       // Suppress console.error for this expected error case
       const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation();
