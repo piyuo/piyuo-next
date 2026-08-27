@@ -9,11 +9,10 @@
 //   - Styled Markdown Rendering
 // ===============================================
 
-import fs from "fs/promises";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import path from "path";
 import { isSupportedLocale } from "../../../i18n";
+import { appVersion, getBaseUrl } from "../../../lib/runtime-config";
 import { MarkdownRenderer } from "./MarkdownRenderer";
 
 // Enable ISR with 24-hour revalidation for documentation
@@ -47,13 +46,16 @@ export async function generateMetadata({ params }: DocsPageProps): Promise<Metad
 }
 
 /**
- * Read markdown file from the public docs directory
+ * Fetch markdown file from the public docs directory over HTTP.
+ * Uses fetch instead of fs so the content is reachable from the Cloudflare
+ * Workers runtime, which has no filesystem access to the public directory.
  */
 async function readMarkdownFile(): Promise<string> {
   try {
-    const filePath = path.join(process.cwd(), "public", "docs", "payload-format.md");
-    const content = await fs.readFile(filePath, "utf-8");
-    return content;
+    const baseUrl = getBaseUrl();
+    const res = await fetch(`${baseUrl}/docs/payload-format.md?v=${appVersion}`);
+    if (!res.ok) throw new Error(`Failed to fetch markdown: ${res.status}`);
+    return await res.text();
   } catch (error) {
     console.error("Error reading markdown file:", error);
     throw error;
